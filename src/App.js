@@ -20,6 +20,7 @@ import Charte from './pages/Charte'
 import BugReport from './pages/BugReport'
 import Thanks from './pages/Thanks'
 import Team from './pages/Team'
+import ProfilParameters from './pages/ProfilParameters'
 import CompagnySolution from './pages/CompagnySolution'
 import LegalMention from './pages/LegalMention'
 import Cgu from './pages/Cgu'
@@ -29,6 +30,10 @@ import PressKit from './pages/PressKit'
 import Files from './pages/Files'
 import ForgotPassword from './pages/ForgotPassword'
 import Error404 from './pages/Error404'
+import Dashboard from './pages/Dashboard'
+import MyOffers from './pages/MyOffers'
+import Proposals from './pages/Proposals'
+import Wallets from './pages/Wallets'
 
 function App() {
   return (
@@ -51,7 +56,7 @@ function App() {
             <Route path="/bug-report" element={<BugReport/>} />
             <Route path="/thanks" element={<Thanks/>} />
             <Route path="/team" element={<Team/>} />
-            <Route path="/compagny-solution" element={<CompagnySolution/>} />
+            <Route path="/compagny-solutions" element={<CompagnySolution/>} />
             <Route path="/legal-mention" element={<LegalMention/>} />
             <Route path="/cgu" element={<Cgu/>} />
             <Route path="/cgv" element={<Cgv/>} />
@@ -59,6 +64,11 @@ function App() {
             <Route path="/press-kit" element={<PressKit/>} />
             <Route path="/files" element={<Files/>} />
             <Route path="/forgot-password" element={<ForgotPassword/>} />
+            <Route path="/dashboard" element={<Dashboard/>} />
+            <Route path="/profil-parameters" element={<ProfilParameters/>} />
+            <Route path="/my-offers" element={<MyOffers/>} />
+            <Route path="/proposals" element={<Proposals/>} />
+            <Route path="/wallets" element={<Wallets/>} />
             <Route path="*" element={<Error404/>} />
           </Routes>
     

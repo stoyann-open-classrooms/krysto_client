@@ -133,12 +133,12 @@ function Header() {
                     <NavLink className="navbar-item" to={'/proposals'}>
                       Propostions
                     </NavLink>
-                    <NavLink className="navbar-item" to={'/accounts'}>
+                    <NavLink className="navbar-item" to={'/wallets'}>
                       <FaMoneyBill className="mr-2" /> Mes comptes
                     </NavLink>
 
                     <hr className="navbar-divider" />
-                    <NavLink className="navbar-item" to={'/parameters'}>
+                    <NavLink className="navbar-item" to={'/profil-parameters'}>
                       Paramètre du compte
                     </NavLink>
                   </div>
