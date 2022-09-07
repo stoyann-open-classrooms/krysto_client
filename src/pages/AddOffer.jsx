@@ -1,7 +1,7 @@
 
 function AddOffer() {
   return (
-    <div>AddOffer</div>
+    <main>AddOffer</main>
   )
 }
 

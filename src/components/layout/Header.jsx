@@ -155,7 +155,7 @@ function Header() {
                 ) : (
                   <div className="buttons">
                     <NavLink
-                      to={'/products'}
+                      to={'/register-subscription'}
                       className="button is-primary is-small"
                     >
                       Inscription

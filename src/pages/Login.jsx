@@ -46,8 +46,8 @@ function Login() {
   }
 
   return (
-    <>
-      <form onSubmit={onSubmit} className="container p-4">
+    <main>
+      <form onSubmit={onSubmit} className="container p-6">
         <h1 className="title is-4">Bienvenue !</h1>
         <div class="field">
           <p class="control has-icons-left has-icons-right">
@@ -99,7 +99,7 @@ function Login() {
           </Link>
       </form>
     
-    </>
+    </main>
   )
 }
 

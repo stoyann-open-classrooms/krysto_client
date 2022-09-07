@@ -1,7 +1,7 @@
 
 function Money() {
   return (
-    <div>Money</div>
+    <main>Money</main>
   )
 }
 

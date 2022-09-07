@@ -6,12 +6,26 @@ footer{
   background-color: rgb(53, 53, 53);
   
 }
-.navbar-brand{
+.navbar-brand , .navbar-menu{
   background-color: rgb(53, 53, 53);
+ a{
+  color: white;
 
+ }
 }
 
 main{
-  background-color: rgb(184, 184, 184);
+  background-color: rgb(240, 240, 240);
   min-height: 100vh;
+}
+
+.container-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-filter{
+  width: 100%;
 }

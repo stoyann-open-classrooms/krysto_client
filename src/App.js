@@ -16,6 +16,17 @@ import Contact from './pages/Contact'
 import Faq from './pages/Faq'
 import Money from './pages/Money'
 import MathModel from './pages/MathModel'
+import Charte from './pages/Charte'
+import BugReport from './pages/BugReport'
+import Thanks from './pages/Thanks'
+import Team from './pages/Team'
+import CompagnySolution from './pages/CompagnySolution'
+import LegalMention from './pages/LegalMention'
+import Cgu from './pages/Cgu'
+import Cgv from './pages/Cgv'
+import Testimonials from './pages/Testimonials'
+import PressKit from './pages/PressKit'
+import Files from './pages/Files'
 
 function App() {
   return (
@@ -26,7 +37,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/register-subscription" element={<Register />} />
             <Route path="/search" element={<Search />} />
             <Route path="/add-offer" element={<AddOffer />} />
             <Route path="/money" element={<Money />} />
@@ -34,6 +45,17 @@ function App() {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/math-model" element={<MathModel/>} />
+            <Route path="/charte" element={<Charte/>} />
+            <Route path="/bug-report" element={<BugReport/>} />
+            <Route path="/thanks" element={<Thanks/>} />
+            <Route path="/team" element={<Team/>} />
+            <Route path="/compagny-solution" element={<CompagnySolution/>} />
+            <Route path="/legal-mention" element={<LegalMention/>} />
+            <Route path="/cgu" element={<Cgu/>} />
+            <Route path="/cgv" element={<Cgv/>} />
+            <Route path="/testimonials" element={<Testimonials/>} />
+            <Route path="/press-kit" element={<PressKit/>} />
+            <Route path="/files" element={<Files/>} />
           </Routes>
     
         <Footer />

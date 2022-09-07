@@ -1,7 +1,7 @@
 
 function Faq() {
   return (
-    <div>Faq</div>
+    <main>Faq</main>
   )
 }
 

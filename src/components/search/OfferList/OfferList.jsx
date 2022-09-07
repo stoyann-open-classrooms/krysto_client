@@ -21,24 +21,19 @@ function OfferList() {
   }, [])
   console.log(offers)
 
-  if(!offers) {
+  if (!offers) {
     return <div>Chargement...</div>
   }
-  
 
-    return (
-    <div className="section">
-      
-       {offers.offers 
-            ? offers.offers.map((offer) => (
-                <OfferItem key={offer._id} offer={offer} />
-              ))
-            :  ""  }
-    </div>
-    )
-  
-
-
+  return (
+    <>
+      {offers.offers
+        ? offers.offers.map((offer) => (
+            <OfferItem key={offer._id} offer={offer} />
+          ))
+        : ''}
+    </>
+  )
 }
 
 export default OfferList

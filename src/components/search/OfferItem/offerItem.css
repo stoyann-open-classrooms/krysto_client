@@ -1,0 +1,32 @@
+.body-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-card {
+  background-color: rgb(83, 83, 83);
+  color: white;
+  margin: 2rem;
+  width: 320px;
+}
+.offer-card .body-card {
+  padding: 1rem;
+}
+.offer-card .body-card h3 {
+  margin-top: 10px;
+  color: violet;
+  font-weight: bold;
+}
+
+.slider-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 230px;
+}/*# sourceMappingURL=offerItem.css.map */
