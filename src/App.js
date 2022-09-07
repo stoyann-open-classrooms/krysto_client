@@ -34,6 +34,8 @@ import Dashboard from './pages/Dashboard'
 import MyOffers from './pages/MyOffers'
 import Proposals from './pages/Proposals'
 import Wallets from './pages/Wallets'
+import G1VsKrysto from './pages/G1VsKrysto'
+import Offer from './pages/Offer'
 
 function App() {
   return (
@@ -67,8 +69,10 @@ function App() {
             <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/profil-parameters" element={<ProfilParameters/>} />
             <Route path="/my-offers" element={<MyOffers/>} />
+            <Route path="/offer/:id" element={<Offer/>} />
             <Route path="/proposals" element={<Proposals/>} />
             <Route path="/wallets" element={<Wallets/>} />
+            <Route path="/g1-vs-krysto" element={<G1VsKrysto/>} />
             <Route path="*" element={<Error404/>} />
           </Routes>
     

@@ -1,15 +1,23 @@
-import React from 'react'
-
+import Logo from '../assets/logo_krysto.png'
 function PressKit() {
   return (
     <main>
-          <div className="hero p-4">
-     
-     <div className="hero-container">
-        <h1>Télècharger notre kit de presse.</h1>
-       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aut?</h3>
-   </div>
- </div>
+      <div className="hero p-4">
+        <div className="hero-container">
+          <h1>kit de presse.</h1>
+          <h3>
+            Télécharger toutes les images Krysto pour illustrer vos articles !
+          </h3>
+        </div>
+      </div>
+<div className="container p-4">
+
+      <img src={Logo} alt="logo de krysto" />
+      <p className='mt-3'>
+        Pour toutes informations complémentaires, interviews, reportages,
+        n'hésitez pas à <a href="/contact">nous contacter</a>.
+      </p>
+</div>
     </main>
   )
 }

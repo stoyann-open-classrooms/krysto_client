@@ -10312,6 +10312,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 body {
   font-family: "Poppins", sans-serif;
   color: #252726;
+  font-size: 10px;
 }
 
 a {
@@ -10466,4 +10467,30 @@ main {
 }
 .main-404 h3 {
   color: #edf5f3;
+}
+
+.comparatif-container h4 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #3f4264;
+  background-color: #62ebca;
+  border-radius: 1rem;
+}
+
+.container-card-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-card-team .card {
+  margin: 30px 0;
+}
+
+.money-content-page h4 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #3f4264;
+  background-color: #62ebca;
+  border-radius: 1rem;
 }/*# sourceMappingURL=index.css.map */

@@ -1,8 +1,10 @@
 @import '../../../SASS/variables';
+
 .body-card-header {
   display: flex;
   justify-content: space-between;
 }
+
 .body-card-content {
   display: flex;
   justify-content: space-between;
@@ -19,6 +21,7 @@
 
   .body-card {
     padding: 1rem;
+
     h3 {
       margin-top: 10px;
       color: $main-color;
@@ -34,5 +37,40 @@
     border-top-left-radius: $radius;
     border-top-right-radius: $radius;
     height: 180px;
+  }
+
+  .controls {
+    position: relative;
+
+    .buttons {
+      position: absolute;
+      bottom: 290px;
+      left: 10%;
+
+      .button {
+        padding: 0;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+.card-footer {
+  border: none;
+}
+
+.card-footer-item:not(:last-child) {
+  border: none;
+}
+
+.arrow-slider {
+  position: absolute;
+
+  &:nth-child(1) {
+    right: 0;
+  }
+
+  &:nth-child(2) {
+    left: 265px;
   }
 }

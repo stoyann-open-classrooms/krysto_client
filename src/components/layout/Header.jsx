@@ -20,7 +20,6 @@ import {
   FaUser,
 } from 'react-icons/fa'
 
-
 function Header() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -32,7 +31,7 @@ function Header() {
     navigate('/')
     window.location.reload()
   }
-  const  [toggleMenu, setToggleMenu] = useState(false)
+  const [toggleMenu, setToggleMenu] = useState(false)
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu)
@@ -50,36 +49,44 @@ function Header() {
                 alt="Logo de krysto / retour a l'acceuil"
               />
             </Link>
+        
 
-            
-            {!toggleMenu ?  <Link
-              role="button"
-              onClick={toggleNav}
-              className="navbar-burger"
-              aria-label="menu"
-              aria-expanded="false"
-              data-target="navbarBasicExample"
-            to={'#'}>
-             <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </Link>: <Link
-            to={'#'}
-            role="button"
-            onClick={toggleNav}
-            className="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          
-          </Link>}
-            
+            {!toggleMenu ? (
+              <Link
+                role="button"
+                onClick={toggleNav}
+                className="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+                to={'#'}
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </Link>
+            ) : (
+              <Link
+                to={'#'}
+                role="button"
+                onClick={toggleNav}
+                className="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </Link>
+              
+            )}
           </div>
+          
 
-          <div id="navbarBasicExample" className={toggleMenu ? 'navbar-menu is-active' : 'navbar-menu'}>
+          <div
+            id="navbarBasicExample"
+            className={toggleMenu ? 'navbar-menu is-active' : 'navbar-menu'}
+          >
             <div className="navbar-start">
               <NavLink className="navbar-item" to={'/'}>
                 Accueil
@@ -175,17 +182,16 @@ function Header() {
                     >
                       Inscription
                     </NavLink>
-                    <NavLink
-                      to={'/login'}
-                      className="button is-light is-small"
-                    >
+                    <NavLink to={'/login'} className="button is-light is-small">
                       <FaSignInAlt className="mr-2" /> Connexion
                     </NavLink>
                   </div>
                 )}
               </div>
             </div>
+            
           </div>
+      
         </nav>
       </header>
     </>

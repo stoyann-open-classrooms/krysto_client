@@ -8,6 +8,8 @@ const register = async (userData) => {
   if (response.data) {
     localStorage.setItem('userToken', JSON.stringify(response.data.token))
     localStorage.setItem('userId', JSON.stringify(response.data.userId))
+    localStorage.setItem('user', JSON.stringify(response.data.user))
+    
   }
   return response.data
 }
@@ -19,6 +21,7 @@ const login = async (userData) => {
   if (response.data) {
     localStorage.setItem('userToken', JSON.stringify(response.data.token))
     localStorage.setItem('userId', JSON.stringify(response.data.user._id))
+    localStorage.setItem('user', JSON.stringify(response.data.user))
   }
   return response.data
 }
@@ -26,7 +29,7 @@ const login = async (userData) => {
 // Logout
 const logout = () => {
   localStorage.removeItem('userToken')
-  localStorage.removeItem('userId')
+  localStorage.removeItem('user')
 }
 
 const authService = {

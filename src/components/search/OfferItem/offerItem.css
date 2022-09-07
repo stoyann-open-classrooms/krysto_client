@@ -33,4 +33,34 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   height: 180px;
+}
+.slider-card .controls {
+  position: relative;
+}
+.slider-card .controls .buttons {
+  position: absolute;
+  bottom: 290px;
+  left: 10%;
+}
+.slider-card .controls .buttons .button {
+  padding: 0;
+  background-color: #62ebca;
+}
+
+.card-footer {
+  border: none;
+}
+
+.card-footer-item:not(:last-child) {
+  border: none;
+}
+
+.arrow-slider {
+  position: absolute;
+}
+.arrow-slider:nth-child(1) {
+  right: 0;
+}
+.arrow-slider:nth-child(2) {
+  left: 265px;
 }/*# sourceMappingURL=offerItem.css.map */

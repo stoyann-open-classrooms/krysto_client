@@ -4,6 +4,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: $dark-color;
+  font-size: 10px;
+
 }
 a{
   font-size: 10px;
@@ -162,5 +164,39 @@ main {
   }
   h3{
     color: $dark-light;
+  }
+}
+
+.comparatif-container{
+  h4{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $main-dark-color;
+    background-color: $secondary-color;
+    border-radius: $radius;
+  
+  }
+}
+
+
+
+.container-card-team{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+   .card{
+    margin: 30px 0;
+   }
+  
+}
+
+.money-content-page{
+  h4{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $main-dark-color;
+    background-color: $secondary-color;
+    border-radius: $radius;
   }
 }
