@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebook, FaFacebookF, FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 function Footer() {
@@ -31,7 +32,16 @@ function Footer() {
 
     
  </div>
- <div class="content has-text-centered mt-6">
+ <div class="content has-text-centered mt-3 mb-3">
+  <div className="social-media-container mb-4">
+    <a href='https://www.facebook.com/Krysto.noumea/'>
+  <FaFacebookSquare/>
+    </a>
+    <a href='https://www.youtube.com/channel/UCoudw4zohXdN9Bs3I32uHkQ'>
+  <FaYoutube/>
+    </a>
+
+  </div>
     KRYSTO.NC © Tous droits réservés - 2022
     </div>
   </footer>

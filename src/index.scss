@@ -22,6 +22,7 @@ body {
   background-color: rgb(53, 53, 53);
   a {
     color: white;
+    font-size: 12px;
   }
 }
 
@@ -119,4 +120,14 @@ main {
   top: -13px;
   color: $dark-color
 
+}
+
+.social-media-container {
+  a {
+    font-size: 30px;
+    margin: 0 20px;
+    border: none;
+    color: $main-color;
+    background-color: transparent;
+  }
 }

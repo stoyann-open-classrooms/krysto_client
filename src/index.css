@@ -10333,6 +10333,7 @@ body {
 .navbar-brand a,
 .navbar-menu a {
   color: white;
+  font-size: 12px;
 }
 
 main {
@@ -10424,4 +10425,12 @@ main {
   position: absolute;
   top: -13px;
   color: #252726;
+}
+
+.social-media-container a {
+  font-size: 30px;
+  margin: 0 20px;
+  border: none;
+  color: #9298E1;
+  background-color: transparent;
 }/*# sourceMappingURL=index.css.map */
