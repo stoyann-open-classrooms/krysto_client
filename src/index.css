@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
+@import url("https://use.typekit.net/hap5tri.css");
 .pagination-previous,
 .pagination-next,
 .pagination-link,
@@ -10308,20 +10309,34 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-footer {
-  padding: 2rem;
-  background-color: rgb(53, 53, 53);
+body {
+  font-family: "Poppins", sans-serif;
+  color: #252726;
 }
 
-.navbar-brand, .navbar-menu {
+.footer {
+  padding: 2rem;
+  background-color: rgb(53, 53, 53);
+  color: #9298E1;
+  font-size: 12px;
+}
+.footer a {
+  font-size: 10px;
+  color: white;
+  font-weight: 300;
+}
+
+.navbar-brand,
+.navbar-menu {
   background-color: rgb(53, 53, 53);
 }
-.navbar-brand a, .navbar-menu a {
+.navbar-brand a,
+.navbar-menu a {
   color: white;
 }
 
 main {
-  background-color: rgb(240, 240, 240);
+  background-color: #edf5f3;
   min-height: 100vh;
 }
 
@@ -10334,4 +10349,79 @@ main {
 
 .btn-filter {
   width: 100%;
+}
+
+.cgu-container {
+  text-align: center;
+}
+.cgu-container h4,
+.cgu-container h1 {
+  color: #9298E1;
+  font-size: 10px;
+  font-weight: bolder;
+}
+.cgu-container p {
+  font-size: 9px;
+  text-align: center;
+}
+.cgu-container li {
+  font-size: 12px;
+}
+
+.subcription-card-top {
+  color: #9298E1;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.subcription-card-top h5 {
+  font-size: 10px;
+}
+
+.container-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.container-subscription .box {
+  background-color: #252726;
+  color: #f0eff3;
+  box-shadow: 2px 2px 10px #c3c7f0;
+  margin: 30px 0;
+  border: #9298E1 3px solid;
+  font-size: 10px;
+}
+.container-subscription .box ul {
+  margin: 10px 0;
+  max-width: 350px;
+  border: 2px solid #9298E1;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.container-subscription .box ul li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.container-subscription .box .button {
+  margin: 10px 0;
+  border: 2px solid #62ebca;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.subcription-card {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nb-free {
+  position: absolute;
+  top: -13px;
+  color: #252726;
 }/*# sourceMappingURL=index.css.map */

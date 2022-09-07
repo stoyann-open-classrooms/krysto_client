@@ -1,0 +1,35 @@
+// ----- Colors -----
+$website-width: 1280px;
+
+
+
+
+$main-color : #9298E1;
+$secondary-color : #62ebca;
+//  $main-color : #4c56bb;
+$light-color : #f0eff3;
+// $dark-color : #131314;
+$dark-color : #252726;
+$dark-light : #edf5f3;
+
+$success : #27db4e; 
+$warning : #e47f57; 
+$danger : #eb6767; 
+
+
+$bg-image : url('../assets/paysage_caledonien.jpeg');
+
+// shadow 
+$shadow: 2px 2px 10px #c3c7f0;
+
+// radius
+$radius: 1rem;
+
+// Responsive
+$smartphone: 50rem;
+$tabletMin: 50.1rem;
+$tabletMax: 76.8rem;
+$normalMin: 76.9rem;
+$normalMax: 120rem;
+$widescreen: 120.1;
+$landscape: 50rem; 
