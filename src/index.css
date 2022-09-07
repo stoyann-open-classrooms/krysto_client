@@ -10314,6 +10314,10 @@ body {
   color: #252726;
 }
 
+a {
+  font-size: 10px;
+}
+
 .footer {
   padding: 2rem;
   background-color: rgb(53, 53, 53);
@@ -10433,4 +10437,33 @@ main {
   border: none;
   color: #9298E1;
   background-color: transparent;
+}
+
+.hero {
+  background-color: #3f4264;
+  color: #f0eff3;
+}
+
+.hero-container {
+  font-size: 13px;
+}
+.hero-container h3 {
+  font-size: 10px;
+}
+
+.main-404 {
+  background-color: #3f4264;
+  text-align: center;
+  color: #edf5f3;
+}
+.main-404 h2 {
+  color: #edf5f3;
+}
+.main-404 h1 {
+  color: #62ebca;
+  font-size: 35px;
+  margin: 6rem 0;
+}
+.main-404 h3 {
+  color: #edf5f3;
 }/*# sourceMappingURL=index.css.map */

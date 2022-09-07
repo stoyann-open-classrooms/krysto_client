@@ -10,9 +10,8 @@ function LandingSlider() {
   return (
     <div className='slider-container'>
         <div className="left-slide">
-            <div className='slide-1' style={{backgroundColor: "#252726"}}>
-                <h1>Le troc nouvelle génèration.</h1>
-                <p>petite-annonces en crypto-monnaie</p>
+            <div className='slide-1 '>
+                <h1 className='title is-3 p-5  big-title mb-0'>Le troc nouvelle génèration.</h1>
             </div>
         </div>
         <div className="right-slide">

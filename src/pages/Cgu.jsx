@@ -2,9 +2,17 @@ import React from 'react'
 
 function Cgu() {
   return (
-    <main className="p-6">
-      <div className="box  cgu-container">
+    <>
+    <main>
+    <div className="hero p-4">
+     
+     <div className="hero-container">
         <h1>Conditions générales d'uttilisation</h1>
+       <h3>En vigeur au 07/09/2022.</h3>
+   </div>
+ </div>
+        
+      <div className="box  cgu-container">
 
         <p className="mb-2 mt-2">
           Les présentes conditions générales d'utilisation (dites « CGU ») ont
@@ -241,6 +249,7 @@ function Cgu() {
         </p>
       </div>
     </main>
+    </>
   )
 }
 

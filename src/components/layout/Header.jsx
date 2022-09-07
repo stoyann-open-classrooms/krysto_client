@@ -6,7 +6,9 @@ import { logout, reset } from '../../features/auth/authSlice'
 import {
   FaBoxOpen,
   FaCalculator,
+  FaClosedCaptioning,
   FaCoins,
+  FaCross,
   FaHouseUser,
   FaMoneyBill,
   FaPhone,
@@ -49,19 +51,32 @@ function Header() {
               />
             </Link>
 
-            <Link
-              to={'#'}
+            
+            {!toggleMenu ?  <Link
               role="button"
               onClick={toggleNav}
               className="navbar-burger"
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </Link>
+            to={'#'}>
+             <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </Link>: <Link
+            to={'#'}
+            role="button"
+            onClick={toggleNav}
+            className="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          
+          </Link>}
+            
           </div>
 
           <div id="navbarBasicExample" className={toggleMenu ? 'navbar-menu is-active' : 'navbar-menu'}>

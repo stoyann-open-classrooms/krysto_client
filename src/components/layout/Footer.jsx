@@ -17,7 +17,7 @@ function Footer() {
  <p>A propos</p>
     <div> <Link className='is-3' to={'/team'}>Qui sommes nous ?</Link></div>
     <div> <Link className='is-3' to={'/compagny-solutions'}>Solutions entreprises</Link></div>
-    <div> <Link className='is-3' to={'/legal-mentions'}>Mention légales</Link></div>
+    <div> <Link className='is-3' to={'/legal-mention'}>Mention légales</Link></div>
     <div> <Link className='is-3' to={'/cgu'}>C.G.U</Link></div>
     <div> <Link className='is-3' to={'/cgv'}>C.G.V</Link></div>
   </div>

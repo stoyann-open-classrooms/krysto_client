@@ -27,6 +27,8 @@ import Cgv from './pages/Cgv'
 import Testimonials from './pages/Testimonials'
 import PressKit from './pages/PressKit'
 import Files from './pages/Files'
+import ForgotPassword from './pages/ForgotPassword'
+import Error404 from './pages/Error404'
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
             <Route path="/testimonials" element={<Testimonials/>} />
             <Route path="/press-kit" element={<PressKit/>} />
             <Route path="/files" element={<Files/>} />
+            <Route path="/forgot-password" element={<ForgotPassword/>} />
+            <Route path="*" element={<Error404/>} />
           </Routes>
     
         <Footer />

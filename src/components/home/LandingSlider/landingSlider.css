@@ -1,13 +1,5 @@
-.image-slide-2 {
-  background-image: url("../../../assets/images/paysage_caledonnien_2.jpeg");
-}
-
-.image-slide-2 {
-  background-image: url("../../../assets/images/paysage_caledonien.jpeg");
-}
-
 .image-slide-1 {
-  background-image: url("../../../assets/images/plastic_sea.jpeg");
+  background-image: url("../../../assets/images/paysage_caledonnien_2.jpeg");
 }
 
 button {
@@ -52,6 +44,7 @@ button:focus {
   height: 40%;
   width: 100%;
   position: absolute;
+  background-color: #3f4264;
   top: 0;
   left: 0;
 }
@@ -83,4 +76,12 @@ button:focus {
   background-position: 95% 75%;
   height: 100%;
   width: 100%;
+}
+
+.slide-1 p {
+  font-size: 13px;
+}
+
+.big-title {
+  color: #edf5f3;
 }/*# sourceMappingURL=landingSlider.css.map */

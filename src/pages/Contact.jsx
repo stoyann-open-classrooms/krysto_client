@@ -2,7 +2,11 @@
 
 function Contact() {
   return (
-    <main>Contact</main>
+    <main>
+      <div className="hero p-4">
+        Nous contacter ...
+      </div>
+    </main>
   )
 }
 

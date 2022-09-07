@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { useSelector, useDispatch } from 'react-redux'
 import { login } from '../features/auth/authSlice'
+import { FaCheck, FaEnvelope, FaLock } from 'react-icons/fa'
 function Login() {
  
   const [formData, setFormData] = useState({
@@ -47,12 +48,12 @@ function Login() {
 
   return (
     <main>
-      <form onSubmit={onSubmit} className="container p-6">
+      <form onSubmit={onSubmit} className="container p-3">
         <h1 className="title is-4">Bienvenue !</h1>
         <div class="field">
           <p class="control has-icons-left has-icons-right">
             <input
-              class="input"
+              class="input is-small"
               type="email"
               placeholder="Email"
               id="email"
@@ -61,17 +62,17 @@ function Login() {
               onChange={onChange}
             />
             <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
+              <FaEnvelope/>
             </span>
             <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
+              <FaCheck/>
             </span>
           </p>
         </div>
         <div class="field">
           <p class="control has-icons-left">
             <input
-              className="input"
+              className="input is-small"
               type="password"
               placeholder="password"
               name="password"
@@ -81,20 +82,21 @@ function Login() {
             />
 
             <span class="icon is-small is-left">
-              <i class="fas fa-lock"></i>
+              <FaLock/>
+             
             </span>
           </p>
         </div>
         <div class="field">
           <p class="control">
-            <button class="button is-success">Connexion</button>
+            <button class="button is-success is-small">Connexion</button>
           </p>
         </div>
         <Link to={'/forgot-password'} className="is-link">
             Mot de passe oublié
           </Link>
        
-          <Link to={'/register'} className="is-link ml-6">
+          <Link to={'/register-subscription'} className="is-link ml-6">
             Pas encore inscrit ?
           </Link>
       </form>
