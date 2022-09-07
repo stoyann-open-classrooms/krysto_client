@@ -1,8 +1,105 @@
-import React from 'react'
-
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { useSelector, useDispatch } from 'react-redux'
+import { login } from '../features/auth/authSlice'
 function Login() {
+ 
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  })
+  const { email, password } = formData
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth,
+  )
+  console.log(user)
+  const onChange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }))
+  }
+  const onSubmit = (e) => {
+    e.preventDefault()
+
+    if (!password) {
+      toast.error('Vous devez entrez votre mot de passe')
+    }
+
+    if (!email) {
+      toast.error('Vous devez entrez votre email')
+    } else {
+      const userData = {
+        email,
+        password,
+      }
+      dispatch(login(userData))
+      toast.success('Vous êtes connecter !')
+
+      navigate('/')
+      // window.location.reload()
+    }
+  }
+
   return (
-    <div>Login</div>
+    <>
+      <form onSubmit={onSubmit} className="container p-4">
+        <h1 className="title is-4">Bienvenue !</h1>
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input
+              class="input"
+              type="email"
+              placeholder="Email"
+              id="email"
+              value={email}
+              name="email"
+              onChange={onChange}
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control has-icons-left">
+            <input
+              className="input"
+              type="password"
+              placeholder="password"
+              name="password"
+              id="password"
+              value={password}
+              onChange={onChange}
+            />
+
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control">
+            <button class="button is-success">Connexion</button>
+          </p>
+        </div>
+        <Link to={'/forgot-password'} className="is-link">
+            Mot de passe oublié
+          </Link>
+       
+          <Link to={'/register'} className="is-link ml-6">
+            Pas encore inscrit ?
+          </Link>
+      </form>
+    
+    </>
   )
 }
 

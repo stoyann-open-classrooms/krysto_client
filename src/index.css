@@ -10308,9 +10308,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-header, footer {
-  background-color: rgb(53, 53, 53);
+footer {
   padding: 2rem;
+  background-color: rgb(53, 53, 53);
+}
+
+.navbar-brand {
+  background-color: rgb(53, 53, 53);
 }
 
 main {

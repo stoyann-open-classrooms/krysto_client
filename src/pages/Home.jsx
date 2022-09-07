@@ -1,8 +1,10 @@
-import React from 'react'
+import LandingSlider from "../components/home/LandingSlider/LandingSlider"
 
 function Home() {
   return (
-    <div>Home</div>
+    <>
+        <LandingSlider/>
+    </>
   )
 }
 
