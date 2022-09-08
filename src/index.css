@@ -10309,9 +10309,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
+/* Color Theme Swatches in Hex */
 body {
   font-family: "Poppins", sans-serif;
-  color: #252726;
+  color: rgb(193, 191, 165);
   font-size: 10px;
 }
 
@@ -10321,8 +10322,8 @@ a {
 
 .footer {
   padding: 2rem;
-  background-color: rgb(53, 53, 53);
-  color: #9298E1;
+  background-color: #161f1c;
+  color: #C2C0A6;
   font-size: 12px;
 }
 .footer a {
@@ -10333,7 +10334,7 @@ a {
 
 .navbar-brand,
 .navbar-menu {
-  background-color: rgb(53, 53, 53);
+  background-color: #161f1c;
 }
 .navbar-brand a,
 .navbar-menu a {
@@ -10342,7 +10343,7 @@ a {
 }
 
 main {
-  background-color: #edf5f3;
+  background-color: #C2C0A6;
   min-height: 100vh;
 }
 
@@ -10362,7 +10363,7 @@ main {
 }
 .cgu-container h4,
 .cgu-container h1 {
-  color: #9298E1;
+  color: #024554;
   font-size: 10px;
   font-weight: bolder;
 }
@@ -10375,7 +10376,7 @@ main {
 }
 
 .subcription-card-top {
-  color: #9298E1;
+  color: #024554;
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 10px;
@@ -10391,17 +10392,17 @@ main {
   width: 100%;
 }
 .container-subscription .box {
-  background-color: #252726;
-  color: #f0eff3;
+  background-color: #161f1c;
+  color: rgb(193, 191, 165);
   box-shadow: 2px 2px 10px #c3c7f0;
   margin: 30px 0;
-  border: #9298E1 3px solid;
+  border: #024554 3px solid;
   font-size: 10px;
 }
 .container-subscription .box ul {
   margin: 10px 0;
   max-width: 350px;
-  border: 2px solid #9298E1;
+  border: 2px solid #024554;
   padding: 10px;
   width: 100%;
   text-align: center;
@@ -10412,7 +10413,7 @@ main {
 }
 .container-subscription .box .button {
   margin: 10px 0;
-  border: 2px solid #62ebca;
+  border: 2px solid #A8B545;
   background-color: transparent;
   border-radius: 1rem;
 }
@@ -10429,20 +10430,20 @@ main {
 .nb-free {
   position: absolute;
   top: -13px;
-  color: #252726;
+  color: #161f1c;
 }
 
 .social-media-container a {
   font-size: 30px;
   margin: 0 20px;
   border: none;
-  color: #9298E1;
+  color: #024554;
   background-color: transparent;
 }
 
 .hero {
-  background-color: #3f4264;
-  color: #f0eff3;
+  background-color: #024554;
+  color: rgb(193, 191, 165);
 }
 
 .hero-container {
@@ -10453,27 +10454,29 @@ main {
 }
 
 .main-404 {
-  background-color: #3f4264;
+  background-color: #024554;
   text-align: center;
-  color: #edf5f3;
+  color: rgb(161, 172, 161);
+}
+.main-404 img {
+  height: 400px;
 }
 .main-404 h2 {
-  color: #edf5f3;
+  color: rgb(161, 172, 161);
 }
 .main-404 h1 {
-  color: #62ebca;
+  color: #A8B545;
   font-size: 35px;
-  margin: 6rem 0;
 }
 .main-404 h3 {
-  color: #edf5f3;
+  color: rgb(161, 172, 161);
 }
 
 .comparatif-container h4 {
   margin-bottom: 2rem;
   text-align: center;
-  color: #3f4264;
-  background-color: #62ebca;
+  color: #161f1c;
+  background-color: #A8B545;
   border-radius: 1rem;
 }
 
@@ -10490,7 +10493,27 @@ main {
 .money-content-page h4 {
   margin-bottom: 2rem;
   text-align: center;
-  color: #3f4264;
-  background-color: #62ebca;
+  color: #161f1c;
+  background-color: #A8B545;
   border-radius: 1rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.logo {
+  color: rgb(193, 191, 165);
+}
+
+.recap-section {
+  min-height: 100vh;
+}
+
+.logout-btn {
+  background-color: #dd6b6b;
+  border: none;
+  color: white;
 }/*# sourceMappingURL=index.css.map */

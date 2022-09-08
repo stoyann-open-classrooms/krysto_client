@@ -12,7 +12,7 @@
 }
 
 .offer-card {
-  background-color: $dark-color;
+  background-color: $main-color;
   color: white;
   margin: 2rem;
   border-radius: $radius;
@@ -24,9 +24,13 @@
 
     h3 {
       margin-top: 10px;
-      color: $main-color;
+      color: $secondary-color;
       font-weight: bold;
     }
+  }
+
+  .button{
+    background-color: $dark-green;
   }
 }
 

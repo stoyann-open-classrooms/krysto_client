@@ -1,4 +1,4 @@
-import Logo from '../assets/logo_krysto.png'
+
 function PressKit() {
   return (
     <main>
@@ -12,7 +12,7 @@ function PressKit() {
       </div>
 <div className="container p-4">
 
-      <img src={Logo} alt="logo de krysto" />
+  
       <p className='mt-3'>
         Pour toutes informations complémentaires, interviews, reportages,
         n'hésitez pas à <a href="/contact">nous contacter</a>.

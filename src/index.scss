@@ -3,7 +3,7 @@
 @import './SASS/variables';
 body {
   font-family: 'Poppins', sans-serif;
-  color: $dark-color;
+  color: $light-color;
   font-size: 10px;
 
 }
@@ -13,8 +13,8 @@ a{
 
 .footer {
   padding: 2rem;
-  background-color: rgb(53, 53, 53);
-  color: $main-color;
+  background-color: $dark-green;
+  color: $ligth-color;
   font-size: 12px;
   a {
     font-size: 10px;
@@ -24,7 +24,7 @@ a{
 }
 .navbar-brand,
 .navbar-menu {
-  background-color: rgb(53, 53, 53);
+  background-color: $dark-green;
   a {
     color: white;
     font-size: 12px;
@@ -32,7 +32,7 @@ a{
 }
 
 main {
-  background-color: $dark-light;
+  background-color: $ligth-color;
   min-height: 100vh;
 }
 
@@ -79,7 +79,7 @@ main {
   justify-content: center;
   width: 100%;
   .box {
-    background-color: $dark-color;
+    background-color: $dark-green;
     color: $light-color;
     box-shadow: $shadow;
     margin:30px 0;
@@ -123,7 +123,7 @@ main {
 .nb-free {
   position: absolute;
   top: -13px;
-  color: $dark-color
+  color: $dark-green
 
 }
 
@@ -138,7 +138,7 @@ main {
 }
 
 .hero {
-  background-color: $main-dark-color;
+  background-color: $main-color;
   color: $light-color;
 }
 
@@ -150,9 +150,12 @@ main {
 }
 
 .main-404{
-  background-color: $main-dark-color;
+  background-color: $main-color;
   text-align: center;
   color: $dark-light;
+  img{
+    height: 400px;
+  }
   h2{
 
     color: $dark-light;
@@ -160,7 +163,7 @@ main {
   h1{
     color: $secondary-color;
     font-size: 35px;
-    margin: 6rem 0;
+  
   }
   h3{
     color: $dark-light;
@@ -171,7 +174,7 @@ main {
   h4{
     margin-bottom: 2rem;
     text-align: center;
-    color: $main-dark-color;
+    color: $dark-green;
     background-color: $secondary-color;
     border-radius: $radius;
   
@@ -195,8 +198,33 @@ main {
   h4{
     margin-bottom: 2rem;
     text-align: center;
-    color: $main-dark-color;
+    color: $dark-green;
     background-color: $secondary-color;
     border-radius: $radius;
   }
 }
+
+
+.price{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.logo{
+  color: $light-color;
+}
+
+
+
+.recap-section{
+  min-height: 100vh;
+}
+
+.logout-btn{
+  background-color: $danger-color;
+  border: none;
+  color: white;
+}
+
+

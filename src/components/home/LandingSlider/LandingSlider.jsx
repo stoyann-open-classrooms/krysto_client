@@ -2,6 +2,7 @@
 import { FaArrowDown, FaArrowUp } from 'react-icons/fa'
 import imageSlide1 from '../../../assets/images/paysage_caledonnien_2.jpeg'
 import './landingSlider.css'
+import Coins from '../../../assets/coins/piece_stoyan-08.svg'
 
 function LandingSlider() {
     const [slide ,setSlide] = useState({
@@ -12,7 +13,8 @@ function LandingSlider() {
         <div className="left-slide">
             <div className='slide-1 '>
                 <h1 className='title is-3 p-5  big-title mb-0'>Le troc nouvelle génèration.</h1>
-            </div>
+<img className='image is-64x64' src={Coins} alt="" />
+             </div>
         </div>
         <div className="right-slide">
 

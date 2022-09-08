@@ -1,3 +1,4 @@
+/* Color Theme Swatches in Hex */
 .image-slide-1 {
   background-image: url("../../../assets/images/paysage_caledonnien_2.jpeg");
 }
@@ -6,7 +7,7 @@ button {
   background-color: #fff;
   border: none;
   cursor: pointer;
-  color: #aaa;
+  color: #161f1c;
   font-size: 16px;
   padding: 15px;
 }
@@ -44,7 +45,7 @@ button:focus {
   height: 40%;
   width: 100%;
   position: absolute;
-  background-color: #3f4264;
+  background-color: #024554;
   top: 0;
   left: 0;
 }
@@ -55,17 +56,19 @@ button:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: whitesmoke;
+  color: rgb(31, 39, 37);
 }
 .left-slide h1 {
   font-size: 20px;
   border-bottom: 10px;
   margin-top: -30px;
+  color: rgb(193, 191, 165);
 }
 
 .right-slide {
   height: 100%;
   position: absolute;
+  color: rgb(31, 39, 37);
   top: 35%;
   left: 0;
   width: 100%;
@@ -83,5 +86,5 @@ button:focus {
 }
 
 .big-title {
-  color: #edf5f3;
+  color: rgb(193, 191, 165);
 }/*# sourceMappingURL=landingSlider.css.map */

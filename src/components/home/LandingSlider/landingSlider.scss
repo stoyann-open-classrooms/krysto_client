@@ -8,7 +8,7 @@
     background-color: #fff;
     border: none;
     cursor: pointer;
-    color: #aaa;
+    color: $dark-green;
     font-size: 16px;
     padding: 15px;
 
@@ -51,7 +51,7 @@
     height: 40%;
     width: 100%;
     position: absolute;
-    background-color: $main-dark-color;
+    background-color: $main-color;
     top: 0;
     left: 0;
     div {
@@ -61,13 +61,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: whitesmoke;
-
+        color: $dark-color;
+        
     }
     h1 {
         font-size: 20px;
         border-bottom: 10px;
         margin-top: -30px;
+        color: $light-color;
     }
 }
 
@@ -75,6 +76,7 @@
 .right-slide {
     height: 100%;
     position: absolute;
+    color: $dark-color;
     top: 35%;
     left: 0;
     // display: none;
@@ -138,5 +140,5 @@
 }
 
 .big-title{
-    color: $dark-light;
+    color: $light-color;
 }

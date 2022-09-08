@@ -1,3 +1,4 @@
+/* Color Theme Swatches in Hex */
 .body-card-header {
   display: flex;
   justify-content: space-between;
@@ -10,7 +11,7 @@
 }
 
 .offer-card {
-  background-color: #252726;
+  background-color: #024554;
   color: white;
   margin: 2rem;
   border-radius: 1rem;
@@ -22,8 +23,11 @@
 }
 .offer-card .body-card h3 {
   margin-top: 10px;
-  color: #9298E1;
+  color: #A8B545;
   font-weight: bold;
+}
+.offer-card .button {
+  background-color: #161f1c;
 }
 
 .slider-card img {
@@ -44,7 +48,7 @@
 }
 .slider-card .controls .buttons .button {
   padding: 0;
-  background-color: #62ebca;
+  background-color: #A8B545;
 }
 
 .card-footer {

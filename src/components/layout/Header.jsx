@@ -2,6 +2,8 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import Logo from '../../assets/logo_krysto.png'
+import Coins from '../../assets/coins/piece_stoyan-03.svg'
+
 import { logout, reset } from '../../features/auth/authSlice'
 import {
   FaBoxOpen,
@@ -43,11 +45,10 @@ function Header() {
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <Link to={'/'} className="navbar-item">
-              <img
-                src={Logo}
-                className="image is-228x228"
-                alt="Logo de krysto / retour a l'acceuil"
-              />
+          <div className="logo">
+              <p className='title is-4 logo'>KRYSTO</p>
+
+          </div>
             </Link>
         
 
@@ -125,10 +126,10 @@ function Header() {
               </div>
               {user ? (
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <div className="navbar-item">
+                  <NavLink to={'#'} className="navbar-item">
                     <FaUser className="mr-2" />
                     Profil
-                  </div>
+                  </NavLink>
 
                   <div className="navbar-dropdown">
                     <NavLink className="navbar-item" to={'/dashboard'}>
@@ -160,7 +161,7 @@ function Header() {
                 {user ? (
                   <>
                     <button
-                      className="button is-small is-danger"
+                      className="button is-small logout-btn"
                       onClick={onLogout}
                     >
                       <FaSignOutAlt className="mr-2" /> Deconexion
