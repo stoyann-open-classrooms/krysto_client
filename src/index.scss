@@ -1,230 +1,43 @@
 @import '../node_modules/bulma/bulma.sass';
 @import url('https://use.typekit.net/hap5tri.css');
+@import "./SASS/reset";
 @import './SASS/variables';
-body {
-  font-family: 'Poppins', sans-serif;
-  color: $light-color;
-  font-size: 10px;
+@import './SASS/placeholders';
 
-}
+
 a{
-  font-size: 10px;
-}
+  color: $secondary;
 
-.footer {
-  padding: 2rem;
-  background-color: $dark-green;
-  color: $ligth-color;
-  font-size: 12px;
-  a {
-    font-size: 10px;
-    color: white;
-    font-weight: 300;
-  }
-}
-.navbar-brand,
-.navbar-menu {
-  background-color: $dark-green;
-  a {
-    color: white;
-    font-size: 12px;
+  &:hover {
+    color: $secondary-color;
   }
 }
 
 main {
-  background-color: $ligth-color;
+  background-color: $primary;
   min-height: 100vh;
-}
-
-.container-offers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-filter {
-  width: 100%;
-}
-
-.cgu-container {
-  text-align: center;
-  h4,
-  h1 {
-    color: $main-color;
-    font-size: 10px;
-    font-weight: bolder;
-  }
-  p {
-    font-size: 9px;
-    text-align: center;
-  }
-  li {
-    font-size: 12px;
-  }
-}
-
-.subcription-card-top {
-  color: $main-color;
-  font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 10px;
-  h5 {
-    font-size: 10px;
-  }
-}
-.container-subscription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  .box {
-    background-color: $dark-green;
-    color: $light-color;
-    box-shadow: $shadow;
-    margin:30px 0;
-    border: $main-color 3px solid;
-    
-    font-size: 10px;
-    ul {
-      margin: 10px 0;
-      max-width: 350px;
-      border: 2px solid $main-color;
-     
-      padding: 10px;
-      width: 100%;
-      text-align: center;
-      li {
-        margin: 5px 0;
-        font-size: 14px;
-        
-      }
-    }
-
-    .button {
-      margin: 10px 0;
-      border: 2px solid $secondary-color;
-      background-color: transparent;
-      border-radius:  $radius;
-    }
-  }
-}
-
-.subcription-card {
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-.nb-free {
-  position: absolute;
-  top: -13px;
-  color: $dark-green
-
-}
-
-.social-media-container {
-  a {
-    font-size: 30px;
-    margin: 0 20px;
-    border: none;
-    color: $main-color;
-    background-color: transparent;
-  }
+  color: $light-color;
 }
 
 .hero {
-  background-color: $main-color;
-  color: $light-color;
+  background-color: $dark;
+  color: $light;
+
 }
 
-.hero-container {
-  font-size: 13px;
-  h3{
-    font-size: 10px;
-  }
-}
 
-.main-404{
-  background-color: $main-color;
-  text-align: center;
-  color: $dark-light;
-  img{
-    height: 400px;
-  }
-  h2{
-
-    color: $dark-light;
-  }
-  h1{
+.button{
+  &:hover{
     color: $secondary-color;
-    font-size: 35px;
-  
-  }
-  h3{
-    color: $dark-light;
-  }
-}
-
-.comparatif-container{
-  h4{
-    margin-bottom: 2rem;
-    text-align: center;
-    color: $dark-green;
-    background-color: $secondary-color;
-    border-radius: $radius;
-  
   }
 }
 
 
 
-.container-card-team{
+.content-image {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-   .card{
-    margin: 30px 0;
-   }
-  
-}
-
-.money-content-page{
-  h4{
-    margin-bottom: 2rem;
-    text-align: center;
-    color: $dark-green;
-    background-color: $secondary-color;
-    border-radius: $radius;
+  img{
+    width: 50%;
+    object-fit: contain;
   }
 }
-
-
-.price{
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-
-.logo{
-  color: $light-color;
-}
-
-
-
-.recap-section{
-  min-height: 100vh;
-}
-
-.logout-btn{
-  background-color: $danger-color;
-  border: none;
-  color: white;
-}
-
-

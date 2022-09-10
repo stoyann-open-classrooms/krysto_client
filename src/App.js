@@ -3,39 +3,44 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './index.css'
 // === Layout components
-import Header from './components/layout/Header'
-import Footer from './components/layout/Footer'
+import Header from './components/layout/header/Header'
+import Footer from './components/layout/footer/Footer'
 // === Pages
-import Home from './pages/Home'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import Search from './pages/Search'
-import AddOffer from './pages/AddOffer'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Faq from './pages/Faq'
-import Money from './pages/Money'
-import MathModel from './pages/MathModel'
-import Charte from './pages/Charte'
-import BugReport from './pages/BugReport'
-import Thanks from './pages/Thanks'
-import Team from './pages/Team'
-import ProfilParameters from './pages/ProfilParameters'
-import CompagnySolution from './pages/CompagnySolution'
-import LegalMention from './pages/LegalMention'
-import Cgu from './pages/Cgu'
-import Cgv from './pages/Cgv'
-import Testimonials from './pages/Testimonials'
-import PressKit from './pages/PressKit'
-import Files from './pages/Files'
-import ForgotPassword from './pages/ForgotPassword'
-import Error404 from './pages/Error404'
-import Dashboard from './pages/Dashboard'
-import MyOffers from './pages/MyOffers'
-import Proposals from './pages/Proposals'
-import Wallets from './pages/Wallets'
-import G1VsKrysto from './pages/G1VsKrysto'
-import Offer from './pages/Offer'
+import Home from './pages/home/Home'
+import Login from './pages/login/Login'
+import Register from './pages/register/Register'
+import Search from './pages/search/Search'
+import AddOffer from './pages/addOffer/AddOffer'
+import Money from './pages/money/Money'
+import About from './pages/about/About'
+import Contact from './pages/contact/Contact'
+import Faq from './pages/faq/Faq'
+import MathModel from './pages/mathModel/MathModel'
+import Thanks from './pages/thanks/Thanks'
+import BugReport from './pages/bugReport/BugReport'
+import Charte from './pages/charte/Charte.jsx'
+import Team from './pages/team/Team'
+import LegalMention from './pages/legalMention/LegalMention'
+import CompagnySolution from './pages/compagnySolution/CompagnySolution'
+import Cgu from './pages/cgu/Cgu'
+import Cgv from './pages/cgv/Cgv'
+import Testimonials from './pages/testimonials/Testimonials'
+import PressKit from './pages/pressKit/PressKit'
+import Files from './pages/files/Files'
+import ForgotPassword from './pages/forgotPassword/ForgotPassword'
+import Dashboard from './pages/dashboard/Dashboard'
+import MyOffers from './pages/myOffers/MyOffers'
+import Offer from './pages/offer/Offer'
+import Proposals from './pages/proposals/Proposals'
+import Wallets from './pages/wallets/Wallets'
+import G1VsKrysto from './pages/G1VsKrysto/G1VsKrysto'
+import ProfilParameters from './pages/profilParameters/ProfilParameters'
+import Error404 from './pages/404/Error404'
+import KrystoProject from './pages/krystoProject/KrystoProject'
+
+
+
+
 
 function App() {
   return (
@@ -48,7 +53,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register-subscription" element={<Register />} />
             <Route path="/search" element={<Search />} />
-            <Route path="/add-offer" element={<AddOffer />} />
+            <Route path="/add-offer" element={<AddOffer/>} />
             <Route path="/money" element={<Money />} />
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
@@ -73,10 +78,11 @@ function App() {
             <Route path="/proposals" element={<Proposals/>} />
             <Route path="/wallets" element={<Wallets/>} />
             <Route path="/g1-vs-krysto" element={<G1VsKrysto/>} />
+            <Route path="/krysto-project" element={<KrystoProject/>} />
             <Route path="*" element={<Error404/>} />
           </Routes>
     
-        <Footer />
+        <Footer/>
       </Router>
       <ToastContainer />
     </>

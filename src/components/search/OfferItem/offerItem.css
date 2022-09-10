@@ -1,4 +1,21 @@
-/* Color Theme Swatches in Hex */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
 .body-card-header {
   display: flex;
   justify-content: space-between;
@@ -11,10 +28,10 @@
 }
 
 .offer-card {
-  background-color: #024554;
-  color: white;
+  background-color: #121216;
+  color: #F2F2F2;
   margin: 2rem;
-  border-radius: 1rem;
+  border-radius: 10px;
   width: 320px;
   font-size: 12px;
 }
@@ -23,19 +40,28 @@
 }
 .offer-card .body-card h3 {
   margin-top: 10px;
-  color: #A8B545;
+  font-size: 1.3rem;
+  color: #F2CB05;
+  letter-spacing: 1px;
   font-weight: bold;
 }
-.offer-card .button {
-  background-color: #161f1c;
+.offer-card .detail-btn {
+  background-color: #F2F2F2;
+  border: none;
+  font-weight: bolder;
+  color: #121216;
+}
+.offer-card .detail-btn:hover {
+  color: #F2F2F2;
+  background-color: #024554;
 }
 
 .slider-card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   height: 180px;
 }
 .slider-card .controls {
@@ -67,4 +93,11 @@
 }
 .arrow-slider:nth-child(2) {
   left: 265px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=offerItem.css.map */

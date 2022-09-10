@@ -1,0 +1,28 @@
+@import "../../SASS/reset";
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+.message {
+
+    .message-header{
+
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+    height: 200px;
+    background-color: $main-color;
+    letter-spacing: 0.7px;
+   .success{
+        background-color: $success-color;
+        color: $dark-color;
+    }
+    .warning{
+        background-color: $warning-color;
+        color: $dark-color;
+    }
+    .danger{
+        background-color: $danger-color;
+        color: $dark-color;
+    }
+  
+}

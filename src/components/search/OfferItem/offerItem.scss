@@ -1,4 +1,6 @@
+@import '../../../SASS/reset';
 @import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
 
 .body-card-header {
   display: flex;
@@ -12,8 +14,8 @@
 }
 
 .offer-card {
-  background-color: $main-color;
-  color: white;
+  background-color: $dark;
+  color: $light;
   margin: 2rem;
   border-radius: $radius;
   width: 320px;
@@ -24,13 +26,22 @@
 
     h3 {
       margin-top: 10px;
-      color: $secondary-color;
+      font-size: 1.3rem;
+      color: $secondary;
+      letter-spacing: 1px;
       font-weight: bold;
     }
   }
 
-  .button{
-    background-color: $dark-green;
+  .detail-btn{
+    background-color: $light;
+    border: none;
+    font-weight: bolder;
+    color: $dark;
+    &:hover{
+      color: $light;
+      background-color: $main-color;
+    }
   }
 }
 
@@ -77,4 +88,14 @@
   &:nth-child(2) {
     left: 265px;
   }
+}
+
+
+
+
+.price{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 2px;
 }

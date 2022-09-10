@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { getOffers, reset } from '../../../features/offer/offerSlice'
-import Spinner from '../../shared/Spinner'
+import Spinner from '../../shared/spinner/Spinner'
 
 import OfferItem from '../OfferItem/OfferItem'
 

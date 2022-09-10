@@ -1,0 +1,41 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+
+.navbar-brand,
+.navbar-menu {
+  background-color: $primary-dark;
+  a {
+    font-size: 12px;
+  }
+}
+.navbar-menu {
+  background-color: $primary-dark;
+}
+.logo {
+  color: $secondary;
+}
+
+.logout-btn {
+  @extend %danger-btn;
+}
+
+.nav-title {
+  color: $secondary;
+ 
+}
+.nav-item {
+  color: $light;
+}
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: $primary-dark;
+  color: $secondary-color;
+}

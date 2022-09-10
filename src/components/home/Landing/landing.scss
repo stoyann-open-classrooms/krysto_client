@@ -1,0 +1,42 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+.landing-container {
+  height: 96vh;
+  background-color: $primary;
+  color: $secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  h1 {
+    font-weight: bolder;
+    color: $secondary;
+}
+h2 {
+    color: $light;
+  }
+}
+
+
+.promo {
+    background-color: $primary-dark;
+    box-shadow: $shadow;
+    border: solid 3px $dark;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+    .promo-price {
+        font-size: 1.6rem;
+        color: white;
+    }
+}

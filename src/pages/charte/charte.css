@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.message {
+  height: 200px;
+  background-color: #024554;
+  letter-spacing: 0.7px;
+}
+.message .message-header {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+.message .success {
+  background-color: #94cc73;
+  color: rgb(22, 71, 59);
+}
+.message .warning {
+  background-color: #dfa958;
+  color: rgb(22, 71, 59);
+}
+.message .danger {
+  background-color: #dd6b6b;
+  color: rgb(22, 71, 59);
+}/*# sourceMappingURL=charte.css.map */

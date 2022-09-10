@@ -25,26 +25,50 @@
 
 
 
-%text-cut {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+
+%danger-btn {
+  background-color: $danger-color;
+  border: none;
+  color: $dark-green;
+  font-weight: bolder;
+
+}
+%warning-btn {
+  background-color: $primary;
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+%success-btn {
+  background-color: $primary;
+  border: none;
+  color: $dark-green;
+  font-weight: bolder;
+}
+%primary-btn {
+  background-color: $primary;
+  border: none;
+  font-weight: bolder;
+  color: $dark-green;
+}
+%secondary-btn {
+  background-color: $secondary;
+  border: none;
+  color: $dark-color;
+}
+
+%primary-background{
+  background-color: $primary;
 }
 
 
 
-%btn {
-  color: $dark-color;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  background-color: $main-color;
-  padding: 1rem 2rem;
-  color: $dark-color;
+// === Title
 
-  height: 3rem;
- 
- svg{
-  margin-right: 10px;
- }
+%title-cadre{
+  margin-bottom: 2rem;
+  text-align: center;
+  color: $light;
+  background-color: $green;
+  border-radius: $radius;
 }

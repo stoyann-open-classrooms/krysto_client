@@ -1,0 +1,62 @@
+@import "../../SASS/reset";
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+
+.title-offer {
+    color: $light-color;
+    margin-top: 2rem;
+}
+
+.btn-signal {
+    @extend %danger-btn
+}
+
+
+.back-btn {
+
+    @extend %secondary-btn;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.offer-cover {
+    height: 200px;
+    border-radius: $radius;
+    margin-bottom: 2rem;
+    img {
+        height: 200px;
+        border-radius: $radius;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+
+.price {
+  
+   display: flex;
+   align-items: center;
+   font-size: 1.2rem;
+    
+    img{
+        height: 2rem;
+    }
+ 
+}
+
+.box-offer-info {
+   background-color: transparent;
+    align-items: center;
+justify-content: space-between;
+display: flex;
+color: $light;
+position: relative;
+
+}
+
+.offer-datetime {
+    font-size: 0.8rem;
+    
+}

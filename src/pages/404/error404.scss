@@ -1,0 +1,25 @@
+@import "../../SASS/reset";
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+.main-404{
+    background-color: $main-color;
+    text-align: center;
+    color: $dark-light;
+    img{
+      height: 400px;
+    }
+    h2{
+  
+      color: $dark-light;
+    }
+    h1{
+      color: $secondary-color;
+      font-size: 35px;
+    
+    }
+    h3{
+      color: $dark-light;
+    }
+  }
+  

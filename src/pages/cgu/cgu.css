@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.cgu-container {
+  text-align: center;
+}
+.cgu-container h4,
+.cgu-container h1 {
+  color: #024554;
+  font-size: 10px;
+  font-weight: bolder;
+}
+.cgu-container p {
+  font-size: 9px;
+  text-align: center;
+}
+.cgu-container li {
+  font-size: 12px;
+}/*# sourceMappingURL=cgu.css.map */

@@ -1,17 +1,64 @@
 // ----- Colors -----
-$website-width: 1280px;
+$main-color: #024554;
+$link-color: #6c71f8;
+$dark-green: #161f1c;
+// $green: #53736A;
+$mid-green: #6A8C69;
+$green: #6A8C69;
+$secondary-color: #A8B545;
+$ligth-color: #C2C0A6;
+$warning-color: #dfa958;
+$danger-color: #dd6b6b;
+$success-color: #94cc73;
+$dark-color: rgb(22, 71, 59);
+$dark-light: rgb(161, 172, 161);
+$light-color: rgba(193,191,165, 1);
+
+
+// ==== Theme  Dollar
+
+
+
+$primary: #3C4CA6;
+$primary-dark: #292f4d;
+$secondary: #F2CB05;
+
+$orange: #BF5B04;
+$green: #1d3b24;
+$light: #F2F2F2;
+
+// // ==== Theme  Green cross
+// $primary: #D5E2F2;
+// $secondary: #467302;
+// $tiertiary: #365902;
+// $color-4: #72A603;
+// $color-5:  #593B02;
+
+// // ==== Currency wallet
+// $primary: #F26671;
+// $secondary: #5C148C;
+// $tiertiary: #8F6CD9;
+// $color-4: #1B1140;
+// $color-5:  #04BFBF;
+// // ==== darker crypto
+// $primary: #A8B6BF;
+// $secondary: #734F2F;
+// $tiertiary: #731702;
+// $color-4: #262626;
+// $color-5:  #0D0D0D;
 
 
 
 
 
-$bg-image : url('../assets/paysage_caledonien.jpeg');
+
+
 
 // shadow
-$shadow: 2px 2px 10px #c3c7f0;
+$shadow: 5px 5px 20px #161f1c9a;
 
 // radius
-$radius: 1rem;
+$radius: 10px;
 
 // Responsive
 $smartphone: 50rem;
@@ -27,23 +74,5 @@ $landscape: 50rem;
 
 
 
-
-
-
-/* Color Theme Swatches in Hex */
-$main-color: #024554;
-$dark-green: #161f1c;
-$green: #53736A;
-$mid-green: #6A8C69;
-$secondary-color: #A8B545;
-$ligth-color: #C2C0A6;
-
-$warning-color: #dfa958;
-$danger-color: #dd6b6b;
-$success-color: #94cc73;
-$dark-color: rgb(31, 39, 37);
-$dark-light: rgb(161, 172, 161);
-
-$light-color: rgba(193,191,165, 1);
 
 

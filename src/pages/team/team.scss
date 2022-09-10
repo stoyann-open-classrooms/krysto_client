@@ -1,0 +1,15 @@
+@import "../../SASS/reset";
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+.container-card-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     .card{
+      margin: 30px 0;
+     }
+    
+  }
+  

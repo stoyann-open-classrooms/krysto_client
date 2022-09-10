@@ -1,4 +1,6 @@
 import React from 'react'
+import Billet from "../../../assets/images/francs_pacifique_5000.jpg"
+import Coins from "../../../assets/coins/piece_stoyan-02.svg"
 
 function RecapSection() {
   return (
@@ -7,44 +9,43 @@ function RecapSection() {
   <div class="level-item has-text-centered">
     <div>
       <p class="heading">Uttilisateurs inscrit</p>
-      <p class="title">3,456</p>
+      <p class="title">6</p>
     </div>
   </div>
   <div class="level-item has-text-centered">
     <div>
       <p class="heading">Annonces en ligne</p>
-      <p class="title">123</p>
+      <p class="title">1</p>
     </div>
   </div>
   <div class="level-item has-text-centered">
     <div>
       <p class="heading">Krysto en circulation</p>
-      <p class="title">456K</p>
+      <p class="title">76</p>
     </div>
   </div>
   <div class="level-item has-text-centered">
     <div>
-      <p class="heading">Compte gratuit disponible</p>
-      <p class="title">456K</p>
+      <p class="heading">Comptes gratuit disponible</p>
+      <p class="title">895</p>
     </div>
   </div>
 </nav>
 
-<h1 className='title is-3 mt-6 mb-6 has-text-centered'>Economisez vos Xpf payer Krysto !</h1>
     
-    <div  >
-      
 
-        <p>Dés votre inscriptions vous recevez l'équivalent de 30 000 Xpf en Krysto !</p>
-        <p>Ensuite chaque jour vous recevrez j'usqu'a 1000 xpf de pouvoir d'achat en krysto</p>
-       
-     
+
+    <p>Si Krysto devait être résumer en une phrase s ce serait celle ci :</p>
+    <p className='title is-3 mt-6 mb-6 has-text-centered'>Ne mettez pas tous vos oeufs dans le même pannier !</p>
+<h1 className='title is-3 mt-6 mb-6 has-text-centered'>Economisez vos Xpf payer Krysto !</h1>
+    <div className='content-image'>
+    <img src={Billet} alt="Billet de 5000 XPF" />
+    <img src={Coins} alt="Billet de 5000 XPF" />
+
     </div>
-    <div className="div">
-        <button className="button is-small">Découvrir le Krysto</button>
-    </div>
-    
-    
+    <p>Le Krysto est une monnaie d'usage vous permettant d'acheter des biens ou des services sur le marché de l'occasion.
+      Tout ce que dépenser en Kryto ce sont des XPF économiser
+    </p>
     </section>
   )
 }
