@@ -20,6 +20,10 @@ function MathModel() {
    Pour en savoir plus sur les ressemblances, et différences entre les deux monnaies, merci de consulter la section
    <a href="/g1-vs-krysto" className=" button  is-small  is-rounded m-3">G1 VS Krysto</a>
  </div>
+
+ <button className="button">
+  Demarrer la présentation
+ </button>
     </main>
   )
 }

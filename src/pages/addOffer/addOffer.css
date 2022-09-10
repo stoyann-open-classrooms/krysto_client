@@ -17,27 +17,27 @@ body {
 }
 
 .danger-btn {
-  background-color: #dd6b6b;
+  background-color: #b14646;
   border: none;
-  color: #161f1c;
+  color: rgb(38, 43, 38) 9;
   font-weight: bolder;
 }
 
 .submit-btn {
   background-color: #3C4CA6;
   border: none;
-  color: #161f1c;
+  color: rgb(38, 43, 38) 9;
   font-weight: bolder;
 }
 
 .buttons .button {
   background-color: #F2CB05;
   border: none;
-  color: rgb(22, 71, 59);
+  color: #1d1c1b;
 }
 
 .label {
-  color: rgb(193, 191, 165);
+  color: #abb3aa;
   font-size: 1.4rem;
   margin-top: 2rem;
 }
@@ -46,7 +46,7 @@ body {
   justify-content: center;
 }
 .buttons .button {
-  color: #161f1c;
+  color: rgb(38, 43, 38) 9;
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.6px;

@@ -6,29 +6,31 @@
 
 
 a{
-  color: $secondary;
+  color: $dark;
+  font-weight: bold;
 
   &:hover {
-    color: $secondary-color;
+    color: $primary;
   }
 }
 
-main {
-  background-color: $primary;
-  min-height: 100vh;
-  color: $light-color;
-}
-
-.hero {
-  background-color: $dark;
+.title {
   color: $light;
-
+}
+body {
+  background-color: $light-color;
+  min-height: 100vh;
+  color: $primary-dark;
+}
+main {
+  min-height: 100vh;
+  color: $primary-dark;
 }
 
 
 .button{
   &:hover{
-    color: $secondary-color;
+    color: $secondary;
   }
 }
 
@@ -40,4 +42,27 @@ main {
     width: 50%;
     object-fit: contain;
   }
+}
+
+.card-content-my-offer {
+  padding: 2rem;
+  display: flex;
+}
+
+.action-my-offer-card-danger{
+  color: $danger-color;
+font-weight: bolder;
+text-transform: uppercase;
+letter-spacing: 0.4px;
+transition: all 0.3s ease-out;
+
+&:hover{
+  background-color: $danger-color;
+  color: $light;
+}
+}
+
+
+.recap-section {
+  background-color: $light-color;
 }

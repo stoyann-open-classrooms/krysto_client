@@ -50,10 +50,11 @@ function Login() {
     <main>
       <form onSubmit={onSubmit} className="container p-3">
         <h1 className="title is-4">Bienvenue !</h1>
-        <div class="field">
-          <p class="control has-icons-left has-icons-right">
+        <div className="field">
+          <p className="control has-icons-left has-icons-right">
             <input
-              class="input is-small"
+              className="input is-large"
+
               type="email"
               placeholder="Email"
               id="email"
@@ -61,10 +62,10 @@ function Login() {
               name="email"
               onChange={onChange}
             />
-            <span class="icon is-small is-left">
+            <span className="icon  is-left">
               <FaEnvelope/>
             </span>
-            <span class="icon is-small is-right">
+            <span className="icon is-right">
               <FaCheck/>
             </span>
           </p>
@@ -72,7 +73,7 @@ function Login() {
         <div class="field">
           <p class="control has-icons-left">
             <input
-              className="input is-small"
+              className="input is-large "
               type="password"
               placeholder="password"
               name="password"
@@ -89,7 +90,7 @@ function Login() {
         </div>
         <div class="field">
           <p class="control">
-            <button class="button is-success is-small">Connexion</button>
+            <button class="button is-success is-medium ">Connexion</button>
           </p>
         </div>
         <Link to={'/forgot-password'} className="is-link">

@@ -17,11 +17,7 @@ function Landing() {
           Gagner en pouvoir d'achat, grâce a la blockchain
         </h2>
       </hgroup>
-      <div className='promo'>
-        <p className='promo-price'>30 000 XPF</p>
-        <p>offert a l'inscription</p>
-        
-        </div>
+   
         </div>
     </section>
 

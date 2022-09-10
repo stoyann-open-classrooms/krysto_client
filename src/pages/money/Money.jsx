@@ -1,17 +1,10 @@
 import { FaBitbucket, FaCoins, FaConfluence, FaMoneyCheckAlt, FaQuestionCircle } from "react-icons/fa"
+import HeroTitle from "../../components/shared/heroTitle/HeroTitle"
 import './money.css'
 function Money() {
   return (
     <main className="pb-6">
-      <div className="hero p-4">
-        <div className="hero-container">
-          <h1>Le krysto.</h1>
-          <h3>
-            Une monnaie complémentaire local et solidaire pour vous faire gagner
-            du pouvoir d'achat.
-          </h3>
-        </div>
-      </div>
+     <HeroTitle title={"Une monnaie complémentaire local et solidaire pour vous faire gagner du pouvoir d'achat."}/>
       <div className="container p-4 money-content-page">
 
       <h4 className="title is-6 p-2 ">  <FaQuestionCircle/> Une monnaie libre c'est quoi ?</h4>

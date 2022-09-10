@@ -4,7 +4,7 @@
 
 
 .title-offer {
-    color: $light-color;
+    
     margin-top: 2rem;
 }
 
@@ -38,10 +38,10 @@
   
    display: flex;
    align-items: center;
-   font-size: 1.2rem;
+   font-size: 1.5rem;
     
     img{
-        height: 2rem;
+        height: 3rem;
     }
  
 }
@@ -51,12 +51,14 @@
     align-items: center;
 justify-content: space-between;
 display: flex;
-color: $light;
+color: $primary;
+font-weight: bold;
 position: relative;
 
 }
 
 .offer-datetime {
     font-size: 0.8rem;
+    color: $dark-green;
     
 }

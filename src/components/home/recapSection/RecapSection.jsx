@@ -1,7 +1,7 @@
 import React from 'react'
 import Billet from "../../../assets/images/francs_pacifique_5000.jpg"
 import Coins from "../../../assets/coins/piece_stoyan-02.svg"
-
+import './RecapSection.css'
 function RecapSection() {
   return (
     <section className='container p-4 recap-section'>
@@ -35,15 +35,14 @@ function RecapSection() {
     
 
 
-    <p>Si Krysto devait être résumer en une phrase s ce serait celle ci :</p>
-    <p className='title is-3 mt-6 mb-6 has-text-centered'>Ne mettez pas tous vos oeufs dans le même pannier !</p>
+  <p className='title is-3 mt-6 mb-6 has-text-centered'>Ne mettez pas tous vos oeufs dans le même pannier !</p>
 <h1 className='title is-3 mt-6 mb-6 has-text-centered'>Economisez vos Xpf payer Krysto !</h1>
     <div className='content-image'>
     <img src={Billet} alt="Billet de 5000 XPF" />
     <img src={Coins} alt="Billet de 5000 XPF" />
 
     </div>
-    <p>Le Krysto est une monnaie d'usage vous permettant d'acheter des biens ou des services sur le marché de l'occasion.
+    <p className='paragraph'>Le Krysto est une monnaie d'usage vous permettant d'acheter des biens ou des services sur le marché de l'occasion.
       Tout ce que dépenser en Kryto ce sont des XPF économiser
     </p>
     </section>

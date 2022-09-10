@@ -1,0 +1,26 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+
+.recap-section{
+    min-height: 100vh;
+}
+.level-item {
+
+    .heading {
+    color: $green;
+    font-weight: bold;
+    font-size: 1.4rem;
+    }
+    .title {
+        color: $dark-green;
+    }
+}
+
+.title {
+    color: $primary;
+}
+
+.paragraph{
+    font-size: 1.3rem;
+}

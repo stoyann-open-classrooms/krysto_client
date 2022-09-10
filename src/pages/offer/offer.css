@@ -17,20 +17,19 @@ body {
 }
 
 .btn-signal {
-  background-color: #dd6b6b;
+  background-color: #b14646;
   border: none;
-  color: #161f1c;
+  color: rgb(38, 43, 38) 9;
   font-weight: bolder;
 }
 
 .back-btn {
   background-color: #F2CB05;
   border: none;
-  color: rgb(22, 71, 59);
+  color: #1d1c1b;
 }
 
 .title-offer {
-  color: rgb(193, 191, 165);
   margin-top: 2rem;
 }
 
@@ -55,10 +54,10 @@ body {
 .price {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .price img {
-  height: 2rem;
+  height: 3rem;
 }
 
 .box-offer-info {
@@ -66,10 +65,12 @@ body {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  color: #F2F2F2;
+  color: #3C4CA6;
+  font-weight: bold;
   position: relative;
 }
 
 .offer-datetime {
   font-size: 0.8rem;
+  color: rgb(38, 43, 38) 9;
 }/*# sourceMappingURL=offer.css.map */

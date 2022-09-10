@@ -1,4 +1,5 @@
 import { FaUpload } from "react-icons/fa"
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import './addOffer.css'
 function AddOffer() {
   return (
@@ -96,6 +97,24 @@ function AddOffer() {
               placeholder="ville / code postal"
             />
           </div>
+          <div className="container p-2 mt-3">
+          <div className="leaflet-container">
+            <MapContainer
+              className="container p-4"
+              style={{ height: '250px' }}
+              center={[-22.275800, 166.458000 ]}
+              zoom={13}
+              scrollWheelZoom={true}
+            >
+              <TileLayer
+                attribution='&copy; <a href="http://osm.org/copyright">OenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png"
+              />
+
+   
+            </MapContainer>
+          </div>
+        </div>
         </div>
         <div class="field is-grouped">
           <div class="control">

@@ -17,15 +17,15 @@ body {
 }
 
 .logout-btn {
-  background-color: #dd6b6b;
+  background-color: #b14646;
   border: none;
-  color: #161f1c;
+  color: rgb(38, 43, 38) 9;
   font-weight: bolder;
 }
 
 .navbar-brand,
 .navbar-menu {
-  background-color: #292f4d;
+  background-color: #1d1c1b;
 }
 .navbar-brand a,
 .navbar-menu a {
@@ -33,7 +33,7 @@ body {
 }
 
 .navbar-menu {
-  background-color: #292f4d;
+  background-color: #1d1c1b;
 }
 
 .logo {
@@ -56,6 +56,6 @@ a.navbar-item.is-active,
 .navbar-link:focus-within,
 .navbar-link:hover,
 .navbar-link.is-active {
-  background-color: #292f4d;
-  color: #A8B545;
+  background-color: #1d1c1b;
+  color: #F2CB05;
 }/*# sourceMappingURL=Header.css.map */

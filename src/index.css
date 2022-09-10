@@ -10328,25 +10328,30 @@ body {
 }
 
 a {
-  color: #F2CB05;
+  color: #1d1c1b;
+  font-weight: bold;
 }
 a:hover {
-  color: #A8B545;
+  color: #3C4CA6;
 }
 
-main {
-  background-color: #3C4CA6;
-  min-height: 100vh;
-  color: rgb(193, 191, 165);
-}
-
-.hero {
-  background-color: hsl(0deg, 0%, 21%);
+.title {
   color: #F2F2F2;
 }
 
+body {
+  background-color: #abb3aa;
+  min-height: 100vh;
+  color: #292f4d;
+}
+
+main {
+  min-height: 100vh;
+  color: #292f4d;
+}
+
 .button:hover {
-  color: #A8B545;
+  color: #F2CB05;
 }
 
 .content-image {
@@ -10356,4 +10361,25 @@ main {
   width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.card-content-my-offer {
+  padding: 2rem;
+  display: flex;
+}
+
+.action-my-offer-card-danger {
+  color: #b14646;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease-out;
+}
+.action-my-offer-card-danger:hover {
+  background-color: #b14646;
+  color: #F2F2F2;
+}
+
+.recap-section {
+  background-color: #abb3aa;
 }/*# sourceMappingURL=index.css.map */
