@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function MathModel() {
   return (
@@ -21,9 +22,9 @@ function MathModel() {
    <a href="/g1-vs-krysto" className=" button  is-small  is-rounded m-3">G1 VS Krysto</a>
  </div>
 
- <button className="button">
+ <Link to={'/presentation'} className="button">
   Demarrer la présentation
- </button>
+ </Link>
     </main>
   )
 }

@@ -5,16 +5,19 @@ import './error404.css'
 
 function Error404() {
   return (
-    <main className="main-404 pt-5">
-      <h2 className="title is-1 ">oups !</h2>
-      <h1 className="title is-1">404</h1>
-      <h3 className='subtitle is-6'>Il semblerait que vous vous soyez perdus...</h3>
+    <main className="main-404 ">
+      <h2 className="title  ">oups !</h2>
+      <h1 className="title ">404</h1>
+      <h3 className='subtitle '>Il semblerait que vous vous soyez perdus...</h3>
 
+<div className='coins-404'>
 
 <img src={GifCoins} alt="" className='image is-120x120' />
+</div>
 
      
-   <a href='/' className='button is-small'>Retour a l'accueil</a>
+   <a href='/' className='button is-large btn-error'>
+     Retour a l'accueil</a>
     </main>
   )
 }

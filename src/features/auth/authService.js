@@ -25,6 +25,7 @@ const login = async (userData) => {
   return response.data
 }
 
+
 // Logout
 const logout = () => {
   localStorage.removeItem('userToken')

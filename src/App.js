@@ -37,6 +37,8 @@ import G1VsKrysto from './pages/G1VsKrysto/G1VsKrysto'
 import ProfilParameters from './pages/profilParameters/ProfilParameters'
 import Error404 from './pages/404/Error404'
 import KrystoProject from './pages/krystoProject/KrystoProject'
+import RegisterForm from './pages/registerForm/RegisterForm'
+import Presentation from './pages/Presentation/Presentation'
 
 
 
@@ -46,10 +48,12 @@ function App() {
   return (
     <>
       <Router>
+        
         <Header />
       
           <Routes>
             <Route path="/" element={<Home />} />
+          <Route path='/presentation'  element={<Presentation/>}/>
             <Route path="/login" element={<Login />} />
             <Route path="/register-subscription" element={<Register />} />
             <Route path="/search" element={<Search />} />
@@ -78,6 +82,7 @@ function App() {
             <Route path="/proposals" element={<Proposals/>} />
             <Route path="/wallets" element={<Wallets/>} />
             <Route path="/g1-vs-krysto" element={<G1VsKrysto/>} />
+            <Route path="/register-form" element={<RegisterForm/>} />
             <Route path="/krysto-project" element={<KrystoProject/>} />
             <Route path="*" element={<Error404/>} />
           </Routes>

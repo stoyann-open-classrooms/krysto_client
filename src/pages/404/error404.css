@@ -17,20 +17,41 @@ body {
 }
 
 .main-404 {
-  background-color: #024554;
+  background-color: #292f4d;
   text-align: center;
-  color: rgb(161, 172, 161);
+  color: #F2F2F2;
 }
 .main-404 img {
   height: 400px;
 }
 .main-404 h2 {
-  color: rgb(161, 172, 161);
+  color: #6A8C69;
+  font-size: 8rem;
+  margin-bottom: 6rem;
 }
 .main-404 h1 {
-  color: #A8B545;
+  color: #F2CB05;
   font-size: 35px;
+  font-size: 6rem;
 }
 .main-404 h3 {
-  color: rgb(161, 172, 161);
+  color: #F2F2F2;
+  font-size: 4rem;
+}
+
+.coins-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-error {
+  color: #F2CB05;
+  background-color: transparent;
+  border-color: #F2CB05;
+  transition: all 0.5s ease-out;
+}
+.btn-error:hover {
+  background-color: #F2CB05;
+  color: #292f4d;
 }/*# sourceMappingURL=error404.css.map */

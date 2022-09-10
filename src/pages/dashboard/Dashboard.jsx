@@ -25,15 +25,15 @@ function Dashboard() {
     dispatch(getProfil())
   }, [])
 
-  console.log(profil)
+  console.log(profil.user)
 
-  if (!profil || isLoading) {
+  if (!profil.user || isLoading) {
     return <Spinner />
   } else {
     return (
       <main>
         <HeroTitle
-          title={`Bienvenue sur votre dashboard ${profil.name}`}
+          title={`Bienvenue sur votre dashboard ${profil.user.name}`}
           image={NoPhoto}
         />
         <div className="dashbord-top container p-4">
@@ -56,9 +56,13 @@ function Dashboard() {
             <h3 className="title is-3">Vos comptes</h3>
             <div className="depositAccount box">
               <h4>Compte de dépot</h4>
+              <p>Votre identifiant de compte (RIB) {profil.user.walletsDeposit[0].uid}</p>
+              <p>solde de votre compte de dépot : {profil.user.walletsDeposit[0].amountMony} Krysto</p>
             </div>
             <div className="currentAccount box">
               <h4>Compte courant</h4>
+              <p>Votre identifiant de compte (RIB) {profil.user.walletMain.uid}</p>
+              <p>solde de votre compte de dépot : {profil.user.walletMain.amountMony} Krysto</p>
 
             </div>
         </div>
@@ -66,13 +70,14 @@ function Dashboard() {
             <h3 className="title is-3">Vos comptes</h3>
             <div className="depositAccount box">
               <h4>Proposition envoyées</h4>
+              
             </div>
             <div className="currentAccount box">
               <h4>Proposition reçue</h4>
             </div>
         </div>
         <div className="dashboard-offers-container p-4">
-            <h3 className="title is-3">Vos Annonces publiées</h3>
+            <h3 className="title is-3">Vos Annonces publiées ({profil.user.offers.length})</h3>
            <div className="box">
             {/* OfferMiniCard */}
            </div>

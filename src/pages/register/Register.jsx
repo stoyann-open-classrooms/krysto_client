@@ -1,4 +1,5 @@
 import { FaCheckCircle } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Register() {
   return (
@@ -76,7 +77,7 @@ function Register() {
             <p>(Dés la première annonce publiée)</p>
           </div>
 
-          <div className="button is-success">Créer mon compte gratuit</div>
+          <Link to={'/register-form'} className="button is-success">Créer mon compte gratuit</Link>
         </div>
         <div className="box subcription-card">
           <div className="subcription-card-top">

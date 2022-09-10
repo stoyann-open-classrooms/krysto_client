@@ -1,6 +1,7 @@
 @import '../../../SASS/reset';
 @import '../../../SASS/variables';
 @import '../../../SASS/placeholders';
+@import '../../../SASS/animations';
 
 .body-card-header {
   display: flex;
@@ -20,6 +21,7 @@
   border-radius: $radius;
   width: 320px;
   font-size: 12px;
+
 
   .body-card {
     padding: 1rem;

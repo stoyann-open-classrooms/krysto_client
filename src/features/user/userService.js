@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API_URL = 'http://152.228.137.213:4001/user/profil/'
+const API_URL = 'http://152.228.137.213:4001/auth/whoami/'
 
 const getProfil = async () => {
   axios.defaults.headers.common['X-Auth-Token'] = `${JSON.parse( localStorage.getItem('userToken'))}`;

@@ -4,6 +4,7 @@ import './addOffer.css'
 function AddOffer() {
   return (
     <main>
+      
       <form className="container p-6">
         <div class="field">
           <label class="label"> Sélectionnez le type de votre annonce</label>
