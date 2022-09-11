@@ -4,20 +4,25 @@
 
 .navbar-brand,
 .navbar-menu {
-  background-color: $dark;
+  background-color: $primary-dark;
   a {
     font-size: 12px;
   }
 }
 .navbar-menu {
-  background-color: $dark;
+  background-color: $primary-dark;
 }
 .logo {
-  color: $secondary;
+  p{
+
+    color: $green;
+  }
 }
 
 .logout-btn {
   @extend %danger-btn;
+  color: $primary-dark;
+  font-size: 1rem;
 }
 
 .nav-title {
@@ -38,4 +43,11 @@ a.navbar-item.is-active,
 .navbar-link.is-active {
   background-color: $dark;
   color: $secondary;
+}
+
+
+.navbar-burger {
+  span{
+    color: $green;
+  }
 }

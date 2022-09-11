@@ -5,8 +5,10 @@
 
 
 .title-offer {
-    
-    margin-top: 2rem;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    color: $green
+
 }
 
 .btn-signal {
@@ -33,16 +35,25 @@
     }
 }
 
+.publish{
+    font-size: 1.5rem;
+    color: $green;
+    span{
+        color: $primary;
+        margin-left: 1rem;
+    }
+}
 
 
 .price {
   
    display: flex;
    align-items: center;
-   font-size: 1.5rem;
+   font-size: 2.5rem;
     
     img{
-        height: 3rem;
+        height: 4rem;
+        margin-left: 0.5rem;
     }
  
 }
@@ -62,4 +73,11 @@ position: relative;
     font-size: 0.8rem;
     color: $dark-green;
     
+}
+
+.box-description{
+    background-color: $primary-light;
+    color: $primary-dark;
+    font-weight: bold;
+    font-size: 1.3rem;
 }

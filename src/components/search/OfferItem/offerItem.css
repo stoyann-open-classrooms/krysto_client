@@ -16,6 +16,47 @@ body {
   font-size: 1rem;
 }
 
+@-webkit-keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .body-card-header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +69,7 @@ body {
 }
 
 .offer-card {
-  background-color: #1d1c1b;
+  background-color: #292f4d;
   color: #F2F2F2;
   margin: 2rem;
   border-radius: 10px;
@@ -41,7 +82,7 @@ body {
 .offer-card .body-card h3 {
   margin-top: 10px;
   font-size: 1.3rem;
-  color: #F2CB05;
+  color: #65bc62;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -53,7 +94,7 @@ body {
 }
 .offer-card .detail-btn:hover {
   color: #F2F2F2;
-  background-color: #024554;
+  background-color: #65bc62;
 }
 
 .slider-card img {
@@ -74,7 +115,7 @@ body {
 }
 .slider-card .controls .buttons .button {
   padding: 0;
-  background-color: #A8B545;
+  background-color: #65bc62;
 }
 
 .card-footer {

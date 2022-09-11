@@ -22,19 +22,19 @@ body {
 }
 
 .table {
-  background-color: #3C4CA6;
-  color: #F2F2F2;
+  background-color: #d9ddf4;
+  color: #3C4CA6;
   border-radius: 10px;
   border-color: #292f4d;
 }
 .table thead th {
-  color: #F2CB05;
+  color: #3C4CA6;
 }
 .table tbody tr {
   transition: all 0.5s ease;
 }
 .table tbody tr:hover {
-  color: #3C4CA6;
+  color: #292f4d;
   font-weight: bold;
 }
 

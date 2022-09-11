@@ -24,7 +24,7 @@ function Header() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   
-  const token =JSON.stringify(localStorage.getItem('userToken'))
+  const token =JSON.parse( localStorage.getItem('userToken'))
   console.log(token);
   const { user } = useSelector((state) => state.auth)
   const onLogout = () => {
@@ -33,6 +33,7 @@ function Header() {
     navigate('/')
     window.location.reload()
   }
+  console.log(user);
   const [toggleMenu, setToggleMenu] = useState(false)
 
   const toggleNav = () => {
@@ -98,7 +99,7 @@ function Header() {
               <NavLink className="navbar-item nav-item" to={'/add-offer'}>
                 <FaPlusCircle className="mr-2" /> Publier
               </NavLink>
-                {token === null ? (
+                {token !== null ? (
                 <div className="navbar-item has-dropdown is-hoverable">
                   <NavLink to={'#'} className="navbar-item nav-title">
                     <FaUser className="mr-2" />
@@ -160,10 +161,10 @@ function Header() {
 
             <div className="navbar-end">
               <div className="navbar-item">
-                {token === null ? (
+                {token !== null ? (
                   <>
                     <button
-                      className="button is-small logout-btn"
+                      className="button  logout-btn"
                       onClick={onLogout}
                     >
                       <FaSignOutAlt className="mr-2" /> Deconexion

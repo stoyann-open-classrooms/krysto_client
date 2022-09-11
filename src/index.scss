@@ -18,7 +18,7 @@ a{
   color: $primary;
 }
 body {
-  background-color: $light-color;
+  background-color: white;
   min-height: 100vh;
   color: $primary-dark;
 }
@@ -63,6 +63,19 @@ transition: all 0.3s ease-out;
 }
 
 
-.recap-section {
-  background-color: $light-color;
+.modal-card-head{
+  background-color: $primary-dark;
+  p{
+    color: $green;
+    font-weight: bolder;
+
+  }
+}
+
+.modal-card-foot{
+  background-color: $primary-dark;
+}
+
+.modal-card-body {
+  background-color: $primary-light;
 }

@@ -17,7 +17,7 @@ body {
 }
 
 .logout-btn {
-  background-color: #b14646;
+  background-color: #e49494;
   border: none;
   color: rgb(38, 43, 38) 9;
   font-weight: bolder;
@@ -25,7 +25,7 @@ body {
 
 .navbar-brand,
 .navbar-menu {
-  background-color: #1d1c1b;
+  background-color: #292f4d;
 }
 .navbar-brand a,
 .navbar-menu a {
@@ -33,15 +33,20 @@ body {
 }
 
 .navbar-menu {
-  background-color: #1d1c1b;
+  background-color: #292f4d;
 }
 
-.logo {
-  color: #F2CB05;
+.logo p {
+  color: #65bc62;
+}
+
+.logout-btn {
+  color: #292f4d;
+  font-size: 1rem;
 }
 
 .nav-title {
-  color: #F2CB05;
+  color: #e2cb59;
 }
 
 .nav-item {
@@ -57,5 +62,9 @@ a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
   background-color: #1d1c1b;
-  color: #F2CB05;
+  color: #e2cb59;
+}
+
+.navbar-burger span {
+  color: #65bc62;
 }/*# sourceMappingURL=Header.css.map */

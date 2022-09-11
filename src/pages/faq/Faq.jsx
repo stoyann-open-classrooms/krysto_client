@@ -4,10 +4,8 @@ function Faq() {
   return (
     <main>
        <HeroTitle
-        title={'F.A.Q.'}
-        subtitle={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, exercitationem?'
-        }
+        title={'F.A.Q'}
+      
       />
   
     </main>

@@ -35,4 +35,16 @@ body {
 
 .presentation-content {
   height: 85vh;
+}
+
+.slider {
+  height: 100vh;
+}
+.slider p {
+  font-size: 1.2rem;
+}
+
+.previousButton svg {
+  fill: #3C4CA6;
+  color: #3C4CA6;
 }/*# sourceMappingURL=presentation.css.map */

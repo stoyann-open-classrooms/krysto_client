@@ -23,3 +23,17 @@ p{
 .presentation-content{
 height: 85vh;
 }
+.slider{
+    height: 100vh;
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+.previousButton{
+svg{
+  fill: $primary;
+  color: $primary;
+
+}
+}

@@ -17,7 +17,7 @@ body {
 }
 
 .danger-btn {
-  background-color: #b14646;
+  background-color: #e49494;
   border: none;
   color: rgb(38, 43, 38) 9;
   font-weight: bolder;
@@ -31,7 +31,7 @@ body {
 }
 
 .buttons .button {
-  background-color: #F2CB05;
+  background-color: #e2cb59;
   border: none;
   color: #1d1c1b;
 }

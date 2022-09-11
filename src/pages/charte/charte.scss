@@ -10,19 +10,19 @@
         line-height: 1.3rem;
     }
     height: 200px;
-    background-color: $main-color;
+    background-color: $primary;
     letter-spacing: 0.7px;
    .success{
-        background-color: $success-color;
-        color: $dark-color;
+        background-color: $green;
+        color: $primary-dark;
     }
     .warning{
-        background-color: $warning-color;
-        color: $dark-color;
+        background-color: $green;
+        color: $primary-dark;
     }
     .danger{
-        background-color: $danger-color;
-        color: $dark-color;
+        background-color: $green;
+        color: $primary-dark;
     }
   
 }

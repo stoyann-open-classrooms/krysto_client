@@ -42,6 +42,8 @@ import Presentation from './pages/Presentation/Presentation'
 import Deposit from './pages/wallets/deposit/Deposit'
 import Main from './pages/wallets/main/Main'
 import UpdateOffer from './pages/updateOffer/UpdateOffer'
+import Converter from './pages/Converter/Converter'
+import PlasticProbleme from './pages/plasticProblem/PlasticProbleme'
 
 
 
@@ -84,10 +86,11 @@ function App() {
             <Route path="/offer/:id" element={<Offer/>} />
             <Route path='/update-offer/:id' element={<UpdateOffer/>}/>
             <Route path="/proposals" element={<Proposals/>} />
-       
+            <Route path="/devise-converter" element={<Converter/>} />
             <Route path="/g1-vs-krysto" element={<G1VsKrysto/>} />
             <Route path="/register-form" element={<RegisterForm/>} />
             <Route path="/krysto-project" element={<KrystoProject/>} />
+            <Route path="/plastic-problem" element={<PlasticProbleme/>} />
             <Route path="*" element={<Error404/>} />
             <Route path='/wallets' element={<Wallets/>}>
               <Route path='/wallets/deposit' element={<Deposit/>}/>

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 import Spinner from '../../components/shared/spinner/Spinner'
 import { getProfil, reset } from '../../features/user/userSlice'
+import CardRib from '../../components/shared/cardRib/CardRib'
 
 function Dashboard() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
@@ -39,17 +40,9 @@ function Dashboard() {
      
         <div className="dashboard-accounts-container p-4">
             <h3 className="title is-3">Vos comptes</h3>
-            <div className="depositAccount box">
-              <h4>Compte de dépot</h4>
-              <p>Votre identifiant de compte (RIB) {profil.user.walletsDeposit[0].uid}</p>
-              <p>solde de votre compte de dépot : {profil.user.walletsDeposit[0].amountMony} Krysto</p>
-            </div>
-            <div className="currentAccount box">
-              <h4>Compte courant</h4>
-              <p>Votre identifiant de compte (RIB) {profil.user.walletMain.uid}</p>
-              <p>solde de votre compte de dépot : {profil.user.walletMain.amountMony} Krysto</p>
-
-            </div>
+            <CardRib wallet={profil.user.walletMain} />
+            <CardRib wallet={profil.user.walletsDeposit[0]} />
+        
         </div>
         <div className="dashboard-proposals-container p-4">
             <h3 className="title is-3">Vos propositions</h3>

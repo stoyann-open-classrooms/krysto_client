@@ -17,7 +17,7 @@ body {
 }
 
 .hero {
-  background-color: #6A8C69;
+  background-color: #65bc62;
   color: #292f4d;
 }
 .hero .hero-container {
@@ -25,4 +25,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.hero .hero-txt h1 {
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=heroTitle.css.map */

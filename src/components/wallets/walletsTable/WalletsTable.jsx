@@ -1,6 +1,7 @@
 import React from 'react'
 
-function WalletsTable() {
+function WalletsTable({transactions}) {
+  console.log(transactions.transactions);
   return (
     <section className='container p-4 mb-6'>
         <h3 className='title '>Vos transactions</h3>
@@ -8,6 +9,7 @@ function WalletsTable() {
   <thead>
     <tr>
       <th><abbr title="Position">Date</abbr></th>
+      <th>Type</th>
       <th>Libellé</th>
       <th><abbr title="Played">Montant (ù)</abbr></th>
       <th><abbr title="Won">Montant (krysto)</abbr></th>
@@ -15,30 +17,24 @@ function WalletsTable() {
   </thead>
 
   <tbody>
-    <tr>
-      <th>1</th>
-      <td>
-        Création monétaire
-      </td>
-      <td>+ 0.000830328</td>
-      <td>+1</td>
-      
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Envoyé à Stoyann - DJME51</td>
-      <td>38</td>
-      <td>20</td>
-      
-    </tr>
+
+    
+        {transactions.transactions
+          ? transactions.transactions.map((transaction) => (
+            <tr>
+              <th>{new Date(transaction.created).toLocaleDateString()}</th>
+              {transaction.type === "create" ?   <td>Création monétaire</td> : <td>Transfert</td> }
+            
+              <td>Aucun libelée pour cette annonce</td>
+              <td>{transaction.amountUnity} ù</td>
+              <td>{(transaction.amountUnity/transaction.monyConvertValue).toFixed(2)} Kr</td>
+            </tr>
+            
+          ))
+          : ''}
+    
  
-    <tr>
-      <th>2</th>
-      <td>Envoyé à Stoyann - DJME51</td>
-      <td>38</td>
-      <td>20</td>
-      
-    </tr>
+
  
    
   </tbody>

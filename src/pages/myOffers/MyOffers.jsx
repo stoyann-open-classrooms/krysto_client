@@ -39,12 +39,12 @@ function MyOffers() {
       />
 <OfferList user={profil.user}/>
      
-
+{/* 
       {/* <div className="container-offers">
         {offers
           ? offers.map((offer) => <p className="box">{offer.title}</p>)
           : ''}
-      </div> */}
+      </div> */} */}
     </main>
   )
 }

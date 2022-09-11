@@ -4,7 +4,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import Spinner from '../../components/shared/spinner/Spinner'
 import { getOffer, reset } from '../../features/offer/offerSlice'
-import Coins from '../../assets/coins/piece_stoyan-02.svg'
+import Coins from '../../assets/coins/coinGif.gif'
+import Modal from '../../components/shared/modal/Modal'
 import './offer.css'
 function Offer() {
   const [toggleModal, setToggleModal] = useState(false)
@@ -44,24 +45,59 @@ function Offer() {
       </div>
 
       <div className="box-offer-info">
-      <div className="offer-datetime">
-          <p>Publiée le : {  new Date(offer.offer.created).toLocaleDateString()}</p>
-          <p> à :{  new Date(offer.offer.created).toLocaleTimeString()}</p>
-         
-   
+        <div className="offer-datetime">
+          <p className='publish'>
+            Publiée le :
+            <span>
+
+             {new Date(offer.offer.created).toLocaleDateString()}
+            </span>
+          </p>
+          <p className='publish'>
+           par : 
+            <span>
+{offer.offer.creator.name}
+            </span>
+          </p>
         </div>
-        
+
         <div className="offer-price">
           <div className="price">
-          <p>{offer.offer.amountMony}</p>
-          <img src={Coins} alt="" />
-           </div>
-           <div className="offer-info">
-
-          <p className='price-translate'>{offer.offer.amountMony * 1000} xpf</p>
-           </div>
+            <p>{offer.offer.amountMony}</p>
+            <img src={Coins} alt="" />
+          </div>
+          <div className="offer-info">
+            <p className="price-translate">
+              {offer.offer.amountMony * 1000} xpf
+            </p>
+          </div>
         </div>
-      
+      </div>
+
+      <div className="buttons mt-5">
+        <div className="button" onClick={toggle}>
+          Contacter le vendeur
+        </div>
+        <Modal
+          btn={'Faire une proposition'}
+          isActive={false}
+          titleModal={'Faire une offre pour cette annonce'}
+        >
+          <section class="modal-card-body">
+            <h4 className="title is-4">
+              Le prix de cette annonce a ete fixée a {offer.offer.amountMony}{' '}
+              Krysto par son vendeur.
+            </h4>
+            <p>
+              Vous pouvez proposer au vendeur un montant inférieur ou suppérieur
+              au prix annoncé. Le vendeur pourra accepter ou refuser votre
+              proposition, en fonction des autres offres qu'il recevra.
+            </p>
+            <form></form>
+            <p>Montant maximum autorisé par vos comptes : {}</p>
+          </section>
+          <footer class="modal-card-foot"></footer>
+        </Modal>
       </div>
       <h1 className="title title-offer ">{offer.offer.title}</h1>
 
@@ -82,17 +118,10 @@ function Offer() {
         </div>
       </div> */}
 
-      <div className="buttons">
-
-      <a href="/search" className=" button back-btn">
-        Revenir a la recherche
-      </a>
-
-      <p onClick={toggle} className="button">
+      {/* <p onClick={toggle} className="button">
 
         Signaler
-      </p>
-      </div>
+      </p> */}
     </main>
   )
 }

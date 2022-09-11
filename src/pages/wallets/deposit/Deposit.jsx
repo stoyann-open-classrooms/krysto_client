@@ -1,8 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import CardRib from '../../../components/shared/cardRib/CardRib'
 import Modal from '../../../components/shared/modal/Modal'
+import Spinner from '../../../components/shared/spinner/Spinner'
 import WalletsTable from '../../../components/wallets/walletsTable/WalletsTable'
+import { getProfil, reset } from '../../../features/user/userSlice'
 import '../wallets.css'
 function Deposit() {
+
+  const { profil, isLoading, isError, isSuccess } = useSelector(
+    (state) => state.user,
+  )
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    return () => {
+      if (isSuccess) {
+        dispatch(reset())
+      }
+    }
+  }, [dispatch, isSuccess, isError])
+
+  useEffect(() => {
+    dispatch(getProfil())
+  }, [])
+
+
+  console.log(profil);
+
+if(!profil.user) {
+  return <Spinner/>
+}
+
+
   return (
     <section className="container p-4">
       <div className="container-graph container p-4">
@@ -30,20 +60,10 @@ function Deposit() {
               Ces numéros de compte sont vos Identifiant bancaires tout comme le
               RIB de votre compte en banque !
             </p>
-            <div className="box rib-box">
-              <div className="box">
-                <h4 className="mb-3 title is-4">Compte courant</h4>
-                <p className="tag is-large is-warning">
-                  {' '}
-                  <strong>DCNV72</strong>{' '}
-                </p>
-              </div>
-              <div className="box">
-                <h4 className="mb-3 title is-4">Compte de dépot</h4>
-                <p className="tag is-large is-warning">
-                  <strong>DJME51 </strong>
-                </p>
-              </div>
+            <div className="rib-box">
+              <CardRib wallet={profil.user.walletsDeposit[0]}/>
+              <CardRib wallet={profil.user.walletMain} monyConvertValue={profil.monyConvertValue}/>
+             
             </div>
           </section>
           <footer class="modal-card-foot">
@@ -51,11 +71,11 @@ function Deposit() {
           </footer>
         </Modal>
       </div>
-      <div className="notification m-6">
-        <h4>Cours du Krysto au 11/09/2022</h4>
-        <div>1 Krysto = 0.0002827 ù</div>
+      <div className="notification m-6 box blue-box has-text-centered">
+        <h4 className='title is-4'>Cours du Krysto au 11/09/2022</h4>
+        <div className='tag is-large p-4'>1 Krysto = {profil.monyConvertValue} ù</div>
       </div>
-      <WalletsTable />
+      <WalletsTable transactions={profil.user.walletsDeposit[0]}/>
     </section>
   )
 }

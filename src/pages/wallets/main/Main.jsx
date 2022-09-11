@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { Profiler, useEffect } from 'react'
 import { Doughnut } from 'react-chartjs-2'
+import { useDispatch, useSelector } from 'react-redux'
+import Spinner from '../../../components/shared/spinner/Spinner'
 import WalletsTable from '../../../components/wallets/walletsTable/WalletsTable'
+import { getProfil, reset } from '../../../features/user/userSlice'
 import '../wallets.css'
 const data = {
   labels: ['red', 'blue', 'green', 'yellow', 'violet'],
@@ -12,13 +15,41 @@ const data = {
   ],
 }
 
+
 function Main() {
+
+
+  const { profil, isLoading, isError, isSuccess } = useSelector(
+    (state) => state.user,
+  )
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    return () => {
+      if (isSuccess) {
+        dispatch(reset())
+      }
+    }
+  }, [dispatch, isSuccess, isError])
+
+  useEffect(() => {
+    dispatch(getProfil())
+  }, [])
+
+
+  console.log(profil);
+
+if(!profil.user) {
+  return <Spinner/>
+}
+
+
   return (
     <section>
       <div className="container-graph container p-4">
         <div className="box box-graph"></div>
       </div>
-      <WalletsTable/>
+      <WalletsTable transactions={profil.user.walletMain}/>
     </section>
   )
 }

@@ -6,9 +6,7 @@ function CompagnySolution() {
     <main>
       <HeroTitle
         title={'Solutions entreprises.'}
-        subtitle={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, exercitationem?'
-        }
+     
       />
     </main>
   )

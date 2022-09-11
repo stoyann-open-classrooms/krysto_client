@@ -18,7 +18,7 @@ body {
 
 .message {
   height: 200px;
-  background-color: #024554;
+  background-color: #3C4CA6;
   letter-spacing: 0.7px;
 }
 .message .message-header {
@@ -26,14 +26,14 @@ body {
   line-height: 1.3rem;
 }
 .message .success {
-  background-color: #94cc73;
-  color: rgb(22, 71, 59);
+  background-color: #65bc62;
+  color: #292f4d;
 }
 .message .warning {
-  background-color: #dfa958;
-  color: rgb(22, 71, 59);
+  background-color: #65bc62;
+  color: #292f4d;
 }
 .message .danger {
-  background-color: #dd6b6b;
-  color: rgb(22, 71, 59);
+  background-color: #65bc62;
+  color: #292f4d;
 }/*# sourceMappingURL=charte.css.map */
