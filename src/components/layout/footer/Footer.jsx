@@ -1,9 +1,12 @@
 import React from 'react'
 import { FaFacebook, FaFacebookF, FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import FotterSvg from "../../../assets/fot.png"
 import './footer.css'
 function Footer() {
   return (
+    <>
+
     <footer class="footer is-fixed-bottom pt-3 pb-5">
 
  <div className="footer-list columns">
@@ -42,9 +45,14 @@ function Footer() {
     </a>
 
   </div>
-    KRYSTO.NC © Tous droits réservés - 2022
+   
+    </div>
+    <div className="img">
+      <img src={FotterSvg} alt="" />
+    <p> KRYSTO.NC © Tous droits réservés - 2022</p>
     </div>
   </footer>
+    </>
   )
 }
 

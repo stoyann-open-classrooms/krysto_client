@@ -1,0 +1,47 @@
+@import "../../SASS/reset";
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+.box-graph {
+    background-color: $dark;
+    height: 200px;
+    // border: solid 2px $primary-dark;
+}
+
+.table {
+    background-color: $primary;
+    color: $light;
+    border-radius: $radius;
+    border-color: $primary-dark;
+    thead{
+
+        th{
+            color: $secondary;
+        }
+    }
+    tbody {
+        
+        tr{
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+.rib-box {
+    
+    display: flex;
+    
+    .box {
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        border: 1px solid $primary;
+        flex: 1;
+    }
+}

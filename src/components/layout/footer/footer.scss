@@ -6,8 +6,13 @@
 
 .footer {
     padding: 2rem;
+    position: relative;
     background-color: $primary-dark;
     font-size: 12px;
+    height: 50rem;
+    width: 100%;
+  
+    
     a {
       font-size: 10px;
       color: $light-color;
@@ -21,9 +26,10 @@
       color: $secondary;
     }
   }
-
   
-.social-media-container {
+  
+  .social-media-container {
+
     a {
       font-size: 30px;
       margin: 0 20px;
@@ -32,4 +38,28 @@
       background-color: transparent;
     }
   }
-  
+  .img {
+width: 100%;
+position: absolute;
+bottom: -35px;
+left: 0;
+right: 0;
+p{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: $primary-dark;
+  font-weight: bold;
+  margin-bottom: 0.9rem;
+}
+
+img{
+  width: 100%;
+  opacity: 0.6;
+}
+  }
+
+  .footer-list {
+    margin-top: 7rem;
+  }

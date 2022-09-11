@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.box-graph {
+  background-color: #1d1c1b;
+  height: 200px;
+}
+
+.table {
+  background-color: #3C4CA6;
+  color: #F2F2F2;
+  border-radius: 10px;
+  border-color: #292f4d;
+}
+.table thead th {
+  color: #F2CB05;
+}
+.table tbody tr {
+  transition: all 0.5s ease;
+}
+.table tbody tr:hover {
+  color: #3C4CA6;
+  font-weight: bold;
+}
+
+.rib-box {
+  display: flex;
+}
+.rib-box .box {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid #3C4CA6;
+  flex: 1;
+}/*# sourceMappingURL=wallets.css.map */

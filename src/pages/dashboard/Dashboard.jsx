@@ -36,22 +36,7 @@ function Dashboard() {
           title={`Bienvenue sur votre dashboard ${profil.user.name}`}
           image={NoPhoto}
         />
-        <div className="dashbord-top container p-4">
-          <div class="field is-grouped is-grouped-multiline">
-            <div class="control mt-5">
-              <div class="tags has-addons is-large">
-                <span class="tag is-dark is-large">compte validé</span>
-                <span class="tag is-info is-large is-success">Oui</span>
-              </div>
-              <div class="control mt-5">
-                <div class="tags has-addons is-large">
-                  <span class="tag is-dark is-large">Total de vos comptes</span>
-                  <span class="tag is-info is-large">30.44 Krysto</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+     
         <div className="dashboard-accounts-container p-4">
             <h3 className="title is-3">Vos comptes</h3>
             <div className="depositAccount box">
@@ -67,7 +52,7 @@ function Dashboard() {
             </div>
         </div>
         <div className="dashboard-proposals-container p-4">
-            <h3 className="title is-3">Vos comptes</h3>
+            <h3 className="title is-3">Vos propositions</h3>
             <div className="depositAccount box">
               <h4>Proposition envoyées</h4>
               
@@ -82,6 +67,7 @@ function Dashboard() {
             {/* OfferMiniCard */}
            </div>
         </div>
+      
       </main>
     )
   }

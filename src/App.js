@@ -39,6 +39,9 @@ import Error404 from './pages/404/Error404'
 import KrystoProject from './pages/krystoProject/KrystoProject'
 import RegisterForm from './pages/registerForm/RegisterForm'
 import Presentation from './pages/Presentation/Presentation'
+import Deposit from './pages/wallets/deposit/Deposit'
+import Main from './pages/wallets/main/Main'
+import UpdateOffer from './pages/updateOffer/UpdateOffer'
 
 
 
@@ -79,12 +82,17 @@ function App() {
             <Route path="/profil-parameters" element={<ProfilParameters/>} />
             <Route path="/my-offers" element={<MyOffers/>} />
             <Route path="/offer/:id" element={<Offer/>} />
+            <Route path='/update-offer/:id' element={<UpdateOffer/>}/>
             <Route path="/proposals" element={<Proposals/>} />
-            <Route path="/wallets" element={<Wallets/>} />
+       
             <Route path="/g1-vs-krysto" element={<G1VsKrysto/>} />
             <Route path="/register-form" element={<RegisterForm/>} />
             <Route path="/krysto-project" element={<KrystoProject/>} />
             <Route path="*" element={<Error404/>} />
+            <Route path='/wallets' element={<Wallets/>}>
+              <Route path='/wallets/deposit' element={<Deposit/>}/>
+              <Route path='/wallets/main' element={<Main/>}/>
+            </Route>
           </Routes>
     
         <Footer/>

@@ -28,21 +28,57 @@ function ProfilParameters() {
 
   console.log(profil)
 
-  if (!profil) {
+  if (!profil.user) {
     return <Spinner />
   } else {
     return (
       <main className='pb-6 ' >
-        <HeroTitle title={`Paramètres de votre compte ${profil.name}`} />
+
+
+
+<div className="dashbord-top container p-4">
+          <div class="field is-grouped is-grouped-multiline">
+            <div class="control mt-5">
+              <div class="tags has-addons is-large">
+                <span class="tag is-dark is-large">compte actif</span>
+                {
+                profil.user.isActive ? <span class="tag is-info is-large is-success">Oui</span> :  <span class="tag is-info is-large is-danger">Non</span>
+                } 
+              </div>
+              <div class="tags has-addons is-large">
+                <span class="tag is-dark is-large">Type d'abonement</span>
+                <span class="tag is-info is-large is-success">{profil.user.plan.name}</span>
+              </div>
+              <div class="tags has-addons is-large">
+                <span class="tag is-dark is-large">Date de création du compte</span>
+                <span class="tag is-info is-large is-info">{new Date(profil.user.plan.created).toLocaleDateString()}</span>
+              </div>
+              <div class="control mt-5">
+                <div class="tags has-addons is-large">
+                  <span class="tag is-dark is-large">Total de vos comptes</span>
+                  <span class="tag is-info is-large">30.44 Krysto</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <HeroTitle title={`Paramètres du  compte de ${profil.user.name}`} />
+    
         <div className="container p-2">
           <section className="parameters-localisation">
           <h1 className='title is-4 cadre'> Localiser votre position principale</h1>
-          { profil.coordinates ? 
+          { profil.user.coordinates ? 
           <div className="leaflet-container">
             <MapContainer
               className="container p-4"
               style={{ height: '150px' }}
-              center={profil.coordinates}
+              center={[profil.user.coordinates[0], profil.user.coordinates[1]]}
               zoom={13}
               scrollWheelZoom={true}
               >
@@ -51,7 +87,7 @@ function ProfilParameters() {
                 url="https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png"
                 />
   <Marker
-              position={profil.coordinates}
+                position={[profil.user.coordinates[0], profil.user.coordinates[1]]}
               >
               <Popup>hello popup</Popup>
             </Marker>

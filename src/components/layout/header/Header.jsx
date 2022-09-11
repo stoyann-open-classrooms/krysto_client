@@ -19,10 +19,13 @@ import {
   FaUser,
 } from 'react-icons/fa'
 
+
 function Header() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
-
+  
+  const token =JSON.stringify(localStorage.getItem('userToken'))
+  console.log(token);
   const { user } = useSelector((state) => state.auth)
   const onLogout = () => {
     dispatch(logout())
@@ -95,7 +98,7 @@ function Header() {
               <NavLink className="navbar-item nav-item" to={'/add-offer'}>
                 <FaPlusCircle className="mr-2" /> Publier
               </NavLink>
-                {user ? (
+                {token === null ? (
                 <div className="navbar-item has-dropdown is-hoverable">
                   <NavLink to={'#'} className="navbar-item nav-title">
                     <FaUser className="mr-2" />
@@ -157,7 +160,7 @@ function Header() {
 
             <div className="navbar-end">
               <div className="navbar-item">
-                {user ? (
+                {token === null ? (
                   <>
                     <button
                       className="button is-small logout-btn"
