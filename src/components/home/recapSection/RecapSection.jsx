@@ -1,31 +1,39 @@
 import React from 'react'
 import Billet from "../../../assets/images/francs_pacifique_5000.jpg"
 import Coins from "../../../assets/coins/piece_stoyan-02.svg"
+import Star from "../../../assets/icones/star.png"
+import Offer from "../../../assets/icones/offer.png"
+import HandMoney from "../../../assets/icones/give-money.png"
+import Gift from "../../../assets/icones/gift.png"
 import './RecapSection.css'
 function RecapSection() {
   return (
     <section className='container p-4 recap-section'>
         <nav class="level m-3">
-  <div class="level-item has-text-centered">
+  <div class="level-item has-text-centered item-recap mb-6">
     <div>
+      <img className='mb-5' src={Star} alt="" />
       <p class="heading">Uttilisateurs inscrit</p>
       <p class="title">6</p>
     </div>
   </div>
-  <div class="level-item has-text-centered">
+  <div class="level-item has-text-centered item-recap mb-6">
     <div>
+      <img className='mb-5' src={Offer} alt="" />
       <p class="heading">Annonces en ligne</p>
       <p class="title">1</p>
     </div>
   </div>
-  <div class="level-item has-text-centered">
+  <div class="level-item has-text-centered item-recap mb-6">
     <div>
+      <img className='mb-5' src={HandMoney} alt="" />
       <p class="heading">Krysto en circulation</p>
       <p class="title">76</p>
     </div>
   </div>
-  <div class="level-item has-text-centered">
+  <div class="level-item has-text-centered item-recap mb-6">
     <div>
+      <img className='mb-5' src={Gift} alt="" />
       <p class="heading">Comptes gratuit disponible</p>
       <p class="title">895</p>
     </div>

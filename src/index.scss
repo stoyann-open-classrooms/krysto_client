@@ -79,3 +79,14 @@ transition: all 0.3s ease-out;
 .modal-card-body {
   background-color: $primary-light;
 }
+.previousButton{
+
+  svg {
+   width: 1rem;
+  }
+}
+.nextButton{
+  svg {
+   width: 1rem;
+  }
+}

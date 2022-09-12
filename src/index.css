@@ -10394,4 +10394,12 @@ main {
 
 .modal-card-body {
   background-color: #d9ddf4;
+}
+
+.previousButton svg {
+  width: 1rem;
+}
+
+.nextButton svg {
+  width: 1rem;
 }/*# sourceMappingURL=index.css.map */

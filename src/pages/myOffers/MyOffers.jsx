@@ -8,6 +8,7 @@ import { reset } from '../../features/user/userSlice'
 import { getProfil } from '../../features/user/userSlice'
 import Spinner from '../../components/shared/spinner/Spinner'
 import OfferList from '../../components/search/OfferList/OfferList'
+import MyOfferList from '../../components/myOffers/MyOfferList'
 function MyOffers() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
     (state) => state.user,
@@ -37,14 +38,14 @@ function MyOffers() {
         title={'Vos annonces'}
         subtitle={'Vous avez actuellement 4 annonces en ligne'}
       />
-<OfferList user={profil.user}/>
+    <MyOfferList user= {profil.user}/>
      
-{/* 
+
       {/* <div className="container-offers">
         {offers
           ? offers.map((offer) => <p className="box">{offer.title}</p>)
           : ''}
-      </div> */} */}
+      </div> */}
     </main>
   )
 }

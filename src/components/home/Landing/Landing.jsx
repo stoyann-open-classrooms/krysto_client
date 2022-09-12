@@ -1,5 +1,6 @@
 import React from 'react'
 import Coins from '../../../assets/coins/coinGif.gif'
+import Pig from '../../../assets/icones/black/save-monny-pig.png'
 import './landing.css'
 function Landing() {
   return (
@@ -17,7 +18,7 @@ function Landing() {
           Gagner en pouvoir d'achat, grâce a la blockchain
         </h2>
       </hgroup>
-   
+      <img src={Pig} alt="" />   
         </div>
     </section>
 

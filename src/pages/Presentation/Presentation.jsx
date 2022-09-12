@@ -138,7 +138,7 @@ function Presentation() {
       <Slider>
         {slides.map((slide, index) => (
           <div key={index}>
-            <div className="container p-6 presentation-content">
+            <div className="container p-3 presentation-content">
               <h1 className="title is-1">{slide.title}</h1>
              
               

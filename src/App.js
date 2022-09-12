@@ -8,15 +8,14 @@ import Footer from './components/layout/footer/Footer'
 // === Pages
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
-import Register from './pages/register/Register'
 import Search from './pages/search/Search'
-import AddOffer from './pages/addOffer/AddOffer'
+import Register from './pages/register/Register'
 import Money from './pages/money/Money'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import Faq from './pages/faq/Faq'
-import MathModel from './pages/mathModel/MathModel'
 import Thanks from './pages/thanks/Thanks'
+import MathModel from './pages/mathModel/MathModel'
 import BugReport from './pages/bugReport/BugReport'
 import Charte from './pages/charte/Charte.jsx'
 import Team from './pages/team/Team'
@@ -27,23 +26,27 @@ import Cgv from './pages/cgv/Cgv'
 import Testimonials from './pages/testimonials/Testimonials'
 import PressKit from './pages/pressKit/PressKit'
 import Files from './pages/files/Files'
-import ForgotPassword from './pages/forgotPassword/ForgotPassword'
-import Dashboard from './pages/dashboard/Dashboard'
-import MyOffers from './pages/myOffers/MyOffers'
 import Offer from './pages/offer/Offer'
-import Proposals from './pages/proposals/Proposals'
-import Wallets from './pages/wallets/Wallets'
 import G1VsKrysto from './pages/G1VsKrysto/G1VsKrysto'
-import ProfilParameters from './pages/profilParameters/ProfilParameters'
 import Error404 from './pages/404/Error404'
 import KrystoProject from './pages/krystoProject/KrystoProject'
 import RegisterForm from './pages/registerForm/RegisterForm'
 import Presentation from './pages/Presentation/Presentation'
-import Deposit from './pages/wallets/deposit/Deposit'
-import Main from './pages/wallets/main/Main'
-import UpdateOffer from './pages/updateOffer/UpdateOffer'
-import Converter from './pages/Converter/Converter'
 import PlasticProbleme from './pages/plasticProblem/PlasticProbleme'
+import ForgotPassword from './pages/forgotPassword/ForgotPassword'
+
+
+// ===== private
+import Dashboard from './pages/dashboard/Dashboard'
+import MyOffers from './pages/myOffers/MyOffers'
+import AddOffer from './pages/addOffer/AddOffer'
+import UpdateOffer from './pages/updateOffer/UpdateOffer'
+import Proposals from './pages/proposals/Proposals'
+import Wallets from './pages/wallets/Wallets'
+import Main from './pages/wallets/main/Main'
+import Deposit from './pages/wallets/deposit/Deposit'
+import ProfilParameters from './pages/profilParameters/ProfilParameters'
+import Converter from './pages/Converter/Converter'
 
 
 
@@ -57,12 +60,13 @@ function App() {
         <Header />
       
           <Routes>
+
+            {/* === public */}
             <Route path="/" element={<Home />} />
           <Route path='/presentation'  element={<Presentation/>}/>
             <Route path="/login" element={<Login />} />
             <Route path="/register-subscription" element={<Register />} />
             <Route path="/search" element={<Search />} />
-            <Route path="/add-offer" element={<AddOffer/>} />
             <Route path="/money" element={<Money />} />
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
@@ -80,23 +84,43 @@ function App() {
             <Route path="/press-kit" element={<PressKit/>} />
             <Route path="/files" element={<Files/>} />
             <Route path="/forgot-password" element={<ForgotPassword/>} />
-            <Route path="/dashboard" element={<Dashboard/>} />
-            <Route path="/profil-parameters" element={<ProfilParameters/>} />
-            <Route path="/my-offers" element={<MyOffers/>} />
             <Route path="/offer/:id" element={<Offer/>} />
-            <Route path='/update-offer/:id' element={<UpdateOffer/>}/>
-            <Route path="/proposals" element={<Proposals/>} />
-            <Route path="/devise-converter" element={<Converter/>} />
             <Route path="/g1-vs-krysto" element={<G1VsKrysto/>} />
             <Route path="/register-form" element={<RegisterForm/>} />
             <Route path="/krysto-project" element={<KrystoProject/>} />
             <Route path="/plastic-problem" element={<PlasticProbleme/>} />
             <Route path="*" element={<Error404/>} />
+  {/* ============ Private */}
+            <Route path="/add-offer" element={<AddOffer/>} />
+            <Route path="/dashboard" element={<Dashboard/>} />
+            <Route path="/profil-parameters" element={<ProfilParameters/>} />
+            <Route path="/my-offers" element={<MyOffers/>} />
+            <Route path='/update-offer/:id' element={<UpdateOffer/>}/>
+            <Route path="/proposals" element={<Proposals/>} />
+            <Route path="/devise-converter" element={<Converter/>} />
             <Route path='/wallets' element={<Wallets/>}>
               <Route path='/wallets/deposit' element={<Deposit/>}/>
               <Route path='/wallets/main' element={<Main/>}/>
             </Route>
           </Routes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
         <Footer/>
       </Router>
