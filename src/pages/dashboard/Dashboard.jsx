@@ -26,7 +26,7 @@ function Dashboard() {
     dispatch(getProfil())
   }, [])
 
-  console.log(profil.user)
+  console.log(profil)
 
   if (!profil.user || isLoading) {
     return <Spinner />

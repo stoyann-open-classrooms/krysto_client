@@ -47,6 +47,8 @@ import Main from './pages/wallets/main/Main'
 import Deposit from './pages/wallets/deposit/Deposit'
 import ProfilParameters from './pages/profilParameters/ProfilParameters'
 import Converter from './pages/Converter/Converter'
+import Private from './pages/private/Private'
+import PrivateHome from './pages/private/privateHome/PrivateHome'
 
 
 
@@ -91,6 +93,12 @@ function App() {
             <Route path="/plastic-problem" element={<PlasticProbleme/>} />
             <Route path="*" element={<Error404/>} />
   {/* ============ Private */}
+              <Route path='/private' element={<Private/>}>
+                <Route path='/private/private-home' element={<PrivateHome/>}/>
+
+
+              </Route>
+
             <Route path="/add-offer" element={<AddOffer/>} />
             <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/profil-parameters" element={<ProfilParameters/>} />

@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroTitle from '../../../components/shared/heroTitle/HeroTitle'
 
 function PrivateHome() {
   return (
-    <div>PrivateHome</div>
+    <main>
+        <HeroTitle title={"Home sweet private home"}/>
+    </main>
   )
 }
 
