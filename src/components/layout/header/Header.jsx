@@ -184,7 +184,8 @@ function Header() {
                       to={'/register-subscription'}
                       className="button is-primary is-small"
                     >
-                      Inscription
+
+                     <FaUser className='mr-2'/> Inscription
                     </NavLink>
                     <NavLink to={'/login'} className="button is-light is-small">
                       <FaSignInAlt className="mr-2" /> Connexion

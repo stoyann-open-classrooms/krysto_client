@@ -1,15 +1,18 @@
+/* eslint-disable no-restricted-globals */
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { useSelector, useDispatch } from 'react-redux'
-import { login } from '../../features/auth/authSlice'
+import { register } from '../../features/auth/authSlice'
 import { FaCheck, FaEnvelope, FaLock, FaUser } from 'react-icons/fa'
 function RegisterForm() {
   const [formData, setFormData] = useState({
+    name:'',
     email: '',
     password: '',
+    planKey:'premium'
   })
-  const { email, password } = formData
+  const { name, email, password , planKey} = formData
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -33,14 +36,14 @@ function RegisterForm() {
     if (!email) {
       toast.error('Vous devez entrez votre email')
     } else {
-      const userData = {
-        email,
-        password,
-      }
-      dispatch(login(userData))
-      toast.success('Vous êtes connecter !')
+    
+  console.log(formData);    
+     dispatch(register(formData))
+     
+      navigate('/register-success')
+      
+    
 
-      navigate('/')
       // window.location.reload()
     }
   }
@@ -52,9 +55,13 @@ function RegisterForm() {
         <div class="field">
           <p class="control has-icons-left has-icons-right">
             <input
-              class="input is-large"
+              className="input is-large"
               type="text"
-              placeholder="Nom d'utilisateur"
+              placeholder="Votre nom d'utilisateur"
+              id="name"
+              value={name}
+              name="name"
+              onChange={onChange}
             />
             <span class="icon is-small is-left">
               <FaUser />

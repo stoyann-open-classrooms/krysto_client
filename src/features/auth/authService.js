@@ -4,11 +4,12 @@ const API_URL = 'http://152.228.137.213:4001/auth'
 
 // Register user
 const register = async (userData) => {
-  const response = await axios.post(API_URL + '/register',  userData)
+  const response = await axios.post ('http://152.228.137.213:4001/krysto/register',  userData)
   if (response.data) {
-    localStorage.setItem('userToken', JSON.stringify(response.data.token))
-    localStorage.setItem('userId', JSON.stringify(response.data.userId))
-  
+    // localStorage.setItem('userMail', JSON.stringify(response.data.user.email))
+    // localStorage.setItem('userName', JSON.stringify(response.data.user.name))
+    // localStorage.setItem('userId', JSON.stringify(response.data.useur.userId))
+  console.log(response.data);
     
   }
   return response.data
@@ -24,6 +25,7 @@ const login = async (userData) => {
   }
   return response.data
 }
+// login user
 
 
 // Logout

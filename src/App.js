@@ -49,6 +49,8 @@ import ProfilParameters from './pages/profilParameters/ProfilParameters'
 import Converter from './pages/Converter/Converter'
 import Private from './pages/private/Private'
 import PrivateHome from './pages/private/privateHome/PrivateHome'
+import RegisterSuccess from './pages/RegisterSuccess/RegisterSuccess'
+import ConfirmEmail from './pages/confirmEmail/ConfirmEmail'
 
 
 
@@ -91,12 +93,12 @@ function App() {
             <Route path="/register-form" element={<RegisterForm/>} />
             <Route path="/krysto-project" element={<KrystoProject/>} />
             <Route path="/plastic-problem" element={<PlasticProbleme/>} />
+            <Route path="/register-success" element={<RegisterSuccess/>} />
+            <Route path="/confirm-email" element={<ConfirmEmail/>} />
             <Route path="*" element={<Error404/>} />
   {/* ============ Private */}
               <Route path='/private' element={<Private/>}>
                 <Route path='/private/private-home' element={<PrivateHome/>}/>
-
-
               </Route>
 
             <Route path="/add-offer" element={<AddOffer/>} />

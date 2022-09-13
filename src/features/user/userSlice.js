@@ -3,6 +3,7 @@ import userService from './userService'
 
 const initialState = {
     profil: {},
+    nbUsers: 0,
     isError: false,
     isSuccess: false,
     isLoading: false,
@@ -18,6 +19,24 @@ export const getProfil = createAsyncThunk(
     async (_, thunkAPI) => {
       try {
         return await userService.getProfil()
+      } catch (error) {
+        const message =
+          (error.response &&
+            error.response.data &&
+            error.response.data.message) ||
+          error.message ||
+          error.toString()
+        return thunkAPI.rejectWithValue(message)
+      }
+    },
+  )
+
+// Get user profil
+export const getNbUsers = createAsyncThunk(
+    'profils/getNbUsers',
+    async (_, thunkAPI) => {
+      try {
+        return await userService.getNbUsers()
       } catch (error) {
         const message =
           (error.response &&
@@ -53,6 +72,21 @@ export const userSlice = createSlice({
           state.isError = true
           state.message = action.payload
           state.profil = null
+        })
+    
+        .addCase(getNbUsers.pending, (state) => {
+          state.isLoading = true
+        })
+        .addCase(getNbUsers.fulfilled, (state, action) => {
+          state.isLoading = false
+          state.isSuccess = true
+          state.nbUsers = action.payload
+        })
+        .addCase(getNbUsers.rejected, (state, action) => {
+          state.isLoading = false
+          state.isError = true
+          state.message = action.payload
+          state.nbUsers = null
         })
       
       

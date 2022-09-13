@@ -39,9 +39,14 @@ function Login() {
         password,
       }
       dispatch(login(userData))
-      toast.success('Vous êtes connecter !')
+      if(isSuccess){
+        
+        window.reload()
+        toast.success('Vous êtes connecter !')
+        navigate('/private/private-home')
 
-      navigate('/')
+      }
+
       // window.location.reload()
     }
   }

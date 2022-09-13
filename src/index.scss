@@ -34,7 +34,21 @@ main {
   }
 }
 
+.message-register-success {
+  border:  solid 3px $primary;
+  background-color: white;
+  
+  p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: $primary;
 
+    span{
+      color: $primary-dark;
+      font-weight: bolder;
+    }
+  }
+}
 
 .content-image {
   display: flex;

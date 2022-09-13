@@ -10354,6 +10354,20 @@ main {
   color: #e2cb59;
 }
 
+.message-register-success {
+  border: solid 3px #3C4CA6;
+  background-color: white;
+}
+.message-register-success p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #3C4CA6;
+}
+.message-register-success p span {
+  color: #292f4d;
+  font-weight: bolder;
+}
+
 .content-image {
   display: flex;
 }

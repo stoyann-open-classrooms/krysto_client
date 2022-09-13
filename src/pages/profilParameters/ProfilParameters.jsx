@@ -83,7 +83,7 @@ function ProfilParameters() {
        <ProfilParametersMap coordinates= {profil.user.coordinates}/>
               </div>
             ) : (
-              <Spinner />
+              <p>Votre localisation n'est pas enregistré.</p>
             )}
           </section>
           <section className=" mt-6 parameters-email-notification">

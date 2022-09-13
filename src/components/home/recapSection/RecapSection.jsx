@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Billet from "../../../assets/images/francs_pacifique_5000.jpg"
 import Coins from "../../../assets/coins/piece_stoyan-02.svg"
 import Star from "../../../assets/icones/star.png"
@@ -6,7 +6,50 @@ import Offer from "../../../assets/icones/offer.png"
 import HandMoney from "../../../assets/icones/give-money.png"
 import Gift from "../../../assets/icones/gift.png"
 import './RecapSection.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { getNbUsers, reset } from '../../../features/user/userSlice'
+import { getOffers } from '../../../features/offer/offerSlice'
+import Spinner from '../../shared/spinner/Spinner'
 function RecapSection() {
+
+
+  const { nbUsers, isLoading, isError, isSuccess } = useSelector(
+    (state) => state.user,
+  )
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    return () => {
+      if (isSuccess) {
+        dispatch(reset())
+      }
+    }
+  }, [dispatch, isSuccess, isError])
+
+  useEffect(() => {
+    dispatch(getNbUsers())
+  }, [])
+
+  console.log(nbUsers)
+
+  const { offers } = useSelector(
+    (state) => state.offer,
+  )
+
+  useEffect(() => {
+    dispatch(getOffers())
+  }, [])
+  console.log(offers)
+
+
+
+if(!offers.offers || !nbUsers.nbUsers){
+  <Spinner/>
+}
+
+
+
+
   return (
     <section className='container p-4 recap-section'>
         <nav class="level m-3">
@@ -14,28 +57,27 @@ function RecapSection() {
     <div>
       <img className='mb-5' src={Star} alt="" />
       <p class="heading">Uttilisateurs inscrit</p>
-      <p class="title">6</p>
+      {nbUsers.nbUsers ?  <p class="title">{nbUsers.nbUsers}</p>   : <p>0</p> }
+      
     </div>
   </div>
   <div class="level-item has-text-centered item-recap mb-6">
     <div>
       <img className='mb-5' src={Offer} alt="" />
       <p class="heading">Annonces en ligne</p>
-      <p class="title">1</p>
+      {offers.offers ?    
+      <p class="title">
+        {offers.offers.length}</p>
+      
+      : <p>0</p> }
     </div>
   </div>
-  <div class="level-item has-text-centered item-recap mb-6">
-    <div>
-      <img className='mb-5' src={HandMoney} alt="" />
-      <p class="heading">Krysto en circulation</p>
-      <p class="title">76</p>
-    </div>
-  </div>
+
   <div class="level-item has-text-centered item-recap mb-6">
     <div>
       <img className='mb-5' src={Gift} alt="" />
       <p class="heading">Comptes gratuit disponible</p>
-      <p class="title">895</p>
+      <p class="title">{nbUsers.limitForFreePlan}</p>
     </div>
   </div>
 </nav>
