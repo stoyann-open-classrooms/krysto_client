@@ -24,7 +24,7 @@ function RegisterSuccess() {
     //     dispatch(getProfil())
     //   }, [])
     
-      console.log(user.emailParams.html)
+     
       if (!user) {
         return <Spinner />
       }

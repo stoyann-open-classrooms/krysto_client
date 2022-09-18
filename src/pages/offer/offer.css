@@ -24,7 +24,7 @@ body {
 }
 
 .back-btn {
-  background-color: #e2cb59;
+  background-color: #F49E4C;
   border: none;
   color: #1d1c1b;
 }
@@ -99,7 +99,7 @@ body {
   color: #65bc62;
 }
 .publish span {
-  color: #3C4CA6;
+  color: #304D6D;
   margin-left: 1rem;
 }
 
@@ -118,7 +118,7 @@ body {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  color: #3C4CA6;
+  color: #304D6D;
   font-weight: bold;
   position: relative;
 }

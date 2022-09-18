@@ -18,7 +18,7 @@ export const createOffer = createAsyncThunk(
      
         const token = thunkAPI.getState().auth.user
         const userId = JSON.parse(window.localStorage.getItem('userId'))
-        console.log(userId)
+      
         return await offerService.createOffer(offerData, token , userId)
       } catch (error) {
         const message =
@@ -153,6 +153,21 @@ export const offerSlice = createSlice({
           state.message = action.payload
           state.offer = null
         })
+    
+        // .addCase(createOffer.pending, (state) => {
+        //   state.isLoading = true
+        // })
+        // .addCase(createOffer.fulfilled, (state, action) => {
+        //   state.isLoading = false
+        //   state.isSuccess = true
+        //   state.offers = action.payload
+        // })
+        // .addCase(createOffer.rejected, (state, action) => {
+        //   state.isLoading = false
+        //   state.isError = true
+        //   state.message = action.payload
+        //   state.offers = null
+        // })
     
       
     }

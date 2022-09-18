@@ -13,13 +13,7 @@ function OfferItem({ offer }) {
   return (
     <div className="offer-card card">
       <div className="slider-card">
-        {/* <div className="controls">
-            <div className="buttons">
-
-                <button className='button is-small arrow-slider'><FaArrowLeft/></button>
-                <button className='button is-small arrow-slider'><FaArrowRight/></button>
-            </div>
-        </div> */}
+ 
         <img src={`http://152.228.137.213:4001/${offer.gallery[0]}`} alt="" />
       </div>
       <div className="body-card">
@@ -27,7 +21,7 @@ function OfferItem({ offer }) {
           <h4>
             {' '}
             <FaTag />
-            {offer.category.name}
+            {offer.category ? offer.category.name : 'aucune categorie'}
           </h4>
           <h4>
             {' '}

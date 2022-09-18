@@ -30,7 +30,7 @@ body {
   margin-bottom: 6rem;
 }
 .main-404 h1 {
-  color: #e2cb59;
+  color: #F49E4C;
   font-size: 35px;
   font-size: 6rem;
 }
@@ -46,12 +46,12 @@ body {
 }
 
 .btn-error {
-  color: #e2cb59;
+  color: #F49E4C;
   background-color: transparent;
-  border-color: #e2cb59;
+  border-color: #F49E4C;
   transition: all 0.5s ease-out;
 }
 .btn-error:hover {
-  background-color: #e2cb59;
+  background-color: #F49E4C;
   color: #292f4d;
 }/*# sourceMappingURL=error404.css.map */

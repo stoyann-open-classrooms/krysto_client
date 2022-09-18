@@ -18,13 +18,13 @@ a{
   color: $primary;
 }
 body {
-  background-color: white;
+  background-color: $body-color;
   min-height: 100vh;
-  color: $primary-dark;
+  color: $primary;
 }
 main {
   min-height: 100vh;
-  color: $primary-dark;
+  color: $primary;
 }
 
 

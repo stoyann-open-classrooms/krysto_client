@@ -19,7 +19,7 @@ body {
 .footer {
   padding: 2rem;
   position: relative;
-  background-color: #292f4d;
+  background-color: #304D6D;
   font-size: 12px;
   height: 50rem;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   color: #F2F2F2;
 }
 .footer p {
-  color: #e2cb59;
+  color: #F49E4C;
 }
 
 .social-media-container a {
@@ -56,7 +56,7 @@ body {
   text-align: center;
   bottom: 0;
   width: 100%;
-  color: #292f4d;
+  color: #304D6D;
   font-weight: bold;
   margin-bottom: 0.9rem;
 }

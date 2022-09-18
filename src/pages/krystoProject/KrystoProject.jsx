@@ -6,10 +6,10 @@ function KrystoProject() {
   return (
     <main>
     <HeroTitle title={"Le projet Krysto."} />
-  <img src={reuse} alt="" />
+
 
 <div className="container p-4">
-
+     <h2 className='title is-4'>Une Calédonie sans plastique grâce a la blockckchain</h2>
   <p className='m-2'>Chez Krysto tout ce que nous entreprenons a pour but de contribuer a limiter notre impact sur l'environement. Grace nôtre monnaie complémentaire nous souhaitons stimuler le marché de l'occasion
     tout en luttant contre la vie cher, en echangeant des bien ou des services entre particulier tout en conservant son pouvoir d'achat réel
   </p>

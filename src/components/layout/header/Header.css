@@ -25,32 +25,32 @@ body {
 
 .navbar-brand,
 .navbar-menu {
-  background-color: #292f4d;
+  background-color: #304D6D;
 }
 .navbar-brand a,
 .navbar-menu a {
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .navbar-menu {
-  background-color: #292f4d;
+  background-color: #CED2D7;
 }
 
 .logo p {
-  color: #65bc62;
+  color: #F49E4C;
 }
 
 .logout-btn {
-  color: #292f4d;
+  color: #304D6D;
   font-size: 1rem;
 }
 
 .nav-title {
-  color: #e2cb59;
+  color: #49392C;
 }
 
 .nav-item {
-  color: #F2F2F2;
+  color: #1d1c1b;
 }
 
 a.navbar-item:focus,
@@ -61,10 +61,14 @@ a.navbar-item.is-active,
 .navbar-link:focus-within,
 .navbar-link:hover,
 .navbar-link.is-active {
-  background-color: #1d1c1b;
-  color: #e2cb59;
+  background-color: #CED2D7;
+  color: #304D6D;
 }
 
 .navbar-burger span {
-  color: #65bc62;
+  color: #F49E4C;
+}
+
+.navbar-dropdown {
+  background-color: #CED2D7;
 }/*# sourceMappingURL=Header.css.map */

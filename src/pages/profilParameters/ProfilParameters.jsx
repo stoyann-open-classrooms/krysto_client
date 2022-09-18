@@ -73,7 +73,7 @@ function ProfilParameters() {
         <HeroTitle title={`Paramètres du  compte de ${profil.user.name}`} />
 
         <div className="container p-2">
-          <section className="parameters-localisation">
+          {/* <section className="parameters-localisation">
             <h1 className="title is-4 ">
               {' '}
               Localiser votre position principale
@@ -85,7 +85,7 @@ function ProfilParameters() {
             ) : (
               <p>Votre localisation n'est pas enregistré.</p>
             )}
-          </section>
+          </section> */}
           <section className=" mt-6 parameters-email-notification">
             <h1 className="title is-4 cadre">
               {' '}

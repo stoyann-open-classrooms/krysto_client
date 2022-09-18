@@ -9,7 +9,7 @@ function Register() {
       <div className="container-subscription">
         <div className="box subcription-card">
           <div className="subcription-card-top">
-            <h3>400 XPF / mois</h3>
+            <h3>  <span>400 XPF</span>/mois</h3>
             <h5>Abonement mensuel</h5>
           </div>
           <p>Engagement d'1 mois renouvlable Résiliable a tout moment.</p>

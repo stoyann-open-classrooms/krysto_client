@@ -10332,36 +10332,36 @@ a {
   font-weight: bold;
 }
 a:hover {
-  color: #3C4CA6;
+  color: #304D6D;
 }
 
 .title {
-  color: #3C4CA6;
+  color: #304D6D;
 }
 
 body {
-  background-color: white;
+  background-color: #ECEAF8;
   min-height: 100vh;
-  color: #292f4d;
+  color: #304D6D;
 }
 
 main {
   min-height: 100vh;
-  color: #292f4d;
+  color: #304D6D;
 }
 
 .button:hover {
-  color: #e2cb59;
+  color: #F49E4C;
 }
 
 .message-register-success {
-  border: solid 3px #3C4CA6;
+  border: solid 3px #304D6D;
   background-color: white;
 }
 .message-register-success p {
   font-size: 1.3rem;
   text-align: center;
-  color: #3C4CA6;
+  color: #304D6D;
 }
 .message-register-success p span {
   color: #292f4d;

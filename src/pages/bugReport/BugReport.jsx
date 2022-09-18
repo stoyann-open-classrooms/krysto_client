@@ -1,8 +1,13 @@
 import React from 'react'
+import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 
 function BugReport() {
   return (
-    <main>BugReport</main>
+    <main>
+      <HeroTitle title={'Reporter un Bug'} />
+
+      
+    </main>
   )
 }
 

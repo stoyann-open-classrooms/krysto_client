@@ -24,14 +24,14 @@ body {
 }
 
 .submit-btn {
-  background-color: #3C4CA6;
+  background-color: #304D6D;
   border: none;
   color: rgb(38, 43, 38) 9;
   font-weight: bolder;
 }
 
 .buttons .button {
-  background-color: #e2cb59;
+  background-color: #F49E4C;
   border: none;
   color: #1d1c1b;
 }
@@ -51,4 +51,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   width: 49%;
+}
+
+.littleCoins {
+  height: 4rem;
 }/*# sourceMappingURL=addOffer.css.map */

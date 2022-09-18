@@ -95,6 +95,7 @@ function App() {
             <Route path="/plastic-problem" element={<PlasticProbleme/>} />
             <Route path="/register-success" element={<RegisterSuccess/>} />
             <Route path="/confirm-email" element={<ConfirmEmail/>} />
+            <Route path="/converter" element={<Converter/>} />
             <Route path="*" element={<Error404/>} />
   {/* ============ Private */}
               <Route path='/private' element={<Private/>}>

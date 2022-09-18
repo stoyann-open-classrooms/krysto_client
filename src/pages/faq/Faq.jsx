@@ -5,7 +5,7 @@ function Faq() {
     <main>
        <HeroTitle
         title={'F.A.Q'}
-      
+  
       />
   
     </main>

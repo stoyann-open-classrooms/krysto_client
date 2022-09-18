@@ -25,9 +25,9 @@ body {
 }
 
 .pagination-previous, .pagination-next {
-  color: #3C4CA6;
+  color: #304D6D;
   font-size: 1.4rem;
-  border-color: #3C4CA6;
+  border-color: #304D6D;
 }
 .pagination-previous:hover, .pagination-next:hover {
   border-color: #292f4d;
@@ -45,6 +45,6 @@ body {
 }
 
 .previousButton svg {
-  fill: #3C4CA6;
-  color: #3C4CA6;
+  fill: #304D6D;
+  color: #304D6D;
 }/*# sourceMappingURL=presentation.css.map */
