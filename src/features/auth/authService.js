@@ -6,9 +6,7 @@ const API_URL = 'http://152.228.137.213:4001/auth'
 const register = async (userData) => {
   const response = await axios.post ('http://152.228.137.213:4001/krysto/register',  userData)
   if (response.data) {
-    // localStorage.setItem('userMail', JSON.stringify(response.data.user.email))
-    // localStorage.setItem('userName', JSON.stringify(response.data.user.name))
-    // localStorage.setItem('userId', JSON.stringify(response.data.useur.userId))
+    
   console.log(response.data);
     
   }

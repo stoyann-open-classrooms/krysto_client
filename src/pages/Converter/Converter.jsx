@@ -55,8 +55,8 @@ const onSubmit = e => {
     setTranslate(`${result.toFixed(2)}`)
   }
   if(formData.curency1 === 'Krysto' && formData.curency2 === 'Unité' ) {
-    const result = (  profil.monyConvertValue / formData.amount  )
-    setTranslate(`${result.toFixed(2)}`)
+    const result = (  profil.monyConvertValue * formData.amount  )
+    setTranslate(`${result.toFixed(9)}`)
   }
   if(formData.curency1 === 'Unité' && formData.curency2 === 'Xpf' ) {
     const result = ( formData.amount /  profil.monyConvertValue * 1000  )
@@ -81,7 +81,7 @@ const onSubmit = e => {
       <HeroTitle title={'Convertisseur de devises Krysto'} />
 
       <form onSubmit={onSubmit} className="form container p-4">
-      <input  onChange={onChange} name='amount' class="input is-large mb-5" type="number" placeholder="Montant"></input>
+      <input min={0} step={'1'} onChange={onChange} name='amount' class="input is-large mb-5" type="number" placeholder="Montant"></input>
        
       <div class="select is-large">
   <select onChange={onChange} name='curency1'>

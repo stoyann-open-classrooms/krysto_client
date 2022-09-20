@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import CardRib from '../../../components/shared/cardRib/CardRib'
 import Modal from '../../../components/shared/modal/Modal'
 import Spinner from '../../../components/shared/spinner/Spinner'
+
 import WalletsTable from '../../../components/wallets/walletsTable/WalletsTable'
 import { getProfil, reset } from '../../../features/user/userSlice'
 import '../wallets.css'
@@ -26,7 +27,7 @@ function Deposit() {
   }, [])
 
 
-  console.log(profil);
+
 
 if(!profil.user) {
   return <Spinner/>
@@ -36,7 +37,7 @@ if(!profil.user) {
   return (
     <section className="container p-4">
       <div className="container-graph container p-4">
-        <div className="box box-graph"></div>
+      
       </div>
       <div className="buttons">
         <Modal btn={'Envoyer'}
