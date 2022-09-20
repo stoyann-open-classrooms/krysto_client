@@ -12,12 +12,6 @@ function Landing() {
           <h1 className="title p-5  big-title ">
             Le troc nouvelle génèration.
           </h1>
-          <h2 className="big-subtitle">
-            Une  ecologiquement 
-          </h2>
-          <h2 className="big-subtitle">
-            Une  ecologiquement 
-          </h2>
         </hgroup>
       </div>
     </section>
