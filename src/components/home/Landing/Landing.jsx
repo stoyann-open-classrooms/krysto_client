@@ -13,7 +13,10 @@ function Landing() {
             Le troc nouvelle génèration.
           </h1>
           <h2 className="big-subtitle">
-            Une  ecologiquement
+            Une  ecologiquement 
+          </h2>
+          <h2 className="big-subtitle">
+            Une  ecologiquement 
           </h2>
         </hgroup>
       </div>
