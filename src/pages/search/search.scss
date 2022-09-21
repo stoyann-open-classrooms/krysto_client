@@ -4,15 +4,13 @@
 
 
 .container-offers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  
+  grid-gap: 1rem;
+  
+  /* grid-template-rows: 1fr 3fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  .btn-filter {
-    width: 100%;
-    background-color: $main-color;
-    color: $light-color;
-  }
+
   

@@ -3,11 +3,11 @@ import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 
 function LegalMention() {
   return (
-    <main>
+    <div className='page-content'>
    
- <HeroTitle title={"Mentions légales"} subtitle={"En vigueur au 07/09/2022"}/>
+ <HeroTitle title={"Mentions légales"}/>
  
-    </main>
+    </div>
   )
 }
 

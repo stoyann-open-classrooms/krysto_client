@@ -31,13 +31,6 @@ li {
   list-style: none;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
 .message {
   height: 200px;
   background-color: #304D6D;
@@ -48,14 +41,14 @@ button {
   line-height: 1.3rem;
 }
 .message .success {
-  background-color: #65bc62;
-  color: #292f4d;
+  background-color: #F49E4C;
+  color: white;
 }
 .message .warning {
-  background-color: #65bc62;
-  color: #292f4d;
+  background-color: #F49E4C;
+  color: white;
 }
 .message .danger {
-  background-color: #65bc62;
-  color: #292f4d;
+  background-color: #F49E4C;
+  color: white;
 }/*# sourceMappingURL=charte.css.map */

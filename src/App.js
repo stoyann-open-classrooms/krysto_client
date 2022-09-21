@@ -25,7 +25,7 @@ import Cgv from './pages/cgv/Cgv'
 import Testimonials from './pages/testimonials/Testimonials'
 import PressKit from './pages/pressKit/PressKit'
 import Files from './pages/files/Files'
-import Offer from './pages/offer/Offer'
+
 import G1VsKrysto from './pages/G1VsKrysto/G1VsKrysto'
 import Error404 from './pages/404/Error404'
 import KrystoProject from './pages/krystoProject/KrystoProject'
@@ -35,14 +35,14 @@ import PlasticProbleme from './pages/plasticProblem/PlasticProbleme'
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 
 // ===== private
-import Dashboard from './pages/dashboard/Dashboard'
+import Dashboard from './pages/private/dashboard/Dashboard'
 import MyOffers from './pages/myOffers/MyOffers'
 import AddOffer from './pages/addOffer/AddOffer'
 import UpdateOffer from './pages/private/updateOffer/UpdateOffer'
 import Proposals from './pages/proposals/Proposals'
 
 import ProfilParameters from './pages/profilParameters/ProfilParameters'
-import Converter from './pages/Converter/Converter'
+
 import Private from './pages/private/Private'
 import RegisterSuccess from './pages/RegisterSuccess/RegisterSuccess'
 import ConfirmEmail from './pages/confirmEmail/ConfirmEmail'
@@ -51,6 +51,8 @@ import Footer from './components/layout/footer/Footer'
 import Wallets from './pages/private/wallets/Wallets'
 import Deposit from './pages/private/wallets/deposit/Deposit'
 import Main from './pages/private/wallets/main/Main'
+import Converter from './pages/private/Converter/Converter.jsx'
+import Offer from './pages/offer/Offer'
 
 function App() {
   return (
@@ -90,11 +92,10 @@ function App() {
             <Route path="/register-success" element={<RegisterSuccess />} />
             <Route path="/confirm-email" element={<ConfirmEmail />} />
             <Route path="*" element={<Error404 />} />
-            <Route path="/offer/:id" element={<Offer />} />
+            <Route path="/offer/:id" element={<Offer/>} />
        
      <Route path="/private" element={<Private />}>
      
-            <Route path="/private/converter" element={<Converter />} />
             <Route path="/private/add-offer" element={<AddOffer />} />
             <Route path="/private/dashboard" element={<Dashboard />} />
             <Route path="/private/profil-parameters" element={<ProfilParameters />} />

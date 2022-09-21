@@ -12,11 +12,11 @@ function Error404() {
 
 <div className='coins-404'>
 
-<img src={GifCoins} alt="" className='image is-120x120' />
+<img src={GifCoins} alt="piéce Krysto qui tourne sur elle même."  />
 </div>
 
      
-   <a href='/' className='button is-large btn-error'>
+   <a href='/' className='submit-btn'>
      Retour a l'accueil</a>
     </div>
   )

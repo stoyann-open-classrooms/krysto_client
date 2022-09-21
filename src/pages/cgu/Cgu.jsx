@@ -4,9 +4,9 @@ import './cgu.css'
 function Cgu() {
   return (
     <>
-    <main>
+    <div className='page-content'>
 
- <HeroTitle title={"Conditions générales d'uttilisation"} subtitle={"En vigeur au 07/09/2022."}/>
+ <HeroTitle title={"Conditions générales d'uttilisation"} />
         
       <div className="box  cgu-container">
 
@@ -244,7 +244,7 @@ function Cgu() {
           joindre l’éditeur aux coordonnées inscrites à l’Article 1.
         </p>
       </div>
-    </main>
+    </div>
     </>
   )
 }

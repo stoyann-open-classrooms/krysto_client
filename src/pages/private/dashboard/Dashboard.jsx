@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
-import NoPhoto from '../../assets/no_picture.png'
+import NoPhoto from '../../../assets/no_picture.png'
 
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
-import Spinner from '../../components/shared/spinner/Spinner'
-import { getProfil, reset } from '../../features/user/userSlice'
-import CardRib from '../../components/shared/cardRib/CardRib'
+import HeroTitle from '../../../components/shared/heroTitle/HeroTitle'
+import Spinner from '../../../components/shared/spinner/Spinner'
+import { getProfil, reset } from '../../../features/user/userSlice'
+import CardRib from '../../../components/shared/cardRib/CardRib'
 import { Link } from 'react-router-dom'
 import { FaGrinTears } from 'react-icons/fa'
 import './dashboard.css'
-import MiniOfferCArd from '../../components/dashboard/miniCard/MiniOfferCArd'
+import MiniOfferCArd from '../../../components/dashboard/miniCard/MiniOfferCArd'
 
 function Dashboard() {
   const { profil, isLoading, isError, isSuccess } = useSelector(

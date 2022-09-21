@@ -1,51 +1,53 @@
-@import "../../../SASS/reset";
+@import '../../../SASS/reset';
 @import '../../../SASS/variables';
 @import '../../../SASS/placeholders';
 
-
-
 .footer {
-
   background-color: $primary-light;
-   height: 200px;
+  height:  40rem;
+  
+  padding: 1rem 1rem 1rem 6rem;
+  width: 100%;
+  z-index: 999999;
+}
 
-width: 100%;
-   z-index: 999999
+.social-media-container {
+  a {
+    font-size: 30px;
+    margin: 0 20px;
+    border: none;
+    color: $light;
+    background-color: transparent;
   }
-  
-  
-  .social-media-container {
+}
 
-    a {
-      font-size: 30px;
-      margin: 0 20px;
-      border: none;
-      color: $light;
-      background-color: transparent;
+
+.footer-nav-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav-section{
+  p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    color: $primary-dark;
+  }
+ul{
+  li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+transition: all 0.2s;
+    &:hover{
+      color: $secondary;
     }
   }
-  .img {
-width: 100%;
-position: absolute;
-bottom: -35px;
-left: 0;
-right: 0;
-p{
-  position: absolute;
+}
+}
+
+.all-right-reserved{
+  margin-top: 2rem;
+  font-size: 2rem;
   text-align: center;
-  bottom: 0;
-  width: 100%;
-  color: $primary;
-  font-weight: bold;
-  margin-bottom: 0.9rem;
 }
-
-img{
-  width: 100%;
-  opacity: 0.6;
-}
-}
-
-.footer-list {
-    margin-top: 7rem;
-  }

@@ -86,9 +86,7 @@ li {
 .offer-card {
   background-color: #304D6D;
   color: #5e7691;
-  margin: 2rem;
   border-radius: 10px;
-  width: 320px;
   font-size: 12px;
 }
 .offer-card .body-card {

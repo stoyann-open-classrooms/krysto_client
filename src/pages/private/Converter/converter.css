@@ -4,4 +4,12 @@
 
 .select-box {
   display: flex;
+}
+
+.result-box {
+  background-color: blue;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem;
+  font-size: 3rem;
 }/*# sourceMappingURL=converter.css.map */

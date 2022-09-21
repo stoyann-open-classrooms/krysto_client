@@ -3,12 +3,12 @@ import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 
 function CompagnySolution() {
   return (
-    <main>
+    <div className='page-content'>
       <HeroTitle
         title={'Solutions entreprises.'}
      
       />
-    </main>
+    </div>
   )
 }
 

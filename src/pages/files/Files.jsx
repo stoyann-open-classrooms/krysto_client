@@ -3,14 +3,12 @@ import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 
 function Files() {
   return (
-    <main>
+    <div className='page-content'>
       <HeroTitle
         title={'Flyers / Affiches / Visuels'}
-        subtitle={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, exercitationem?'
-        }
+       
       />
-    </main>
+    </div>
   )
 }
 

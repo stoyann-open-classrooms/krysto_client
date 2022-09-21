@@ -2,7 +2,7 @@ import React from 'react'
 
 function Testimonials() {
   return (
-    <main>
+    <div className='page-content'>
           <div className="hero p-4">
      
      <div className="hero-container">
@@ -10,7 +10,7 @@ function Testimonials() {
 
    </div>
  </div>
-    </main>
+    </div>
   )
 }
 

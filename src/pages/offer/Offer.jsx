@@ -54,7 +54,7 @@ function Offer() {
             </span>
           </p>
           <p className='publish'>
-           par : 
+           par :
             <span>
 {offer.offer.creator.name}
             </span>
@@ -75,10 +75,10 @@ function Offer() {
       </div>
 
       <div className="buttons mt-5">
-        <div className="button" onClick={toggle}>
+        <button className="submit-btn" onClick={toggle}>
           Contacter le vendeur
-        </div>
-        <Modal
+        </button>
+        {/* <Modal
           btn={'Faire une proposition'}
           isActive={false}
           titleModal={'Faire une offre pour cette annonce'}
@@ -97,7 +97,7 @@ function Offer() {
             <p>Montant maximum autorisé par vos comptes : {}</p>
           </section>
           <footer class="modal-card-foot"></footer>
-        </Modal>
+        </Modal> */}
       </div>
       <h1 className="title title-offer ">{offer.offer.title}</h1>
 

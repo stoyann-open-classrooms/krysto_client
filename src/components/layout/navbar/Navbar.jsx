@@ -126,7 +126,7 @@ function Navbar() {
                 <span className="tooltip">Propositions</span>
               </li>
               <li>
-            <NavLink to={'/private/converter'}>
+            <NavLink to={'/private/devise-converter'}>
               <FaCalculator className="nav-icone" />
               <span className="links_name">Convertisseur</span>
             </NavLink>

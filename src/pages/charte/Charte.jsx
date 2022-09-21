@@ -3,8 +3,8 @@ import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 import './charte.css'
 function Charte() {
   return (
-    <main>
- <HeroTitle title={"La charte du bon utilisateur."} subtitle={"Ce qu'il faut faire et ne pas faire sur la plateforme Krysto."}/>
+    <div className='page-content'>
+ <HeroTitle title={"La charte du bon utilisateur."} />
 
    <div className="container p-4 mb-6">
 
@@ -83,7 +83,7 @@ function Charte() {
    </div>
  
         
-    </main>
+    </div>
   )
 }
 

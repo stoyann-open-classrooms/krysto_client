@@ -5,12 +5,12 @@ import './search.css'
 function Search() {
 
   return (
-    <>
+    <div className="page-content">
 
       <div className="container-offers">
       <OfferList/>
       </div>
-    </>
+    </div>
   )
 }
 

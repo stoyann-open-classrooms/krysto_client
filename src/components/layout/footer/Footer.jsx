@@ -1,58 +1,84 @@
 import React from 'react'
-import { FaFacebook, FaFacebookF, FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaFacebookSquare,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import FotterSvg from "../../../assets/fot.png"
+
 import './footer.css'
 function Footer() {
   return (
     <>
+      <footer className="footer">
+        <div className="footer-nav-container">
+          <div className="footer-nav-section">
+            <p>Voir aussi</p>
+            <ul>
+              <li>
+                <Link to={'/charte'}>Charte du bon uttilisateur</Link>
+              </li>
+              <li>
+                <Link to={'/thanks'}>Remerciement</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-nav-section">
+            <p>A propos</p>
+            <ul>
+              <li>
+                <Link to={'/team'}>Qui sommes nous ?</Link>
+              </li>
+              <li>
+                <Link to={'/compagny-solutions'}>Solutions entreprises</Link>
+              </li>
+              <li>
+                <Link to={'/legal-mention'}>Mention légales</Link>
+              </li>
+              <li>
+                <Link to={'/cgu'}>C.G.U</Link>
+              </li>
+              <li>
+                <Link to={'/cgv'}>C.G.V</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-nav-section">
+            <p>Presse</p>
+            <ul>
+              <li>
 
-    <footer className='footer'>
 
-{/* 
- <div className="footer-list columns"> */}
-  {/* <div className='column'>
-    <p>Voir aussi</p>
-    
-    <div> <Link className='is-3' to={'/charte'}>Charte du bon uttilisateur</Link></div>
-    <div > <Link className='is-3' to={'/thanks'}>Remerciement</Link></div>
-  </div>
-  <div className='column'>
- <p>A propos</p>
-    <div> <Link className='is-3' to={'/team'}>Qui sommes nous ?</Link></div>
-    <div> <Link className='is-3' to={'/compagny-solutions'}>Solutions entreprises</Link></div>
-    <div> <Link className='is-3' to={'/legal-mention'}>Mention légales</Link></div>
-    <div> <Link className='is-3' to={'/cgu'}>C.G.U</Link></div>
-    <div> <Link className='is-3' to={'/cgv'}>C.G.V</Link></div>
-  </div>
-  <div className='column'>
-  <p>Presse</p>
-    <div> <Link className='is-3' to={'/testimonials'}>On parle de nous</Link></div>
-    <div> <Link className='is-3' to={'/press-kit'}>Kit de presse</Link></div>
-    <div> <Link className='is-3' to={'/files'}>Flyers/Affiches/Visuels</Link></div>
+            <Link to={'/testimonials'}>On parle de nous</Link>
+              </li>
+              <li>
 
-  </div>
- 
+            <Link to={'/press-kit'}>Kit de presse</Link>
+              </li>
+              <li>
 
-    
- </div>
- <div class="content has-text-centered mt-3 mb-3">
-  <div className="social-media-container mb-4">
-    <a href='https://www.facebook.com/Krysto.noumea/'>
-  <FaFacebookSquare/>
-    </a>
-    <a href='https://www.youtube.com/channel/UCoudw4zohXdN9Bs3I32uHkQ'>
-  <FaYoutube/>
-    </a>
+            <Link to={'/files'}>Flyers/Affiches/Visuels</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+          <div className="social-media-container">
+            <a href="https://www.facebook.com/Krysto.noumea/">
+              <FaFacebookSquare />
+            </a>
+            <a href="https://www.youtube.com/channel/UCoudw4zohXdN9Bs3I32uHkQ">
+              <FaYoutube />
+            </a>
+          </div>
+     
+  
 
-  </div>
-   dsfsdfsdfs
-    </div>
-    <div className="img">
-      <img src={FotterSvg} alt="" />
-    <p> KRYSTO.NC © Tous droits réservés - 2022</p>
-    </div> */}
-  </footer>
+        <p className='all-right-reserved'> KRYSTO.NC © Tous droits réservés - 2022</p>
+      </footer>
     </>
   )
 }
