@@ -38,19 +38,19 @@ import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 import Dashboard from './pages/dashboard/Dashboard'
 import MyOffers from './pages/myOffers/MyOffers'
 import AddOffer from './pages/addOffer/AddOffer'
-import UpdateOffer from './pages/updateOffer/UpdateOffer'
+import UpdateOffer from './pages/private/updateOffer/UpdateOffer'
 import Proposals from './pages/proposals/Proposals'
-import Wallets from './pages/wallets/Wallets'
-import Main from './pages/wallets/main/Main'
-import Deposit from './pages/wallets/deposit/Deposit'
+
 import ProfilParameters from './pages/profilParameters/ProfilParameters'
 import Converter from './pages/Converter/Converter'
 import Private from './pages/private/Private'
-import PrivateHome from './pages/private/privateHome/PrivateHome'
 import RegisterSuccess from './pages/RegisterSuccess/RegisterSuccess'
 import ConfirmEmail from './pages/confirmEmail/ConfirmEmail'
 import Navbar from './components/layout/navbar/Navbar'
 import Footer from './components/layout/footer/Footer'
+import Wallets from './pages/private/wallets/Wallets'
+import Deposit from './pages/private/wallets/deposit/Deposit'
+import Main from './pages/private/wallets/main/Main'
 
 function App() {
   return (
@@ -83,31 +83,31 @@ function App() {
             <Route path="/press-kit" element={<PressKit />} />
             <Route path="/files" element={<Files />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="/offer/:id" element={<Offer />} />
             <Route path="/g1-vs-krysto" element={<G1VsKrysto />} />
             <Route path="/register-form" element={<RegisterForm />} />
             <Route path="/krysto-project" element={<KrystoProject />} />
             <Route path="/plastic-problem" element={<PlasticProbleme />} />
             <Route path="/register-success" element={<RegisterSuccess />} />
             <Route path="/confirm-email" element={<ConfirmEmail />} />
-            <Route path="/converter" element={<Converter />} />
             <Route path="*" element={<Error404 />} />
+            <Route path="/offer/:id" element={<Offer />} />
        
      <Route path="/private" element={<Private />}>
-              <Route path="/private/private-home" element={<PrivateHome />} />
+     
+            <Route path="/private/converter" element={<Converter />} />
+            <Route path="/private/add-offer" element={<AddOffer />} />
+            <Route path="/private/dashboard" element={<Dashboard />} />
+            <Route path="/private/profil-parameters" element={<ProfilParameters />} />
+            <Route path="/private/my-offers" element={<MyOffers />} />
+            <Route path="/private/update-offer/:id" element={<UpdateOffer />} />
+            <Route path="/private/proposals" element={<Proposals />} />
+            <Route path="/private/devise-converter" element={<Converter />} />
+            <Route path="/private/wallets" element={<Wallets />}>
+              <Route path="/private/wallets/deposit" element={<Deposit />} />
+              <Route path="/private/wallets/main" element={<Main />} />
+            </Route>
             </Route>
 
-            <Route path="/add-offer" element={<AddOffer />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/profil-parameters" element={<ProfilParameters />} />
-            <Route path="/my-offers" element={<MyOffers />} />
-            <Route path="/update-offer/:id" element={<UpdateOffer />} />
-            <Route path="/proposals" element={<Proposals />} />
-            <Route path="/devise-converter" element={<Converter />} />
-            <Route path="/wallets" element={<Wallets />}>
-              <Route path="/wallets/deposit" element={<Deposit />} />
-              <Route path="/wallets/main" element={<Main />} />
-            </Route>
           </Routes>
  <Footer/>
         </main>

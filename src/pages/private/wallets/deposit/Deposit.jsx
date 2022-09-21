@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import CardRib from '../../../components/shared/cardRib/CardRib'
-import Modal from '../../../components/shared/modal/Modal'
-import Spinner from '../../../components/shared/spinner/Spinner'
-
-import WalletsTable from '../../../components/wallets/walletsTable/WalletsTable'
-import { getProfil, reset } from '../../../features/user/userSlice'
+import Modal from '../../../../components/shared/modal/Modal'
+import Spinner from '../../../../components/shared/spinner/Spinner'
+// import CardRib from '../../../../components/shared/cardRib'
+import WalletsTable from '../../../../components/wallets/walletsTable/WalletsTable'
+import { getProfil, reset } from '../../../../features/user/userSlice'
 import '../wallets.css'
 function Deposit() {
 
@@ -61,11 +60,7 @@ if(!profil.user) {
               Ces numéros de compte sont vos Identifiant bancaires tout comme le
               RIB de votre compte en banque !
             </p>
-            <div className="rib-box">
-              <CardRib wallet={profil.user.walletsDeposit[0]}/>
-              <CardRib wallet={profil.user.walletMain} monyConvertValue={profil.monyConvertValue}/>
-             
-            </div>
+
           </section>
           <footer class="modal-card-foot">
             <button class="button is-success">J'ai compris</button>

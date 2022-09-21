@@ -29,7 +29,8 @@ function Private() {
 
   if (isLoading === false) {
     if (profil.error === true) {
-      return <Navigate to={'/'} />
+      
+      return <Navigate to={'/login'} />
     }
   }
 

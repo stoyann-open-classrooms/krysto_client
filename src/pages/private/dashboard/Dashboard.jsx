@@ -10,7 +10,8 @@ import CardRib from '../../components/shared/cardRib/CardRib'
 import { Link } from 'react-router-dom'
 import { FaGrinTears } from 'react-icons/fa'
 import './dashboard.css'
-import MiniOfferCArd from '../../components/dashboard/MiniOfferCArd'
+import MiniOfferCArd from '../../components/dashboard/miniCard/MiniOfferCArd'
+
 function Dashboard() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
     (state) => state.user,

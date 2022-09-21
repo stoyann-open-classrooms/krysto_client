@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate, Outlet } from 'react-router-dom'
-import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
-import { getProfil, reset } from '../../features/user/userSlice'
+import {  useNavigate, Outlet, NavLink } from 'react-router-dom'
+import HeroTitle from '../../../components/shared/heroTitle/HeroTitle'
 
 
 function Wallets() {
@@ -33,12 +32,12 @@ function Wallets() {
          <HeroTitle title={"Gerer vos krysto"}/>
          
         <div className='account-btn-container'>
-        <Link className='account-btn' to={'/wallets/main'}>
+        <NavLink className='account-btn' to={'/wallets/main'}>
             Compte courant
-        </Link>
-        <Link className='account-btn' to={'/wallets/deposit'}  >
+        </NavLink>
+        <NavLink className='account-btn' to={'/wallets/deposit'}  >
             Compte de dépot
-        </Link>
+        </NavLink>
       
         </div>
         <Outlet/>

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Spinner from '../../../components/shared/spinner/Spinner'
+import Spinner from '../../../../components/shared/spinner/Spinner'
 import Chart from "react-apexcharts";
-import WalletsTable from '../../../components/wallets/walletsTable/WalletsTable'
-import { getProfil, reset } from '../../../features/user/userSlice'
+import WalletsTable from '../../../../components/wallets/walletsTable/WalletsTable'
+import { getProfil, reset } from '../../../../features/user/userSlice'
 import '../wallets.css'
 
 
