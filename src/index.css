@@ -85,6 +85,10 @@ form hgroup {
   border: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+.field textarea {
+  height: 15rem;
+  padding: 1rem;
+}
 
 .submit-btn {
   color: white;

@@ -1,12 +1,14 @@
 @import '../../../SASS/reset';
 @import '../../../SASS/variables';
 @import '../../../SASS/placeholders';
+@import '../../../SASS/animations';
 
 
 .hero {
 background-color: $primary-light;
     color: $primary-dark;
   margin-bottom: 2rem;
+  border-radius: $radius;
     
     .hero-container{
         font-size: 1.4rem;

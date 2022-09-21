@@ -32,11 +32,11 @@ function Wallets() {
     <div className='page-content'>
          <HeroTitle title={"Gerer vos krysto"}/>
          
-        <div className="buttons mt-2 is-centered">
-        <Link className='button is-small is-warning' to={'/wallets/main'}>
+        <div className='account-btn-container'>
+        <Link className='account-btn' to={'/wallets/main'}>
             Compte courant
         </Link>
-        <Link className='button is-small is-warning' to={'/wallets/deposit'}  >
+        <Link className='account-btn' to={'/wallets/deposit'}  >
             Compte de dépot
         </Link>
       

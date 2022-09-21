@@ -9,7 +9,8 @@ import { getProfil, reset } from '../../features/user/userSlice'
 import CardRib from '../../components/shared/cardRib/CardRib'
 import { Link } from 'react-router-dom'
 import { FaGrinTears } from 'react-icons/fa'
-
+import './dashboard.css'
+import MiniOfferCArd from '../../components/dashboard/MiniOfferCArd'
 function Dashboard() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
     (state) => state.user,
@@ -34,42 +35,42 @@ function Dashboard() {
     return <Spinner />
   } else {
     return (
-      <div className='page-content'>
+      <div className="page-content">
         <HeroTitle
           title={`Bienvenue sur votre dashboard ${profil.user.name}`}
-         
         />
-     
-        <div className="dashboard-accounts-container p-4">
-            <h3 className="title is-3">Vos comptes</h3>
+        <div className="dashboard-section">
+          <h3>Vos comptes</h3>
+          <div className="dashboard-accounts-container">
             <CardRib wallet={profil.user.walletMain} />
             <CardRib wallet={profil.user.walletsDeposit[0]} />
-        
-        </div>
-        <div className="dashboard-proposals-container p-4">
-            <h3 className="title is-3">Vos propositions</h3>
-            <div className="depositAccount box">
-              <h4>Proposition envoyées</h4>
-              
-            </div>
-            <div className="currentAccount box">
-              <h4>Proposition reçue</h4>
-            </div>
-        </div>
-        <div className="dashboard-offers-container p-4">
-            <h3 className="title is-3">Vos Annonces publiées ({profil.user.offers.length})</h3>
-           <div className="box">
-            {/* OfferMiniCard */}
-           </div>
-        </div>
-
-        <Link to={"/profil-parameters"}>
-          <button className="btn-danger">
-
-          Modifier les parametres de votre compte
-          </button>
+          </div>
+          <Link to={'/wallets/main'} className="submit-btn">
+            gerez mes comptes
           </Link>
+        </div>
       
+        <div className="dashboard-section">
+          <h3>Vos annonces ({profil.user.offers.length})</h3>
+          <div className="dashboard-slider">
+            <div className="slider-content">
+
+          {profil
+        ? profil.user.offers.map((offer) => (
+          <MiniOfferCArd key={offer._id} offer={offer} />
+          ))
+          : ''}
+          </div>
+          </div>
+          
+        </div>
+      
+
+        <Link to={'/profil-parameters'}>
+          <button className="btn-danger">
+            Modifier les parametres de votre compte
+          </button>
+        </Link>
       </div>
     )
   }

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+.card-rib {
+  background-color: #5e7691;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+}
+.card-rib h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card-rib .rib-uid {
+  background-color: #F49E4C;
+  color: #292f4d;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.rib-balance {
+  font-size: 2rem;
+}/*# sourceMappingURL=CardRib.css.map */

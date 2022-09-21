@@ -1,0 +1,31 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+
+
+.dashboard-accounts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.dashboard-section{
+    margin-bottom: 3rem;
+
+    h3{
+        
+        font-size: 2rem;
+    }
+}
+
+
+.dashboard-slider{
+    padding: 0.5rem;
+  
+
+    width: 100%;
+    
+    background-color: $primary-light;
+}

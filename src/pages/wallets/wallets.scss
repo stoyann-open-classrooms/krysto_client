@@ -3,7 +3,6 @@
 @import '../../SASS/placeholders';
 
 .box-graph {
-    background-color: $dark;
     height: 200px;
     // border: solid 2px $primary-dark;
 }
@@ -44,4 +43,23 @@
         border: 1px solid $primary;
         flex: 1;
     }
+}
+
+
+.account-btn{
+ margin: 0 1rem;
+    background-color: $primary-light;
+    width: 50%;
+ border-radius: $radius;
+ text-align: center;
+ font-size: 2rem;
+}
+
+.account-btn-container{
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    height: 4rem;
+
+    
 }
