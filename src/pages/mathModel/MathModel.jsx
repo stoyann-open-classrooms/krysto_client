@@ -3,13 +3,13 @@ import HeroTitle from "../../components/shared/heroTitle/HeroTitle"
 
 function MathModel() {
   return (
-    <main>
+    <div>
        <div className="hero p-4">
        <HeroTitle title={"Le modèle mathématique."}/>
      
     
  </div>
- <div className="page-content container p-4">
+ <div className="">
 
        <h3>Une monnaie autonome,relative,stable et sans risque.</h3>
    <h3 className="title is-5 ">Origines</h3>
@@ -24,7 +24,7 @@ function MathModel() {
  <Link to={'/presentation'} className="button">
   Demarrer la présentation
  </Link>
-    </main>
+    </div>
   )
 }
 

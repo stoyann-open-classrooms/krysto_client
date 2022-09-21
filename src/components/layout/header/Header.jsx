@@ -43,7 +43,9 @@ function Header() {
   return (
     <>
       <header>
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+{/* 
+
+      <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <Link to={'/'} className="navbar-item">
               <div className="logo">
@@ -168,7 +170,7 @@ function Header() {
                       onClick={onLogout}
                     >
                       <FaSignOutAlt className="mr-2" /> Deconexion
-                    </button>
+                    </button> */}
                     {/* <figure class="image is-128x128">
                       <img
                         class="is-rounded"
@@ -177,7 +179,7 @@ function Header() {
                         alt="test"
                       />
                     </figure> */}
-                  </>
+                  {/* </>
                 ) : (
                   <div className="buttons">
                     <NavLink
@@ -197,7 +199,9 @@ function Header() {
 
           </div>
 
-        </nav>
+        </nav> */}
+
+
       </header>
     </>
   )

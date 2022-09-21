@@ -4,6 +4,7 @@
 ::after {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Popins", sans-serif;
   padding: 0;
 }
 
@@ -13,7 +14,9 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 @-webkit-keyframes flip-in-hor-top {
@@ -65,16 +68,23 @@ body {
   align-items: center;
   padding-top: 3rem;
 }
+.landing-container hgroup {
+  text-align: center;
+}
 .landing-container h1 {
   font-weight: bolder;
   -webkit-animation: flip-in-hor-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: flip-in-hor-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  font-size: 2rem;
   color: #304D6D;
+  margin: 0;
 }
 .landing-container h2 {
   -webkit-animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  margin: 0;
   color: #304D6D;
+  font-size: 1.6rem;
 }
 
 .big-title {

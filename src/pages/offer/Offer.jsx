@@ -36,7 +36,7 @@ function Offer() {
     return <Spinner />
   }
   return (
-    <main className="container p-4 offer-container">
+    <div >
       <div className="offer-cover">
         <img
           src={`http://152.228.137.213:4001/${offer.offer.gallery[0]}`}
@@ -122,7 +122,7 @@ function Offer() {
 
         Signaler
       </p> */}
-    </main>
+    </div>
   )
 }
 

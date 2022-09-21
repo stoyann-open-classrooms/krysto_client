@@ -9,15 +9,26 @@
   flex-direction: column;
   align-items: center;
   padding-top: 3rem;
+ 
+
+
+  hgroup{
+    text-align: center;
+    
+  }
   h1 {
     font-weight: bolder;
   animation: flip-in-hor-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  
+  font-size: 2rem;
   color: $primary;
+  margin: 0;
 }
 h2 {
   animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    color: $primary;
+  margin: 0;
+  color: $primary;
+  font-size: 1.6rem;
+
   }
 }
 

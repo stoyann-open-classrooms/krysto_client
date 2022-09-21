@@ -35,7 +35,6 @@ import Presentation from './pages/Presentation/Presentation'
 import PlasticProbleme from './pages/plasticProblem/PlasticProbleme'
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 
-
 // ===== private
 import Dashboard from './pages/dashboard/Dashboard'
 import MyOffers from './pages/myOffers/MyOffers'
@@ -51,89 +50,68 @@ import Private from './pages/private/Private'
 import PrivateHome from './pages/private/privateHome/PrivateHome'
 import RegisterSuccess from './pages/RegisterSuccess/RegisterSuccess'
 import ConfirmEmail from './pages/confirmEmail/ConfirmEmail'
-
-
-
-
+import Navbar from './components/layout/navbar/Navbar'
 
 function App() {
   return (
     <>
       <Router>
-        
         <Header />
-      
+        <Navbar />
+        <main className="content">
           <Routes>
-
             {/* === public */}
             <Route path="/" element={<Home />} />
-          <Route path='/presentation'  element={<Presentation/>}/>
+            <Route path="/presentation" element={<Presentation />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register-subscription" element={<Register />} />
             <Route path="/search" element={<Search />} />
             <Route path="/money" element={<Money />} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<Faq />} />
-            <Route path="/math-model" element={<MathModel/>} />
-            <Route path="/charte" element={<Charte/>} />
-            <Route path="/bug-report" element={<BugReport/>} />
-            <Route path="/thanks" element={<Thanks/>} />
-            <Route path="/team" element={<Team/>} />
-            <Route path="/compagny-solutions" element={<CompagnySolution/>} />
-            <Route path="/legal-mention" element={<LegalMention/>} />
-            <Route path="/cgu" element={<Cgu/>} />
-            <Route path="/cgv" element={<Cgv/>} />
-            <Route path="/testimonials" element={<Testimonials/>} />
-            <Route path="/press-kit" element={<PressKit/>} />
-            <Route path="/files" element={<Files/>} />
-            <Route path="/forgot-password" element={<ForgotPassword/>} />
-            <Route path="/offer/:id" element={<Offer/>} />
-            <Route path="/g1-vs-krysto" element={<G1VsKrysto/>} />
-            <Route path="/register-form" element={<RegisterForm/>} />
-            <Route path="/krysto-project" element={<KrystoProject/>} />
-            <Route path="/plastic-problem" element={<PlasticProbleme/>} />
-            <Route path="/register-success" element={<RegisterSuccess/>} />
-            <Route path="/confirm-email" element={<ConfirmEmail/>} />
-            <Route path="/converter" element={<Converter/>} />
-            <Route path="*" element={<Error404/>} />
-  {/* ============ Private */}
-              <Route path='/private' element={<Private/>}>
-                <Route path='/private/private-home' element={<PrivateHome/>}/>
-              </Route>
+            <Route path="/math-model" element={<MathModel />} />
+            <Route path="/charte" element={<Charte />} />
+            <Route path="/bug-report" element={<BugReport />} />
+            <Route path="/thanks" element={<Thanks />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/compagny-solutions" element={<CompagnySolution />} />
+            <Route path="/legal-mention" element={<LegalMention />} />
+            <Route path="/cgu" element={<Cgu />} />
+            <Route path="/cgv" element={<Cgv />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/press-kit" element={<PressKit />} />
+            <Route path="/files" element={<Files />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/offer/:id" element={<Offer />} />
+            <Route path="/g1-vs-krysto" element={<G1VsKrysto />} />
+            <Route path="/register-form" element={<RegisterForm />} />
+            <Route path="/krysto-project" element={<KrystoProject />} />
+            <Route path="/plastic-problem" element={<PlasticProbleme />} />
+            <Route path="/register-success" element={<RegisterSuccess />} />
+            <Route path="/confirm-email" element={<ConfirmEmail />} />
+            <Route path="/converter" element={<Converter />} />
+            <Route path="*" element={<Error404 />} />
+       
+     <Route path="/private" element={<Private />}>
+              <Route path="/private/private-home" element={<PrivateHome />} />
+            </Route>
 
-            <Route path="/add-offer" element={<AddOffer/>} />
-            <Route path="/dashboard" element={<Dashboard/>} />
-            <Route path="/profil-parameters" element={<ProfilParameters/>} />
-            <Route path="/my-offers" element={<MyOffers/>} />
-            <Route path='/update-offer/:id' element={<UpdateOffer/>}/>
-            <Route path="/proposals" element={<Proposals/>} />
-            <Route path="/devise-converter" element={<Converter/>} />
-            <Route path='/wallets' element={<Wallets/>}>
-              <Route path='/wallets/deposit' element={<Deposit/>}/>
-              <Route path='/wallets/main' element={<Main/>}/>
+            <Route path="/add-offer" element={<AddOffer />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/profil-parameters" element={<ProfilParameters />} />
+            <Route path="/my-offers" element={<MyOffers />} />
+            <Route path="/update-offer/:id" element={<UpdateOffer />} />
+            <Route path="/proposals" element={<Proposals />} />
+            <Route path="/devise-converter" element={<Converter />} />
+            <Route path="/wallets" element={<Wallets />}>
+              <Route path="/wallets/deposit" element={<Deposit />} />
+              <Route path="/wallets/main" element={<Main />} />
             </Route>
           </Routes>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <Footer/>
+        </main>
+     {/* ============ Private */}
+        {/* <Footer/> */}
       </Router>
       <ToastContainer />
     </>
