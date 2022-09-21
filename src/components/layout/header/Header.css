@@ -31,75 +31,18 @@ li {
   list-style: none;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-.logout-btn {
-  background-color: #e49494;
-  border: none;
-  color: rgb(38, 43, 38) 9;
-  font-weight: bolder;
-}
-
-.navbar-brand,
-.navbar-menu {
-  background-color: #304D6D;
-}
-.navbar-brand a,
-.navbar-menu a {
-  font-size: 8px;
-}
-
-.navbar-menu {
-  background-color: #CED2D7;
-}
-
-.logo p {
-  color: #F49E4C;
-}
-
-.logout-btn {
-  color: #304D6D;
-  font-size: 1rem;
-}
-
-.nav-title {
-  color: #49392C;
-}
-
-.nav-item {
-  color: #1d1c1b;
-}
-
-a.navbar-item:focus,
-a.navbar-item:focus-within,
-a.navbar-item:hover,
-a.navbar-item.is-active,
-.navbar-link:focus,
-.navbar-link:focus-within,
-.navbar-link:hover,
-.navbar-link.is-active {
-  background-color: #CED2D7;
-  color: #304D6D;
-}
-
-.navbar-burger span {
-  color: #F49E4C;
-}
-
-.navbar-dropdown {
-  background-color: #CED2D7;
-}
-
 header {
   height: 80px;
-  top: 0;
-  left: 0;
-  right: 0;
+  font-size: 2rem;
   width: 100%;
+  left: 6rem;
+  color: white;
   background-color: #304D6D;
+}
+
+.header-nav {
+  position: absolute;
+  right: 0;
+  display: flex;
+  top: 1.5rem;
 }/*# sourceMappingURL=Header.css.map */

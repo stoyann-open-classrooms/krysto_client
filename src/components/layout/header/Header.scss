@@ -2,66 +2,21 @@
 @import '../../../SASS/variables';
 @import '../../../SASS/placeholders';
 
-.navbar-brand,
-.navbar-menu {
-  background-color: $primary;
-  a {
-    font-size: 8px;
-  }
-}
-.navbar-menu {
-  background-color: $bg-drop;
-}
-.logo {
-  p{
 
-    color: $secondary;
-  }
-}
-
-.logout-btn {
-  @extend %danger-btn;
-  color: $primary;
-  font-size: 1rem;
-}
-
-.nav-title {
-  color: $comp3;
- 
-}
-.nav-item {
-  color: $dark;
-}
-
-a.navbar-item:focus,
-a.navbar-item:focus-within,
-a.navbar-item:hover,
-a.navbar-item.is-active,
-.navbar-link:focus,
-.navbar-link:focus-within,
-.navbar-link:hover,
-.navbar-link.is-active {
-  background-color: $bg-drop;
-  color: $primary;
-}
-
-
-.navbar-burger {
-  span{
-    color: $secondary;
-  }
-}
-
-.navbar-dropdown{
-  background-color: $bg-drop;
-}
 
 header{
   height: 80px;
-  top: 0;
-  left: 0;
-  right: 0;
+font-size: 2rem;
   width: 100%;
-  
+  left: 6rem;
+  color: white;
   background-color: $primary;
+}
+
+.header-nav{
+  position: absolute;
+right: 0;
+display: flex;
+top: 1.5rem;
+
 }

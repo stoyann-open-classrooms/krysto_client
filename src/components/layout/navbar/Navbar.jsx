@@ -1,11 +1,19 @@
 import { useState } from 'react'
 import {
+  FaAdversal,
   FaCalculator,
   FaCoins,
+  FaComment,
+  FaEnvelope,
   FaEraser,
   FaHamburger,
+  FaHandshake,
+  FaHandshakeSlash,
+  FaHome,
   FaHouseUser,
+  FaLightbulb,
   FaPhone,
+  FaPlane,
   FaPlus,
   FaPlusCircle,
   FaQuestion,
@@ -15,6 +23,7 @@ import {
   FaSignInAlt,
   FaSignOutAlt,
   FaUser,
+  FaWallet,
 } from 'react-icons/fa'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import userPic from '../../../assets/images/bouchon_hand.jpeg'
@@ -46,21 +55,27 @@ function Navbar() {
         className={toggle ? 'overlay active' : 'overlay'}
       ></div>
       <div className={toggle ? 'sidebar active' : 'sidebar'}>
-        <div className="logo_content">
-          <Link to={'/'} className="logo">
+        <Link to={"/"} className="logo_content">
+          <div className="logo">
             <img src={Coins} alt="" />
-            <div className="logo_name">Krysto</div>
-          </Link>
-        </div>
+            <Link to={'/'} className="logo_name">Krysto</Link>
+          </div>
+        </Link>
         <span>
-        <FaHamburger onClick={toggleNav} id="btn" />
-
+  
+    <div className="burger" onClick={toggleNav}>
+            <div className={toggle ? "contLigne btn1 active" :  "contLigne btn1"}>
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+            </div>
+        </div>
         </span>
 
         <ul className="nav_list">
           <li>
             <NavLink to={'/'}>
-              <FaHouseUser className="nav-icone" />
+              <FaHome className="nav-icone" />
               <span className="links_name">Accueil</span>
             </NavLink>
             <span className="tooltip">Acceuil</span>
@@ -84,11 +99,39 @@ function Navbar() {
               </li>
               <li>
                 <NavLink to={'/dashboard'}>
-                  <FaHouseUser className="nav-icone" />
+                  <FaUser className="nav-icone" />
                   <span className="links_name">Dashboard</span>
                 </NavLink>
                 <span className="tooltip">Dashboard</span>
               </li>
+              <li>
+                <NavLink to={'/my-offers'}>
+                  <FaHandshake className="nav-icone" />
+                  <span className="links_name">Mes trocs</span>
+                </NavLink>
+                <span className="tooltip">Mes trocs</span>
+              </li>
+              <li>
+                <NavLink to={'/wallets'}>
+                  <FaWallet className="nav-icone" />
+                  <span className="links_name">Comptes</span>
+                </NavLink>
+                <span className="tooltip">Comptes</span>
+              </li>
+              <li>
+                <NavLink to={'/proposals'}>
+                  <FaComment className="nav-icone" />
+                  <span className="links_name">Propositions</span>
+                </NavLink>
+                <span className="tooltip">Propositions</span>
+              </li>
+              <li>
+            <NavLink to={'/converter'}>
+              <FaCalculator className="nav-icone" />
+              <span className="links_name">Convertisseur</span>
+            </NavLink>
+            <span className="tooltip">Convertisseur</span>
+          </li>
             </>
           ) : (
             ''
@@ -101,16 +144,10 @@ function Navbar() {
             </NavLink>
             <span className="tooltip">La monnaie</span>
           </li>
-          <li>
-            <NavLink to={'/math-model'}>
-              <FaCalculator className="nav-icone" />
-              <span className="links_name">mathématique </span>
-            </NavLink>
-            <span className="tooltip">mathématique</span>
-          </li>
+       
           <li>
             <NavLink to={'/krysto-project'}>
-              <FaRProject className="nav-icone" />
+              <FaLightbulb className="nav-icone" />
               <span className="links_name"> Le projet </span>
             </NavLink>
             <span className="tooltip"> Le projet</span>
@@ -125,7 +162,7 @@ function Navbar() {
 
           <li>
             <NavLink to={'/about'}>
-              <FaQuestionCircle className="nav-icone" />
+              <FaAdversal className="nav-icone" />
               <span className="links_name">A propos</span>
             </NavLink>
             <span className="tooltip">A propos</span>
@@ -160,14 +197,19 @@ function Navbar() {
                   <div className="profil_info">
                     <Link to={'/login'}>
                       <button className="log_btn">
+                        <span>
+
                         <FaSignInAlt />
+                        </span>
                         Connexion
                       </button>
                     </Link>
                     <Link to={'/register-subscription'}>
                       <button className="log_btn">
-                        {' '}
+                        <span>
+
                         <FaSignOutAlt />
+                        </span>
                         S'inscrire
                       </button>
                     </Link>

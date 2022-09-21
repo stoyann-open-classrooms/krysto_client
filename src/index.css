@@ -98,4 +98,10 @@ form hgroup {
 .submit-btn:hover {
   background: #F49E4C;
   color: #292f4d;
+}
+
+.btn-danger {
+  background-color: #f44c4c;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
 }/*# sourceMappingURL=index.css.map */

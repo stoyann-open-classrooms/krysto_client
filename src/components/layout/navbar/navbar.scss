@@ -23,14 +23,15 @@
     font-size: 1.3rem;
   }
   .logo_content {
+ 
     .logo {
       opacity: 1;
     }
   }
 
-  #btn {
+  .burger {
     left: 90%;
-    color: white;
+    
   }
 
   #log_out {
@@ -147,17 +148,51 @@ text-align: center;
   }
 }
 
-.sidebar #btn {
-  position: absolute;
-  top: 1.8rem;
-  height: 2rem;
-  width: 2rem;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 5rem;
-  transform: translate(-50%);
-  left: 50%;
+.sidebar .burger {
+   position: absolute;
+   top: 2.5rem;
+   height: 3rem;
+   width: 3rem;
+
+
+  left: 15%;
+  color: white;
   cursor: pointer;
+ 
+  
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+  .contLigne {
+    width: 2rem;
+    height: 42px;
+    cursor: pointer;
+    position: relative;
+}
+.lignes {
+    width: 150%;
+    height: 3px;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+.lignes:nth-child(1){
+  top: 0px;
+}
+.lignes:nth-child(2){
+  top: 1rem;
+}
+.lignes:nth-child(3){
+  top: 2rem;
+}
+
 }
 
 .profile_content {
@@ -214,7 +249,15 @@ text-align: center;
 .log_btn {
   margin: 0 0.6rem;
     padding: 0.4rem 1rem;
+    display: flex;
+    align-items: center;
+span {
+  margin-right: 1rem;
 }
+&:hover{
+  color: $secondary;
+}
+  }
 
 @media only screen and (max-width: 400px)  {
 .sidebar{
@@ -234,4 +277,22 @@ main{
 .profile_content{
   display: none;
 }
+}
+
+
+
+
+
+
+.btn1.active .lignes:nth-child(1){
+  top: 1rem;
+  transform: rotate(135deg);
+}
+.btn1.active .lignes:nth-child(2){
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.btn1.active .lignes:nth-child(3){
+  top: 1rem;
+  transform: rotate(-135deg);
 }

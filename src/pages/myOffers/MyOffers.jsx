@@ -33,20 +33,13 @@ function MyOffers() {
   }
 
   return (
-    <main>
+    <div className='page-content'>
       <HeroTitle
-        title={'Vos annonces'}
-        subtitle={'Vous avez actuellement 4 annonces en ligne'}
+        title={'Vos trocs'}
       />
     <MyOfferList user= {profil.user}/>
      
-
-      {/* <div className="container-offers">
-        {offers
-          ? offers.map((offer) => <p className="box">{offer.title}</p>)
-          : ''}
-      </div> */}
-    </main>
+    </div>
   )
 }
 

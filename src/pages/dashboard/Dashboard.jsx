@@ -7,6 +7,8 @@ import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 import Spinner from '../../components/shared/spinner/Spinner'
 import { getProfil, reset } from '../../features/user/userSlice'
 import CardRib from '../../components/shared/cardRib/CardRib'
+import { Link } from 'react-router-dom'
+import { FaGrinTears } from 'react-icons/fa'
 
 function Dashboard() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
@@ -60,6 +62,13 @@ function Dashboard() {
             {/* OfferMiniCard */}
            </div>
         </div>
+
+        <Link to={"/profil-parameters"}>
+          <button className="btn-danger">
+
+          Modifier les parametres de votre compte
+          </button>
+          </Link>
       
       </div>
     )

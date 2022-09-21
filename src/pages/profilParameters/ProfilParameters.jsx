@@ -34,7 +34,7 @@ function ProfilParameters() {
     return <Spinner />
   } else {
     return (
-      <main className="pb-6 ">
+      <div className='page-content'>
         {/* <div className="dashbord-top container p-4">
           <div class="field is-grouped is-grouped-multiline">
             <div class="control mt-5">
@@ -105,20 +105,18 @@ function ProfilParameters() {
 
             <UpdatePassword />
           </section>
-          <section className=" mt-6 parameters-section">
+          <section className="danger-section">
             <h1 className="title is-4 cadre"> Résilier votre abonement</h1>
-            <button className="button is-large is-danger">
+            <button className="btn-danger">
               Resilier votre abonement
             </button>
-          </section>
-          <section className="mt-6 parameters-section">
-            <h1 className="title is-4 cadre"> Supprimer votre compte</h1>
-            <button className="button is-large is-danger">
+            <button className='btn-danger' >
               Supprimer votre compte
             </button>
           </section>
+       
         </div>
-      </main>
+      </div>
     )
   }
 }

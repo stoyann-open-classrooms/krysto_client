@@ -1,8 +1,13 @@
 import React from 'react'
+import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 
 function Proposals() {
   return (
-    <main>Proposals</main>
+    <div className='page-content'>
+      <HeroTitle 
+      title={`Mes propositions`}
+      />
+    </div>
   )
 }
 

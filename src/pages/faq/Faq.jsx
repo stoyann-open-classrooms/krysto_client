@@ -2,13 +2,13 @@ import HeroTitle from "../../components/shared/heroTitle/HeroTitle"
 
 function Faq() {
   return (
-    <main>
+    <div className="page-content">
        <HeroTitle
         title={'F.A.Q'}
   
       />
   
-    </main>
+    </div>
   )
 }
 

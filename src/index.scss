@@ -83,6 +83,12 @@ form {
 }
 
 
+.btn-danger {
+  background-color: $danger;
+  padding: 0.4rem 1rem;
+  border-radius: $radius;
+}
+
 // .message-register-success {
 //   border:  solid 3px $primary;
 //   background-color: white;

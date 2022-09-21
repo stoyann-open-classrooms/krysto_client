@@ -29,7 +29,7 @@ function Wallets() {
 
  
   return (
-    <main>
+    <div className='page-content'>
          <HeroTitle title={"Gerer vos krysto"}/>
          
         <div className="buttons mt-2 is-centered">
@@ -44,7 +44,7 @@ function Wallets() {
         <Outlet/>
     
 
-    </main>
+    </div>
   )
 }
 
