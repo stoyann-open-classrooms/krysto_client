@@ -4,7 +4,6 @@
 ::after {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Popins", sans-serif;
   padding: 0;
 }
 
@@ -17,11 +16,25 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
 }
 
 .hero {
-  background-color: #65bc62;
+  background-color: #5e7691;
   color: #292f4d;
+  margin-bottom: 2rem;
 }
 .hero .hero-container {
   font-size: 1.4rem;

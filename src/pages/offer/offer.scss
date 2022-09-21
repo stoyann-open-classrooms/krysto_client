@@ -4,21 +4,22 @@
 @import '../../SASS/animations';
 
 
+.page-content{
+   padding: 1rem 4rem 4rem 4rem;
+   min-height: 100vh;
+}
 .title-offer {
     font-size: 2.5rem;
     margin-top: 1.5rem;
-    color: $green
+
 
 }
 
-.btn-signal {
-    @extend %danger-btn
-}
 
 
 .back-btn {
 
-    @extend %secondary-btn;
+ 
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -37,7 +38,7 @@
 
 .publish{
     font-size: 1.5rem;
-    color: $green;
+ 
     span{
         color: $primary;
         margin-left: 1rem;
@@ -71,8 +72,7 @@ position: relative;
 
 .offer-datetime {
     font-size: 0.8rem;
-    color: $dark-green;
-    
+
 }
 
 .box-description{

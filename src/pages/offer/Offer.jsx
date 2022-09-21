@@ -36,7 +36,7 @@ function Offer() {
     return <Spinner />
   }
   return (
-    <div >
+    <div className='page-content' >
       <div className="offer-cover">
         <img
           src={`http://152.228.137.213:4001/${offer.offer.gallery[0]}`}

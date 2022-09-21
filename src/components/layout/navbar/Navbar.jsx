@@ -52,7 +52,10 @@ function Navbar() {
             <div className="logo_name">Krysto</div>
           </Link>
         </div>
+        <span>
         <FaHamburger onClick={toggleNav} id="btn" />
+
+        </span>
 
         <ul className="nav_list">
           <li>
@@ -73,7 +76,7 @@ function Navbar() {
           {token !== null ? (
             <>
               <li>
-                <NavLink to={'/about'}>
+                <NavLink to={'/add-offer'}>
                   <FaPlus className="nav-icone" />
                   <span className="links_name">Publier</span>
                 </NavLink>

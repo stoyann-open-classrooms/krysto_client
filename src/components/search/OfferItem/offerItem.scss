@@ -15,8 +15,8 @@
 }
 
 .offer-card {
-  background-color: $primary-dark;
-  color: $light;
+  background-color: $primary;
+  color: $primary-light;
   margin: 2rem;
   border-radius: $radius;
   width: 320px;
@@ -29,20 +29,20 @@
     h3 {
       margin-top: 10px;
       font-size: 1.3rem;
-      color: $green;
+      color: $secondary;
       letter-spacing: 1px;
       font-weight: bold;
     }
   }
 
   .detail-btn{
-    background-color: $light;
+    background-color: $primary-light;
     border: none;
     font-weight: bolder;
-    color: $dark;
+    color: $primary-dark;
     &:hover{
-      color: $light;
-      background-color: $green;
+      color: $primary-light;
+      background-color: $primary-dark;
     }
   }
 }
@@ -66,7 +66,7 @@
 
       .button {
         padding: 0;
-        background-color: $green;
+        background-color: $secondary;
       }
     }
   }

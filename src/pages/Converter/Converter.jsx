@@ -77,30 +77,41 @@ const onSubmit = e => {
   }
 
   return (
-    <main >
+    <div className='page-content'>
       <HeroTitle title={'Convertisseur de devises Krysto'} />
 
       <form onSubmit={onSubmit} className="form container p-4">
+        <div className="field">
+
       <input min={0} step={'1'} onChange={onChange} name='amount' class="input is-large mb-5" type="number" placeholder="Montant"></input>
+        </div>
+        <div className="select-box">
+        <div className="field">
+        
+    
+        <select onChange={onChange} name='curency1'>
+          <option value={''}>DE</option>
+          <option value={'Unité'}>Unité</option>
+          <option value={'Krysto'}>Krysto</option>
+          <option value={'Xpf'}>Xpf</option>
+        </select>
+      </div>
+          
+            <div className='field'>
+        <select onChange={onChange} name='curency2'>
+          <option value={''}>Vers</option>
+          <option value={'Unité'}>Unité</option>
+          <option value={'Krysto'}>Krysto</option>
+          <option value={'Xpx'}>Xpf</option>
+        </select>
+      </div>
+        </div>
        
-      <div class="select is-large">
-  <select onChange={onChange} name='curency1'>
-    <option value={''}>DE</option>
-    <option value={'Unité'}>Unité</option>
-    <option value={'Krysto'}>Krysto</option>
-    <option value={'Xpf'}>Xpf</option>
-  </select>
-</div>
-      <div class="select is-large">
-  <select onChange={onChange} name='curency2'>
-    <option value={''}>Vers</option>
-    <option value={'Unité'}>Unité</option>
-    <option value={'Krysto'}>Krysto</option>
-    <option value={'Xpx'}>Xpf</option>
-  </select>
-</div>
+        
+    
+  
        
-        <button type='submit'>Submit</button>
+        <button className='submit-btn' type='submit'>Convertir</button>
       </form>
       {!translate ? "" : 
 <div className="box translate-result container p-5 ">
@@ -108,7 +119,7 @@ const onSubmit = e => {
       <p>{translate + " " + formData.curency2}</p>
 </div>
 }
-    </main>
+    </div>
   )
 }
 

@@ -4,50 +4,84 @@
 
 main {
   // height: 100%;
-  width: calc(100%);
+  width: calc(100vw);
   left: 3rem;
-  height: 100vh;
+  height: 100%;
   top: 6rem;
 
-  color: $primary;
+  padding: 1rem   0 ;
+
+
+  color: white;
   background-color: $primary-dark;
   position: absolute;
+  overflow: scroll;
 }
 
-.button {
-  &:hover {
-    color: $secondary;
-  }
+
+.login_form_title{
+  font-size: 3rem;
 }
 
 form {
   background-color: $primary-light;
   border-radius: $radius;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 300px;
-  padding: 5rem 1rem;
+  min-width: 200px;
   max-width: 560px;
   display: flex;
-  margin: 20vh auto;
+  margin: auto;
+  hgroup{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
 }
 
 .field {
   width: 100%;
   padding: 1rem;
+  position: relative;
+ span{
+  position: absolute;
+  right: 2rem;
+  top: 33%;
+  font-size: 1.3rem;
+  color: $primary-dark;
+ }
+ 
 
-  input {
+  input , select , textarea {
     width: 100%;
     height: 3.3rem;
     border-radius: 5px;
+    position: relative;
     outline: none;
     padding: 0 1rem;
+    position: relative;
     border: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   }
 }
+
+.submit-btn{
+
+  color: white;
+  background-color: $primary-dark;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bolder;
+  transition: all 0.3s ease-out;
+  &:hover {
+    background: $secondary;
+    color: $primary-dark;
+ 
+  }
+}
+
 
 // .message-register-success {
 //   border:  solid 3px $primary;

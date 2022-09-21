@@ -4,9 +4,9 @@ function Login() {
  
 
   return (
-    <>
+    <div className='page-content'>
     <LoginForm/>
-    </>
+    </div>
   )
 }
 

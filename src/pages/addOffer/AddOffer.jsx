@@ -3,11 +3,11 @@ import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 
 function AddOffer() {
   return (
-    <main>
+    <div className='page-content'>
       <HeroTitle title={'Publier une annonce'} />
 
       <AddOfferForm />
-    </main>
+    </div>
   )
 }
 

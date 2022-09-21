@@ -20,6 +20,7 @@ const login = async (userData) => {
   if (response.data) {
     localStorage.setItem('userToken', JSON.stringify(response.data.token))
     localStorage.setItem('userId', JSON.stringify(response.data.user._id))
+     window.location.reload()
   }
   return response.data
 }

@@ -3,7 +3,7 @@ import HeroTitle from "../../components/shared/heroTitle/HeroTitle"
 
 function MathModel() {
   return (
-    <div>
+    <div className="page-content">
        <div className="hero p-4">
        <HeroTitle title={"Le modèle mathématique."}/>
      

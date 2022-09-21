@@ -3,12 +3,12 @@ import HeroTitle from "../../components/shared/heroTitle/HeroTitle"
 
 function Contact() {
   return (
-    <main>
+    <div className="page-content">
    <HeroTitle
         title={'Nous contacter.'}
  
       />
-    </main>
+    </div>
   )
 }
 

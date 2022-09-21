@@ -4,7 +4,6 @@
 ::after {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Popins", sans-serif;
   padding: 0;
 }
 
@@ -17,45 +16,86 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   left: 3rem;
-  height: 100vh;
+  height: 100%;
   top: 6rem;
-  color: #304D6D;
+  padding: 1rem 0;
+  color: white;
   background-color: #292f4d;
   position: absolute;
+  overflow: scroll;
 }
 
-.button:hover {
-  color: #F49E4C;
+.login_form_title {
+  font-size: 3rem;
 }
 
 form {
   background-color: #5e7691;
   border-radius: 10px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 300px;
-  padding: 5rem 1rem;
+  min-width: 200px;
   max-width: 560px;
   display: flex;
-  margin: 20vh auto;
+  margin: auto;
+}
+form hgroup {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .field {
   width: 100%;
   padding: 1rem;
+  position: relative;
 }
-.field input {
+.field span {
+  position: absolute;
+  right: 2rem;
+  top: 33%;
+  font-size: 1.3rem;
+  color: #292f4d;
+}
+.field input, .field select, .field textarea {
   width: 100%;
   height: 3.3rem;
   border-radius: 5px;
+  position: relative;
   outline: none;
   padding: 0 1rem;
+  position: relative;
   border: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.submit-btn {
+  color: white;
+  background-color: #292f4d;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bolder;
+  transition: all 0.3s ease-out;
+}
+.submit-btn:hover {
+  background: #F49E4C;
+  color: #292f4d;
 }/*# sourceMappingURL=index.css.map */

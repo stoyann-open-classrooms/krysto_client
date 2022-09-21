@@ -1,19 +1,8 @@
-
-import Landing from "../../components/home/Landing/Landing"
-import RecapSection from "../../components/home/recapSection/RecapSection"
-
-
-
-
 function Home() {
   return (
-    <>
-        <Landing>
-
-        </Landing>
-       
-        <RecapSection/>
-    </>
+    <div className="page-content">
+      <h1>Gagner en pouvoir d'achat en consommant plus librement.</h1>
+    </div>
   )
 }
 

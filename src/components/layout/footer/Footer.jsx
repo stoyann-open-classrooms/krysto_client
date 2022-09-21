@@ -7,10 +7,11 @@ function Footer() {
   return (
     <>
 
-    <footer class="footer is-fixed-bottom pt-3 pb-5">
+    <footer className='footer'>
 
- <div className="footer-list columns">
-  <div className='column'>
+{/* 
+ <div className="footer-list columns"> */}
+  {/* <div className='column'>
     <p>Voir aussi</p>
     
     <div> <Link className='is-3' to={'/charte'}>Charte du bon uttilisateur</Link></div>
@@ -45,12 +46,12 @@ function Footer() {
     </a>
 
   </div>
-   
+   dsfsdfsdfs
     </div>
     <div className="img">
       <img src={FotterSvg} alt="" />
     <p> KRYSTO.NC © Tous droits réservés - 2022</p>
-    </div>
+    </div> */}
   </footer>
     </>
   )

@@ -5,26 +5,12 @@
 
 
 .footer {
-    padding: 2rem;
-    position: relative;
-    background-color: $primary;
-    font-size: 12px;
-    height: 50rem;
-    width: 100%;
-  
-    
-    a {
-      font-size: 10px;
-      color: $light-color;
-      font-weight: 300;
-      
-      &:hover {
-        color: $light;
-      }
-    }
-    p{
-      color: $secondary;
-    }
+
+  background-color: $primary-light;
+   height: 200px;
+
+width: 100%;
+   z-index: 999999
   }
   
   

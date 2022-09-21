@@ -4,7 +4,7 @@ import reuse from "../../assets/refuse-reduce-reuse-recycle-icones.svg"
 import { Link } from 'react-router-dom'
 function KrystoProject() {
   return (
-    <main>
+    <div className='page-content'>
     <HeroTitle title={"Le projet Krysto."} />
 
 
@@ -25,7 +25,7 @@ function KrystoProject() {
 
 
 </div>
-  </main>
+  </div>
   )
 }
 

@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css'
 import './index.css'
 // === Layout components
 import Header from './components/layout/header/Header'
-import Footer from './components/layout/footer/Footer'
 // === Pages
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
@@ -51,6 +50,7 @@ import PrivateHome from './pages/private/privateHome/PrivateHome'
 import RegisterSuccess from './pages/RegisterSuccess/RegisterSuccess'
 import ConfirmEmail from './pages/confirmEmail/ConfirmEmail'
 import Navbar from './components/layout/navbar/Navbar'
+import Footer from './components/layout/footer/Footer'
 
 function App() {
   return (
@@ -109,9 +109,9 @@ function App() {
               <Route path="/wallets/main" element={<Main />} />
             </Route>
           </Routes>
+ <Footer/>
         </main>
      {/* ============ Private */}
-        {/* <Footer/> */}
       </Router>
       <ToastContainer />
     </>

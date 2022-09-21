@@ -32,10 +32,10 @@ function Dashboard() {
     return <Spinner />
   } else {
     return (
-      <main>
+      <div className='page-content'>
         <HeroTitle
           title={`Bienvenue sur votre dashboard ${profil.user.name}`}
-          image={NoPhoto}
+         
         />
      
         <div className="dashboard-accounts-container p-4">
@@ -61,7 +61,7 @@ function Dashboard() {
            </div>
         </div>
       
-      </main>
+      </div>
     )
   }
 }

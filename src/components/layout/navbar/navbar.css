@@ -4,7 +4,6 @@
 ::after {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Popins", sans-serif;
   padding: 0;
 }
 
@@ -17,6 +16,19 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
 }
 
 .overlay {
@@ -46,6 +58,10 @@ body {
 }
 .sidebar.active #btn {
   left: 90%;
+  color: white;
+}
+.sidebar.active #log_out {
+  opacity: 1;
 }
 .sidebar.active ul li .tooltip {
   display: none;
@@ -73,6 +89,7 @@ body {
 }
 .sidebar .logo_content {
   font-size: 2rem;
+  position: relative;
 }
 .sidebar .logo_content .logo {
   color: white;
@@ -95,9 +112,8 @@ body {
   list-style: none;
   height: 5rem;
   width: 100%;
-  margin: 0 5px;
   line-height: 5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
   border-radius: 12px;
 }
@@ -107,14 +123,17 @@ body {
 }
 .sidebar ul li .tooltip {
   position: absolute;
-  height: 35px;
   width: 200px;
   top: 0%;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
   border-radius: 6px;
   text-align: center;
+  padding: 0.2rem;
   left: 45px;
-  background: white;
+  font-size: 2rem;
+  text-align: center;
+  background: #304D6D;
+  color: #F49E4C;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   transition: 0s;
   opacity: 0;
@@ -122,7 +141,7 @@ body {
 }
 .sidebar ul li a {
   color: white;
-  align-items: center;
+  margin: 0;
   text-decoration: none;
   border-radius: 12px;
 }
@@ -161,8 +180,6 @@ body {
 .profile_content .profile {
   position: relative;
   padding: 10px 6px;
-  height: 6rem;
-  background-color: #5e7691;
 }
 .profile_content .profile .profile_details {
   display: flex;
@@ -184,6 +201,7 @@ body {
   position: absolute;
   transform: translate(-50%);
   left: 88%;
+  bottom: 2rem;
   min-width: 3rem;
   line-height: 3rem;
   border: none;
@@ -191,7 +209,7 @@ body {
   border-radius: 12px;
   background-color: transparent;
   color: white;
-  opacity: 1;
+  opacity: 0;
   cursor: pointer;
 }
 
@@ -202,4 +220,21 @@ body {
 .log_btn {
   margin: 0 0.6rem;
   padding: 0.4rem 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .sidebar {
+    width: 4rem;
+  }
+  .nav-icone {
+    height: 1rem;
+    width: 1rem;
+  }
+  main {
+    left: 0;
+    padding: 1rem;
+  }
+  .profile_content {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.css.map */

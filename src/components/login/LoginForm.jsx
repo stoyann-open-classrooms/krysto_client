@@ -39,21 +39,20 @@ function LoginForm() {
             password,
           }
           dispatch(login(userData))
-          if(isSuccess){
-            
-            window.reload()
-            toast.success('Vous êtes connecter !')
-            navigate('/private/private-home')
+navigate('/dashboard')
     
-          }
-    
-          // window.location.reload()
+        
         }
       }
     
       return (
         
           <form onSubmit={onSubmit} >
+            <hgroup>
+
+            <h1 className='login_form_title' >Bonjour !</h1>
+            <h2>Connectez-vous pour découvrir toutes nos fonctionnalités !</h2>
+            </hgroup>
             <div className="field">
             
                 <input
@@ -64,7 +63,7 @@ function LoginForm() {
                   name="email"
                   onChange={onChange}
                 />
-                <span className="icon  is-left">
+                <span>
                   <FaEnvelope/>
                 </span>
               
@@ -81,7 +80,7 @@ function LoginForm() {
                   onChange={onChange}
                 />
     
-                <span class="icon is-small is-left">
+                <span>
                   <FaLock/>
                  
                 </span>
@@ -89,7 +88,7 @@ function LoginForm() {
             </div>
             <div class="field">
               <div class="control">
-                <button class="button is-success is-medium ">Connexion</button>
+                <button className='login-btn'>Connexion</button>
               </div>
             </div>
             <Link to={'/forgot-password'} className="is-link">

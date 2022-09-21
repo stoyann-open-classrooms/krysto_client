@@ -2,9 +2,9 @@ import HeroTitle from "../../components/shared/heroTitle/HeroTitle"
 
 function About() {
   return (
-    <main>
+    <div className="page-content">
       <HeroTitle title={"A propos de Krysto."}  subtitle={"Une plateforme ecologique, ethique et solidaire."}/>
-    </main>
+    </div>
   )
 }
 
