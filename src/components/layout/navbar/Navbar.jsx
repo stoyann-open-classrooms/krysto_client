@@ -91,42 +91,42 @@ function Navbar() {
           {token !== null ? (
             <>
               <li>
-                <NavLink to={'/add-offer'}>
+                <NavLink to={'/private/add-offer'}>
                   <FaPlus className="nav-icone" />
                   <span className="links_name">Publier</span>
                 </NavLink>
                 <span className="tooltip">Publier</span>
               </li>
               <li>
-                <NavLink to={'/dashboard'}>
+                <NavLink to={'/private/dashboard'}>
                   <FaUser className="nav-icone" />
                   <span className="links_name">Dashboard</span>
                 </NavLink>
                 <span className="tooltip">Dashboard</span>
               </li>
               <li>
-                <NavLink to={'/my-offers'}>
+                <NavLink to={'/private/my-offers'}>
                   <FaHandshake className="nav-icone" />
                   <span className="links_name">Mes trocs</span>
                 </NavLink>
                 <span className="tooltip">Mes trocs</span>
               </li>
               <li>
-                <NavLink to={'/wallets'}>
+                <NavLink to={'/private/wallets/main'}>
                   <FaWallet className="nav-icone" />
                   <span className="links_name">Comptes</span>
                 </NavLink>
                 <span className="tooltip">Comptes</span>
               </li>
               <li>
-                <NavLink to={'/proposals'}>
+                <NavLink to={'/private/proposals'}>
                   <FaComment className="nav-icone" />
                   <span className="links_name">Propositions</span>
                 </NavLink>
                 <span className="tooltip">Propositions</span>
               </li>
               <li>
-            <NavLink to={'/converter'}>
+            <NavLink to={'/private/converter'}>
               <FaCalculator className="nav-icone" />
               <span className="links_name">Convertisseur</span>
             </NavLink>

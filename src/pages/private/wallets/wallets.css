@@ -73,6 +73,16 @@ li {
   font-size: 2rem;
 }
 
+.account-btn-active {
+  margin: 0 1rem;
+  background-color: #304D6D;
+  color: #F49E4C;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .account-btn-container {
   margin-bottom: 2rem;
   display: flex;
