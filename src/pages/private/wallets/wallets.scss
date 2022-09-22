@@ -7,28 +7,6 @@
     // border: solid 2px $primary-dark;
 }
 
-.table {
-    background-color: $primary-light;
-
-    color: $primary;
-    border-radius: $radius;
-    border-color: $primary-dark;
-    thead{
-        th{
-            color: $primary;
-        }
-    }
-    tbody {
-        
-        tr{
-            transition: all 0.5s ease;
-            &:hover {
-                color: $primary-dark;
-                font-weight: bold;
-            }
-        }
-    }
-}
 
 
 .rib-box {

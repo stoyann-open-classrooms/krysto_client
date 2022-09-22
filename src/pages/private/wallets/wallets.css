@@ -35,23 +35,6 @@ li {
   height: 200px;
 }
 
-.table {
-  background-color: #5e7691;
-  color: #304D6D;
-  border-radius: 10px;
-  border-color: #292f4d;
-}
-.table thead th {
-  color: #304D6D;
-}
-.table tbody tr {
-  transition: all 0.5s ease;
-}
-.table tbody tr:hover {
-  color: #292f4d;
-  font-weight: bold;
-}
-
 .rib-box {
   display: flex;
 }

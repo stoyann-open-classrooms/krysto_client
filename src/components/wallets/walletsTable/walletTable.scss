@@ -1,0 +1,37 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+@import '../../../SASS/animations';
+
+
+.transaction-table {
+    background-color: $primary-light;
+width: 100%;
+line-height: 3rem;
+    color: white;
+    border-radius: $radius;
+    border-color: $primary-dark;
+    thead{
+        th{
+            font-size: 1.2rem;
+            color: $primary-dark;
+        }
+    }
+    tbody {
+        
+        tr{
+            transition: all 0.5s ease;
+            
+            
+            &:hover {
+                color: $secondary;
+        
+            }
+        }
+    }
+}
+
+
+.transaction-table-container{
+    width: 100%;
+}

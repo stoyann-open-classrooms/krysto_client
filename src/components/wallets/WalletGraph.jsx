@@ -7,7 +7,7 @@ function WalletGraph({ transactions }) {
     options: {
       chart: {
         id: 'basic-line',
-        background: '#fffff',
+       
         foreColor: 'white',
         fill: {
           type: 'gradient',
@@ -19,65 +19,12 @@ function WalletGraph({ transactions }) {
           },
         },
         toolbar: {
-          show: true,
-          offsetX: 0,
-          offsetY: 0,
-          tools: {
-            download: true,
-            selection: true,
-            zoom: false,
-            zoomin: false,
-            zoomout: false,
-            pan: false,
-            reset: false | '<img src="/static/icons/reset.png" width="30">',
-            customIcons: [],
-          },
-          export: {
-            csv: {
-              filename: `compte de dépot`,
-              columnDelimiter: ',',
-              headerCategory: 'Date',
-              headerValue: 'value',
-              dateFormatter(timestamp) {
-                return new Date(timestamp).toDateString()
-              },
-            },
-            svg: {
-              filename: `Compte de dépot`,
-            },
-            png: {
-              filename: `compte de dépot`,
-            },
-          },
-          autoSelected: 'zoom',
+          show: false,
         },
       },
       stroke: {
         curve: 'smooth',
-        width: '10',
-      },
-
-      markers: {
-        size: 10,
-
-        colors: ['#F49E4C', '#292f4d', '#292f4d'],
-
-        strokeWidth: 2,
-        strokeOpacity: 0.9,
-        strokeDashArray: 0,
-        fillOpacity: 1,
-        discrete: [],
-        shape: 'circle',
-        radius: 2,
-        offsetX: 0,
-        offsetY: 0,
-        onClick: undefined,
-        onDblClick: undefined,
-        showNullDataPoints: true,
-        hover: {
-          size: undefined,
-          sizeOffset: 3,
-        },
+        width: '3',
       },
 
       tooltip: {
@@ -93,7 +40,9 @@ function WalletGraph({ transactions }) {
     series: [
       {
         name: 'krysto',
-        data: transactions.map((transaction) => transaction.amountMony.toFixed(4)) ,
+        data: transactions.map((transaction) =>
+          transaction.amountMony.toFixed(4),
+        ),
       },
     ],
   })

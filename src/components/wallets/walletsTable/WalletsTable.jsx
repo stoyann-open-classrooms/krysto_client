@@ -1,11 +1,11 @@
-import React from 'react'
+import './walletTable.css'
 
 function WalletsTable({ transactions }) {
   console.log(transactions.transactions)
   return (
-    <section className="container p-4 mb-6">
-      <h3 className="title ">Vos transactions</h3>
-      <table class="table  is-fullwidth is-hoverable">
+    <section className='transaction-table-container'>
+      <h3>Vos transactions</h3>
+      <table className="transaction-table">
         <thead>
           <tr>
             <th>
@@ -34,7 +34,7 @@ function WalletsTable({ transactions }) {
                   )}
 
                   <td>Aucun libelée pour cette transaction</td>
-                  <td>{transaction.amountUnity} ù</td>
+                  <td>{transaction.amountUnity.toFixed(4)} ù</td>
                   <td>
                     {(
                       transaction.amountUnity / transaction.monyConvertValue

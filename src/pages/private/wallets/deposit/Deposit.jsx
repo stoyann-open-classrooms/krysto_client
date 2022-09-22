@@ -39,19 +39,10 @@ if(!profil.user) {
       <div className="container-graph">
       <WalletGraph transactions={profil.user.walletsDeposit[0].transactions}/>
       </div>
-      <div className="buttons">
-        <Modal btn={'Envoyer'}
-        isActive={false}
-        titleModal={"Comment recevoir de l'argent d'un autre utilisateur ?"}
-        
-        >
-
-        </Modal>
-      
-      </div>
+    
       <div >
-        <h4 className='title is-4'>Cours du Krysto au 11/09/2022</h4>
-        <div className='tag is-large p-4'>1 Krysto = {profil.monyConvertValue} ù</div>
+        <h4>Cours du Krysto au 11/09/2022</h4>
+        <div>1 Krysto = {profil.monyConvertValue} ù</div>
       </div>
       <WalletsTable transactions={profil.user.walletsDeposit[0]}/>
     </section>
