@@ -31,50 +31,8 @@ li {
   list-style: none;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-.danger-btn {
-  background-color: #e49494;
-  border: none;
-  color: rgb(38, 43, 38) 9;
-  font-weight: bolder;
-}
-
-.submit-btn {
-  background-color: #304D6D;
-  border: none;
-  color: rgb(38, 43, 38) 9;
-  font-weight: bolder;
-}
-
-.buttons .button {
-  background-color: #F49E4C;
-  border: none;
-  color: #1d1c1b;
-}
-
 .label {
-  color: #abb3aa;
+  color: #5e7691;
   font-size: 1.4rem;
   margin-top: 2rem;
-}
-
-.buttons {
-  justify-content: center;
-}
-.buttons .button {
-  color: rgb(38, 43, 38) 9;
-  font-weight: bolder;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  width: 49%;
-}
-
-.littleCoins {
-  height: 4rem;
 }/*# sourceMappingURL=addOffer.css.map */

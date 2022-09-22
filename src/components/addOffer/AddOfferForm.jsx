@@ -56,24 +56,19 @@ function AddOfferForm() {
 
   return (
     <form onSubmit={handleForm} className="container p-6">
-      <div class="field">
-        <label class="label"> Sélectionnez le type d'annonce.</label>
-        <div class="control">
-          <div class="select is-large">
+      <div className="field">
+        <label className="label"> Sélectionnez le type d'annonce.</label>
             <select onChange={handleInput} name="type">
               <option value={'OFFER'}>je vend</option>
               <option value={'DEMANDE'}>je recherche</option>
             </select>
-          </div>
-        </div>
       </div>
-      <div class="field">
-        <label class="label">
-          {' '}
+      <div className="field">
+        <label className="label">
           Sélectionnez la catégorie de votre annonce.
         </label>
-        <div class="control">
-          <div class="select is-large">
+        <div className="control">
+          <div className="select is-large">
             <select onChange={handleInput} name="category">
               <option>Catégories</option>
               {categories.entities
@@ -87,7 +82,7 @@ function AddOfferForm() {
           </div>
         </div>
       </div>
-      <div class="field">
+      <div className="field">
         <label className="label">Titre de votre annonce</label>
         <div className="control">
           <input
@@ -112,8 +107,7 @@ function AddOfferForm() {
       </div>
       <div class="field">
         <label class="label"> Redigez votre annonce </label>
-        <div class="field has-addons">
-          <p class="control">
+       
             <input
               name="amountMony"
               onChange={handleInput}
@@ -121,14 +115,9 @@ function AddOfferForm() {
               type="number"
               placeholder="Prix de l'annonce"
             />
-          </p>
-          <div class="control">
-            <p class="button is-disabled is-large">
               <img className="littleCoins" src={Coins} alt="" />
-            </p>
           </div>
-        </div>
-      </div>
+         
       <div className="field">
         <label class="label">Ajouter des photos</label>
         <div class="file has-name mb-4">
@@ -170,7 +159,7 @@ function AddOfferForm() {
             placeholder="ville / code postal"
           />
         </div>
-        <div className="container p-2 mt-3">
+        {/* <div className="container p-2 mt-3">
           <div className="leaflet-container">
             <MapContainer
               className="container p-4"
@@ -185,7 +174,7 @@ function AddOfferForm() {
               />
             </MapContainer>
           </div>
-        </div>
+        </div> */}
       </div>
       <div class="field">
         <label class="label">Brouillon</label>
@@ -199,13 +188,12 @@ function AddOfferForm() {
         </div>
       </div>
       <div class="field is-grouped">
-        <div class="control">
-          <button class="button submit-btn">Publier</button>
+        <div class="buttons">
+          <button class="btn-submit">Publier</button>
+          <button class="btn-submit">Annuler</button>
         </div>
 
-        <div class="control">
-          <button class="button danger-btn ">Annuler</button>
-        </div>
+        
       </div>
     </form>
   )

@@ -1,0 +1,14 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+@import '../../../SASS/animations';
+
+
+
+.card-slide{
+    background-color: $primary-dark;
+    height: 100%;
+    margin: 1rem;
+    width: 15rem;
+    flex-shrink: 0;
+}

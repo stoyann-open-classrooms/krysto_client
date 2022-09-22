@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+.page-section {
+  min-height: 100vh;
+}
+
+.paralax {
+  background-image: url(../../assets//images/paysage_caledonnien_2.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.paralax-txt {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 550px) {
+  .paralax-txt {
+    font-size: 5rem;
+  }
+}
+p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.last-offer-slider {
+  background-color: #5e7691;
+  height: 15rem;
+  width: 100%;
+  position: relative;
+}
+.last-offer-slider .arrow {
+  position: absolute;
+  font-size: 2.3rem;
+  top: 35%;
+}
+.last-offer-slider .arrow:hover {
+  color: #F49E4C;
+}
+.last-offer-slider .arrow:nth-child(1) {
+  left: 1rem;
+}
+.last-offer-slider .arrow:nth-child(2) {
+  right: 1rem;
+}
+
+.title-last-offer-slider {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-card-slide {
+  margin: 4rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.7rem;
+}
+
+.container-card-price-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  min-width: 300px;
+  margin: 10rem auto;
+}/*# sourceMappingURL=home.css.map */
