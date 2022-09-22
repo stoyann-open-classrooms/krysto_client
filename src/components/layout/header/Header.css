@@ -45,4 +45,12 @@ header {
   right: 0;
   display: flex;
   top: 1.5rem;
+}
+
+.log_btn_nav {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+.log_btn_nav:hover {
+  color: #F49E4C;
 }/*# sourceMappingURL=Header.css.map */

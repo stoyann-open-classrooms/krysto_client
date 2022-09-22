@@ -39,7 +39,6 @@ import Dashboard from './pages/private/dashboard/Dashboard'
 import MyOffers from './pages/myOffers/MyOffers'
 import AddOffer from './pages/addOffer/AddOffer'
 import UpdateOffer from './pages/private/updateOffer/UpdateOffer'
-import Proposals from './pages/proposals/Proposals'
 
 import ProfilParameters from './pages/profilParameters/ProfilParameters'
 
@@ -53,6 +52,7 @@ import Deposit from './pages/private/wallets/deposit/Deposit'
 import Main from './pages/private/wallets/main/Main'
 import Converter from './pages/private/Converter/Converter.jsx'
 import Offer from './pages/offer/Offer'
+import Proposals from './pages/private/proposals/Proposals'
 
 function App() {
   return (
@@ -101,7 +101,7 @@ function App() {
             <Route path="/private/profil-parameters" element={<ProfilParameters />} />
             <Route path="/private/my-offers" element={<MyOffers />} />
             <Route path="/private/update-offer/:id" element={<UpdateOffer />} />
-            <Route path="/private/proposals" element={<Proposals />} />
+            <Route path="/private/proposals" element={<Proposals/>} />
             <Route path="/private/devise-converter" element={<Converter />} />
             <Route path="/private/wallets" element={<Wallets />}>
               <Route path="/private/wallets/deposit" element={<Deposit />} />

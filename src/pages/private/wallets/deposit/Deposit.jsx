@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Modal from '../../../../components/shared/modal/Modal'
 import Spinner from '../../../../components/shared/spinner/Spinner'
+import WalletGraph from '../../../../components/wallets/WalletGraph'
 // import CardRib from '../../../../components/shared/cardRib'
 import WalletsTable from '../../../../components/wallets/walletsTable/WalletsTable'
 import { getProfil, reset } from '../../../../features/user/userSlice'
@@ -35,8 +36,8 @@ if(!profil.user) {
 
   return (
     <section className="container p-4">
-      <div className="container-graph container p-4">
-      
+      <div className="container-graph">
+      <WalletGraph transactions={profil.user.walletsDeposit[0].transactions}/>
       </div>
       <div className="buttons">
         <Modal btn={'Envoyer'}
@@ -46,28 +47,9 @@ if(!profil.user) {
         >
 
         </Modal>
-        <Modal
-          isActive={false}
-          btn={'Recevoir'}
-          titleModal={"Comment recevoir de l'argent d'un autre utilisateur ?"}
-        >
-          <section class="modal-card-body">
-            <p>
-              Donnez le numéro du compte sur lequel vous souhaitez recevoir de
-              la monnaie, à la personne qui souhaite vous en envoyer :
-            </p>
-            <p>
-              Ces numéros de compte sont vos Identifiant bancaires tout comme le
-              RIB de votre compte en banque !
-            </p>
-
-          </section>
-          <footer class="modal-card-foot">
-            <button class="button is-success">J'ai compris</button>
-          </footer>
-        </Modal>
+      
       </div>
-      <div className="notification m-6 box blue-box has-text-centered">
+      <div >
         <h4 className='title is-4'>Cours du Krysto au 11/09/2022</h4>
         <div className='tag is-large p-4'>1 Krysto = {profil.monyConvertValue} ù</div>
       </div>

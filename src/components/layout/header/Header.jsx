@@ -29,7 +29,16 @@ function Header() {
 
 
       <nav className='header-nav'>
-      <Link to={'/login'}>
+
+        {token ? 
+          <>
+          <button className= "log_btn_nav" onClick={onLogout}>
+            <FaSignOutAlt />
+          </button>
+        </>
+        : 
+        <>
+        <Link to={'/login'}>
                       <button className="log_btn">
                         <span>
 
@@ -48,6 +57,10 @@ function Header() {
                         S'inscrire
                       </button>
                     </Link>
+        </>
+        
+        }
+      
 
 
         </nav>

@@ -1,5 +1,6 @@
 import React from 'react'
-import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
+import HeroTitle from '../../../components/shared/heroTitle/HeroTitle'
+
 
 function Proposals() {
   return (

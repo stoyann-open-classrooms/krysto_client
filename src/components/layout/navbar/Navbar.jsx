@@ -74,7 +74,10 @@ function Navbar() {
 
         <ul className="nav_list">
           <li>
-            <NavLink to={'/'}>
+            <NavLink to={'/'}
+            
+       
+            >
               <FaHome className="nav-icone" />
               <span className="links_name">Accueil</span>
             </NavLink>

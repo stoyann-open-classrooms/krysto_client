@@ -281,4 +281,8 @@ li {
 .btn1.active .lignes:nth-child(3) {
   top: 1rem;
   transform: rotate(-135deg);
+}
+
+.active {
+  color: #F49E4C;
 }/*# sourceMappingURL=navbar.css.map */
