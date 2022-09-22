@@ -67,7 +67,7 @@ function Dashboard() {
         </div>
       
 
-        <Link to={'/profil-parameters'}>
+        <Link to={'/private/profil-parameters'}>
           <button className="btn-danger">
             Modifier les parametres de votre compte
           </button>

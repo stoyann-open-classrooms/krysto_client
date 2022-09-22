@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import Dialog from '../../../../components/shared/Dialog/Dialog'
 import Modal from '../../../../components/shared/modal/Modal'
 import Spinner from '../../../../components/shared/spinner/Spinner'
 import WalletGraph from '../../../../components/wallets/WalletGraph'
@@ -44,6 +45,16 @@ if(!profil.user) {
       </hgroup>
       <div className="container-graph">
       <WalletGraph transactions={profil.user.walletsDeposit[0].transactions}/>
+      </div>
+       
+      <div className="buttons">
+      <Dialog btn={"Envoyer"}>
+        <h1>this is the modal</h1>
+      </Dialog>
+      <Dialog btn={"Recevoir"}>
+        <h1>this is the modal</h1>
+      </Dialog>
+      
       </div>
      
       <div >

@@ -24,7 +24,7 @@ function SearchBar() {
   console.log(categories);
 
   return (
-    <div className='searchBar-container'>
+    <form className='searchBar-container'>
   <div className="field search">
 
 <input type="text" placeholder='taper votre recherche'/>
@@ -41,7 +41,7 @@ function SearchBar() {
                 : ''}
     </select>
   </div>
-    </div>
+    </form>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import Dialog from '../../../../components/shared/Dialog/Dialog'
 import Spinner from '../../../../components/shared/spinner/Spinner'
 import WalletGraph from '../../../../components/wallets/WalletGraph'
 
@@ -37,14 +38,20 @@ function Main() {
       <hgroup className='title-wallet'>
 
       <h2>Compte courant - 44 Jours</h2>
-      <h2>{profil.user.walletMain.amountMony}</h2>
+      <h2>{profil.user.walletMain.amountUnity / profil.monyConvertValue} Krysto</h2>
       </hgroup>
       <div className="container-graph">
        <WalletGraph transactions={profil.user.walletMain.transactions}/>
       </div>
+    
       <div className="buttons">
-        <button>Envoyer</button>
-        <button>recevoir</button>
+      <Dialog btn={"Envoyer"}>
+        <h1>this is the modal</h1>
+      </Dialog>
+      <Dialog btn={"Recevoir"}>
+        <h1>this is the modal</h1>
+      </Dialog>
+      
       </div>
       <WalletsTable transactions={profil.user.walletMain} />
     </section>

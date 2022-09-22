@@ -81,6 +81,13 @@ li {
   background-color: #304D6D;
   margin: 0 1rem;
   padding: 1rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+.buttons button:hover {
+  color: #F49E4C;
+  background-color: #5e7691;
 }
 
 .apexcharts-toolbar svg {
