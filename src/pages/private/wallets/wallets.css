@@ -35,16 +35,9 @@ li {
   height: 200px;
 }
 
-.rib-box {
-  display: flex;
-}
-.rib-box .box {
-  height: 140px;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  border: 1px solid #304D6D;
-  flex: 1;
+.title-wallet {
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .account-btn {

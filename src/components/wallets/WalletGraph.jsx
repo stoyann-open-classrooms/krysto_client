@@ -5,9 +5,11 @@ function WalletGraph({ transactions }) {
   console.log('transaction from graph', transactions)
   const [chartData, setChartData] = useState({
     options: {
+       
+     
       chart: {
         id: 'basic-line',
-       
+      
         foreColor: 'white',
         fill: {
           type: 'gradient',
@@ -76,14 +78,14 @@ function WalletGraph({ transactions }) {
             name: 'krysto',
             data: transactions.map((transaction) =>
               transaction.amountMony.toFixed(4),
-            ),
+            ).reverse(),
           },
         ],
       })
 
 
 
-  console.log(chartData)
+  console.log(chartData.series[0].data)
 
   return (
     <div className="mixed-chart">
@@ -91,7 +93,7 @@ function WalletGraph({ transactions }) {
         options={chartData.options}
         series={chartData.series}
         type="area"
-        height={450}
+        height={350}
       />
     </div>
   )

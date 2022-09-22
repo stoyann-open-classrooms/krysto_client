@@ -93,4 +93,9 @@ li {
 
 .transaction-table-container {
   width: 100%;
+}
+.transaction-table-container h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=walletTable.css.map */

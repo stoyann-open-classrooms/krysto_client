@@ -4,25 +4,15 @@
 
 .box-graph {
     height: 200px;
-    // border: solid 2px $primary-dark;
+
 }
 
 
 
-.rib-box {
-    
-    display: flex;
-    
-    .box {
-        height: 140px;
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-        border: 1px solid $primary;
-        flex: 1;
-    }
+.title-wallet{
+    text-align: center;
+    font-size: 1.4rem;
 }
-
 
 .account-btn{
  margin: 0 1rem;

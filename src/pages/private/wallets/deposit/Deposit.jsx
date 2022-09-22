@@ -35,11 +35,17 @@ if(!profil.user) {
 
 
   return (
-    <section className="container p-4">
+    <section>
+            <hgroup className='title-wallet'>
+
+
+       <h2>Compte courant - 44 Jours</h2>
+      <h2>{profil.user.walletsDeposit[0].amountMony} Krysto</h2>
+      </hgroup>
       <div className="container-graph">
       <WalletGraph transactions={profil.user.walletsDeposit[0].transactions}/>
       </div>
-    
+     
       <div >
         <h4>Cours du Krysto au 11/09/2022</h4>
         <div>1 Krysto = {profil.monyConvertValue} ù</div>

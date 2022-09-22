@@ -4,7 +4,7 @@ function WalletsTable({ transactions }) {
   console.log(transactions.transactions)
   return (
     <section className='transaction-table-container'>
-      <h3>Vos transactions</h3>
+      <h3>Historique de vos transactions</h3>
       <table className="transaction-table">
         <thead>
           <tr>

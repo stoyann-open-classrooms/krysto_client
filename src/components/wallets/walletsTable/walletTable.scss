@@ -11,6 +11,8 @@ line-height: 3rem;
     color: white;
     border-radius: $radius;
     border-color: $primary-dark;
+
+
     thead{
         th{
             font-size: 1.2rem;
@@ -34,4 +36,9 @@ line-height: 3rem;
 
 .transaction-table-container{
     width: 100%;
+    h3{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }

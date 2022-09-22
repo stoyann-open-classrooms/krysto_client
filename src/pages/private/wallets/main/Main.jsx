@@ -34,6 +34,11 @@ function Main() {
 
   return (
     <section>
+      <hgroup className='title-wallet'>
+
+      <h2>Compte courant - 44 Jours</h2>
+      <h2>{profil.user.walletMain.amountMony}</h2>
+      </hgroup>
       <div className="container-graph">
        <WalletGraph transactions={profil.user.walletMain.transactions}/>
       </div>
