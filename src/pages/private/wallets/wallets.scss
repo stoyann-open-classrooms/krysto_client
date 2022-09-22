@@ -56,3 +56,32 @@
   
 }
 
+.buttons {
+    display: flex;
+    flex: 1;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    button{
+        width: 50%;
+        background-color: $primary;
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+}
+
+.apexcharts-toolbar{
+    svg{
+  stroke: none;
+        fill:  $primary-light !important;
+    }
+}
+ .apexcharts-menu-open{
+    background-color:  $primary-dark !important ;
+  
+}
+ .apexcharts-menu-item{
+    &:hover{
+        color: $secondary;
+        background-color: $primary-light !important;
+    }
+}

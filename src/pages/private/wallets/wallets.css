@@ -75,4 +75,31 @@ li {
 
 .container-graph {
   padding: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex: 1;
+  margin-bottom: 3rem;
+  padding: 3rem;
+}
+.buttons button {
+  width: 50%;
+  background-color: #304D6D;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.apexcharts-toolbar svg {
+  stroke: none;
+  fill: #5e7691 !important;
+}
+
+.apexcharts-menu-open {
+  background-color: #292f4d !important;
+}
+
+.apexcharts-menu-item:hover {
+  color: #F49E4C;
+  background-color: #5e7691 !important;
 }/*# sourceMappingURL=wallets.css.map */

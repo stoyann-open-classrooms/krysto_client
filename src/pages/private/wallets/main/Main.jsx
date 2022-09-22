@@ -37,6 +37,10 @@ function Main() {
       <div className="container-graph">
        <WalletGraph transactions={profil.user.walletMain.transactions}/>
       </div>
+      <div className="buttons">
+        <button>Envoyer</button>
+        <button>recevoir</button>
+      </div>
       <WalletsTable transactions={profil.user.walletMain} />
     </section>
   )
