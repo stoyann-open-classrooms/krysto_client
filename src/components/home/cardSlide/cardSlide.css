@@ -73,9 +73,41 @@ li {
   }
 }
 .card-slide {
-  background-color: #292f4d;
-  height: 100%;
+  background-color: #5e7691;
+  height: 11rem;
+  width: 20rem;
   margin: 1rem;
-  width: 15rem;
+  padding: 0.2rem;
+  border-radius: 10px;
   flex-shrink: 0;
+}
+.card-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70%;
+}
+.card-slide p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card-slide-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amount img {
+  height: 2rem;
+}
+
+.card-slide-title {
+  color: #292f4d;
 }/*# sourceMappingURL=cardSlide.css.map */

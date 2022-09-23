@@ -34,6 +34,9 @@ li {
 .page-section {
   min-height: 100vh;
 }
+.page-section h2, .page-section h3 {
+  font-size: 3.2rem;
+}
 
 .paralax {
   background-image: url(../../assets//images/paysage_caledonnien_2.jpeg);
@@ -60,29 +63,8 @@ li {
   }
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 1rem 0;
-}
-
-.last-offer-slider {
-  background-color: #5e7691;
-  height: 15rem;
-  width: 100%;
-  position: relative;
-}
-.last-offer-slider .arrow {
-  position: absolute;
-  font-size: 2.3rem;
-  top: 35%;
-}
-.last-offer-slider .arrow:hover {
-  color: #F49E4C;
-}
-.last-offer-slider .arrow:nth-child(1) {
-  left: 1rem;
-}
-.last-offer-slider .arrow:nth-child(2) {
-  right: 1rem;
 }
 
 .title-last-offer-slider {
@@ -91,7 +73,6 @@ p {
 }
 
 .container-card-slide {
-  margin: 4rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -107,4 +88,25 @@ p {
   max-width: 1300px;
   min-width: 300px;
   margin: 10rem auto;
+}
+
+.content-cycle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.content-cycle .cycle {
+  width: 100%;
+}
+
+.abs {
+  position: absolute;
+  left: 43%;
+  top: 35%;
+  height: 15rem;
+}
+
+.last-offer-slider {
+  height: 20rem;
+  margin: 25rem 5rem;
 }/*# sourceMappingURL=home.css.map */

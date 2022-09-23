@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import cycle from '../../../assets/cycletroc.jpg'
+import cycle from '../../../assets/cycletroc.png'
+import coins from '../../../assets/coins/coinGif.gif'
 
 function Solution() {
   return (
@@ -59,8 +60,9 @@ function Solution() {
         retrouvons une liberté dont nous avions même oublié l'existance; Nous
         pouvons désormais choisir le système dans lequel nous avons confiance.
       </p>
-      
-      <img src={cycle} alt="" />
+      <div className='content-cycle'>
+      <img className='cycle' src={cycle} alt="" />
+      </div>
     </section>
   )
 }

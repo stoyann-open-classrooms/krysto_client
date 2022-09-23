@@ -6,9 +6,42 @@
 
 
 .card-slide{
-    background-color: $primary-dark;
-    height: 100%;
+    background-color: $primary-light;
+    height: 11rem;
+    width: 20rem;
     margin: 1rem;
-    width: 15rem;
+    padding: 0.2rem;
+    border-radius: $radius;
     flex-shrink: 0;
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 70%;
+}
+
+    p{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.card-slide-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img{
+        height: 2rem;
+    }
+}
+
+.card-slide-title{
+    color: $primary-dark;
 }
