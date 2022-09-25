@@ -5,7 +5,6 @@
 @import '../../SASS/animations';
 
 .section-inner {
-  position: absolute;
   bottom: 20rem;
   left: 150px;
   max-width: 560px;
@@ -77,3 +76,16 @@
     transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
+
+
+// .scroll-arrow{
+//   position: absolute;
+//   bottom: 3rem;
+//   transform: translateX(-50%);
+//   left: 50%;
+//  animation: fade-bounce 5s infinite;
+
+//   svg{
+//     font-size: 3rem;
+//   }
+// }

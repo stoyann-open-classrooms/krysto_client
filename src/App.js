@@ -44,7 +44,6 @@ import ProfilParameters from './pages/profilParameters/ProfilParameters'
 import Private from './pages/private/Private'
 import RegisterSuccess from './pages/RegisterSuccess/RegisterSuccess'
 import ConfirmEmail from './pages/confirmEmail/ConfirmEmail'
-import Navbar from './components/layout/navbar/Navbar'
 // import Footer from './components/layout/footer/Footer'
 import Wallets from './pages/private/wallets/Wallets'
 import Deposit from './pages/private/wallets/deposit/Deposit'
@@ -59,8 +58,9 @@ function App() {
     <>
       <Router>
         <Header />
-        <Navbar />
-        <main >
+
+        <main>
+
           <Routes>
             {/* === public */}
             <Route path="/" element={<Home />} />
@@ -111,8 +111,9 @@ function App() {
             </Route>
 
           </Routes>
- {/* <Footer/> */}
         </main>
+ {/* <Footer/> */}
+      
      {/* ============ Private */}
       </Router>
       <ToastContainer />

@@ -10,12 +10,10 @@ function Home() {
   return (
     <>
       <Landing/>
-      {/* <Landing/>
-      <Kezako/>
-      <Why/>
-      <NoMony/>
-      <Solution/>
-      <Price/> */}
+
+      <Landing/>
+
+  
     </>
   )
 

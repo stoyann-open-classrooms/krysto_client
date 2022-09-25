@@ -100,6 +100,26 @@ input:focus {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes fade-bounce {
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+@keyframes fade-bounce {
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY();
+  }
+}
 .main-header {
   position: fixed;
   top: 0;
@@ -110,7 +130,7 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  height: 10rem;
+  height: 8rem;
   padding: 0 3rem;
 }
 

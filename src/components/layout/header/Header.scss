@@ -4,16 +4,16 @@
 @import '../../../SASS/animations';
 
 .main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
+position: fixed;
+top: 0;
+left: 0;
   width: 100%;
   z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  height: 10rem;
+  height: 8rem;
   padding: 0 3rem;
 }
 

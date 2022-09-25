@@ -5,7 +5,7 @@ import './error404.css'
 
 function Error404() {
   return (
-    <div className=" page-content main-404 ">
+    <div className="  main-404 ">
       <h2 className="title  ">oups !</h2>
       <h1 className="title ">404</h1>
       <h3 className='subtitle '>Il semblerait que vous vous soyez perdus...</h3>

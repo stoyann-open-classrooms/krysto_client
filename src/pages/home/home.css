@@ -100,8 +100,27 @@ input:focus {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes fade-bounce {
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+@keyframes fade-bounce {
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY();
+  }
+}
 .section-inner {
-  position: absolute;
   bottom: 20rem;
   left: 150px;
   max-width: 560px;

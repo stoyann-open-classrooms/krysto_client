@@ -100,6 +100,26 @@ input:focus {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes fade-bounce {
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+@keyframes fade-bounce {
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY();
+  }
+}
 .body-card-header {
   display: flex;
   justify-content: space-between;

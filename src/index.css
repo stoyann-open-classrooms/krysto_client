@@ -44,12 +44,6 @@ body {
   color: #313539;
 }
 
-section {
-  height: 100vh;
-  background-position: center center;
-  position: relative;
-}
-
 form {
   background-color: #5e7691;
   border-radius: 5px;
