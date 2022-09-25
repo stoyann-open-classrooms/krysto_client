@@ -5,12 +5,16 @@ import React from 'react'
 
 function Landing() {
   return (
-    <section>
-        <div className='title-group'>
-        <h1>Le troc nouvelle génèration !</h1>
-        <h2>Le <strong>Krysto</strong>  une  numrique local inspirée de la Theorie relative de la monnaie vous permettant d’echanger des biens ou des services sur la plateforme</h2>
+    <section className='section-a'>
+      <div className="section-inner">
+        <h4>Gagnez en pouvoir d'achat</h4>
+        <h2>Graçe au Krysto</h2>
+        <div className="btn animate">
+          <div className="hover"></div>
+          <span>s'inscrire</span>
         </div>
-
+      </div>
+   
 
 
 

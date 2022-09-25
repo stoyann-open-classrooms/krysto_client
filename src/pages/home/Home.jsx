@@ -8,14 +8,15 @@ import './home.css'
 
 function Home() {
   return (
-    <main>
+    <>
+      <Landing/>
       {/* <Landing/>
       <Kezako/>
       <Why/>
       <NoMony/>
       <Solution/>
       <Price/> */}
-    </main>
+    </>
   )
 
 }

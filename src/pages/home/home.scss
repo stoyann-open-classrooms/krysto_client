@@ -1,3 +1,37 @@
 @import '../../SASS/reset';
 @import '../../SASS/variables';
 @import '../../SASS/placeholders';
+
+
+
+
+.section-inner{
+  position: absolute;
+ bottom: 20rem;
+ left: 150px;
+ max-width: 560px;
+ h4{
+  font-size: 2rem;
+  margin-bottom: 5px;
+  font-weight: 300;
+ }
+
+}
+
+
+.section-inner h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+
+.section-a {
+  // background-image: url('../../assets/images/paysage_caledonien.jpeg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background: $primary;
+  text-transform: uppercase;
+  color: $light;
+
+}

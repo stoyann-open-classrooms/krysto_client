@@ -44,8 +44,10 @@ body {
   color: #313539;
 }
 
-.login_form_title {
-  font-size: 3rem;
+section {
+  height: 100vh;
+  background-position: center center;
+  position: relative;
 }
 
 form {

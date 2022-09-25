@@ -37,4 +37,28 @@ button:active {
 
 input:focus {
   outline: none;
+}
+
+.section-inner {
+  position: absolute;
+  bottom: 20rem;
+  left: 150px;
+  max-width: 560px;
+}
+.section-inner h4 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.section-inner h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.section-a {
+  background: #304D6D;
+  text-transform: uppercase;
+  color: #ECEAF8;
 }/*# sourceMappingURL=home.css.map */
