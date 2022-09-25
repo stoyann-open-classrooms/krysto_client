@@ -8,6 +8,7 @@
   bottom: 20rem;
   left: 150px;
   max-width: 560px;
+ 
   h4 {
     font-size: 2rem;
     margin-bottom: 5px;
@@ -28,10 +29,12 @@
   // background-image: url('../../assets/images/paysage_caledonien.jpeg');
   // background-repeat: no-repeat;
   // background-size: cover;mt;
-
-  background: $primary;
+img{
+  width: 100%;
+}
+  background: $light;
   text-transform: uppercase;
-  color: $light;
+  color: $text;
 }
 
 .section-inner {
@@ -51,18 +54,21 @@
   padding: 10px 30px;
   border-radius: $radius;
   margin: 10px;
-  border: 2px solid $light;
+  border: 2px solid $primary;
   text-transform: uppercase;
   font-weight: bold;
   overflow: hidden;
   z-index: 2;
+  span{
+    color: $dark;
+  }
 
   &:hover {
     .hover {
       transform: translateY(0);
     }
     span {
-      color: $dark;
+      color: $light;
     }
   }
 
@@ -72,7 +78,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $light;
+    background-color: $primary;
     color: $dark;
     z-index: -1;
     transform: translateY(100%);

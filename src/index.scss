@@ -9,11 +9,12 @@ body{
 main{
   min-height: 100vh;
 }
-.page-content{
-  background-color: $light;
-}
+
 section{
-  min-height: 100vh;
+display: flex;
+margin: auto;
+max-width: 1300px;
+
 }
 
 
@@ -21,9 +22,12 @@ section{
   overflow: hidden;
 }
 
-form{
-  min-width: 300px;
-  max-width: 500px;
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+
 }
 
 .field {
@@ -55,5 +59,31 @@ form{
   textarea{
     height: 15rem;
     padding: 1rem;
+  }
+}
+
+
+
+.is-link{
+  color: $primary;
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size:1.2rem;
+  &:hover{
+    color: $secondary;
+
+  }
+}
+
+.submit-btn{
+  color: $light;
+  padding:0.6rem 1rem;
+  font-weight: bolder;
+  background-color: $primary;
+  border-radius: $radius;
+transition: all 0.4s ease-out;  
+
+  &:hover{
+    color: $secondary;
   }
 }

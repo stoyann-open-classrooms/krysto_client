@@ -8,21 +8,6 @@ function Home() {
 
       <Landing/>
      
-      <Landing/>
-      <Landing/>
-      <Landing/>
-      <Landing/>
-      <Landing/>
-      <Landing/>
-
-     
-    
-      {/* <Landing/>
-      <Kezako/>
-      <Why/>
-      <NoMony/>
-      <Solution/>
-      <Price/> */}
     </div>
   )
 
