@@ -4,18 +4,13 @@ import './DashboardNav.css'
 function DashboardNav() {
   return (
     <div className='dashboard-nav'>
-        <button >
-          <NavLink
-    to={'/private/dashboard'}
-  
-  >
-home
-  </NavLink>
-    </button>
-        <button className="dashboard-nav-btn">
+   
+        <button className="">
           <NavLink 
     to={'/private/dashboard/wallets'}
-  
+    className={({ isActive }) => {
+        return isActive ? 'dashboard-nav-btn active' : 'dashboard-nav-btn'
+      }}
   >
 
     Mes comptes
@@ -24,18 +19,23 @@ home
 
 
    
-      <button className="dashboard-nav-btn">
+      <button>
           <NavLink 
     to={'/private/dashboard/my-trocs'}
-  
+    className={({ isActive }) => {
+        return isActive ? 'dashboard-nav-btn active' : 'dashboard-nav-btn'
+      }}
   >
 
 Mes Trocs
   </NavLink>
     </button>
-      <button className="dashboard-nav-btn">
+      <button >
           <NavLink 
     to={'/private/dashboard/propositions'}
+    className={({ isActive }) => {
+        return isActive ? 'dashboard-nav-btn active' : 'dashboard-nav-btn'
+      }}
   
   >
 

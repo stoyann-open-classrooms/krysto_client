@@ -13,21 +13,23 @@ align-items: center;
 background-color: $grey;
     width: 100%;
     padding: 1rem 0;
-    a{
+    .dashboard-nav-btn{
         background-color: $dark;
         font-size: 10px;
         width: 25%;
+        font-size: 1rem;
         max-width: 200px;
         padding: 0.6rem;
         height: 25px;
         border-radius: $radius;
 
-        .active{
-            color: $primary;
-        }
+      
     }
 
     
 
     }
 
+    .active{
+        color: $complementary2;
+    }

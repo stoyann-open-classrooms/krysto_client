@@ -6,7 +6,8 @@ import { getProfil, reset } from '../../../features/user/userSlice'
 
 import "./dashboard.css"
 import { NavLink, Outlet } from 'react-router-dom'
-
+import TitlePage from '../../../components/layout/TitlePage'
+import ProfilIcone from '../../../assets/icones/primary-home-logo.png'
 
 function Dashboard() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
@@ -33,11 +34,7 @@ function Dashboard() {
   } else {
     return (
       <section>
-     <div className="title-page">
-      <h1>Bienvenue sur votre Dashboard</h1>
-      {/* <img src={HomeLogo} alt="" /> */}
-     </div>
-  
+   <TitlePage title={"Bienvenue sur votre dashboard"} icone={ProfilIcone}/>
       </section>
 
 

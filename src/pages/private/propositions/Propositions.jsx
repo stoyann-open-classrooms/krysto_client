@@ -1,9 +1,12 @@
 import React from 'react'
+import TitlePage from '../../../components/layout/TitlePage'
+import PropositionIcone from '../../../assets/icones/enveloppe.png'
 
 function Propositions() {
   return (
     <section>
-        <h1>Mes propositions</h1>
+   <TitlePage title={"Mes propositions"} icone={PropositionIcone}/>
+        
     </section>
   )
 }
