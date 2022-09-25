@@ -5,6 +5,8 @@ import { toast } from 'react-toastify'
 import { useSelector, useDispatch } from 'react-redux'
 import { login } from '../../features/auth/authSlice'
 import { FaCheck, FaEnvelope, FaLock } from 'react-icons/fa'
+import './LoginForm.css'
+
 function LoginForm() {
   const [formData, setFormData] = useState({
     email: '',
@@ -44,11 +46,8 @@ function LoginForm() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <hgroup>
-        <h1 className="login_form_title">Bonjour !</h1>
-        <h2>Connectez-vous pour découvrir toutes nos fonctionnalités !</h2>
-      </hgroup>
+    <form onSubmit={onSubmit} >
+
       <div className="field">
         <input
           type="email"

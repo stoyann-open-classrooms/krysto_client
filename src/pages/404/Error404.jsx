@@ -8,6 +8,7 @@ function Error404() {
     <div className=" page-content main-404 ">
       <h2 className="title  ">oups !</h2>
       <h1 className="title ">404</h1>
+  
       <h3 className='subtitle '>Il semblerait que vous vous soyez perdus...</h3>
 
 <div className='coins-404'>
@@ -16,7 +17,7 @@ function Error404() {
 </div>
 
      
-   <a href='/' className='submit-btn'>
+   <a href='/' className='back-btn'>
      Retour a l'accueil</a>
     </div>
   )

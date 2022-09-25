@@ -2,52 +2,51 @@
 @import '../../../SASS/variables';
 @import '../../../SASS/placeholders';
 
-.footer {
+footer {
   background-color: $primary-light;
-  height:  40rem;
-  
-  padding: 1rem 1rem 1rem 6rem;
-  width: 100%;
-  z-index: 999999;
+position: relative;
+color: $light;
+padding: 5rem;
+p{
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  opacity: 0.4;
 }
 
-.social-media-container {
-  a {
-    font-size: 30px;
-    margin: 0 20px;
-    border: none;
-    color: $light;
-    background-color: transparent;
-  }
-}
-
-
-.footer-nav-container{
+ul {
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-.footer-nav-section{
-  p{
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    font-weight: bolder;
-    color: $primary-dark;
-  }
-ul{
   li{
-    font-size: 1.2rem;
-    margin: 1rem 0;
-transition: all 0.2s;
+    margin-right: 3rem;
+    color: $text;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    line-height: 2.5;
+    color: $light;
+    display: flex;
+    align-items: center;
     &:hover{
       color: $secondary;
+    }
+    a{
+      margin-right: 1rem;
+   
+     
+      transition: color 0.6s;
     }
   }
 }
 }
+@media(max-width:960px) {
+  // hide desktop menu
+  
+}
 
-.all-right-reserved{
-  margin-top: 2rem;
-  font-size: 2rem;
-  text-align: center;
+@media(max-width:600px) {
+  
 }

@@ -4,9 +4,9 @@ function Login() {
  
 
   return (
-    <div className='page-content'>
+    <section className='section-a'>
     <LoginForm/>
-    </div>
+    </section>
   )
 }
 

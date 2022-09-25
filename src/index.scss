@@ -6,29 +6,24 @@ body{
   background-color: $light;
   color: $text;
 }
-
-
+main{
+  min-height: 100vh;
+}
+.page-content{
+  background-color: $light;
+}
 section{
-  height: 100vh;
-  background-position: center center;
-
-  position: relative;
+  min-height: 100vh;
 }
 
-form {
-  background-color: $primary-light;
-  border-radius: $radius;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 200px;
-  max-width: 560px;
-  display: flex;
-  margin: auto;
-  hgroup{
-    text-align: center;
-    margin-bottom: 2rem;
-  }
 
+.stop-scrolling{
+  overflow: hidden;
+}
+
+form{
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .field {
@@ -62,6 +57,3 @@ form {
     padding: 1rem;
   }
 }
-
-
-

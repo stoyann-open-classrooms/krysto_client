@@ -26,7 +26,6 @@ ul {
 }
 
 button {
-  background-color: transparent;
   border: none;
   color: white;
   cursor: pointer;
@@ -37,4 +36,13 @@ button:active {
 
 input:focus {
   outline: none;
-}/*# sourceMappingURL=cgu.css.map */
+}
+
+form {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}/*# sourceMappingURL=LoginForm.css.map */

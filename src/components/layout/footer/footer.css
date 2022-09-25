@@ -26,7 +26,6 @@ ul {
 }
 
 button {
-  background-color: transparent;
   border: none;
   color: white;
   cursor: pointer;
@@ -39,44 +38,39 @@ input:focus {
   outline: none;
 }
 
-.footer {
+footer {
   background-color: #5e7691;
-  height: 40rem;
-  padding: 1rem 1rem 1rem 6rem;
-  width: 100%;
-  z-index: 999999;
-}
-
-.social-media-container a {
-  font-size: 30px;
-  margin: 0 20px;
-  border: none;
+  position: relative;
   color: #ECEAF8;
-  background-color: transparent;
+  padding: 5rem;
 }
-
-.footer-nav-container {
+footer p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  opacity: 0.4;
+}
+footer ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.footer-nav-section p {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  font-weight: bolder;
-  color: #292f4d;
+footer ul li {
+  margin-right: 3rem;
+  color: #313539;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  line-height: 2.5;
+  color: #ECEAF8;
+  display: flex;
+  align-items: center;
 }
-.footer-nav-section ul li {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  transition: all 0.2s;
-}
-.footer-nav-section ul li:hover {
+footer ul li:hover {
   color: #F49E4C;
 }
-
-.all-right-reserved {
-  margin-top: 2rem;
-  font-size: 2rem;
-  text-align: center;
+footer ul li a {
+  margin-right: 1rem;
+  transition: color 0.6s;
 }/*# sourceMappingURL=footer.css.map */
