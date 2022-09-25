@@ -5,6 +5,7 @@ import { reset } from '../../features/user/userSlice'
 import { getProfil } from '../../features/user/userSlice'
 import { Outlet, useLocation, Navigate, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import DashboardNav from '../../components/dashboard/DashboardNav'
 function Private() {
   const user = JSON.parse(localStorage.getItem('userToken'))
 
@@ -36,6 +37,7 @@ function Private() {
 
   return (
     <>
+    <DashboardNav/>
       <Outlet />
     </>
   )

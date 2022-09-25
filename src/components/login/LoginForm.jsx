@@ -47,24 +47,21 @@ function LoginForm() {
 
   return (
     <form onSubmit={onSubmit} className="login-form">
-      <hgroup>
-        <h1 className="login_form_title">Bonjour !</h1>
-        <h2>Connectez-vous pour découvrir toutes nos fonctionnalités !</h2>
-      </hgroup>
+    
       <div className="field">
+        <label htmlFor="email">e-mail</label>
         <input
           type="email"
-          placeholder="Email"
+       
           id="email"
           value={email}
           name="email"
           onChange={onChange}
         />
-        <span>
-          <FaEnvelope />
-        </span>
+       
       </div>
       <div class="field">
+        <label htmlFor="password">Mot de passe</label>
         <input
           type="password"
           placeholder="password"
@@ -74,9 +71,6 @@ function LoginForm() {
           onChange={onChange}
         />
 
-        <span>
-          <FaLock />
-        </span>
       </div>
       <div class="field">
         <div class="control">
@@ -89,9 +83,7 @@ function LoginForm() {
         Mot de passe oublié
       </Link>
 
-      <Link to={'/register-subscription'} className="is-link ml-6">
-        Pas encore inscrit ?
-      </Link>
+
       </div>
     </form>
   )

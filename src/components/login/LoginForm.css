@@ -36,4 +36,18 @@ button:active {
 
 input:focus {
   outline: none;
+}
+
+.login-form {
+  height: auto;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-family: "DM Sans";
+}
+.login-form input {
+  background-color: transparent;
+  border-radius: none;
+  border-bottom: solid 1px #304D6D;
 }/*# sourceMappingURL=LoginForm.css.map */

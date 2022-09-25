@@ -4,3 +4,18 @@
 
 
 
+.login-form{
+    height: auto;
+   
+    border-radius: $radius * 4;
+    background-color: #fff;
+    padding: 2rem;
+margin-bottom: 2rem;
+    font-family: "DM Sans";
+input{
+    background-color: transparent;
+    border-radius: none;
+border-bottom: solid 1px $primary;
+}
+
+}
