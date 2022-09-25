@@ -25,7 +25,9 @@ function App() {
             <Route
               path="/private"
               element={'./pages/private/Private.jsx'}
-            ></Route>
+            >
+<Route path='/private/dashboard' element={'./pages/private/dashboard'}/>
+            </Route>
           </Routes>
         </main>
         <Footer/>
