@@ -42,89 +42,69 @@ function Header() {
         onClick={toggleNav}
         className={toggle ? 'overlay-show' : 'overlay'}
       ></div>
-      <div className={toggle ? 'mobile-main-menu show-menu' : 'mobile-main-menu'}>
+      <div
+        className={toggle ? 'mobile-main-menu show-menu' : 'mobile-main-menu'}
+      >
         <ul>
-        <li className="mobile-only">
+          <li className="mobile-only">
             <Link to={'/'}>Accueil</Link>
           </li>
-      
+
           {/* // mobile only */}
 
-        
           <li className="mobile-only">
             <Link to={'/search'}>Rechercher</Link>
           </li>
-        
 
-          {token ? 
-          <>
-                    <li className="mobile-only">
-            <Link to={'/login'}>Dashboard</Link>
-          </li>
-                    <li >
-            <Link to={'/login'}>Mes propositions</Link>
-          </li>
-                    <li className="mobile-only">
-            <Link to={'/login'}>Mes trocs</Link>
-          </li>
-                    <li className="mobile-only">
-            <Link to={'/login'}>Deconnexion</Link>
-          </li>
-         
-          </>
-          : 
-          <>
-
-                    <li className="mobile-only">
-            <Link to={'/login'}>Connexion</Link>
-          </li>
-         
-          <li className="mobile-only">
-            <Link to={'/register'}>S'inscrire</Link>
-          </li>
-          </>
-          
-          }
-
-
-
-
-
-{token ? 
-          <>
-            
-                    <li >
-            <Link to={'/login'}>Mes comptes</Link>
-          </li>
-       
-            
-         
-          </>
-          : 
-          <>
-      <li >
-            <Link to={'/money'}>La monnaie</Link>
-          </li>
+          {token ? (
+            <>
+              <li className="mobile-only">
+                <Link to={'/private/dashboard'}>Dashboard</Link>
+              </li>
               <li>
-            <Link to={'/'}>A propos</Link>
-          </li>
-          <li>
-            <Link to={'/'}>Team</Link>
-          </li>
-          <li>
-            <Link to={'/'}>Contact</Link>
-          </li>
-          </>
-          
-          }
+                <Link to={'/login'}>Mes propositions</Link>
+              </li>
+              <li className="mobile-only">
+                <Link to={'/login'}>Mes trocs</Link>
+              </li>
+              <li className="mobile-only">
+                <Link to={'/login'}>Deconnexion</Link>
+              </li>
+            </>
+          ) : (
+            <>
+              <li className="mobile-only">
+                <Link to={'/login'}>Connexion</Link>
+              </li>
 
+              <li className="mobile-only">
+                <Link to={'/register'}>S'inscrire</Link>
+              </li>
+            </>
+          )}
 
-
-
-
-          
-      
-
+          {token ? (
+            <>
+              <li>
+                <Link to={'/login'}>Mes comptes</Link>
+              </li>
+            </>
+          ) : (
+            <>
+              <li>
+                <Link to={'/money'}>La monnaie</Link>
+              </li>
+              <li>
+                <Link to={'/'}>A propos</Link>
+              </li>
+              <li>
+                <Link to={'/'}>Team</Link>
+              </li>
+              <li>
+                <Link to={'/'}>Contact</Link>
+              </li>
+            </>
+          )}
         </ul>
       </div>
       <header className="main-header">
@@ -149,32 +129,28 @@ function Header() {
               <Link to={'/money'}>La monnaie</Link>
             </li>
             <li>
-              <FaUser/>
+              <FaUser />
               <Link to={'/money'}>Profil</Link>
             </li>
 
-            {token ? 
-            <>
-              <li>
-              <FaSignOutAlt />
-              <Link to={'/login'}>deconnexion</Link>
-            </li>
-        
-            </>
-            : 
-
-            <>
-            <FaSignInAlt />
-            <Link to={'/login'}>Connexion</Link>
-            <li>
-          </li>
-          <li>
-            <FaRegUserCircle />
-            <Link to={'/register'}>S'inscrire</Link>
-          </li>
-          </>
-            
-            }
+            {token ? (
+              <>
+                <li>
+                  <FaSignOutAlt />
+                  <Link to={'/login'}>deconnexion</Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <FaSignInAlt />
+                <Link to={'/login'}>Connexion</Link>
+                <li></li>
+                <li>
+                  <FaRegUserCircle />
+                  <Link to={'/register'}>S'inscrire</Link>
+                </li>
+              </>
+            )}
           </ul>
         </nav>
       </header>

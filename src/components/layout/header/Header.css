@@ -106,9 +106,10 @@ input:focus {
   align-items: center;
   text-transform: uppercase;
   height: 6rem;
-  background-color: #ECEAF8;
-  color: #343B42;
+  background-color: #304D6D;
+  color: #ECEAF8;
   padding: 0 1rem;
+  border-bottom: solid 2px #F49E4C;
 }
 
 .logo {
@@ -174,7 +175,7 @@ input:focus {
 .hamburger span {
   position: absolute;
   height: 2px;
-  background-color: #343B42;
+  background-color: #ECEAF8;
   width: 20px;
   transition: all 0.5s;
 }

@@ -14,9 +14,10 @@
   align-items: center;
   text-transform: uppercase;
   height: 6rem;
-  background-color: $light;
-  color: $dark;
+  background-color: $primary;
+  color: $light;
   padding: 0 1rem;
+  border-bottom: solid 2px $secondary;
 }
 
 .logo {
@@ -93,7 +94,7 @@ padding: 1rem;
   span{
     position: absolute;
     height: 2px;
-    background-color: $dark;
+    background-color: $light;
     width: 20px;
     transition: all 0.5s;
   }

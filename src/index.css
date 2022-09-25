@@ -51,6 +51,8 @@ section {
   display: flex;
   margin: auto;
   max-width: 1300px;
+  padding: 0 6%;
+  margin-top: 2rem;
 }
 
 .stop-scrolling {

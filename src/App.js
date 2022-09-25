@@ -10,6 +10,8 @@ import Login from './pages/login/Login'
 import Error404 from './pages/404/Error404'
 import Footer from './components/layout/footer/Footer'
 
+import Dashboard from './pages/private/dashboard/Dashboard.jsx'
+import Private from './pages/private/Private'
 
 function App() {
   return (
@@ -24,9 +26,9 @@ function App() {
             {/* Private routes */}
             <Route
               path="/private"
-              element={'./pages/private/Private.jsx'}
+              element={<Private/>}
             >
-<Route path='/private/dashboard' element={'./pages/private/dashboard'}/>
+               <Route path="/private/dashboard" element={<Dashboard/>} />
             </Route>
           </Routes>
         </main>
