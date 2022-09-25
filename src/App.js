@@ -11,7 +11,10 @@ import Error404 from './pages/404/Error404'
 import Footer from './components/layout/footer/Footer'
 
 import Dashboard from './pages/private/dashboard/Dashboard.jsx'
+import Wallets from './pages/private/wallets/Wallets.jsx'
 import Private from './pages/private/Private'
+import Propositions from './pages/private/propositions/Propositions'
+import Trocs from './pages/private/trocs/Trocs.jsx'
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
               element={<Private/>}
             >
                <Route path="/private/dashboard" element={<Dashboard/>} />
+               <Route path="/private/dashboard/wallets" element={<Wallets/>} />
+               <Route path="/private/dashboard/propositions" element={<Propositions/>} />
+               <Route path="/private/dashboard/my-trocs" element={<Trocs/>} />
             </Route>
           </Routes>
         </main>
