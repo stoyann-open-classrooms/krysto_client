@@ -9,7 +9,7 @@ function Landing() {
     <section className='page-section'>
         <div className='title-group'>
         <h1>Le troc nouvelle génèration !</h1>
-        <h2>Le <strong>Krysto</strong>  une monnaie numrique local inspirée de la Theorie relative de la monnaie vous permettant d’echanger des biens ou des services sur la plateforme</h2>
+        <h2>Le <strong>Krysto</strong>  une  numrique local inspirée de la Theorie relative de la monnaie vous permettant d’echanger des biens ou des services sur la plateforme</h2>
         </div>
 
 
