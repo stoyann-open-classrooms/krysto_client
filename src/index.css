@@ -28,7 +28,7 @@ ul {
 button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: #ECEAF8;
   cursor: pointer;
 }
 button:active {

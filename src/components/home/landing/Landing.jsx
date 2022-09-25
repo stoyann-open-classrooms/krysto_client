@@ -9,10 +9,10 @@ function Landing() {
       <div className="section-inner">
         <h4>Gagnez en pouvoir d'achat</h4>
         <h2>Graçe au Krysto</h2>
-        <div className="btn animate">
+        <button className="btn">
           <div className="hover"></div>
           <span>s'inscrire</span>
-        </div>
+        </button>
       </div>
    
 
