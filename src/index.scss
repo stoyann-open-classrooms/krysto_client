@@ -5,17 +5,15 @@
 main {
   // height: 100%;
   width: calc(100vw);
-  left: 3rem;
+
   height: 100%;
-  top: 6rem;
-
-  padding: 1rem   0 ;
-
-
-  color: white;
-  background-color: $primary-dark;
+  top: 5rem;
+  padding: 1rem;
+  color: $text;
+  background-color: $light;
   position: absolute;
   overflow: scroll;
+  
 }
 
 
@@ -88,9 +86,9 @@ form {
 }
 
 
-.btn-danger {
-  background-color: $danger;
-  padding: 0.4rem 1rem;
+.btn-parameters {
+  border: 3px solid $primary;
+  padding: 0.6rem 3rem;
   border-radius: $radius;
 }
 

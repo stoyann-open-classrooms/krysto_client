@@ -6,10 +6,11 @@ import HeroTitle from '../../components/shared/heroTitle/HeroTitle'
 import Spinner from '../../components/shared/spinner/Spinner'
 import { getProfil, reset } from '../../features/user/userSlice'
 import './profilParameters.css'
-import { FaCheck, FaLock } from 'react-icons/fa'
+import { FaCheck, FaLock, FaMailBulk, FaTrash, FaVoicemail } from 'react-icons/fa'
 import ResetMailForm from '../../components/profilParameters/ResetMailForm'
 import UpdatePassword from '../../components/profilParameters/UpdatePassword'
 import ProfilParametersMap from '../../components/profilParameters/ProfilParametersMap'
+import { Link } from 'react-router-dom'
 function ProfilParameters() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
     (state) => state.user,
@@ -35,87 +36,30 @@ function ProfilParameters() {
   } else {
     return (
       <div className='page-content'>
-        {/* <div className="dashbord-top container p-4">
-          <div class="field is-grouped is-grouped-multiline">
-            <div class="control mt-5">
-              <div class="tags has-addons is-large">
-                <span class="tag is-dark is-large">compte actif</span>
-                {profil.user.isActive ? (
-                  <span class="tag is-info is-large is-success">Oui</span>
-                ) : (
-                  <span class="tag is-info is-large is-danger">Non</span>
-                )}
-              </div>
-              <div class="tags has-addons is-large">
-                <span class="tag is-dark is-large">Type d'abonement</span>
-                <span class="tag is-info is-large is-success">
-                  {profil.user.plan.name}
-                </span>
-              </div>
-              <div class="tags has-addons is-large">
-                <span class="tag is-dark is-large">
-                  Date de création du compte
-                </span>
-                <span class="tag is-info is-large is-info">
-                  {new Date(profil.user.plan.created).toLocaleDateString()}
-                </span>
-              </div>
-              <div class="control mt-5">
-                <div class="tags has-addons is-large">
-                  <span class="tag is-dark is-large">Total de vos comptes</span>
-                  <span class="tag is-info is-large">30.44 Krysto</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        <HeroTitle title={`Paramètres du  compte de ${profil.user.name}`} />
-
-        <div className="container p-2">
-          {/* <section className="parameters-localisation">
-            <h1 className="title is-4 ">
-              {' '}
-              Localiser votre position principale
-            </h1>
-            {profil.user.coordinates ? (
-              <div className="leaflet-container">
-       <ProfilParametersMap coordinates= {profil.user.coordinates}/>
-              </div>
-            ) : (
-              <p>Votre localisation n'est pas enregistré.</p>
-            )}
-          </section> */}
-          <section className=" mt-6 parameters-email-notification">
-            <h1 className="title is-4 cadre">
-              {' '}
-              Activer les notifications par e-mail
-            </h1>
-            <label class="checkbox">
-              <input type="checkbox" />
-              Remember me
-            </label>
-          </section>
-          <section className="mt-6 parameters-section">
-            <h1 className="title is-4 cadre"> Modifier votre e-mail</h1>
-            <ResetMailForm />
-          </section>
-          <section className=" mt-6 parameters-section">
-            <h1 className="title is-4 cadre"> Modifier votre mot de passe</h1>
-
-            <UpdatePassword />
-          </section>
-          <section className="danger-section">
-            <h1 className="title is-4 cadre"> Résilier votre abonement</h1>
-            <button className="btn-danger">
-              Resilier votre abonement
-            </button>
-            <button className='btn-danger' >
-              Supprimer votre compte
-            </button>
-          </section>
-       
-        </div>
+        <HeroTitle title={`Paramètres du compte de ${profil.user.name}`} />
+     
+     <section className='parameters-section'>
+      <h3>Modifier votre e-mail</h3>
+      <Link to={'/private/change-email'}>
+      <button className='btn-parameters'>
+        Modifier Votre adresse e-mail</button>
+      </Link>
+     </section>
+     <section className='parameters-section'>
+      <h3>Modifier votre mot de passe</h3>
+      <button className='btn-parameters'>
+        Modifier Votre mot de passe</button>
+     </section>
+     <section className='parameters-section'>
+      <h3>Résilier votre abonement</h3>
+      <button className='btn-parameters'>
+        Résilier votre abonement</button>
+     </section>
+     <section className='parameters-section'>
+      <h3>Supprimer votre compte</h3>
+      <button className='btn-parameters'>
+      <FaTrash/>  Supprimer votre compte</button>
+     </section>
       </div>
     )
   }

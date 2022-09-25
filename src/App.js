@@ -53,6 +53,7 @@ import Main from './pages/private/wallets/main/Main'
 import Converter from './pages/private/Converter/Converter.jsx'
 import Offer from './pages/offer/Offer'
 import Proposals from './pages/private/proposals/Proposals'
+import ChangeEmail from './pages/profilParameters/changeEmail/ChangeEmail'
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
      <Route path="/private" element={<Private />}>
      
             <Route path="/private/add-offer" element={<AddOffer />} />
+            <Route path="/private/change-email" element={<ChangeEmail />} />
             <Route path="/private/dashboard" element={<Dashboard />} />
             <Route path="/private/profil-parameters" element={<ProfilParameters />} />
             <Route path="/private/my-offers" element={<MyOffers />} />

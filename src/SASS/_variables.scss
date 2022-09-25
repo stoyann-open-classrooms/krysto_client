@@ -26,7 +26,7 @@ $dark-color: rgb(22, 71, 59);
 // $green: #65bc62;
 // $orange: #a8662c;
 // $danger-color: #e49494;
- $light: #F2F2F2;
+
 
 
 // $comp1: #B47EB3;
@@ -39,29 +39,34 @@ $dark-color: rgb(22, 71, 59);
 
 
 // Use colors
+$text:#313539;
+$light:#ECEAF8;
+$dark:#343B42;
+$grey:#5D656E;
+
+
 
 $primary-dark: #292f4d;
 $primary-light: #5e7691;
 $primary: #304D6D;
 $secondary:#F49E4C;
-$danger:#f44c4c;
+$complementary1:#957FAA;
+$complementary2:#AAD2BA;
+$complementary3:#49392C;
+$danger:#C26066;
 
 
 // shadow
-$shadow: 5px 5px 20px #161f1c9a;
+$shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 // radius
-$radius: 10px;
+$radius: 5px;
 
 // Responsive
-$smartphone: 50rem;
-$tabletMin: 50.1rem;
-$tabletMax: 76.8rem;
-$normalMin: 76.9rem;
-$normalMax: 120rem;
-$widescreen: 120.1;
-$landscape: 50rem;
-
+// Responsive
+$bigPhone: 40.5rem;
+$tablet: 76.8rem;
+$desktop: 120rem;
 
 
 

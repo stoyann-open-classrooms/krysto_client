@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 *,
 ::before,
 ::after {
@@ -12,10 +12,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -29,6 +26,20 @@ a {
 
 li {
   list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+input:focus {
+  outline: none;
 }
 
 @-webkit-keyframes flip-in-hor-top {
@@ -84,9 +95,10 @@ li {
 }
 
 .offer-card {
-  background-color: #304D6D;
+  background-color: white;
   color: #5e7691;
-  border-radius: 10px;
+  border-radius: 5px;
+  max-width: 300px;
   font-size: 12px;
 }
 .offer-card .body-card {
@@ -114,8 +126,8 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   height: 180px;
 }
 .slider-card .controls {

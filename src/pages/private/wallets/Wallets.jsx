@@ -3,7 +3,6 @@ import HeroTitle from '../../../components/shared/heroTitle/HeroTitle'
 
 function Wallets() {
 
-
   return (
     <div className="page-content">
       <HeroTitle title={'Gerer vos krysto'} />

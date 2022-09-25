@@ -54,6 +54,13 @@ function Navbar() {
         onClick={toggleNav}
         className={toggle ? 'overlay active' : 'overlay'}
       ></div>
+          <div className="burger" onClick={toggleNav}>
+            <div className={toggle ? "contLigne btn1 active" :  "contLigne btn1"}>
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+            </div>
+        </div>
       <div className={toggle ? 'sidebar active' : 'sidebar'}>
         <Link to={"/"} className="logo_content">
           <div className="logo">
@@ -63,13 +70,7 @@ function Navbar() {
         </Link>
         <span>
   
-    <div className="burger" onClick={toggleNav}>
-            <div className={toggle ? "contLigne btn1 active" :  "contLigne btn1"}>
-                <div class="lignes"></div>
-                <div class="lignes"></div>
-                <div class="lignes"></div>
-            </div>
-        </div>
+
         </span>
 
         <ul className="nav_list">

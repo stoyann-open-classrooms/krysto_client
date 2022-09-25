@@ -16,27 +16,24 @@
   display: block;
 }
 .sidebar.active {
-  width: 240px;
+  width: 220px;
   .profil_info {
     opacity: 1;
     margin-left: 1rem;
     font-size: 1.3rem;
   }
   .logo_content {
- 
     .logo {
       opacity: 1;
     }
   }
 
   .burger {
-    left: 90%;
-    
+    left: 80%;
   }
 
   #log_out {
     opacity: 1;
-  
   }
 
   ul {
@@ -56,14 +53,16 @@
 .sidebar {
   position: fixed;
   z-index: 999;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: -20px;
+
   height: 100%;
-  width: 240px;
+  width: 8rem;
+
   background: $primary;
   padding: 6px 14px;
   transition: all 0.5s ease;
-  width: 60px;
+
   .links_name {
     opacity: 0;
     pointer-events: none;
@@ -73,7 +72,7 @@
     position: relative;
 
     .logo {
-      color: white;
+      color: $light;
       display: flex;
       height: 50px;
       text-decoration: none;
@@ -86,14 +85,15 @@
       height: 5rem;
     }
   }
-  ul {
+  .nav_list {
     margin-top: 2rem;
+    margin-left: 2rem;
     li {
       position: relative;
       list-style: none;
       height: 5rem;
       width: 100%;
-    
+
       line-height: 5rem;
       font-size: 1rem;
 
@@ -108,16 +108,16 @@
 
       .tooltip {
         position: absolute;
-       
+
         width: 200px;
         top: 0%;
         transform: translateY(-20%);
         border-radius: 6px;
         text-align: center;
-   padding: 0.2rem;
+        padding: 0.2rem;
         left: 45px;
-font-size: 2rem;
-text-align: center;
+        font-size: 2rem;
+        text-align: center;
         background: $primary;
         color: $secondary;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -128,8 +128,7 @@ text-align: center;
 
       a {
         color: white;
-        margin: 0
-        ;
+        margin: 0;
         text-decoration: none;
         border-radius: 12px;
         &:hover {
@@ -148,51 +147,46 @@ text-align: center;
   }
 }
 
-.sidebar .burger {
-   position: absolute;
-   top: 2.5rem;
-   height: 3rem;
-   width: 3rem;
+ .burger {
+  position: absolute;
+  top: 2.5rem;
+  right: 56px;
+  height: 2rem;
+  width: 2rem;
+  z-index: 9999999;
 
 
-  left: 15%;
+  left: 25%;
   color: white;
   cursor: pointer;
- 
-  
-
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 
   .contLigne {
     width: 2rem;
     height: 42px;
     cursor: pointer;
     position: relative;
-}
-.lignes {
+  }
+  .lignes {
     width: 150%;
     height: 3px;
     border-radius: 5px;
     background: white;
     position: absolute;
-    transition: all .5s ease-in-out;
-}
-.lignes:nth-child(1){
-  top: 0px;
-}
-.lignes:nth-child(2){
-  top: 1rem;
-}
-.lignes:nth-child(3){
-  top: 2rem;
-}
-
+    transition: all 0.5s ease-in-out;
+  }
+  .lignes:nth-child(1) {
+    top: 0px;
+  }
+  .lignes:nth-child(2) {
+    top: 1rem;
+  }
+  .lignes:nth-child(3) {
+    top: 2rem;
+  }
 }
 
 .profile_content {
@@ -205,7 +199,6 @@ text-align: center;
   .profile {
     position: relative;
     padding: 10px 6px;
-    
 
     .profile_details {
       display: flex;
@@ -245,59 +238,50 @@ text-align: center;
   opacity: 0;
 }
 
-
 .log_btn {
   margin: 0 0.6rem;
-    padding: 0.4rem 1rem;
-    display: flex;
-    align-items: center;
-span {
-  margin-right: 1rem;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  span {
+    margin-right: 1rem;
+  }
+  &:hover {
+    color: $secondary;
+  }
 }
-&:hover{
-  color: $secondary;
-}
+
+@media only screen and (max-width: 400px) {
+  .sidebar {
+    width: 2rem;
   }
 
-@media only screen and (max-width: 400px)  {
-.sidebar{
-width: 4rem;
-
+  // .nav-icone {
+  //   height: 1rem;
+  //   width: 1rem;
+  // }
+  // main {
+  //   left: 0;
+  //   padding: 1rem;
+  // }
+  // .profile_content {
+  //   // display: none;
+  // }
 }
 
-.nav-icone{
-  height: 1rem;
-  width: 1rem;
-
-}
-main{
-  left: 0;
-  padding: 1rem;
-}
-.profile_content{
-  display: none;
-}
-}
-
-
-
-
-
-
-.btn1.active .lignes:nth-child(1){
+.btn1.active .lignes:nth-child(1) {
   top: 1rem;
   transform: rotate(135deg);
 }
-.btn1.active .lignes:nth-child(2){
+.btn1.active .lignes:nth-child(2) {
   transform: translateX(-20px);
   opacity: 0;
 }
-.btn1.active .lignes:nth-child(3){
+.btn1.active .lignes:nth-child(3) {
   top: 1rem;
   transform: rotate(-135deg);
 }
 
-
-.active{
+.active {
   color: $secondary;
 }

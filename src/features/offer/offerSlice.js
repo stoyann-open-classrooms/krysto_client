@@ -15,7 +15,7 @@ export const createOffer = createAsyncThunk(
     'offer/create',
     async (offerData, thunkAPI) => {
       try {
-     
+    
         const token = thunkAPI.getState().auth.user
         const userId = JSON.parse(window.localStorage.getItem('userId'))
       

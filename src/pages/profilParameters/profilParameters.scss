@@ -2,14 +2,3 @@
 @import '../../SASS/variables';
 @import '../../SASS/placeholders';
 
-.cadre {
-   @extend %title-cadre
-}
-
-.checkbox{
-
-    input {
-
-        color: white;
-    }
-}

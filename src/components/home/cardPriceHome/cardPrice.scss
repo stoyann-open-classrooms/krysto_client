@@ -4,6 +4,7 @@
 @import '../../../SASS/animations';
 
 .price-card {
+    position: relative;
   background-image: radial-gradient(
       circle at 38% 55%,
       hsla(149, 0%, 62%, 0.1) 0%,
@@ -52,7 +53,7 @@
     linear-gradient(135deg, rgb(48, 77, 109), rgb(94, 118, 145));
   width: 30rem;
 
-  height: auto;
+  height: 520px;
 
   margin: 2rem 1rem;
   border-radius: 5px;
@@ -60,6 +61,7 @@
 
 .card-price-home {
   text-align: center;
+  position: relative;
   h3 {
     text-align: center;
     font-size: 3rem;
@@ -93,12 +95,45 @@
   }
 }
 
-.card-price-btn {
-  display: flex;
-  margin: 1rem auto;
-  padding: 1rem;
-  text-align: center;
-  justify-content: center;
-  width: 90%;
-  background-color: $primary;
+
+
+.card-price-btn{
+    position: absolute;
+left: 20%;
+text-transform: uppercase;
+    width: 200Px;
+    height: 30px;
+    background: linear-gradient(90deg, rgb(60, 131, 208),rgb(23, 49, 78));
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    text-shadow: 6px 3px 2px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: .5s;
+    overflow: hidden;
+    &:hover{
+        transform: perspective(300px) ;
+        text-shadow: -6px 3px 2px rgba(0, 0, 0, .2);
+    
+    }
+    
+&:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #ffff, transparent);
+    transition: .5s;
 }
+
+&:hover:before{
+    left: 100%;
+
+}
+}
+

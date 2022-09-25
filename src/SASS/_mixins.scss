@@ -1,31 +1,20 @@
 
 // ===================== responsive =====================
 
-@mixin smartphone {
-  @media only screen and (max-width: $smartphone) {
+@mixin bigPhone-and-lower {
+  @media screen and (max-width: $bigPhone) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media(min-width: $tabletMin)  and (max-width: $tabletMax) {
+@mixin tablet-and-higher {
+  @media screen and (min-width: $tablet) {
     @content;
   }
 }
 
-@mixin normal {
-  @media(min-width: $normalMin)  and (max-width: $normalMax) {
-    @content;
-  }
-}
-
-@mixin widescreen {
-  @media only screen and (max-width: $widescreen) {
-    @content;
-  }
-}
-@mixin landscape {
-  @media only screen and (max-width: $landscape) {
+@mixin desktop-and-higher {
+  @media screen and (min-width: $desktop) {
     @content;
   }
 }

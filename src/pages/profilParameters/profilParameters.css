@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 *,
 ::before,
 ::after {
@@ -12,10 +12,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -37,19 +34,10 @@ button {
   color: white;
   cursor: pointer;
 }
-
-.cadre {
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #304D6D;
-  padding: 1rem;
-  margin-top: 1rem;
-  background-color: #F2F2F2;
-  -webkit-animation: flip-in-hor-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: flip-in-hor-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  border-radius: 10px;
+button:active {
+  transform: scale(0.98);
 }
 
-.checkbox input {
-  color: white;
+input:focus {
+  outline: none;
 }/*# sourceMappingURL=profilParameters.css.map */

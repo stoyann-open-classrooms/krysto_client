@@ -12,7 +12,7 @@ function Error404() {
 
 <div className='coins-404'>
 
-<img src={GifCoins} alt="piéce Krysto qui tourne sur elle même."  />
+<img src={GifCoins} alt="piéce Krysto qui tourne sur elle même"  />
 </div>
 
      

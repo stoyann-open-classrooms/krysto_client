@@ -15,13 +15,12 @@
 }
 
 .offer-card {
-  background-color: $primary;
+  background-color: white;
   color: $primary-light;
- 
-  border-radius: $radius;
- 
-  font-size: 12px;
 
+  border-radius: $radius;
+  max-width: 300px;
+  font-size: 12px;
 
   .body-card {
     padding: 1rem;
@@ -35,12 +34,13 @@
     }
   }
 
-  .detail-btn{
+  .detail-btn {
     background-color: $primary-light;
     border: none;
     font-weight: bolder;
     color: $primary-dark;
-    &:hover{
+
+    &:hover {
       color: $primary-light;
       background-color: $primary-dark;
     }
@@ -92,10 +92,7 @@
   }
 }
 
-
-
-
-.price{
+.price {
   display: flex;
   align-items: center;
   font-size: 16px;
