@@ -4,72 +4,72 @@
 
 
 
-.container-subscription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+// .container-subscription {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     width: 100%;
    
-  }
+//   }
   
-  .subcription-card {
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    border: $secondary 2px solid;
-    padding: 1rem 3rem; 
-    margin: 1rem;
+//   .subcription-card {
+//     position: relative;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     align-items: center;
+//     color: white;
+//     border: $secondary 2px solid;
+//     padding: 1rem 3rem; 
+//     margin: 1rem;
    
-  }
-  .subsription-list{  
+//   }
+//   .subsription-list{  
    
- li{
-  background-color: $primary-light;
-  margin: 1rem;
-  font-size: 1.4rem;
-  padding: 0.4rem 2rem;
-  border-radius: $radius;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+//  li{
+//   background-color: $primary-light;
+//   margin: 1rem;
+//   font-size: 1.4rem;
+//   padding: 0.4rem 2rem;
+//   border-radius: $radius;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
 
- }
+//  }
    
-  }
+//   }
   
-.subcription-card-top {
-    color: $primary-light;
+// .subcription-card-top {
+//     color: $primary-light;
    
-    font-size: 2rem;
+//     font-size: 2rem;
   
-    p{
-      color: white;
-      font-size: 1rem;
-    }
+//     p{
+//       color: white;
+//       font-size: 1rem;
+//     }
 
-  }
+//   }
 
-  .nb-free {
-    position: absolute;
-    top: -13px;
-    color: $secondary
+//   .nb-free {
+//     position: absolute;
+//     top: -13px;
+//     color: $secondary
   
-  }
+//   }
 
-  .unlimited{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 1rem 0 0 0;
-    color: $secondary;
-    font-size: 1.3rem;
-    span{
+//   .unlimited{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     margin: 1rem 0 0 0;
+//     color: $secondary;
+//     font-size: 1.3rem;
+//     span{
       
-      margin-right: 2rem;
-      font-size: 2rem;
-    }
-  }
+//       margin-right: 2rem;
+//       font-size: 2rem;
+//     }
+//   }

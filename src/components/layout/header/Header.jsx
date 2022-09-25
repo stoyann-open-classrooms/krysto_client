@@ -1,18 +1,18 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 import { useSelector, useDispatch } from 'react-redux'
-import './Header.css'
-
 import { logout, reset } from '../../../features/auth/authSlice'
 import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa'
+import Coins from '../../../assets/coins/coinGif.gif'
+import './Header.css'
 
 
 function Header() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  
-  const token =JSON.parse( localStorage.getItem('userToken'))
-  console.log(token);
+
+  const token = JSON.parse(localStorage.getItem('userToken'))
+  console.log(token)
   const { user } = useSelector((state) => state.auth)
   const onLogout = () => {
     dispatch(logout())
@@ -20,55 +20,41 @@ function Header() {
     navigate('/')
     window.location.reload()
   }
-  console.log(user);
+  console.log(user)
 
+  return <>
+<header className='main-header'>
+  <div >
+    <Link className="logo" to={'/'}>
+      <img src={Coins} alt="piéce krysto qui tourne" />
+      <p>
 
-  return (
-    <>
-      <header>
+      Krysto
+      </p>
+    </Link>
+  </div>
+  <nav className='desktop-main-menu'>
+    <ul>
+      <li>
+        <Link to={'/'}>Accueil</Link>
+      </li>
+      <li>
+        <Link to={'/search'}>Rechercher</Link>
+      </li>
+      <li>
+        <Link to={'/money'}>La monnaie</Link>
+      </li>
+      <li>
+        <Link to={'/login'}>Connexion</Link>
+      </li>
+      <li>
+        <Link to={'/register'}>S'inscrire</Link>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-
-      <nav className='header-nav'>
-
-        {token ? 
-          <>
-          <button className= "log_btn_nav" onClick={onLogout}>
-            <FaSignOutAlt />
-          </button>
-        </>
-        : 
-        <>
-        <Link to={'/login'}>
-                      <button className="log_btn">
-                        <span>
-
-                        <FaSignInAlt />
-                        </span>
-                        Connexion
-                      </button>
-                    </Link>
-                    <Link to={'/register-subscription'}>
-                      <button className="log_btn">
-                        {' '}
-                        <span>
-                          
-                        <FaSignOutAlt />
-                        </span>
-                        S'inscrire
-                      </button>
-                    </Link>
-        </>
-        
-        }
-      
-
-
-        </nav>
-
-
-      </header>
-    </>
-  )
+</>
 }
 
 export default Header

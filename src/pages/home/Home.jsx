@@ -8,14 +8,14 @@ import './home.css'
 
 function Home() {
   return (
-    <div className="page-content">
-      <Landing/>
+    <main>
+      {/* <Landing/>
       <Kezako/>
       <Why/>
       <NoMony/>
       <Solution/>
-      <Price/>
-    </div>
+      <Price/> */}
+    </main>
   )
 
 }

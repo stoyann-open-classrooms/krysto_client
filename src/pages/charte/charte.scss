@@ -1,28 +1,3 @@
 @import "../../SASS/reset";
 @import '../../SASS/variables';
 @import '../../SASS/placeholders';
-
-.message {
-
-    .message-header{
-
-        font-size: 1.1rem;
-        line-height: 1.3rem;
-    }
-    height: 200px;
-    background-color: $primary;
-    letter-spacing: 0.7px;
-   .success{
-        background-color: $secondary;
-        color: white;
-    }
-    .warning{
-        background-color: $secondary;
-        color: white;
-    }
-    .danger{
-        background-color: $secondary;
-        color: white;
-    }
-  
-}

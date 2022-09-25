@@ -2,9 +2,9 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,9 +13,6 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
 }
 
 a {
@@ -24,7 +21,7 @@ a {
   font-weight: 600;
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -40,63 +37,4 @@ button:active {
 
 input:focus {
   outline: none;
-}
-
-.container-subscription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-
-.subcription-card {
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-  border: #F49E4C 2px solid;
-  padding: 1rem 3rem;
-  margin: 1rem;
-}
-
-.subsription-list li {
-  background-color: #5e7691;
-  margin: 1rem;
-  font-size: 1.4rem;
-  padding: 0.4rem 2rem;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.subcription-card-top {
-  color: #5e7691;
-  font-size: 2rem;
-}
-.subcription-card-top p {
-  color: white;
-  font-size: 1rem;
-}
-
-.nb-free {
-  position: absolute;
-  top: -13px;
-  color: #F49E4C;
-}
-
-.unlimited {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 1rem 0 0 0;
-  color: #F49E4C;
-  font-size: 1.3rem;
-}
-.unlimited span {
-  margin-right: 2rem;
-  font-size: 2rem;
 }/*# sourceMappingURL=register.css.map */

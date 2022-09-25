@@ -1,39 +1,3 @@
 @import "../../SASS/reset";
 @import '../../SASS/variables';
 @import '../../SASS/placeholders';
-
-.presentation-text-container{
-font-size: 1.8rem;
-margin: 6rem 0;
-p{
-    margin: 2rem;
-}
-}
-
-.pagination-previous , .pagination-next{
-   color: $primary;
-   font-size: 1.4rem;
-   border-color: $primary;
-
-   &:hover {
-    border-color: $primary-dark;
-   }
-}
-
-.presentation-content{
-height: 85vh;
-}
-.slider{
-    height: 80vh;
-    p{
-        font-size: 1.2rem;
-    }
-}
-
-.previousButton{
-svg{
-  fill: $primary;
-  color: $primary;
-
-}
-}

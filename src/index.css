@@ -2,9 +2,9 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,9 +13,6 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
 }
 
 a {
@@ -24,7 +21,7 @@ a {
   font-weight: 600;
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -42,15 +39,9 @@ input:focus {
   outline: none;
 }
 
-main {
-  width: 100vw;
-  height: 100%;
-  top: 5rem;
-  padding: 1rem;
-  color: #313539;
+body {
   background-color: #ECEAF8;
-  position: absolute;
-  overflow: scroll;
+  color: #313539;
 }
 
 .login_form_title {
@@ -93,29 +84,9 @@ form hgroup {
   padding: 0 1rem;
   position: relative;
   border: none;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
 }
 .field textarea {
   height: 15rem;
   padding: 1rem;
-}
-
-.submit-btn {
-  color: white;
-  background-color: #292f4d;
-  text-transform: uppercase;
-  padding: 1rem;
-  border-radius: 5px;
-  font-weight: bolder;
-  transition: all 0.3s ease-out;
-}
-.submit-btn:hover {
-  background: #F49E4C;
-  color: #292f4d;
-}
-
-.btn-parameters {
-  border: 3px solid #304D6D;
-  padding: 0.6rem 3rem;
-  border-radius: 5px;
 }/*# sourceMappingURL=index.css.map */

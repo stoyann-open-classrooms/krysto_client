@@ -2,9 +2,9 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,9 +13,6 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
 }
 
 a {
@@ -24,7 +21,7 @@ a {
   font-weight: 600;
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -40,26 +37,4 @@ button:active {
 
 input:focus {
   outline: none;
-}
-
-.message {
-  height: 200px;
-  background-color: #304D6D;
-  letter-spacing: 0.7px;
-}
-.message .message-header {
-  font-size: 1.1rem;
-  line-height: 1.3rem;
-}
-.message .success {
-  background-color: #F49E4C;
-  color: white;
-}
-.message .warning {
-  background-color: #F49E4C;
-  color: white;
-}
-.message .danger {
-  background-color: #F49E4C;
-  color: white;
 }/*# sourceMappingURL=charte.css.map */

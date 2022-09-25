@@ -31,7 +31,6 @@ import Error404 from './pages/404/Error404'
 import KrystoProject from './pages/krystoProject/KrystoProject'
 import RegisterForm from './pages/registerForm/RegisterForm'
 import Presentation from './pages/Presentation/Presentation'
-import PlasticProbleme from './pages/plasticProblem/PlasticProbleme'
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 
 // ===== private
@@ -46,7 +45,7 @@ import Private from './pages/private/Private'
 import RegisterSuccess from './pages/RegisterSuccess/RegisterSuccess'
 import ConfirmEmail from './pages/confirmEmail/ConfirmEmail'
 import Navbar from './components/layout/navbar/Navbar'
-import Footer from './components/layout/footer/Footer'
+// import Footer from './components/layout/footer/Footer'
 import Wallets from './pages/private/wallets/Wallets'
 import Deposit from './pages/private/wallets/deposit/Deposit'
 import Main from './pages/private/wallets/main/Main'
@@ -61,7 +60,7 @@ function App() {
       <Router>
         <Header />
         <Navbar />
-        <main className="content">
+        <main >
           <Routes>
             {/* === public */}
             <Route path="/" element={<Home />} />
@@ -89,7 +88,7 @@ function App() {
             <Route path="/g1-vs-krysto" element={<G1VsKrysto />} />
             <Route path="/register-form" element={<RegisterForm />} />
             <Route path="/krysto-project" element={<KrystoProject />} />
-            <Route path="/plastic-problem" element={<PlasticProbleme />} />
+        
             <Route path="/register-success" element={<RegisterSuccess />} />
             <Route path="/confirm-email" element={<ConfirmEmail />} />
             <Route path="*" element={<Error404 />} />
@@ -112,7 +111,7 @@ function App() {
             </Route>
 
           </Routes>
- <Footer/>
+ {/* <Footer/> */}
         </main>
      {/* ============ Private */}
       </Router>

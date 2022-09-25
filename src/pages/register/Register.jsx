@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './register.css'
 function Register() {
   return (
-    <div className="page-content">
+    <div>
       <h1>Choisissez votre formule...</h1>
       <h2 className="notification is-small is-success p-2">
         Inscription gratuite pour les 1000 premiers utilisateurs !
@@ -13,7 +13,7 @@ function Register() {
           <hgroup className="subcription-card-top">
             <h3>
               {' '}
-              <span>400 XPF</span>/mois
+              <span>400XPF</span>/mois
             </h3>
             <h4>Abonement mensuel</h4>
             <p>Engagement d'1 mois renouvlable Résiliable a tout moment.</p>

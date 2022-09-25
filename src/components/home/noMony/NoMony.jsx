@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function NoMony() {
   return (
-    <section className="page-section">
+    <section >
       <h2>
         Plus besoins d'argent, une autre façon de consommer, librement et
         ecologiquement.

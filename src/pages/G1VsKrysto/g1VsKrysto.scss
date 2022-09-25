@@ -2,15 +2,3 @@
 @import '../../SASS/variables';
 @import '../../SASS/placeholders';
 
-
-.comparatif-container{
-    h4{
-    
-    @extend %title-cadre;
-    }
-  }
-  
-
-  .blue-box{
-    background-color: $primary-light;
-  }
