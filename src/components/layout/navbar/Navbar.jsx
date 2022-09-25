@@ -22,7 +22,7 @@ import {  useDispatch } from 'react-redux'
 import './navbar.css'
 import { logout } from '../../../features/auth/authSlice'
 import { reset } from '../../../features/user/userSlice'
-import Coins from '../../../assets/coins/coinGif.gif'
+
 function Navbar() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
