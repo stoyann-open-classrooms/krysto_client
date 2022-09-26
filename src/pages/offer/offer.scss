@@ -8,6 +8,11 @@
     height: 15rem;
     margin-top: 2rem;
     width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .offer-page-top{
@@ -17,6 +22,7 @@
     margin-top: 2rem;
     h1{
         flex: 2;
+        @extend %text-cut
     }
 }
 .offer-page-body{

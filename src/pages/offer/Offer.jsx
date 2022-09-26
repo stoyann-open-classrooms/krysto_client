@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import Spinner from '../../components/shared/spinner/Spinner'
 import { getOffer, reset } from '../../features/offer/offerSlice'
+
+import noPhoto from '../../assets/no_picture.png'
 import './offer.css'
 function Offer() {
 
@@ -35,7 +37,15 @@ if(!offer.offer) {
   return (
     <section>
         <div className="offer-slider-container">
-            
+
+            {offer.offer.gallery[0] ? 
+        <img
+        src={`http://152.228.137.213:4001/${offer.offer.gallery[0]}`}
+        alt=""
+        />
+    : 
+        <img src={noPhoto} alt="" srcset="" />
+    }
         </div>
         <div className="offer-page-top">*
         <h1>
