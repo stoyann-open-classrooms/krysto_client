@@ -8,13 +8,13 @@ import Header from './components/layout/header/Header'
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import Error404 from './pages/404/Error404'
-import Footer from './components/layout/footer/Footer'
 
 import Dashboard from './pages/private/dashboard/Dashboard.jsx'
 import Wallets from './pages/private/wallets/Wallets.jsx'
 import Private from './pages/private/Private'
 import Propositions from './pages/private/propositions/Propositions'
 import Trocs from './pages/private/trocs/Trocs.jsx'
+import Search from './pages/search/Search'
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/search" element={<Search />} />
             <Route path="*" element={<Error404 />} />
             {/* Private routes */}
             <Route
