@@ -61,12 +61,7 @@ function Header() {
               <li className="mobile-only">
                 <Link to={'/private/dashboard'}>Dashboard</Link>
               </li>
-              <li>
-                <Link to={'/login'}>Mes propositions</Link>
-              </li>
-              <li className="mobile-only">
-                <Link to={'/login'}>Mes trocs</Link>
-              </li>
+         
               <li className="mobile-only">
                 <Link to={'/login'}>Deconnexion</Link>
               </li>

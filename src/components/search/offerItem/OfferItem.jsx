@@ -1,13 +1,22 @@
 import './offerItem.css'
-import test from '../../../assets/images/tortue_plastic.jpeg'
+import noPhoto from '../../../assets/images/tortue_plastic.jpeg'
 import coins from '../../../assets/coins/coinGif.gif'
 import { Link } from 'react-router-dom'
 import { FaEye } from 'react-icons/fa'
 function OfferItem({ offer }) {
+
+    
   return (
     <div className="offer-card">
       <div className="offer-img-container">
-        <img src={test} alt="" />
+      {offer.gallery[0] ? 
+        <img
+        src={`http://152.228.137.213:4001/${offer.gallery[0]}`}
+        alt=""
+        />
+    : 
+        <img src={noPhoto} alt="" srcset="" />
+    }
       </div>
       <div className="offer-card-body">
         <div className="card-body-top">

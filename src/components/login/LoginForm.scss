@@ -2,20 +2,18 @@
 @import '../../SASS/variables';
 @import '../../SASS/placeholders';
 
-
-
-.login-form{
-    height: auto;
-   
-    border-radius: $radius * 4;
-    background-color: #fff;
-    padding: 2rem;
-margin-bottom: 2rem;
-    font-family: "DM Sans";
-input{
+.login-form {
+  height: auto;
+  max-width: 400px;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'DM Sans';
+  input {
     background-color: transparent;
     border-radius: none;
-border-bottom: solid 1px $primary;
-}
-
+    border-bottom: solid 1px $primary;
+  }
 }

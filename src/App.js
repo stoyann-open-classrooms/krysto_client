@@ -17,6 +17,7 @@ import Private from './pages/private/Private'
 import Propositions from './pages/private/propositions/Propositions'
 import Trocs from './pages/private/trocs/Trocs.jsx'
 import Offer from './pages/offer/Offer'
+import RegisterSubscription from './pages/registerSubscription/RegisterSubscription'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/register-subscription" element={<RegisterSubscription/>} />
             <Route path="/offer/:id" element={<Offer/>} />
             <Route path="*" element={<Error404 />} />
             {/* Private routes */}
