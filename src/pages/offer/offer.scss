@@ -1,0 +1,33 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+
+.offer-slider-container{
+    background-color: $grey;
+    height: 15rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.offer-page-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    h1{
+        flex: 2;
+    }
+}
+.offer-page-body{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+.btn-offer{
+    background-color: $dark;
+    padding: 0.4rem 1rem;
+    border-radius: $radius;
+    flex: 1;
+    
+    
+}
