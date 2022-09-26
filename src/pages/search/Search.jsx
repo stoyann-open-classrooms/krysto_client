@@ -27,9 +27,8 @@ function Search() {
 
   return (
     <section>
-        <TitlePage title={"Rechercher parmis les annonces"}/>
+        <h1>rechercher</h1>
         <OffersContainer offers={offers}/>
-
     </section>
   )
 }

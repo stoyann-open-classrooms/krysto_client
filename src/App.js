@@ -8,13 +8,14 @@ import Header from './components/layout/header/Header'
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import Error404 from './pages/404/Error404'
+import Search from './pages/search/Search'
 
+// === Import Private pages 
 import Dashboard from './pages/private/dashboard/Dashboard.jsx'
 import Wallets from './pages/private/wallets/Wallets.jsx'
 import Private from './pages/private/Private'
 import Propositions from './pages/private/propositions/Propositions'
 import Trocs from './pages/private/trocs/Trocs.jsx'
-import Search from './pages/search/Search'
 
 function App() {
   return (
