@@ -5,12 +5,12 @@
 @import '../../SASS/animations';
 
 .section-inner {
-  bottom: 20rem;
-  left: 150px;
-  max-width: 560px;
+margin-top: 2rem;
+display: flex;
+flex-direction: column;
  
   h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 5px;
     font-weight: 300;
     animation: fade-in-up 0.5s ease-in-out;
@@ -18,7 +18,7 @@
 }
 
 .section-inner h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
   animation: fade-in-up 0.5s ease-in-out 0.2s;
@@ -50,8 +50,8 @@ img{
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  min-width: 130px;
-  padding: 10px 30px;
+  min-width: 10rem;
+  padding: 0.4rem 30px;
   border-radius: $radius;
   margin: 10px;
   border: 2px solid $primary;
