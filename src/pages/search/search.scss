@@ -1,0 +1,35 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+.offer-search-container{
+    background-color: $dark;
+    width: 100%;
+    height: auto;
+    padding: 2rem 2rem;
+
+
+    input{
+        display: flex;
+        margin: auto;
+        height: 3rem;
+        border-radius: 2px;
+        outline: none;
+        border: none;
+        background-color: $grey;
+        color: $light;
+       width: 100%;
+}}
+
+.dropdown-category-container{
+    margin-top: 1rem;
+    select {
+        width: 100%;
+        outline: none;
+        padding: 0.5rem;
+        border-radius: 2px;
+        background-color: $dark;
+        border: 2px solid $light;
+        color: $light;
+    }
+}

@@ -4,7 +4,7 @@ import TitlePage from '../../../components/layout/TitlePage'
 import WalletIcone from '../../../assets/icones/wallet.png'
 function Wallets() {
   return (
-    <section>
+    <section className='dashboard-section'>
      <TitlePage title={'Mes comptes'} icone={WalletIcone}/>
       <div className="buttons">
         <button className="submit-btn">Compte courant</button>

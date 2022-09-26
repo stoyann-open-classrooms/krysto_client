@@ -47,6 +47,11 @@ main {
   min-height: 100vh;
 }
 
+.dashboard-section {
+  height: 90vh;
+  position: relative;
+}
+
 section {
   padding: 0 5%;
   display: flex;
@@ -79,7 +84,9 @@ form {
   font-size: 1.3rem;
   color: #292f4d;
 }
-.field input, .field select, .field textarea {
+.field input,
+.field select,
+.field textarea {
   width: 100%;
   height: 3.3rem;
   position: relative;
@@ -117,15 +124,16 @@ form {
 }
 
 .buttons {
+  bottom: 3rem;
+  position: absolute;
+  left: 0;
+  right: 0;
   display: flex;
-  margin-top: 1rem;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex: 1;
 }
 .buttons button {
-  font-size: 1rem;
-  flex: 1;
-  margin: 0 0.2rem;
+  margin: 0 1rem;
 }
 
 .title-page {

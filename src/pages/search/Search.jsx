@@ -5,6 +5,9 @@ import TitlePage from '../../components/layout/TitlePage'
 import OffersContainer from '../../components/search/OffersContainer'
 import {getOffers, reset} from '../../features/offer/offerSlice'
 import OfferIcone from '../../assets/icones/offer-icone-primary.png'
+import OfferSearch from '../../components/search/offerSearch/OfferSearch'
+import Offer from '../offer/Offer'
+import './search.css'
 
 function Search() {
 
@@ -28,10 +31,12 @@ function Search() {
 
 
   return (
+    <>
+     <OfferSearch icone={OfferIcone}/>
     <section>
-       <TitlePage title={"Chercher un troc"} icone={OfferIcone}/>
         <OffersContainer offers={offers} />
     </section>
+    </>
   )
 }
 
