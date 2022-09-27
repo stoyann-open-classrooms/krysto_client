@@ -10,7 +10,7 @@ function WalletGraph({ transactions }) {
       chart: {
         id: 'basic-line',
       
-        foreColor: 'white',
+        foreColor: '#313539',
         fill: {
           type: 'gradient',
           gradient: {

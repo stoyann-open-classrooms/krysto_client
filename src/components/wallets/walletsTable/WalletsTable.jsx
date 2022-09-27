@@ -12,7 +12,7 @@ function WalletsTable({ transactions }) {
               <abbr title="Position">Date</abbr>
             </th>
             <th>Type</th>
-            <th>Libellé</th>
+           
             <th>
               <abbr title="Played">Montant (ù)</abbr>
             </th>
@@ -33,7 +33,7 @@ function WalletsTable({ transactions }) {
                     <td>Transfert</td>
                   )}
 
-                  <td>Aucun libelée pour cette transaction</td>
+                 
                   <td>{transaction.amountUnity.toFixed(4)} ù</td>
                   <td>
                     {(

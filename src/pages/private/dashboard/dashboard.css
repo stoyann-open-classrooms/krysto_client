@@ -1,15 +1,1 @@
-.title-page {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-.title-page h1 {
-  flex: 2;
-  font-size: 2rem;
-  max-width: 60%;
-}
-.title-page img {
-  max-width: 4rem;
-}/*# sourceMappingURL=dashboard.css.map */
+/*# sourceMappingURL=dashboard.css.map */
