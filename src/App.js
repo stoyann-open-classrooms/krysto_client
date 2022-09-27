@@ -18,6 +18,8 @@ import Propositions from './pages/private/propositions/Propositions'
 import Trocs from './pages/private/trocs/Trocs.jsx'
 import Offer from './pages/offer/Offer'
 import RegisterSubscription from './pages/registerSubscription/RegisterSubscription'
+import Deposit from './pages/private/wallets/deposit/Deposit'
+import Main from './pages/private/wallets/main/Main'
 
 function App() {
   return (
@@ -38,7 +40,13 @@ function App() {
               element={<Private/>}
             >
                <Route path="/private/dashboard" element={<Dashboard/>} />
-               <Route path="/private/dashboard/wallets" element={<Wallets/>} />
+
+               <Route path="/private/dashboard/wallets" element={<Wallets />}>
+              <Route path="/private/dashboard/wallets/deposit" element={<Deposit />} />
+              <Route path="/private/dashboard/wallets/main" element={<Main />} />
+            </Route>
+
+
                <Route path="/private/dashboard/propositions" element={<Propositions/>} />
                <Route path="/private/dashboard/my-trocs" element={<Trocs/>} />
             </Route>
