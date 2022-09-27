@@ -38,6 +38,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  padding-top: 8rem;
+}
+
 .login-form {
   height: auto;
   max-width: 400px;

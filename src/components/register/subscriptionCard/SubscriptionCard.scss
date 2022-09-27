@@ -141,11 +141,12 @@ margin: 1rem auto;
 
 .basic {
     .price-area, .inner-area, .button button{
-        background: $primary;
+        background: #93EBCB;
+        color: $dark;
     }
 
     .package-name{
-        background: $primary;
+        background: #93EBCB;
         &::before{
             content: "Mensuel";
 
@@ -154,11 +155,11 @@ margin: 1rem auto;
 }
 .premium {
     .price-area, .inner-area {
-        background: $primary;
+        background: #F49E4C;
      
     }
     .package-name{
-        background: $primary;
+        background: #F49E4C;
         &::before{
             content: "Premium";
 
@@ -179,14 +180,19 @@ margin: 1rem auto;
 }
 
 .basic .button button{
-background-color: #fff;
+    background: #93EBCB;
 color: $primary;
-border: solid 2px $primary;
+border: solid 2px #93EBCB;;
 }
 .pro .button button{
 background-color: #fff;
 color: $primary;
-border: solid 2px $primary;
+border: solid 2px ;
+}
+.premium .button button{
+background: #F49E4C;;
+color: $dark;
+
 }
 
 .ribbon{
@@ -218,10 +224,12 @@ border: solid 2px $primary;
 
     span{
         position: absolute;
-        background: $primary-dark;
+        background: #F49E4C;
         width: 200px;
+        font-size: 1.4rem;
         padding: 10px 0;
-        color: $light;
+        font-weight: bold;
+        color: $dark;
         text-align: center;
         box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.12);
         top: 30px;

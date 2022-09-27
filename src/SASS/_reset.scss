@@ -13,8 +13,7 @@ html {
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
-
+  font-family: 'DM Sans', sans-serif;
 }
 
 a {
@@ -28,7 +27,6 @@ ul {
 }
 
 button {
-
   border: none;
   color: white;
   cursor: pointer;
@@ -38,4 +36,9 @@ button {
 }
 input:focus {
   outline: none;
+}
+
+section{
+  padding-top: 8rem;
+
 }

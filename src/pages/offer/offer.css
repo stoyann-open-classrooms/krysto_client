@@ -38,6 +38,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  padding-top: 8rem;
+}
+
 .offer-page-top h1 {
   overflow: hidden;
   white-space: nowrap;

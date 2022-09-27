@@ -38,6 +38,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  padding-top: 8rem;
+}
+
 footer {
   background-color: #5e7691;
   position: relative;

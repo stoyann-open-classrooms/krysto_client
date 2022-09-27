@@ -38,6 +38,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  padding-top: 8rem;
+}
+
 .container-subscription-card {
   width: 100%;
   display: flex;
@@ -145,20 +149,21 @@ input:focus {
   }
 }
 .basic .price-area, .basic .inner-area, .basic .button button {
-  background: #304D6D;
+  background: #93EBCB;
+  color: #343B42;
 }
 .basic .package-name {
-  background: #304D6D;
+  background: #93EBCB;
 }
 .basic .package-name::before {
   content: "Mensuel";
 }
 
 .premium .price-area, .premium .inner-area {
-  background: #304D6D;
+  background: #F49E4C;
 }
 .premium .package-name {
-  background: #304D6D;
+  background: #F49E4C;
 }
 .premium .package-name::before {
   content: "Premium";
@@ -175,15 +180,20 @@ input:focus {
 }
 
 .basic .button button {
-  background-color: #fff;
+  background: #93EBCB;
   color: #304D6D;
-  border: solid 2px #304D6D;
+  border: solid 2px #93EBCB;
 }
 
 .pro .button button {
   background-color: #fff;
   color: #304D6D;
-  border: solid 2px #304D6D;
+  border: solid 2px;
+}
+
+.premium .button button {
+  background: #F49E4C;
+  color: #343B42;
 }
 
 .ribbon {
@@ -213,10 +223,12 @@ input:focus {
 }
 .ribbon span {
   position: absolute;
-  background: #292f4d;
+  background: #F49E4C;
   width: 200px;
+  font-size: 1.4rem;
   padding: 10px 0;
-  color: #ECEAF8;
+  font-weight: bold;
+  color: #343B42;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   top: 30px;

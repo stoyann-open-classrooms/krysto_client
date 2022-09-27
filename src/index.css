@@ -38,6 +38,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  padding-top: 8rem;
+}
+
 body {
   background-color: #ECEAF8;
   color: #313539;

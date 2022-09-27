@@ -38,6 +38,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  padding-top: 8rem;
+}
+
 @-webkit-keyframes flip-in-hor-top {
   0% {
     transform: rotateX(-80deg);

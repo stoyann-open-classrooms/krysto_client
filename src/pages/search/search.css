@@ -38,6 +38,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  padding-top: 8rem;
+}
+
 .offer-search-container {
   background-color: #343B42;
   width: 100%;

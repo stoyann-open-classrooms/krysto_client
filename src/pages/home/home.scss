@@ -17,6 +17,10 @@ flex-direction: column;
   }
 }
 
+.section-landing{
+  height: 100vh;
+}
+
 .section-inner h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -25,17 +29,6 @@ flex-direction: column;
   animation-fill-mode: both;
 }
 
-.section-a {
-  // background-image: url('../../assets/images/paysage_caledonien.jpeg');
-  // background-repeat: no-repeat;
-  // background-size: cover;mt;
-img{
-  width: 100%;
-}
-  background: $light;
-  text-transform: uppercase;
-  color: $text;
-}
 
 .section-inner {
 
@@ -45,7 +38,7 @@ img{
   }
 }
 
-.btn {
+.btn-cta {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -86,6 +79,74 @@ img{
   }
 }
 
+
+.sectionB{
+  background-color: $primary;
+  height: 100vh;
+  h2{
+    text-align: center;
+    margin: 2rem 0;
+    color: #637990;
+    font-size: 2.2rem;
+  }
+  p{
+    color: $light;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+
+
+.sectionC{
+  background-color: $light;
+  min-height: 100vh;
+  h2{
+    text-align: center;
+    margin: 2rem 0;
+    color: #637990;
+    font-size: 2.2rem;
+  }
+  p{
+    color: $text;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+
+.sectionD{
+  background-color: $light;
+  height: 100vh;
+  h2{
+    text-align: center;
+    margin: 2rem 0;
+    color: #637990;
+    font-size: 2.2rem;
+  }
+  p{
+    color: $text;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+.sectionE{
+  background-color: $light;
+  height: 100vh;
+  h2{
+    text-align: center;
+    margin: 2rem 0;
+    color: #637990;
+    font-size: 2.2rem;
+  }
+  p{
+    color: $text;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
 
 // .scroll-arrow{
 //   position: absolute;
