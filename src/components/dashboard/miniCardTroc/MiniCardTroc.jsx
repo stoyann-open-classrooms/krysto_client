@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import noPhoto from '../../../assets/no_picture.png'
 import './miniCardOffer.css'
 function MiniCardTroc({offer}) {
@@ -25,7 +26,13 @@ function MiniCardTroc({offer}) {
         <h3>{offer.text}</h3>
 </div>
 <div className="mini-card-actions">
-<button>Voir</button>
+<button>
+  <Link to={`/offer/${offer._id}`}>
+
+  Voir
+
+  </Link>
+</button>
 <button>Modifier</button>
 <button>Supprimer</button>
 

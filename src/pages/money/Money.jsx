@@ -5,7 +5,7 @@ import krystoVal2 from '../../../src/assets/val-krysto-2.jpg'
 import jNext from '../../../src/assets/jNext.jpg'
 import chain from '../../assets/icones/chain.png'
 import { Link } from 'react-router-dom'
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
+import {  FaArrowAltCircleRight } from 'react-icons/fa'
 function Money() {
   return (
     <section>
@@ -286,7 +286,7 @@ function Money() {
       </p>
       <img src={krystoVal2} alt="" />
       <div>
-        <h2>> POUR GAGNER PLUS, IL FAUT UTILISER SON COMPTE DE DÉPOT</h2>
+        <h2> POUR GAGNER PLUS, IL FAUT UTILISER SON COMPTE DE DÉPOT</h2>
         <p>
           <strong>
             Les compte de dépot ne stockent pas des unités (ù). Il stock
@@ -326,7 +326,7 @@ function Money() {
         Plus un compte courant est vide, plus il rapporte (presque 1 Krysto/j)
       </p>
       <p>
-        Donc, plus vous stockez vos òto sur votre compte de dépot, plus vous
+        Donc, plus vous stockez vos Krysto sur votre compte de dépot, plus vous
         accumulez leur valeur.
       </p>
 
