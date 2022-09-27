@@ -1,16 +1,29 @@
-import React from 'react'
-import {NavLink , Outlet }from 'react-router-dom'
-import TitlePage from '../../../components/layout/TitlePage'
-import WalletIcone from '../../../assets/icones/wallet.png'
+import { Outlet, NavLink } from 'react-router-dom'
+
 function Wallets() {
+
   return (
-    <section className='dashboard-section'>
-     <TitlePage title={'Mes comptes'} icone={WalletIcone}/>
-      <div className="buttons">
-        <button className="submit-btn">Compte courant</button>
-        <button className="submit-btn">Compte de depot</button>
+    <div className="page-content">
+      <div className="account-btn-container">
+        <NavLink
+          to={'/private/wallets/main'}
+          className={({ isActive }) => {
+            return isActive ? 'account-btn-active' : 'account-btn'
+          }}
+        >
+          Compte courant
+        </NavLink>
+        <NavLink
+          to={'/private/wallets/deposit'}
+          className={({ isActive }) => {
+            return isActive ? 'account-btn-active' : 'account-btn'
+          }}
+        >
+          Compte de dépot
+        </NavLink>
       </div>
-    </section>
+      <Outlet />
+    </div>
   )
 }
 
