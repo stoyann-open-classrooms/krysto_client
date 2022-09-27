@@ -1,9 +1,38 @@
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Outlet, NavLink } from 'react-router-dom'
+import Spinner from '../../../components/shared/spinner/Spinner'
+import { getProfil, reset } from '../../../features/user/userSlice'
 
 function Wallets() {
 
+
+  // const { profil, isLoading, isError, isSuccess } = useSelector(
+  //   (state) => state.user,
+  // )
+  // const dispatch = useDispatch()
+
+  // useEffect(() => {
+  //   return () => {
+  //     if (isSuccess) {
+  //       dispatch(reset())
+  //     }
+  //   }
+  // }, [dispatch, isSuccess, isError])
+
+  // useEffect(() => {
+  //   dispatch(getProfil())
+  // }, [])
+
+  // console.log(profil)
+
   return (
     <div className="page-content">
+
+
+
+
+
       <div className="account-btn-container buttons">
       <button className="submit-btn">
           <NavLink 

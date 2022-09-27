@@ -1,8 +1,13 @@
 import React from 'react'
-
+import SubscriptionCard from '../../components/register/subscriptionCard/SubscriptionCard'
+import './registerSubscribe.css'
 function RegisterSubscription() {
   return (
-    <div>RegisterSubscription</div>
+    <section>
+        <SubscriptionCard/>
+  
+      
+    </section>
   )
 }
 

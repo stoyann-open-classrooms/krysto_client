@@ -73,7 +73,7 @@ function Header() {
               </li>
 
               <li className="mobile-only">
-                <Link to={'/register'}>S'inscrire</Link>
+                <Link to={'/register-subscription'}>S'inscrire</Link>
               </li>
             </>
           )}
@@ -142,7 +142,7 @@ function Header() {
                 <li></li>
                 <li>
                   <FaRegUserCircle />
-                  <Link to={'/register'}>S'inscrire</Link>
+                  <Link to={'/register-subscription'}>S'inscrire</Link>
                 </li>
               </>
             )}

@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+input:focus {
+  outline: none;
+}
+
+.container-subscription-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem auto;
+  justify-content: space-between;
+}
+.container-subscription-card .table {
+  background-color: #fff;
+  width: calc(33% - 20px);
+  padding: 3rem;
+  position: relative;
+  margin: 1rem auto;
+}
+.container-subscription-card .table .package-name {
+  width: 100%;
+  height: 2px;
+  margin: 35px 0;
+  position: relative;
+}
+.container-subscription-card .table .package-name::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.price-section {
+  display: flex;
+  justify-content: center;
+}
+.price-section .price-area {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  color: #ECEAF8;
+  padding: 2px;
+}
+.price-section .price-area .inner-area {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #304D6D;
+  line-height: 117px;
+  text-align: center;
+  position: relative;
+}
+.price-section .price-area .inner-area .text {
+  font-size: 1.3;
+  position: absolute;
+  top: -10px;
+}
+.price-section .price-area .inner-area .price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.features li {
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features li .list-name {
+  font-size: 17px;
+  font-weight: 400;
+}
+.features li .icone {
+  font-size: 15px;
+  color: green;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  width: 80%;
+  height: 3.3rem;
+  color: #ECEAF8;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: #304D6D;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button button:hover {
+  border-radius: 5px;
+}
+
+@media (max-width: 1020px) {
+  .container-subscription-card .table {
+    width: calc(50% - 20px);
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .container-subscription-card .table {
+    width: 100%;
+  }
+}
+.basic .price-area, .basic .inner-area, .basic .button button {
+  background: #304D6D;
+}
+.basic .package-name {
+  background: #304D6D;
+}
+.basic .package-name::before {
+  content: "Mensuel";
+}
+
+.premium .price-area, .premium .inner-area {
+  background: #304D6D;
+}
+.premium .package-name {
+  background: #304D6D;
+}
+.premium .package-name::before {
+  content: "Premium";
+}
+
+.pro .price-area, .pro .inner-area {
+  background: #304D6D;
+}
+.pro .package-name {
+  background: #304D6D;
+}
+.pro .package-name::before {
+  content: "Annuel";
+}
+
+.basic .button button {
+  background-color: #fff;
+  color: #304D6D;
+  border: solid 2px #304D6D;
+}
+
+.pro .button button {
+  background-color: #fff;
+  color: #304D6D;
+  border: solid 2px #304D6D;
+}
+
+.ribbon {
+  height: 12rem;
+  width: 150px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  overflow: hidden;
+}
+.ribbon::before, .ribbon::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  display: block;
+  border: 7px solid #304D6D;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+.ribbon::before {
+  top: 0;
+  right: 30px;
+}
+.ribbon::after {
+  bottom: 0;
+  left: 0px;
+}
+.ribbon span {
+  position: absolute;
+  background: #292f4d;
+  width: 200px;
+  padding: 10px 0;
+  color: #ECEAF8;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  top: 30px;
+  right: 0;
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=SubscriptionCard.css.map */

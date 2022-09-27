@@ -59,8 +59,10 @@ if(!offer.offer) {
             <p>{offer.offer.text}</p>
         </div>
         <div className="offer-page-footer buttons">
+
+
             <button className='btn-offer'>Contacter le vendeur</button>
-            <button className='btn-offer'>Faire une proposition</button>
+            <button className='btn-offer'>Faire une proposition</button> 
         </div>
     </section>
   )
