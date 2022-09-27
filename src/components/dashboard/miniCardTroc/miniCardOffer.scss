@@ -15,7 +15,6 @@ max-width: 500px;
 }
 
 .image-container{
-    border-radius: $radius;
     height: 100%;
     width: 40%;
     flex: 1;
@@ -24,11 +23,46 @@ max-width: 500px;
         border-radius: $radius 0 0 $radius;
         object-fit: cover;
         width: 100%;
+        border: 2px solid $primary-light;
     }
 }
 
 .mini-card-body{
-    border-radius: $radius 0 0 $radius;
+    position: relative;
+    border: 2px solid $primary-light;
+    border-left: none;
+    border-radius: 0 $radius  $radius 0;
     padding: 1rem;
    flex: 2;
+}
+
+.mini-card-body-top{
+    margin-bottom: 2rem;
+    display: flex;
+    h3{
+        flex: 2;
+        @extend %text-cut
+    }
+
+}
+
+.mini-card-actions{
+    display: flex;
+    flex: 1;
+    padding: 0.2rem;
+ right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 1rem auto;
+    position: absolute;
+    button{
+        width: 100%;
+        height: 2rem;
+        margin: 0 0.2rem;
+        background-color: $primary-light;
+        border-radius: $radius;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: 0.4rem;
+    }
 }

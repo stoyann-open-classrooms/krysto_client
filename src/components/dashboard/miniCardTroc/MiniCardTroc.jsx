@@ -15,9 +15,21 @@ function MiniCardTroc({offer}) {
     }
     </div>
     <div className="mini-card-body">
+<div className="mini-card-body-top">
 
         <h3>{offer.title}</h3>
-        <h3>{offer.status}</h3>
+        <div>{offer.amountMony}</div>
+</div>
+<div className="mini-card-body-content">
+
+        <h3>{offer.text}</h3>
+</div>
+<div className="mini-card-actions">
+<button>Voir</button>
+<button>Modifier</button>
+<button>Supprimer</button>
+
+</div>
     </div>
     </div>
   )

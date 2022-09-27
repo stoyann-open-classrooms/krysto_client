@@ -36,7 +36,7 @@ function Main() {
       <hgroup className='title-wallet'>
 
       <h2>Compte courant - 44 Jours</h2>
-      <h3>{profil.user.walletMain.amountUnity / profil.monyConvertValue} Krysto</h3>
+      <h3>{   Math.round(profil.user.walletMain.amountUnity / profil.monyConvertValue ) } Krysto</h3>
       </hgroup>
       <div className="container-graph">
        <WalletGraph transactions={profil.user.walletMain.transactions}/>
