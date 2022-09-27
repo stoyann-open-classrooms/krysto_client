@@ -8,6 +8,7 @@ import "./dashboard.css"
 import { NavLink, Outlet } from 'react-router-dom'
 import TitlePage from '../../../components/layout/TitlePage'
 import ProfilIcone from '../../../assets/icones/primary-home-logo.png'
+import DashboardNav from '../../../components/dashboard/DashboardNav'
 
 function Dashboard() {
   const { profil, isLoading, isError, isSuccess } = useSelector(
@@ -33,10 +34,20 @@ function Dashboard() {
     return <Spinner />
   } else {
     return (
+      <>
+
       <section>
    <TitlePage title={"Bienvenue sur votre dashboard"} icone={ProfilIcone}/>
+
+
+
+
+
+
+   
       </section>
 
+      </>
 
 
 

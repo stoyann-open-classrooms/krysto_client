@@ -13,7 +13,7 @@ function Home() {
       <Landing/>
       <SectionB/>
       <SectionC/>
-      <SectionD/>
+      {/* <SectionD/> */}
       <SectionE/>
      
     </div>

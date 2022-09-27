@@ -6,7 +6,7 @@
     background-color: $dark;
     width: 100%;
     height: auto;
-    padding: 2rem 2rem;
+    padding: 8rem 2rem 2rem 2rem;
 
 
     input{
@@ -20,6 +20,11 @@
         color: $light;
        width: 100%;
 }}
+
+.offers-container{
+    padding: 0 2rem;
+    margin: 4rem auto;
+}
 
 .dropdown-category-container{
     margin-top: 1rem;

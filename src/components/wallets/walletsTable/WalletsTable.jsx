@@ -3,26 +3,27 @@ import './walletTable.css'
 function WalletsTable({ transactions }) {
   console.log(transactions.transactions)
   return (
-    <section className='transaction-table-container'>
+    <div className='transaction-table-container'>
       <h3>Historique de vos transactions</h3>
       <table className="transaction-table">
         <thead>
           <tr>
             <th>
-              <abbr title="Position">Date</abbr>
+            Date
             </th>
             <th>Type</th>
            
             <th>
-              <abbr title="Played">Montant (ù)</abbr>
+            Montant  (ùnités)
+       
             </th>
             <th>
-              <abbr title="Won">Montant (krysto)</abbr>
+            Montant  (krysto)
             </th>
           </tr>
         </thead>
 
-        <tbody>
+        <tbody className=' scroller'>
           {transactions.transactions
             ? transactions.transactions.map((transaction) => (
                 <tr>
@@ -46,7 +47,7 @@ function WalletsTable({ transactions }) {
             : ''}
         </tbody>
       </table>
-    </section>
+    </div>
   )
 }
 

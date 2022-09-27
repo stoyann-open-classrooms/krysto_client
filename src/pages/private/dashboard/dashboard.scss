@@ -1,1 +1,55 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
 
+
+.my-offers-container{
+    padding: 0 1rem;
+  }
+
+  .account-btn-container{
+    display: flex;
+    flex: 1;
+    margin-top: 2rem;
+    button{
+        margin: 0 1rem;
+        width: 100%;
+    }
+  }
+
+
+
+  .wallet-actions{
+    display: flex;
+    margin: 1rem 0;
+button{
+    flex: 1;
+    background-color: transparent;
+    border: 2px solid $primary;
+    margin: 0 1rem;
+    color: $primary;
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border-radius: $radius;
+}
+  }
+
+
+  .title-wallet{
+    text-align: center;
+  }
+
+  .wallet-page-content{
+    margin-top: 3rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+
+    hgroup{
+        margin-bottom: 2rem;
+        h2{
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+  }

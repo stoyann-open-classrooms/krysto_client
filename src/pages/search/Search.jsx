@@ -33,9 +33,9 @@ function Search() {
   return (
     <>
      <OfferSearch icone={OfferIcone}/>
-    <section>
+
         <OffersContainer offers={offers} />
-    </section>
+   
     </>
   )
 }

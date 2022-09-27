@@ -16,6 +16,7 @@ function SectionD() {
     Le Krysto lui n’est pas créer par la dette . Elle est créer de façon équitable, pour tous ces utilisateurs. L’inflation est donc évitér de façon mathématique
     </strong>
    </p>
+
     </section>
   )
 }

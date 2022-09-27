@@ -39,14 +39,14 @@ input:focus {
 }
 
 section {
-  padding-top: 8rem;
+  padding: 10rem 5%;
 }
 
 .offer-search-container {
   background-color: #343B42;
   width: 100%;
   height: auto;
-  padding: 2rem 2rem;
+  padding: 8rem 2rem 2rem 2rem;
 }
 .offer-search-container input {
   display: flex;
@@ -58,6 +58,11 @@ section {
   background-color: #5D656E;
   color: #ECEAF8;
   width: 100%;
+}
+
+.offers-container {
+  padding: 0 2rem;
+  margin: 4rem auto;
 }
 
 .dropdown-category-container {

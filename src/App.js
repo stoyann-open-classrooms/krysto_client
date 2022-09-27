@@ -20,6 +20,8 @@ import Offer from './pages/offer/Offer'
 import RegisterSubscription from './pages/registerSubscription/RegisterSubscription'
 import Deposit from './pages/private/wallets/deposit/Deposit'
 import Main from './pages/private/wallets/main/Main'
+import Money from './pages/money/Money'
+import KrystoVsG1 from './pages/krystoVsG1/KrystoVsG1'
 
 function App() {
   return (
@@ -30,9 +32,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path = "/register-subscription" element={<RegisterSubscription/>}/>
-            <Route path="/search" element={<Search />} />
             <Route path="/register-subscription" element={<RegisterSubscription/>} />
+            <Route path="/money" element={<Money/>} />
+            <Route path="/krysto-vs-g1" element={<KrystoVsG1/>} />
+            <Route path="/search" element={<Search />} />
             <Route path="/offer/:id" element={<Offer/>} />
             <Route path="*" element={<Error404 />} />
             {/* Private routes */}

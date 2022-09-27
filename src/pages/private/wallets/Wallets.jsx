@@ -30,10 +30,7 @@ function Wallets() {
     <div className="page-content">
 
 
-
-
-
-      <div className="account-btn-container buttons">
+      <div className="account-btn-container">
       <button className="submit-btn">
           <NavLink 
     to={'/private/dashboard/wallets/main'}

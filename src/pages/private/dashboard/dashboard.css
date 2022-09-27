@@ -1,1 +1,89 @@
-/*# sourceMappingURL=dashboard.css.map */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+input:focus {
+  outline: none;
+}
+
+section {
+  padding: 10rem 5%;
+}
+
+.my-offers-container {
+  padding: 0 1rem;
+}
+
+.account-btn-container {
+  display: flex;
+  flex: 1;
+  margin-top: 2rem;
+}
+.account-btn-container button {
+  margin: 0 1rem;
+  width: 100%;
+}
+
+.wallet-actions {
+  display: flex;
+  margin: 1rem 0;
+}
+.wallet-actions button {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid #304D6D;
+  margin: 0 1rem;
+  color: #304D6D;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+}
+
+.title-wallet {
+  text-align: center;
+}
+
+.wallet-page-content {
+  margin-top: 3rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+.wallet-page-content hgroup {
+  margin-bottom: 2rem;
+}
+.wallet-page-content hgroup h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=dashboard.css.map */

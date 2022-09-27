@@ -39,7 +39,7 @@ input:focus {
 }
 
 section {
-  padding-top: 8rem;
+  padding: 10rem 5%;
 }
 
 @-webkit-keyframes flip-in-hor-top {
@@ -171,7 +171,7 @@ section {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 1.2rem;
   right: 2rem;
   z-index: 9;
@@ -227,7 +227,7 @@ section {
   top: 0;
   right: 0;
   width: 350px;
-  z-index: 4;
+  z-index: 9;
   height: 100%;
   background-color: #304D6D;
   color: #ECEAF8;

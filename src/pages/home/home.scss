@@ -40,6 +40,7 @@ flex-direction: column;
 
 .btn-cta {
   position: relative;
+  background-color: transparent;
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -71,7 +72,8 @@ flex-direction: column;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $primary;
+    background-color: $primary-light;
+    border-color: $primary-light;
     color: $dark;
     z-index: -1;
     transform: translateY(100%);
@@ -82,7 +84,7 @@ flex-direction: column;
 
 .sectionB{
   background-color: $primary;
-  height: 100vh;
+  min-height: 100vh;
   h2{
     text-align: center;
     margin: 2rem 0;
@@ -117,7 +119,7 @@ flex-direction: column;
 
 .sectionD{
   background-color: $light;
-  height: 100vh;
+  min-height: 100vh;
   h2{
     text-align: center;
     margin: 2rem 0;
@@ -159,3 +161,37 @@ flex-direction: column;
 //     font-size: 3rem;
 //   }
 // }
+
+
+.how-to-troc-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+    .troc-card{
+      padding: 2rem 1rem;
+
+border: 2px solid $secondary;
+height: 25rem;
+margin:  1rem;
+    color: $light;
+
+    h4{
+      font-size: 2.2rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.troc-card-images {
+  margin-top: 2rem;
+display: flex;
+flex: 1;
+align-items: center;
+justify-content: space-between;
+img{
+  width: 30%;
+  height: 10rem;
+  object-fit: contain;
+}
+}

@@ -7,26 +7,33 @@
 .transaction-table {
     background-color: $primary-light;
 width: 100%;
+padding: 1rem;
 line-height: 3rem;
     color: white;
+    text-align: left;
     border-radius: $radius;
     border-color: $primary-dark;
 
 
     thead{
         th{
+            text-align: left;
             font-size: 1.2rem;
-            color: $primary-dark;
+            color: $complementary2;
         }
     }
     tbody {
+
+   
         
         tr{
             transition: all 0.5s ease;
-            
+           
             
             &:hover {
                 color: $secondary;
+                border-radius: $radius * 2;
+                background-color: $primary;
         
             }
         }
@@ -41,4 +48,9 @@ line-height: 3rem;
         text-align: center;
         margin-bottom: 2rem;
     }
+}
+
+.apexcharts-toolbar{
+    z-index: 0 !important;
+
 }

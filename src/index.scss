@@ -17,6 +17,7 @@ section {
   padding: 0 5%;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .stop-scrolling {
@@ -106,6 +107,7 @@ flex: 1;
   display: flex;
   align-items: center;
   width: 100%;
+  margin: 2rem 0;
   justify-content: space-between;
 
   h1 {
@@ -118,3 +120,5 @@ flex: 1;
     max-width: 5rem;
   }
 }
+
+

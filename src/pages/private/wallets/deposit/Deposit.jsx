@@ -35,7 +35,7 @@ if(!profil.user) {
 
 
   return (
-    <section>
+    <div>
             <hgroup className='title-wallet'>
 
 
@@ -61,7 +61,7 @@ if(!profil.user) {
         <div>1 Krysto = {profil.monyConvertValue} ù</div>
       </div>
       <WalletsTable transactions={profil.user.walletsDeposit[0]}/>
-    </section>
+    </div>
   )
 }
 

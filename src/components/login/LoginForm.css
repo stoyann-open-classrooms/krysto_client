@@ -39,7 +39,7 @@ input:focus {
 }
 
 section {
-  padding-top: 8rem;
+  padding: 10rem 5%;
 }
 
 .login-form {

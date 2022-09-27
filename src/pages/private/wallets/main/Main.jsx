@@ -32,21 +32,28 @@ function Main() {
   }
 
   return (
-    <section>
+    <div className='wallet-page-content'>
       <hgroup className='title-wallet'>
 
       <h2>Compte courant - 44 Jours</h2>
-      <h2>{profil.user.walletMain.amountUnity / profil.monyConvertValue} Krysto</h2>
+      <h3>{profil.user.walletMain.amountUnity / profil.monyConvertValue} Krysto</h3>
       </hgroup>
       <div className="container-graph">
        <WalletGraph transactions={profil.user.walletMain.transactions}/>
       </div>
     
-      <div className="buttons">
-  
+      <div className="wallet-actions">
+  <button className="btn-cta">
+  <div className="hover"></div>
+          <span>Envoyer</span>
+  </button>
+  <button className="btn-cta">
+  <div className="hover"></div>
+          <span>Recevoir</span>
+  </button>
       </div>
       <WalletsTable transactions={profil.user.walletMain} />
-    </section>
+    </div>
   )
 }
 

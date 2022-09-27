@@ -7,7 +7,7 @@ function DashboardNav() {
    
         <button className="">
           <NavLink 
-    to={'/private/dashboard/wallets'}
+    to={'/private/dashboard/wallets/main'}
     className={({ isActive }) => {
         return isActive ? 'dashboard-nav-btn active' : 'dashboard-nav-btn'
       }}
