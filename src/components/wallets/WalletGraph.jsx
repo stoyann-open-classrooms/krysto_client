@@ -11,6 +11,7 @@ function WalletGraph({ transactions }) {
         id: 'basic-line',
       
         foreColor: '#313539',
+     
         fill: {
           type: 'gradient',
           gradient: {
@@ -64,7 +65,7 @@ function WalletGraph({ transactions }) {
       tooltip: {
         enabled: false,
       },
-
+  
       xaxis: {
         categories: transactions.map((transaction) =>
           new Date(transaction.created).toLocaleDateString(),
@@ -93,7 +94,7 @@ function WalletGraph({ transactions }) {
         options={chartData.options}
         series={chartData.series}
         type="area"
-        height={350}
+        height={300}
       />
     </div>
   )
