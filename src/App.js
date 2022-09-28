@@ -25,6 +25,7 @@ import Money from './pages/money/Money'
 import KrystoVsG1 from './pages/krystoVsG1/KrystoVsG1'
 import AddOffer from './pages/addOffer/AddOffer'
 import RegisterForm from './pages/registerForm/RegisterForm';
+import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/register-subscription" element={<RegisterSubscription/>} />
             <Route path="/register-form" element={<RegisterForm/>} />
             <Route path="/money" element={<Money/>} />
