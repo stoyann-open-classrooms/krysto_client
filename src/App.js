@@ -24,6 +24,7 @@ import Main from './pages/private/wallets/main/Main'
 import Money from './pages/money/Money'
 import KrystoVsG1 from './pages/krystoVsG1/KrystoVsG1'
 import AddOffer from './pages/addOffer/AddOffer'
+import RegisterForm from './pages/registerForm/RegisterForm';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register-subscription" element={<RegisterSubscription/>} />
+            <Route path="/register-form" element={<RegisterForm/>} />
             <Route path="/money" element={<Money/>} />
             <Route path="/krysto-vs-g1" element={<KrystoVsG1/>} />
             <Route path="/search" element={<Search />} />

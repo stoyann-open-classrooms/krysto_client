@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import './SubscriptionCard.css'
 function SubscriptionCard() {
   return (
@@ -68,7 +69,11 @@ function SubscriptionCard() {
                 <span className="icone"><FaCheck/></span>
             </li>
         </div>
+
+        <Link to={"/register-form"}>
+
         <div className="button"><button>Choisir</button></div>
+        </Link>
  
     </div>
     <div className='table pro'>
