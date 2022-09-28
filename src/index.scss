@@ -30,7 +30,20 @@ form {
   align-items: center;
   justify-content: space-around;
 }
-
+.actions{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  button {
+    &:nth-child(1){
+      margin-right: 1rem;
+    }
+    width: 100%;
+    border-radius: $radius;
+    padding:0.4rem 1rem ;
+    background-color: $primary;
+  }
+}
 .field {
   width: 100%;
   position: relative;
@@ -39,9 +52,10 @@ form {
   label {
     position: absolute;
     left: 0;
+    
     text-transform: uppercase;
     font-weight: bolder;
-    top: -1.5rem;
+    top: -2.4rem;
     margin-bottom: 1rem;
     font-size: 1.3rem;
     color: $primary-dark;

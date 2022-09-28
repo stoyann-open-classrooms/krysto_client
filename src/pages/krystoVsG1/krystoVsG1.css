@@ -1,0 +1,11 @@
+.comparatif-cover {
+  display: flex;
+}
+.comparatif-cover div {
+  width: 3rem;
+  height: 3rem;
+}
+.comparatif-cover div img {
+  width: 3rem;
+  height: 3rem;
+}/*# sourceMappingURL=krystoVsG1.css.map */

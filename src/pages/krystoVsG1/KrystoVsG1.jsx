@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import TitlePage from '../../components/layout/TitlePage'
+import krystoCoins from '../../assets/coins/piece_stoyan-02.svg'
+import g1Coins from '../../assets/coins-g1.png'
+import  "./krystoVsG1.css"
 
 function KrystoVsG1() {
   return (
     <section>
       <TitlePage title={' Ğ1 VS Krysto : comparatif'} />
+
       <p>
         La ressemblance entre les deux monnaies étant évidentes pour ceux qui
         connaissent la Ğ1, ce comparatif vous aidera à mieux comprendre leurs

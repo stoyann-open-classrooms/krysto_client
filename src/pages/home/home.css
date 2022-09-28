@@ -253,7 +253,7 @@ section {
 .how-to-troc-container .troc-card {
   padding: 2rem 1rem;
   border: 2px solid #5e7691;
-  height: 25rem;
+  height: 300px;
   margin: 1rem;
   color: #ECEAF8;
 }
@@ -270,7 +270,7 @@ section {
   justify-content: space-between;
 }
 .troc-card-images img {
-  width: 30%;
+  width: 20%;
   height: 10rem;
   -o-object-fit: contain;
      object-fit: contain;

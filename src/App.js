@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './index.css'
+import { SearchProvider } from "./context/Search/searchContext";
 // === Import Layout components
 import Header from './components/layout/header/Header'
 // === Import Public pages 
@@ -22,10 +23,13 @@ import Deposit from './pages/private/wallets/deposit/Deposit'
 import Main from './pages/private/wallets/main/Main'
 import Money from './pages/money/Money'
 import KrystoVsG1 from './pages/krystoVsG1/KrystoVsG1'
+import AddOffer from './pages/addOffer/AddOffer'
 
 function App() {
   return (
     <>
+    <SearchProvider>
+
       <Router>
         <Header />
         <main>
@@ -37,12 +41,13 @@ function App() {
             <Route path="/krysto-vs-g1" element={<KrystoVsG1/>} />
             <Route path="/search" element={<Search />} />
             <Route path="/offer/:id" element={<Offer/>} />
+            <Route path="/add-offer" element={<AddOffer/>} />
             <Route path="*" element={<Error404 />} />
             {/* Private routes */}
             <Route
               path="/private"
               element={<Private/>}
-            >
+              >
                <Route path="/private/dashboard" element={<Dashboard/>} />
 
                <Route path="/private/dashboard/wallets" element={<Wallets />}>
@@ -60,6 +65,7 @@ function App() {
       </Router>
   
       <ToastContainer />
+              </SearchProvider>
     </>
   )
 }

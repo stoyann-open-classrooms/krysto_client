@@ -55,6 +55,9 @@ function Header() {
           <li className="mobile-only">
             <Link to={'/search'}>Rechercher</Link>
           </li>
+          <li className="mobile-only">
+            <Link to={'/add-offer'}>Publier un troc</Link>
+          </li>
 
           {token ? (
             <>

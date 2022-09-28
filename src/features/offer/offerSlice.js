@@ -12,14 +12,14 @@ const initialState = {
 
 // Create new annonce
 export const createOffer = createAsyncThunk(
-    'offer/create',
+    'offers/create',
     async (offerData, thunkAPI) => {
       try {
     
         const token = thunkAPI.getState().auth.user
         const userId = JSON.parse(window.localStorage.getItem('userId'))
       
-        return await offerService.createOffer(offerData, token , userId)
+        return await offerService.createOffer(offerData, userId)
       } catch (error) {
         const message =
           (error.response &&

@@ -1,10 +1,14 @@
 import React from 'react'
+import { useContext } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {getCategories } from '../../../features/category/categorySlice'
 import Spinner from '../../shared/spinner/Spinner'
-
+import SearchContext from "../../../context/Search/searchContext";
 function OfferSearch({icone}) {
+
+
+
 const dispatch  = useDispatch()
     const { categories, isLoading, isError, isSuccess } = useSelector(
         (state) => state.category,
@@ -12,13 +16,16 @@ const dispatch  = useDispatch()
       useEffect(() => {
         dispatch(getCategories())
       }, [])
-
-      console.log(categories);
+      const { getSearch, searchValue } = useContext(SearchContext);
+   console.log(searchValue);
   return (
     <div className="offer-search-container">
        
       <div className="searchbar-container">
-        <input type="text" />
+        <input  onChange={getSearch}
+      value={searchValue}
+      type="text"
+      placeholder= {"taper votre recherche"}/>
       </div>
       <div className="dropdown-category-container">
         <select name="" id="">
