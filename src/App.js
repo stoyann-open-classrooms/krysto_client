@@ -5,6 +5,7 @@ import './index.css'
 import { SearchProvider } from "./context/Search/searchContext";
 // === Import Layout components
 import Header from './components/layout/header/Header'
+import Footer from './components/layout/footer/Footer'
 // === Import Public pages 
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
@@ -74,7 +75,7 @@ function App() {
             </Route>
           </Routes>
         </main>
-        {/* <Footer/> */}
+        <Footer/>
       </Router>
   
       <ToastContainer />

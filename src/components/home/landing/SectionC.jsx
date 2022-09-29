@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 function SectionC() {
   return (
     <section className='sectionC'>
-        <h2>pourquoi Krysto ?</h2>
-  <p>On le sait plus ou moins tous, le troc est un système utilisé depuis très très très longtemps !  Le troc c’est l’échange de biens ou de services qui ne nécessite pas l’intervention de la monnaie.</p>
+      
+  <h2>On le sait plus ou moins tous, le troc est un système utilisé depuis très très très longtemps !  Le troc c’est l’échange de biens ou de services qui ne nécessite pas l’intervention de la monnaie.</h2>
   <p>Et l’Homme pratique le troc depuis plusieurs siècles, échangeant par exemple son savoir-faire contre de la nourriture. 
 Il faut remonter aux plus anciennes civilisations pour retourner au point de départ de l’utilisation du troc qui était déjà destiné à échanger et faire du commerce.</p>
    

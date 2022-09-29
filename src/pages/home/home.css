@@ -253,9 +253,12 @@ section {
 .how-to-troc-container .troc-card {
   padding: 2rem 1rem;
   border: 2px solid #5e7691;
-  height: 300px;
+  height: auto;
   margin: 1rem;
   color: #ECEAF8;
+}
+.how-to-troc-container .troc-card .circular-icon {
+  opacity: 0.5;
 }
 .how-to-troc-container .troc-card h4 {
   font-size: 2.2rem;
@@ -274,4 +277,39 @@ section {
   height: 10rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.sectionA-hero {
+  background-color: #304D6D;
+  padding: 3rem 1rem;
+  color: #ECEAF8;
+  background-image: url("../../assets//coins/piece_stoyan-02.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -103px right -150px;
+  height: 60vh;
+}
+.sectionA-hero p {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  width: 80%;
+}
+.sectionA-hero .sectionA-hero-title {
+  font-size: 2.4rem;
+}
+
+.sectionA-equity {
+  height: 40vh;
+  padding: 3rem 1rem;
+}
+.sectionA-equity .sectionA-equity-title {
+  font-size: 2.4rem;
+}
+
+.cycle-troc-home {
+  width: 100%;
+  overflow: hidden;
+}
+.cycle-troc-home img {
+  height: auto;
+  width: 100%;
 }/*# sourceMappingURL=home.css.map */

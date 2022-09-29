@@ -40,19 +40,26 @@ function Dashboard() {
       <div className="page-content">
    <TitlePage title={`Bienvenue sur votre ${profil.user.name}`}/>
         <div className="dashboard-section">
-         
+      <h4>Total de vos comptes 59.78 Krysto</h4>
+       <div className="wallets">
+        </div>  
+       <div className="propositions">
+        <div className="sent">
+          <h5>proposition envoyés</h5>
+        </div>
+        <div className="sell">
+          <h5>proposition reçue</h5>
+        </div>
+        </div>  
+       <div className="offer">
+       Vous avez 5 trocs
+         3 trocs en ligne 
+         2 trocs en brouillon
+        </div>  
+    
+        </div>
       
-          <div className="dashboard-accounts-container">
-            {/* <CardRib wallet={profil.user.walletMain} />
-            <CardRib wallet={profil.user.walletsDeposit[0]} /> */}
-          </div>
        
-        </div>
-      
-        <div className="dashboard-section">
-          <h3>Vos annonces ({profil.user.offers.length})</h3>
-        </div>
-      
 
         
       </div>
