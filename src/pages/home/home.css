@@ -137,45 +137,6 @@ section {
           animation-fill-mode: both;
 }
 
-.btn-cta {
-  position: relative;
-  background-color: transparent;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  min-width: 10rem;
-  padding: 0.4rem 30px;
-  border-radius: 5px;
-  margin: 10px;
-  border: 2px solid #304D6D;
-  text-transform: uppercase;
-  font-weight: bold;
-  overflow: hidden;
-  z-index: 2;
-}
-.btn-cta span {
-  color: #343B42;
-}
-.btn-cta:hover .hover {
-  transform: translateY(0);
-}
-.btn-cta:hover span {
-  color: #ECEAF8;
-}
-.btn-cta .hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #5e7691;
-  border-color: #5e7691;
-  color: #343B42;
-  z-index: -1;
-  transform: translateY(100%);
-  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
 .sectionB {
   background-color: #304D6D;
   min-height: 100vh;
@@ -312,4 +273,17 @@ section {
 .cycle-troc-home img {
   height: auto;
   width: 100%;
+}
+
+.main-btn {
+  margin-top: 3rem;
+}
+
+.promo {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+.promo p {
+  font-size: 1.3rem;
 }/*# sourceMappingURL=home.css.map */

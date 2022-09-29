@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function SectionA() {
   return (
@@ -14,6 +15,23 @@ function SectionA() {
         <span>Vous recevez tous, chaque jour, la même quantité de monnaie !</span>
     </h3>
  
+    </div>
+
+    <div>
+    {/* <button  className='btn-cta'>
+<Link to={"/money"}>
+
+    <div className="hover"></div>
+        <span>Le modèle mathématique</span>
+</Link>
+    </button>
+    <button  className='btn-cta'>
+<Link to={"/krysto-details"}>
+
+    <div className="hover"></div>
+        <span>Le krysto en détails</span>
+</Link>
+    </button> */}
     </div>
     </div>
   )

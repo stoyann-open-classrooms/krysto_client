@@ -42,6 +42,12 @@ section {
   padding: 10rem 5%;
 }
 
+.dash-section {
+  position: relative;
+  height: 100vh;
+  padding-top: 0;
+}
+
 .my-offers-container {
   padding: 0 1rem;
 }
@@ -86,4 +92,37 @@ section {
 .wallet-page-content hgroup h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.parameters-btn {
+  background-color: #C26066;
+  color: white;
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+}
+.parameters-btn span {
+  color: #ECEAF8;
+}
+.parameters-btn span:hover {
+  color: #343B42;
+}
+.parameters-btn:hover {
+  background-color: rgb(232, 121, 121);
+  color: #343B42;
+}
+
+.total-balance {
+  background-color: #304D6D;
+  color: #ECEAF8;
+  padding: 0.5rem 2rem;
+  width: 300px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-size: 1.4rem;
+  border-radius: 10px;
 }/*# sourceMappingURL=dashboard.css.map */

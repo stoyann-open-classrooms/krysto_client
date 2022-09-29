@@ -3,6 +3,13 @@
 @import '../../../SASS/placeholders';
 
 
+.dash-section{
+  position: relative;
+  height: 100vh;
+  padding-top: 0;
+}
+
+
 .my-offers-container{
     padding: 0 1rem;
   }
@@ -53,3 +60,39 @@ button{
         }
     }
   }
+
+  .parameters-btn{
+    background-color: $danger;
+    color: white;
+    position: absolute;
+    bottom: 4rem ;
+right: 0;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: $radius;
+    span{
+      color: $light;
+  
+   
+      &:hover{
+        color: $dark;
+      }
+    }
+    &:hover{
+      background-color: rgb(232, 121, 121);
+      color: $dark;
+    }
+    }
+
+
+    .total-balance{
+      background-color: $primary;
+      color: $light;
+      padding: 0.5rem 2rem;
+      width: 300px;
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      font-size: 1.4rem;
+      border-radius: $radius + $radius;
+    }

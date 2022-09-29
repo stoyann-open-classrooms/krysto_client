@@ -37,10 +37,23 @@ function Dashboard() {
     return <Spinner />
   } else {
     return (
-      <div className="page-content">
-   <TitlePage title={`Bienvenue sur votre ${profil.user.name}`}/>
+      <section className="dash-section">
+
+   <TitlePage title={`Bienvenue sur votre profil ${profil.user.name}`}/>
         <div className="dashboard-section">
-      <h4>Total de vos comptes 59.78 Krysto</h4>
+
+          <div className="dashboard-info">
+          <button  className='btn-cta'>
+<Link to={"/add-offer"}>
+
+    <div className="hover"></div>
+        <span>Publier un troc</span>
+</Link>
+    </button>
+
+      <h4 className='total-balance'>Total de vos comptes 59.78 Krysto</h4>
+          </div>
+
        <div className="wallets">
         </div>  
        <div className="propositions">
@@ -56,13 +69,19 @@ function Dashboard() {
          3 trocs en ligne 
          2 trocs en brouillon
         </div>  
-    
+        <button  className=' parameters-btn'>
+<Link to={"/private/profil-parameters"}>
+
+    <div className="hover"></div>
+        <span>Parametres du compte</span>
+</Link>
+    </button>
         </div>
       
        
 
         
-      </div>
+      </section>
     )
   }
 }

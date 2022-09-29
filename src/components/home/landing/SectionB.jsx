@@ -12,13 +12,12 @@ function SectionB() {
         <div className="sectionB-troc-cycle">
 
 
-        <h2>Tout peut être échangé, troquer, de la garde de Omaî le chat à une paire de claquettes, d'un co-voiturage au prêt d'une tondeuse ou d'une machine à raclette , d'un cours d'anglais à une place de concert ...</h2>
+        <h2>Le krysto est une monaie local et solidaire elle permet de troquer des biens ou des services sur le marché de  l’occasion. </h2>
  
  <div className="cycle-troc-home">
 
   <img src={cicle} alt="" />
  </div>
-        <p>Le krysto est une monaie local et solidaire elle permet de troquer des biens ou des services sur le marché de  l’occasion. </p>
         </div>
   
   <div className="sectionB-how-to">
@@ -26,7 +25,7 @@ function SectionB() {
   
   
    
-    <h2>Dés l'inscription vous recevez tout de suite 30.43 Krysto soit l'équivalent de 30430 xpf a dépenser tout de suite sur la plateforme parmis les annonces proposée</h2>
+    <p>Dés l'inscription vous recevez tout de suite 30.43 Krysto soit l'équivalent de 30430 xpf a dépenser tout de suite sur la plateforme parmis les annonces proposée</p>
     <p>Quotidienement vous recevez automatiquement sans rien faire entre 0 et 1 krysto Selon le solde de votre compte courant</p>
     <p>vous pouvez aussi gagner des Krysto en vendant des bien ou des services sur la plateforme</p>
     
@@ -37,7 +36,7 @@ function SectionB() {
 
 <div className='how-to-troc-container'>
     <div className='troc-card'>
-        <h4>Troq classique</h4>
+        <h4>Troc classique</h4>
         <div className='troc-card-images'>
         <img src={teddy} alt="" />
         <img className='circular-icon' src={circular} alt="" />
@@ -46,7 +45,7 @@ function SectionB() {
 <p>J'échange quelquechose contre autre chose</p>
     </div>
     <div className='troc-card'>
-        <h4>Troq contre des Krysto</h4>
+        <h4>Troc contre des Krysto</h4>
         <div className='troc-card-images'>
         <img src={teddy} alt="" />
         <img className='circular-icon' src={circular} alt="" />
@@ -56,7 +55,7 @@ function SectionB() {
 
     </div>
     <div className='troc-card'>
-        <h4>négocier le troq</h4>
+        <h4>négocier le troc</h4>
         <div className='troc-card-images'>
         <img src={teddy} alt="" />
         <img className='circular-icon' src={circular} alt="" />

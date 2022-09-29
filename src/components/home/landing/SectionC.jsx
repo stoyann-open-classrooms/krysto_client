@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 function SectionC() {
   return (
     <section className='sectionC'>
+        <h2>Tout peut être échangé, troquer, de la garde de Omaî le chat à une paire de claquettes, d'un co-voiturage au prêt d'une tondeuse ou d'une machine à raclette , d'un cours d'anglais à une place de concert ...</h2>
       
-  <h2>On le sait plus ou moins tous, le troc est un système utilisé depuis très très très longtemps !  Le troc c’est l’échange de biens ou de services qui ne nécessite pas l’intervention de la monnaie.</h2>
+  <p>On le sait plus ou moins tous, le troc est un système utilisé depuis très très très longtemps !  Le troc c’est l’échange de biens ou de services qui ne nécessite pas l’intervention de la monnaie.</p>
   <p>Et l’Homme pratique le troc depuis plusieurs siècles, échangeant par exemple son savoir-faire contre de la nourriture. 
 Il faut remonter aux plus anciennes civilisations pour retourner au point de départ de l’utilisation du troc qui était déjà destiné à échanger et faire du commerce.</p>
    
@@ -20,13 +21,7 @@ Il faut remonter aux plus anciennes civilisations pour retourner au point de dé
     
 En effet si vous souhaiter troquer quelquechose vous devez trouvez quelqu’un qui soit interresser par ce que vous proposer et qu’il est quelques chose qui vous convienne en echange sela limite fortement les capacité d’échange entre individus</p>
    <h2>Grace au Krysto plus de probléme vous pouvez troquer des biens ou des services avec n’importe quelle utilisateurs de la plateforme. </h2>
-   <button  className='btn-cta'>
-<Link to={"/money"}>
 
-    <div className="hover"></div>
-        <span>Le Krysto en détails</span>
-</Link>
-    </button>
 
    
     </section>
