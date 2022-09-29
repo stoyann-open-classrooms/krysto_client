@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import Modal from '../../../../components/shared/spinner/modal/Modal'
 
 import Spinner from '../../../../components/shared/spinner/Spinner'
 import WalletGraph from '../../../../components/wallets/WalletGraph'
@@ -45,16 +46,47 @@ if(!profil.user) {
       <div className="container-graph">
       <WalletGraph transactions={profil.user.walletsDeposit[0].transactions}/>
       </div>
-       
-      <div className="buttons">
-      {/* <Dialog btn={"Envoyer"}>
-        <h1>this is the modal</h1>
-      </Dialog>
-      <Dialog btn={"Recevoir"}>
-        <h1>this is the modal</h1>
-      </Dialog>
-       */}
-      </div>
+      <div className="wallet-actions">
+
+
+
+
+<Modal btn={'Envoyer'} title={'Envoyer'}>
+  <h3>Le prix de cette annonce est de  Krysto</h3>
+  <p>
+    Vous pouvez proposer au vendeur un montant inférieur ou suppérieur au
+    prix annoncé. Le vendeur pourra accepter ou refuser votre proposition,
+    en fonction des autres offres qu'il recevra.
+  </p>
+
+</Modal>
+
+<Modal btn={'recevoir'} title={'Recevboir'}>
+  <h3>Le prix de e est de  Krysto</h3>
+  <p>
+    Vous pouvez proposer au vendeur un montant inférieur ou suppérieur au
+    prix annoncé. Le vendeur pourra accepter ou refuser votre proposition,
+    en fonction des autres offres qu'il recevra.
+  </p>
+
+</Modal>
+
+
+
+
+
+
+
+
+{/* <button className="btn-cta">
+<div className="hover"></div>
+    <span>Envoyer</span>
+</button>
+<button className="btn-cta">
+<div className="hover"></div>
+    <span>Recevoir</span>
+</button> */}
+</div>
      
       <div >
         <h4>Cours du Krysto au 11/09/2022</h4>

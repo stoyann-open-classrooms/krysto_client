@@ -18,14 +18,16 @@ line-height: 3rem;
     thead{
         th{
             text-align: left;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: $complementary2;
         }
     }
     tbody {
 
    
-        
+        td{
+            @extend %text-cut;
+        }
         tr{
             transition: all 0.5s ease;
            

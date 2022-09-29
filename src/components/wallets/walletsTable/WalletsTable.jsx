@@ -35,7 +35,7 @@ function WalletsTable({ transactions }) {
                   )}
 
                  
-                  <td>{transaction.amountUnity.toFixed(4)} ù</td>
+                  <td>{transaction.amountUnity.toFixed(7)} ù</td>
                   <td>
                     {(
                       transaction.amountUnity / transaction.monyConvertValue

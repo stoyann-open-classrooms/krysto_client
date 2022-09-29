@@ -10,29 +10,29 @@ function KrystoVsG1() {
     <section>
       <TitlePage title={' Ğ1 VS Krysto : comparatif'} />
 
-      <p>
+      <p className='big-paragraphe'>
         La ressemblance entre les deux monnaies étant évidentes pour ceux qui
         connaissent la Ğ1, ce comparatif vous aidera à mieux comprendre leurs
         différences.
       </p>
-      <h2>Le modèle mahtématique.</h2>
+      <h2 className='title-section'>Le modèle mahtématique.</h2>
       <p>
         Les formules mathématiques (algorythme) utilisée par le système Krysto
         ne sont pas tout a fait similaires à celle de la Ğ1.
       </p>
-      <h2>Formule du dividende en Krysto</h2>
-      <p>1 Krysto = (masse monétaire / nombre d'utilisateurs / 365.25) * 12</p>
+      <h2  className='title-section'>Formule du dividende en Krysto</h2>
+      <p className='formule'>1 Krysto = (masse monétaire / nombre d'utilisateurs / 365.25) * 12</p>
 
-      <h2>Toile de confiance.</h2>
+      <h2 className='title-section'>Toile de confiance.</h2>
       <p>
         Avec la Ğ1, la co-création de la monnaie (versemment du DU) est
         conditionnée à l'intégration de la toile de confiance. Pour intégrer la
         toile de confiance, vous devez être certifié par 5 membres déjà
         certifiés eux-mêmes. L'objectif de cette toile de confiance est simple :{' '}
-        <strong>
+        <p className='big-paragraphe'>
           {' '}
           garantir que chaque membre ne possède qu'un seul compte en Ğ1.{' '}
-        </strong>
+        </p>
       </p>
 
       <p>
@@ -41,16 +41,15 @@ function KrystoVsG1() {
         à notre monnaie.
       </p>
 
-      <p>
-        {' '}
-        <strong>
-          {' '}
+      <p className='big-paragraphe'>
+       
           L'unicité des comptes est garantie d'une autre façon :{' '}
-        </strong>{' '}
-        <br /> via le paiement des abonnements. En effet, il n'est pas possible
-        de créer plusieurs compte Krysto avec la même identité banquaire (carte
-        bleue).
+        
+     
       </p>
+      <p>   via le paiement des abonnements. En effet, il n'est pas possible
+        de créer plusieurs compte Krysto avec la même identité banquaire (carte
+        bleue).</p>
       <p>
         La création de plusieurs comptes par personne est donc limitée, pour
         éviter les abus et l'accumulation de monnaie par une petite minorité.
@@ -62,7 +61,7 @@ function KrystoVsG1() {
         monnaie :
       </p>
 
-      <ul>
+      <ul className='comparatif-list'>
         <li>Plafonemend des comptes de dépôts ç 362.25 Krysto (362 250 XPF)</li>
         <li>Vérification de votre adresse e-mail</li>
         <li>
@@ -83,7 +82,7 @@ function KrystoVsG1() {
         réel.
       </p>
 
-      <h2>Taux de conversion en XPF</h2>
+      <h2 className='title-section'>Taux de conversion en XPF</h2>
       <p>
         Les créateurs de la Ğ1 ont fait le choix de ne pas définir de taux de
         conversion entre la Ğ1 et les autres monnaies comme les €uros, afin de
@@ -127,7 +126,7 @@ function KrystoVsG1() {
         travers ce taux de conversion.
       </p>
 
-      <h2>Gratuité du service.</h2>
+      <h2 className='title-section'>Gratuité du service.</h2>
       <p>
         La Ğ1 est entièrement gratuite. La seule condition pour participer à la
         co-création de la monnaie est l'intégration de la toile de confiance.

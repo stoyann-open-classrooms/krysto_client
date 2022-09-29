@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './modal.css'
 
 function Modal( props) {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(true)
   const toggleModal = () => {
     setModal(!modal)
   }

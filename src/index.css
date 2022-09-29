@@ -170,4 +170,14 @@ form {
 }
 .title-page img {
   max-width: 5rem;
+}
+
+.back-btn {
+  position: absolute;
+  right: 1rem;
+  background-color: #304D6D;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  color: #ECEAF8;
+  top: 12rem;
 }/*# sourceMappingURL=index.css.map */

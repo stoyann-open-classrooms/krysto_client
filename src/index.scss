@@ -136,3 +136,12 @@ flex: 1;
 }
 
 
+.back-btn{
+  position: absolute;
+  right: 1rem;
+  background-color: $primary;
+  padding: 0.4rem 1rem;
+  border-radius: $radius;
+  color: $light;
+  top: 12rem;
+}

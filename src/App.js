@@ -26,6 +26,8 @@ import KrystoVsG1 from './pages/krystoVsG1/KrystoVsG1'
 import AddOffer from './pages/addOffer/AddOffer'
 import RegisterForm from './pages/registerForm/RegisterForm';
 import ForgotPassword from './pages/forgotPassword/ForgotPassword';
+import Seller from './pages/private/propositions/seller/Seller';
+import Sent from './pages/private/propositions/sent/Sent';
 
 function App() {
   return (
@@ -61,6 +63,13 @@ function App() {
 
 
                <Route path="/private/dashboard/propositions" element={<Propositions/>} />
+               <Route path="/private/dashboard/propositions-seller" element={<Seller/>} />
+               <Route path="/private/dashboard/propositions-sent" element={<Sent/>} />
+              
+              
+              
+              
+              
                <Route path="/private/dashboard/my-trocs" element={<Trocs/>} />
             </Route>
           </Routes>

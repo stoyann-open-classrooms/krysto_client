@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import Modal from '../../../../components/shared/spinner/modal/Modal'
 import Spinner from '../../../../components/shared/spinner/Spinner'
 import WalletGraph from '../../../../components/wallets/WalletGraph'
 
@@ -43,14 +44,56 @@ function Main() {
       </div>
     
       <div className="wallet-actions">
-  <button className="btn-cta">
+
+
+
+
+      <Modal btn={'Envoyer'} title={'Envoyer de la monnaie'}>
+     
+        <h3>Depuis vers votre compte courant</h3>
+     
+     <div className="modal-link">
+        <p>Vers votre compte de dépots</p>
+     
+      <p>Transférez votre monnaie vers votre compte de dépots.</p>
+     </div>
+     <div className="modal-link">
+      <p>Vers un contact</p>
+      <p>Transférez votre monnaie vers le compte de l'un de vos contacts.</p>
+     </div>
+     <div className="modal-link inactiv">
+      <p>Vers un nouveaux compte</p>
+      <p>Transférez votre monnaie vers un nouveau compte tiers.</p>
+      
+      <div className="field">
+
+        <input type="text" placeholder='Indiquez le n° du compte a créditer' />
+      </div>
+     </div>
+
+      <button className="btn-submit">Annuler</button>
+      </Modal>
+
+      <Modal btn={'recevoir'} title={'Recevoir de la monnaie'}>
+       <p>Pour recevoir de la monnaie : </p>
+      
+      </Modal>
+
+
+
+
+
+
+
+
+  {/* <button className="btn-cta">
   <div className="hover"></div>
           <span>Envoyer</span>
   </button>
   <button className="btn-cta">
   <div className="hover"></div>
           <span>Recevoir</span>
-  </button>
+  </button> */}
       </div>
       <WalletsTable transactions={profil.user.walletMain} />
     </div>

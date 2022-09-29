@@ -11,34 +11,13 @@ import './offer.css'
 import { useState } from 'react'
 import Modal from '../../components/shared/spinner/modal/Modal'
 function Offer() {
+  const { profil } = useSelector((state) => state.user)
 
-
-
-
-
-
-
-
-  const { profil} = useSelector(
-    (state) => state.user,
-  )
- 
-
- 
   useEffect(() => {
     dispatch(getProfil())
   }, [])
 
   console.log(profil)
-
-
-
-
-
-
-
-
-
 
   const [toggleModal, setToggleModal] = useState(false)
 
@@ -94,24 +73,19 @@ function Offer() {
           prix annoncé. Le vendeur pourra accepter ou refuser votre proposition,
           en fonction des autres offres qu'il recevra.
         </p>
-<form>
+        <form>
+          <div className="field">
+            <label htmlFor="">Montant de l'offre en Krysto.</label>
+            <input type="number" />
+          </div>
 
-<div className="field">
-       <label htmlFor="">Montant de l'offre en Krysto.</label>
-        <input type="number" />
-</div>
+          <div className="field">
+            <textarea placeholder="Laisser un message..." name=""></textarea>
+          </div>
 
-<div className="field">
-
-        <textarea placeholder='Laisser un message...' name=""></textarea>
-</div>
-
-<button className='submit-btn'>Envoyer ma proposition</button>
-
-</form>
-<div className='authorized'>Montant autorisé par vos comptes: </div>
-
-
+          <button className="submit-btn">Envoyer ma proposition</button>
+        </form>
+        <div className="authorized">Montant autorisé par vos comptes: </div>
       </Modal>
     </section>
   )
