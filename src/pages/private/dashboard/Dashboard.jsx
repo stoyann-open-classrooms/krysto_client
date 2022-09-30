@@ -70,7 +70,12 @@ function Dashboard() {
         <div className="sell">
         {profil.conversations.length === 0 ? 
           <h5>Vous n'avez pas de négociation en cours</h5>
-        : ''}
+          :     
+          
+          <h5>Vous avez {profil.conversations.length} converstions en cours</h5>
+          
+          
+          }
         </div>
         </div>  
        <div className="offer">

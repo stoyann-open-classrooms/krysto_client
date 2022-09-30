@@ -14,6 +14,7 @@ import {
 import Coins from '../../../assets/coins/coinGif.gif'
 import './Header.css'
 import { useState } from 'react'
+import ProfilParameters from '../../../pages/private/profilPararameters/ProfilParameters'
 
 function Header() {
   const navigate = useNavigate()
@@ -46,25 +47,82 @@ function Header() {
         className={toggle ? 'mobile-main-menu show-menu' : 'mobile-main-menu'}
       >
         <ul>
-          <li className="mobile-only">
-            <Link to={'/'}>Accueil</Link>
-          </li>
+
+
+
 
           {/* // mobile only */}
+          <li className='mobile-only'>
+             
+              <Link to={'/'}>Accueil</Link>
+            </li>
+            <li className='mobile-only' >
+             
+              <Link to={'/search'}>Rechercher</Link>
+            </li>
+         
+    
+            <li className='mobile-only'>
+            
+              <Link to={'/money'}>publier un troc</Link>
+            </li>
+       
+            <li className='mobile-only'>
+              
+              <Link to={'/money'}>Le krysto en détails</Link>
+            </li>
 
-          <li className="mobile-only">
-            <Link to={'/search'}>Rechercher</Link>
+          {/* // desktop */}
+
+          <li>
+            <Link to={'/trm-details'}>La Théorie relative de la monnaie</Link>
           </li>
-          <li className="mobile-only">
-            <Link to={'/add-offer'}>Publier un troc</Link>
+          <li>
+            <Link to={'/krysto-vs-g1'}>G1 vs Krysto : comparatif</Link>
           </li>
 
-          {token ? (
+
+{ token ?       
+
+<>
+
+
+<li className='mobile-only'>
+             
+             <Link to={'/private/dashboard'}>profil</Link>
+           </li>
+
+<li className='mobile-only'>
+             
+             <Link to={'/m'}>déconexion</Link>
+           </li>
+
+</>
+
+:
+<>
+
+
+<li className='mobile-only'>
+             
+             <Link to={'/login'}>connexion</Link>
+           </li>
+
+<li className='mobile-only'>
+             
+             <Link to={'/register-subscription'}>s'incrire</Link>
+           </li>
+
+</>
+}
+
+
+          {/* {token ? (
             <>
               <li className="mobile-only">
                 <Link to={'/private/dashboard'}>Dashboard</Link>
               </li>
-         
+
               <li className="mobile-only">
                 <Link to={'/login'}>Deconnexion</Link>
               </li>
@@ -79,9 +137,9 @@ function Header() {
                 <Link to={'/register-subscription'}>S'inscrire</Link>
               </li>
             </>
-          )}
+          )} */}
 
-          {token ? (
+          {/* {token ? (
             <>
               <li>
                 <Link to={'/login'}>Mes comptes</Link>
@@ -102,7 +160,7 @@ function Header() {
                 <Link to={'/'}>Contact</Link>
               </li>
             </>
-          )}
+          )} */}
         </ul>
       </div>
       <header className="main-header">
@@ -126,16 +184,22 @@ function Header() {
               <FaMoneyBill />
               <Link to={'/money'}>La monnaie</Link>
             </li>
+       
             <li>
               <FaUser />
-              <Link to={'/money'}>Profil</Link>
+              <Link to={'/add-offer'}>publier</Link>
             </li>
+         
 
             {token ? (
               <>
                 <li>
                   <FaSignOutAlt />
-                  <Link to={'/login'}>deconnexion</Link>
+                  <Link to={'/private/dashboard'}>profil</Link>
+                </li>
+                <li>
+                  <FaSignOutAlt />
+                  <Link to={'/'}>deconnexion</Link>
                 </li>
               </>
             ) : (

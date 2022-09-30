@@ -1,4 +1,5 @@
 
+import TitlePage from '../../components/layout/TitlePage'
 import LoginForm from '../../components/login/LoginForm'
 import './login.css'
 function Login() {
@@ -6,17 +7,14 @@ function Login() {
 
   return (
     <section >
-      <div className="title-page">
+      <div>
+<TitlePage title={"Connexion"}/>
 
-<h1>Connexion</h1>
       </div>
+    <h2>Connecter vous pour commencer a troquer avec les autres utilisateurs !</h2>
     <LoginForm/>
 
-    <div className="register-link-container">
-      <button className="submit-btn">Inscription</button>
-    </div>
 
-    <h2>Connecter vous pour commencer a troquer avec les autres utilisateurs !</h2>
     </section>
   )
 }

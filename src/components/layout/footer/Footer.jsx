@@ -22,7 +22,8 @@ function Footer() {
   </li>
   <li>
     <FaDiscord/>
-    <Link to={'#'}>Discord</Link>
+    <a href='https://discord.gg/vqJQZDbYtA'>Discord</a>
+
   </li>
   <li>
     <FaLinkedin/>

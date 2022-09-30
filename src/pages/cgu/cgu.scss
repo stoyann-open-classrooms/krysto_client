@@ -1,0 +1,48 @@
+
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+@import '../../SASS/mixins';
+@import '../../SASS/animations';
+.cgu-container{
+    background-color: #fff;
+    padding: 3rem 1rem;
+    position: relative;
+    overflow: hidden;
+
+
+    h4{
+        font-size: 1.3rem;
+        text-align: center;
+        position: relative;
+        margin: 2rem 0;
+        &::before{
+            content: "";
+            background-color: $primary-light;
+            height: 0.3rem;
+         
+            position: absolute;
+            width: 80%;
+            transform: translateX(-50%);
+            right: 50%;
+            left: 50%;
+        
+            top: -0.4rem;
+            
+        }
+        &::after{
+            content: "";
+            background-color: $primary-light;
+            height: 0.3rem;
+         
+            position: absolute;
+            width: 80%;
+            transform: translateX(-50%);
+            right: 50%;
+            left: 50%;
+        
+            bottom: -0.4rem;
+            
+        }
+    }
+}

@@ -46,7 +46,7 @@ function LoginForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="login-form">
+    <form onSubmit={onSubmit}>
     
       <div className="field">
         <label htmlFor="email">e-mail</label>
@@ -81,6 +81,9 @@ function LoginForm() {
 
       <Link to={'/forgot-password'} className="is-link">
         Mot de passe oublié
+      </Link>
+      <Link to={'/register-subscription'} className="is-link">
+        Pas encore inscrit ?
       </Link>
 
 

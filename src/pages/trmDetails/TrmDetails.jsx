@@ -115,18 +115,23 @@ function TrmDetails() {
         </a>{' '}
       </div>
       <div className="trm-link">
+        <h3>La TRM en vidéos (version courte)</h3>
         <p>
-          <h3>La TRM en vidéos</h3>
+          Pour en savoir plus vous pouvez lire la Théorie Relative de la
+          Monnaie. Ce livre écrit par Stéphane Laborde est disponible en ligne :
+        </p>
+        <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PdSEpQ8ZtY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div className="trm-link">
+        <p>
+          <h3>La TRM en vidéos (version longue)</h3>
           Ou alors en regardant cette vidéos ou Stéphane Laborde vous qui
           éxplique lui même la TRM
         </p>
         <br />
-        <a
-          className="is-link"
-          href="https://www.youtube.com/watch?v=kPxmbseOmHM&t=280s"
-        >
-          Comprendre la théorie relative de la monnaie avec stéphane laborde
-        </a>{' '}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kPxmbseOmHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
       </div>
    
     </section>
