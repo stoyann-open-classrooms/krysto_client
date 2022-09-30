@@ -3,6 +3,8 @@ import TitlePage from '../../components/layout/TitlePage'
 import trmGeneration from '../../assets/trm/trm-generation.png'
 import convergence from '../../assets/trm/convergence-des-soldes.png'
 import './trmDetails.css'
+import { FaCheck } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 function TrmDetails() {
   return (
     <section>
@@ -13,20 +15,33 @@ function TrmDetails() {
       </p>
       <h2>4 Libertés</h2>
       <p>Cette théorie pose 4 axiomes qui sont les 4 libertés économiques</p>
-      <ul>
-        <li>La liberté de choix de son systéme monétaire</li>
-        <li>La liberté d'utiliser les ressources.</li>
+
+      <ul className="comparatif-list">
         <li>
-          La liberté d'estimation et de production de toute valeur économique
+          {' '}
+          <FaCheck /> La liberté d'échanger, comptabiliser, afficher ses prix
+          dans la monnaie.
         </li>
         <li>
-          La liberté d'échanger, comptabiliser, afficher ses prix dans la
-          monnaie.
+          {' '}
+          <FaCheck /> La liberté d'estimation et de production de toute valeur
+          économique
+        </li>
+        <li>
+          {' '}
+          <FaCheck />
+          La liberté de choix de son systéme monétaire
+        </li>
+        <li>
+          {' '}
+          <FaCheck />
+          La liberté d'utiliser les ressources.
         </li>
       </ul>
-      <p>
+
+      <p className="big-paragraphe">
         La liberté s'entend bien sûr au sens de non-nuisance à soi et à autrui.
-        s'il y'a nuisance, il y'a privation de liberté.
+        s'il y'a nuisance, alors il y'a privation de liberté.
       </p>
 
       <div className="chapter">
@@ -51,7 +66,7 @@ function TrmDetails() {
 
       <div className="chapter">
         <h2>Égalité spatio-temporelle</h2>
-        <p>
+        <p className="big-paragraphe">
           Pour respecter les 4 libertés, il faut que chaque humain crée la même
           part de monnaie (la même portion).On appelle cela le DU
         </p>
@@ -65,29 +80,55 @@ function TrmDetails() {
           privilégier les plus jeunes ni les plus âgés..
         </p>
 
-        <h3>DU = C(M/N)</h3>
+        <h3 className="formule">
+          {' '}
+          <span>DU =</span> coefficient (c) /Masse monétaire(M/N)
+        </h3>
       </div>
       <div className="chapter">
         <h2>Convergences des comptes</h2>
-        <p>
+        <p className="big-paragraphe">
           Chaque créateur créant la même quantité de monnaie, leurs comptes se
           rapprochent relativement. Comme une différence d'âge devient de moins
           en moins visible en vieillissant.
         </p>
         <div className="chapter-img">
-
-        <img src={convergence} alt="" />
+          <img src={convergence} alt="" />
         </div>
       </div>
-      <h2>Plus d'informations sur la TRM - liens utiles</h2>
-      <p>Pour en savoir plus vous pouvez lire la Théorie Relative de la Monnaie. Ce livre écrit par Stéphane Laborde est disponible en ligne : http://trm.creationmonetaire.info/</p>
-    Vous pou
-    <div>
+      <div className='big-paragraphe'>
         <h2>Le krysto et la G1</h2>
-        Basée sur la même théorie, le Krysto comporte beaucoup de difference avec la G1 pour connaitre les differences entre ces deux monnaie merci de consulter la section <span>Krysto vs G1</span>
-    </div>
-    
-    
+        Basée sur la même théorie, le Krysto comporte beaucoup de difference
+        avec la G1 pour connaitre les differences entre ces deux monnaie merci
+        de consulter la section <Link className='is-link' to={'/krysto-vs-g1'}>Krysto vs G1</Link>
+      </div>
+      <h2>Plus d'informations sur la TRM - liens utiles</h2>
+      <div className="trm-link">
+        <h3>La TRM en intégralité</h3>
+        <p>
+          Pour en savoir plus vous pouvez lire la Théorie Relative de la
+          Monnaie. Ce livre écrit par Stéphane Laborde est disponible en ligne :
+        </p>
+        <br />
+        <a className="is-link" href="http://trm.creationmonetaire.info/">
+          La Théorie Relative de la monnaie en intégralité
+        </a>{' '}
+      </div>
+      <div className="trm-link">
+        <p>
+          <h3>La TRM en vidéos</h3>
+          Ou alors en regardant cette vidéos ou Stéphane Laborde vous qui
+          éxplique lui même la TRM
+        </p>
+        <br />
+        <a
+          className="is-link"
+          href="https://www.youtube.com/watch?v=kPxmbseOmHM&t=280s"
+        >
+          Comprendre la théorie relative de la monnaie avec stéphane laborde
+        </a>{' '}
+      </div>
+   
     </section>
   )
 }

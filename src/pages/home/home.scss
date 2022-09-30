@@ -199,20 +199,21 @@
   text-align: center;
   margin: 3rem auto;
   border: solid 2px $primary;
-  background-color: #fff;
+  background-color: $dark;
+  border-radius: $radius * 4;
 height: 28rem;
-border-radius: 50%;
-width: 28rem;
+border: 2rem $primary solid;
+width: 100%;
   color: $secondary;
   span{
     font-size: 3rem;
-    color: $primary;
+    color: $light;
   }
   p{
     font-size: 1.2rem;
     text-align: center;
     margin: 0;
-    color: $primary;
+    color: $light;
   }
 }
 

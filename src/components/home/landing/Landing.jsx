@@ -19,7 +19,7 @@ function Landing() {
  <div className='promo'>
       <h5>30 000 XPF offert</h5>
       <h6>A l'inscripiton <span>*</span></h6>
-      <p>En Krysto</p>
+      <p>*En Krysto</p>
 
  </div>
         <Link to={'/register-subscription'} className="btn-cta main-btn">

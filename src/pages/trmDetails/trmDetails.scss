@@ -1,10 +1,29 @@
-
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
 
 .chapter{
+    p{
+        margin: 3rem 0;
+    }
     .chapter-img{
         width: 100%;
+        margin: 3rem 0;
+       
     img{
         width: 100%;
+        margin: 10rem 0;
     }
     }
+}
+
+
+
+.trm-link{
+    background-color: #fff;
+box-shadow: $shadow;
+padding:1.2rem 1rem;
+font-size: 1.2rem;
+text-align: center;
+margin: 2rem auto;
 }

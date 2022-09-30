@@ -39,7 +39,7 @@ input:focus {
 }
 
 section {
-  padding: 10rem 5%;
+  padding: 6rem 5%;
 }
 
 @-webkit-keyframes flip-in-hor-top {
@@ -288,21 +288,22 @@ section {
   text-align: center;
   margin: 3rem auto;
   border: solid 2px #304D6D;
-  background-color: #fff;
+  background-color: #343B42;
+  border-radius: 20px;
   height: 28rem;
-  border-radius: 50%;
-  width: 28rem;
+  border: 2rem #304D6D solid;
+  width: 100%;
   color: #F49E4C;
 }
 .promo span {
   font-size: 3rem;
-  color: #304D6D;
+  color: #ECEAF8;
 }
 .promo p {
   font-size: 1.2rem;
   text-align: center;
   margin: 0;
-  color: #304D6D;
+  color: #ECEAF8;
 }
 
 .landing-subtitle {

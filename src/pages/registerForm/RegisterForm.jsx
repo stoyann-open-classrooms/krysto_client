@@ -55,7 +55,7 @@ function RegisterForm() {
       <form onSubmit={onSubmit}>
        
         <div class="field">
-          <p class="control has-icons-left has-icons-right">
+          <label htmlFor="name">Entrer votre nom d'utilisateur</label>
             <input
               className="input is-large"
               type="text"
@@ -67,10 +67,11 @@ function RegisterForm() {
             />
            
           
-          </p>
+          
         </div>
         <div className="field">
-          <p className="control has-icons-left has-icons-right">
+        
+          <label htmlFor="email">Entrer votre e-mail</label>
             <input
               className="input is-large"
               type="email"
@@ -81,10 +82,10 @@ function RegisterForm() {
               onChange={onChange}
             />
           
-          </p>
+          
         </div>
         <div class="field">
-          <p class="control has-icons-left">
+       <label htmlFor="password">Entrer un mot de passe</label>
             <input
               className="input is-large "
               type="password"
@@ -95,31 +96,31 @@ function RegisterForm() {
               onChange={onChange}
             />
 
-          
-          </p>
+     
         </div>
         <div class="field">
-          <p class="control has-icons-left">
+          <label htmlFor="password2">Confirmer votre mot de passe</label>
+        
             <input
               className="input is-large "
               type="password"
               placeholder="confirmer votre mot de passe"
-              name="password"
-              id="password"
+              name="password2"
+              id="password2"
               value={password}
               onChange={onChange}
             />
 
-          </p>
+      
         </div>
         <div class="field">
           <p class="control">
-            <button class="submit-btn ">Connexion</button>
+            <button class="submit-btn ">Envoyer</button>
           </p>
         </div>
 
       </form>
-      <p>En créant votre compte, vous aceptez les <Link to={'/cgu'}>C.G.U</Link> et <Link to={'/cgu'}>C.G.U</Link> </p>
+      <p>En créant votre compte, vous aceptez les <Link to={'/cgu'}>C.G.U</Link> et <Link to={'/cgv'}>C.G.V</Link> </p>
     </section>
   )
 }
