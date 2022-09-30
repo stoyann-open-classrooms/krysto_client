@@ -84,15 +84,63 @@ right: 0;
     }
     }
 
+  .add-offer-btn{
+    background-color: $dark;
+    color: white;
+    position: absolute;
+    top: -6rem ;
+right: 0;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: $radius;
+    span{
+      color: $light;
+  
+   
+    }
+    &:hover{
+      background-color: $primary;
+     
+    }
+    }
+
 
     .total-balance{
       background-color: $primary;
       color: $light;
       padding: 0.5rem 2rem;
-      width: 300px;
+      min-width:  130px;
+      display: flex;
+      margin: 0 2rem;
+      justify-content: center;
+      flex: 2;
+      font-size: 1.2rem;
+      border-radius: $radius + $radius;
+    }
+    .total-troc{
+      background-color: $primary;
+      color: $light;
+      padding: 0.5rem 2rem;
+      min-width:  130px;
       display: flex;
       margin: auto;
       justify-content: center;
-      font-size: 1.4rem;
+      flex: 1;
+      font-size: 1.2rem;
       border-radius: $radius + $radius;
+    }
+
+    .dashboard-info{
+      display: flex;
+      margin-bottom: 3rem;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+
+    .propositions{
+      h5{
+        color: red;
+        font-size: 1.4rem;
+      }
     }

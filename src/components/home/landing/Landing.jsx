@@ -14,11 +14,11 @@ function Landing() {
       <div className="section-inner">
         <h4>Une nouvelle facon de consommer plus librement et ecologiquement.</h4>
         <h2>Le troc nouvelle génèration !</h2>
-      <p>Le krysto une monnaie numerique local inspirée de la Theorie relative de la monnaie vous permettant d’echanger des biens ou des services sur la plateforme</p>
+      <p className='landing-subtitle'>Le krysto une monnaie numerique local inspirée de la Theorie relative de la monnaie vous permettant d’echanger des biens ou des services sur le marché de l'occasion.</p>
       </div>
  <div className='promo'>
       <h5>30 000 XPF offert</h5>
-      <h6>A l'inscripiton*</h6>
+      <h6>A l'inscripiton <span>*</span></h6>
       <p>En Krysto</p>
 
  </div>

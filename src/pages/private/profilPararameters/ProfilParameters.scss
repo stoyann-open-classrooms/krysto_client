@@ -1,0 +1,65 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+
+
+.parameters-section {
+  padding: 0;
+}
+
+.parameters-hero{
+    margin-bottom: 2rem;
+}
+.parameters-hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email-checked,
+.email-unchecked,
+.plan-key {
+  display: flex;
+  width: 100px;
+  height: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  svg{
+    margin-right: 1rem;
+  }
+}
+
+.email-checked {
+  background-color: green;
+}
+
+.email-unchecked {
+  background-color: $danger;
+}
+.plan-key{
+    background-color: $dark;
+    color: white;
+}
+
+.parameters-form{
+  
+    display: flex;
+   margin:  0 auto;
+    input{
+       margin: 0 auto;
+    }
+}
+
+
+.danger-section{
+margin-top: 40vh;
+   display: flex; 
+   justify-content: space-around;
+  
+}

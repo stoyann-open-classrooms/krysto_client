@@ -32,6 +32,8 @@ import Sent from './pages/private/propositions/sent/Sent'
 import KrystoDetails from './pages/krystoDetails/KrystoDetails'
 import TrmDetails from './pages/trmDetails/TrmDetails'
 import ProfilParameters from './pages/private/profilPararameters/ProfilParameters'
+import Cgu from './pages/cgu/Cgu'
+import Cgv from './pages/cgv/Cgv'
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
               <Route path="/search" element={<Search />} />
               <Route path="/offer/:id" element={<Offer />} />
               <Route path="/add-offer" element={<AddOffer />} />
+              <Route path="/cgu" element={<Cgu />} />
+              <Route path="/cgv" element={<Cgv />} />
               <Route path="*" element={<Error404 />} />
               {/* Private routes */}
               <Route path="/private" element={<Private />}>

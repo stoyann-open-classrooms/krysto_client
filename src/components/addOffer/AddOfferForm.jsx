@@ -55,7 +55,7 @@ function AddOfferForm() {
 
   const handleForm = (e) => {
     e.preventDefault()
- dispatch(createOffer(offer))
+//  dispatch(createOffer(offer))
  console.log(offer);
   }
 

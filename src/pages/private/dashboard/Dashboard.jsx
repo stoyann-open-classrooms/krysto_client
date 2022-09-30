@@ -41,27 +41,36 @@ function Dashboard() {
 
    <TitlePage title={`Bienvenue sur votre profil ${profil.user.name}`}/>
         <div className="dashboard-section">
-
-          <div className="dashboard-info">
-          <button  className='btn-cta'>
+        <button  className=' add-offer-btn'>
 <Link to={"/add-offer"}>
 
     <div className="hover"></div>
-        <span>Publier un troc</span>
+        <span>Ajouter un troc</span>
 </Link>
     </button>
+          <div className="dashboard-info">
+
+    
 
       <h4 className='total-balance'>Total de vos comptes 59.78 Krysto</h4>
+      <h4 className='total-troc'>{profil.user.offers.length} trocs en ligne</h4>
           </div>
 
        <div className="wallets">
         </div>  
        <div className="propositions">
         <div className="sent">
-          <h5>proposition envoyés</h5>
+          {profil.user.propositionsSent.length === 0 ? 
+          <h5>Vous n'avez fait aucune proposition</h5>
+        : ''}
+     
+
+
         </div>
         <div className="sell">
-          <h5>proposition reçue</h5>
+        {profil.conversations.length === 0 ? 
+          <h5>Vous n'avez pas de négociation en cours</h5>
+        : ''}
         </div>
         </div>  
        <div className="offer">

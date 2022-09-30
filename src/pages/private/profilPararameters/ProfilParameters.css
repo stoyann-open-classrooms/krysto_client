@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+input:focus {
+  outline: none;
+}
+
+section {
+  padding: 10rem 5%;
+}
+
+.parameters-section {
+  padding: 0;
+}
+
+.parameters-hero {
+  margin-bottom: 2rem;
+}
+
+.parameters-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-checked,
+.email-unchecked,
+.plan-key {
+  display: flex;
+  width: 100px;
+  height: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.email-checked svg,
+.email-unchecked svg,
+.plan-key svg {
+  margin-right: 1rem;
+}
+
+.email-checked {
+  background-color: green;
+}
+
+.email-unchecked {
+  background-color: #C26066;
+}
+
+.plan-key {
+  background-color: #343B42;
+  color: white;
+}
+
+.parameters-form {
+  display: flex;
+  margin: 0 auto;
+}
+.parameters-form input {
+  margin: 0 auto;
+}
+
+.danger-section {
+  margin-top: 40vh;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=ProfilParameters.css.map */

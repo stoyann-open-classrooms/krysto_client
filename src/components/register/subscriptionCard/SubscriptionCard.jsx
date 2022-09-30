@@ -34,6 +34,14 @@ function SubscriptionCard() {
                 <span className="list-name">Recevoir des Krysto</span>
                 <span className="icone"><FaCheck/></span>
             </li>
+            <li>
+                <span className="list-name">Payer en Krysto</span>
+                <span className="icone"><FaCheck/></span>
+            </li>
+            <li>
+                <span className="list-name">Gerer vos comptes</span>
+                <span className="icone"><FaCheck/></span>
+            </li>
         </div>
         <div className="button"><button>Choisir</button></div>
      
@@ -61,11 +69,19 @@ function SubscriptionCard() {
                 <span className="icone"><FaCheck/></span>
             </li>
             <li>
+                <span className="list-name">Recevoir des Krysto</span>
+                <span className="icone"><FaCheck/></span>
+            </li>
+            <li>
                 <span className="list-name">Envoyer des Krysto</span>
                 <span className="icone"><FaCheck/></span>
             </li>
             <li>
-                <span className="list-name">Recevoir des Krysto</span>
+                <span className="list-name">Payer en Krysto</span>
+                <span className="icone"><FaCheck/></span>
+            </li>
+            <li>
+                <span className="list-name">Gerer vos comptes</span>
                 <span className="icone"><FaCheck/></span>
             </li>
         </div>
@@ -101,6 +117,14 @@ function SubscriptionCard() {
             </li>
             <li>
                 <span className="list-name">Recevoir des Krysto</span>
+                <span className="icone"><FaCheck/></span>
+            </li>
+            <li>
+                <span className="list-name">Payer en Krysto</span>
+                <span className="icone"><FaCheck/></span>
+            </li>
+            <li>
+                <span className="list-name">Gerer vos comptes</span>
                 <span className="icone"><FaCheck/></span>
             </li>
         </div>

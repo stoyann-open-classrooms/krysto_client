@@ -19,7 +19,7 @@ function Offer() {
 
   console.log(profil)
 
-  const [toggleModal, setToggleModal] = useState(false)
+
 
   const params = useParams()
 

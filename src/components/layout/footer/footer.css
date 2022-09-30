@@ -46,7 +46,7 @@ footer {
   background-color: #5e7691;
   position: relative;
   color: #ECEAF8;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 footer p {
   text-align: center;
@@ -54,27 +54,32 @@ footer p {
   margin-top: 2rem;
   opacity: 0.4;
 }
-footer ul {
+footer .social-link-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  flex: 1;
 }
-footer ul li {
-  margin-right: 3rem;
+footer .social-link-list li {
   color: #313539;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.3rem;
-  line-height: 2.5;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
   color: #ECEAF8;
   display: flex;
   align-items: center;
 }
-footer ul li:hover {
+footer .social-link-list li svg {
+  margin-right: 0.2rem;
+}
+footer .social-link-list li:hover {
   color: #F49E4C;
 }
-footer ul li a {
+footer .social-link-list li a {
   margin-right: 1rem;
   transition: color 0.6s;
 }/*# sourceMappingURL=footer.css.map */

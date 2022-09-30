@@ -7,20 +7,18 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-      
-<ul>
+
+
+
+<ul className='social-link-list'>
   
   <li>
     <FaYoutube/>
-    <Link to={'#'}>You Tube</Link>
+    <a href='https://www.youtube.com/channel/UCoudw4zohXdN9Bs3I32uHkQ'>You tube</a>
   </li>
   <li>
     <FaFacebook/>
-    <Link to={'#'}>Facebook</Link>
-  </li>
-  <li>
-    <FaInstagram/>
-    <Link to={'#'}>Instagram</Link>
+    <a href='https://www.facebook.com/Krysto.noumea'>Facebook</a>
   </li>
   <li>
     <FaDiscord/>
@@ -28,7 +26,7 @@ function Footer() {
   </li>
   <li>
     <FaLinkedin/>
-    <Link to={'#'}>Linkedyn</Link>
+    <a href='https://www.linkedin.com/company/krysto-nc/'>Linkedyn</a>
   </li>
 
   </ul>  
