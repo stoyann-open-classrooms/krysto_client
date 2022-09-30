@@ -1,9 +1,1 @@
-import React from 'react'
-
-function Cgu() {
-  return (
-    <section>Cgu</section>
-  )
-}
-
-export default Cgu
+import { FaArrowCircleDown } from 'react-icons/fa'

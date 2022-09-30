@@ -1,7 +1,5 @@
 import React from 'react'
-import { FaArrowCircleDown } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import bourse from '../../../assets/icones/bourse 1.png'
 
 
 
